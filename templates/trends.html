@@ -1,0 +1,290 @@
+{% extends "base.html" %}
+{% block title %}Trend Analysis{% endblock %}
+{% block topbar_title %}Trend Analysis{% endblock %}
+{% block content %}
+<div class="ph fi"><h1 class="ph-title">Trend Analysis</h1>
+<p class="ph-sub">Track welfare score changes across 2018–2026. <strong>Rising trends = improving welfare delivery.</strong></p></div>
+
+{% set cu = current_user() %}
+{% if utype not in ("researcher","data_analyst","admin") %}
+<div class="ib ib-v fi1" style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+  <i class="fa fa-lock" style="font-size:18px;flex-shrink:0"></i>
+  <span>Citizens see the national trend only. <strong>Researchers & Analysts</strong> get all 4 indicator lines, state filtering and advanced charts. <a href="{{ url_for('upgrade') }}" style="font-weight:700">Upgrade free →</a></span>
+</div>
+{% endif %}
+
+<div class="trend-ctrl fi1">
+  <div>
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--tm);margin-bottom:6px">Show data up to</div>
+    <div style="font-family:var(--fontd);font-size:40px;font-weight:800;color:var(--p);line-height:1" id="yearDisplay">{{ years[-1] }}</div>
+  </div>
+  <div>
+    <input type="range" id="yearSlider" min="{{ years[0] }}" max="{{ years[-1] }}" value="{{ years[-1] }}" step="1">
+    <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--tm);margin-top:6px">
+      {% for y in years %}<span>{{ y }}</span>{% endfor %}
+    </div>
+  </div>
+  <div>
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--tm);margin-bottom:6px">Filter State</div>
+    <select id="stateFilter" class="fc" style="min-width:190px">
+      <option value="">All States (National)</option>
+      {% for s in states %}<option>{{ s }}</option>{% endfor %}
+    </select>
+    <div id="stateViewLabel" style="margin-top:8px;font-size:12px;font-weight:800;color:var(--tb);background:var(--p-l);border:1px solid var(--b);padding:6px 10px;border-radius:12px;display:inline-block">Viewing: National</div>
+  </div>
+</div>
+
+{% if trend_insight %}
+<div class="card fi2 mb4" style="border-left:4px solid var(--p)">
+  <div class="card-b" style="padding:16px 20px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:14px">
+
+      {% set pct = trend_insight.pct_change %}
+      <div style="display:flex;align-items:center;gap:10px;padding:12px;background:{% if pct >= 0 %}var(--g-l){% else %}var(--r-l){% endif %};border-radius:var(--rads);border:1px solid {% if pct >= 0 %}rgba(16,185,129,.2){% else %}rgba(239,68,68,.2){% endif %}">
+        <i class="fa fa-{% if pct >= 0 %}arrow-trend-up{% else %}arrow-trend-down{% endif %}" style="color:{% if pct >= 0 %}var(--g){% else %}var(--r){% endif %};font-size:20px;flex-shrink:0"></i>
+        <div>
+          <div style="font-family:var(--fontd);font-size:18px;font-weight:800;color:var(--th)">{% if pct > 0 %}+{% endif %}{{ pct }}%</div>
+          <div style="font-size:12px;color:var(--ts)">Welfare {{ trend_insight.direction }} since {{ trend_insight.first_yr }}</div>
+        </div>
+      </div>
+
+      {% if trend_insight.five_yr_ago != trend_insight.first_yr %}
+      {% set pct5 = trend_insight.pct_5yr %}
+      <div style="display:flex;align-items:center;gap:10px;padding:12px;background:{% if pct5 >= 0 %}var(--p-l){% else %}var(--o-l){% endif %};border-radius:var(--rads);border:1px solid {% if pct5 >= 0 %}rgba(37,99,235,.2){% else %}rgba(249,115,22,.2){% endif %}">
+        <i class="fa fa-calendar-check" style="color:{% if pct5 >= 0 %}var(--p){% else %}var(--o){% endif %};font-size:18px;flex-shrink:0"></i>
+        <div>
+          <div style="font-family:var(--fontd);font-size:18px;font-weight:800;color:var(--th)">{% if pct5 > 0 %}+{% endif %}{{ pct5 }}%</div>
+          <div style="font-size:12px;color:var(--ts)">Since {{ trend_insight.five_yr_ago }} (5-year)</div>
+        </div>
+      </div>
+      {% endif %}
+
+      <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--a-l);border-radius:var(--rads);border:1px solid rgba(245,158,11,.2)">
+        <i class="fa fa-trophy" style="color:var(--a);font-size:18px;flex-shrink:0"></i>
+        <div>
+          <div style="font-family:var(--fontd);font-size:18px;font-weight:800;color:var(--th)">{{ trend_insight.best_yr }}</div>
+          <div style="font-size:12px;color:var(--ts)">Best performing year</div>
+        </div>
+      </div>
+
+      {% if trend_insight.most_improved_state != '—' %}
+      <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--v-l);border-radius:var(--rads);border:1px solid rgba(139,92,246,.2)">
+        <i class="fa fa-medal" style="color:var(--v);font-size:18px;flex-shrink:0"></i>
+        <div>
+          <div style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--th);line-height:1.2">{{ trend_insight.most_improved_state }}</div>
+          <div style="font-size:12px;color:var(--ts)">Most improved state (+{{ trend_insight.most_improved_delta }} pts)</div>
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+    
+    <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ts);flex-wrap:wrap">
+      <span style="font-family:var(--fontd);font-weight:700;font-size:14px;color:var(--th)">{{ trend_insight.first_yr }}:</span>
+      <span style="font-family:var(--fontd);font-weight:800;color:var(--tm)">{{ trend_insight.score_first }}/100</span>
+      <i class="fa fa-arrow-right" style="color:var(--tm)"></i>
+      <span style="font-family:var(--fontd);font-weight:700;font-size:14px;color:var(--th)">{{ trend_insight.last_yr }}:</span>
+      <span style="font-family:var(--fontd);font-weight:800;color:var(--p)">{{ trend_insight.score_last }}/100</span>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div id="insightsPanel" class="fi2"></div>
+
+<div class="ib ib-b fi2 mb4" style="display:flex;align-items:flex-start;gap:10px">
+  <i class="fa fa-circle-info" style="color:var(--p);margin-top:2px;flex-shrink:0"></i>
+  <div>
+    <strong>Score: 0 (Critical) → 100 (Excellent). Higher is always better.</strong>
+    Rising lines = improving welfare delivery. Falling lines = declining delivery.
+    <br><span style="font-size:12px;color:var(--ts);font-style:italic">Upward trend indicates improvement in welfare delivery; downward trend indicates decline requiring attention.</span>
+  </div>
+</div>
+
+<div class="card col2 fi3 mb4">
+  <div class="card-h">
+    <div>
+      <div class="card-t">📈 Welfare Score Trend — {{ years[0] }} to <span id="yearEnd">{{ years[-1] }}</span></div>
+      <div class="card-sub">Overall + 4 indicators · Higher = better</div>
+    </div>
+    {% if cu and cu.user_type in ("researcher","data_analyst","admin") %}
+    <a href="{{ url_for('export_dashboard') }}" class="btn btn-o btn-sm"><i class="fa fa-download"></i> Export CSV</a>
+    {% endif %}
+  </div>
+  <div class="card-b"><div style="position:relative;height:340px"><canvas id="trendLineChart"></canvas></div></div>
+</div>
+
+<div class="cg fi4 mb4">
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">🗺️ State Rankings</div><div class="card-sub">Sorted highest first</div></div><a href="{{ url_for('leaderboard') }}" class="btn btn-ghost btn-sm">Full rankings →</a></div>
+    <div class="card-b"><div style="position:relative;height:400px"><canvas id="stateBarChart"></canvas></div></div>
+    <div class="card-f"><div style="display:flex;gap:16px;font-size:12px;flex-wrap:wrap">
+      <span style="color:#10B981">🌟 80–100 Excellent</span>
+      <span style="color:#3B82F6">✅ 60–79 Good</span>
+      <span style="color:#F59E0B">⚠️ 40–59 Moderate</span>
+      <span style="color:#F97316">🔶 20–39 Weak</span>
+      <span style="color:#EF4444">🚨 0–19 Critical</span>
+    </div></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><div class="card-t">🥧 Indicator Distribution</div><div class="card-sub">Average score breakdown by welfare area</div></div>
+    <div class="card-b">
+      <div style="position:relative;max-width:220px;margin:0 auto 16px">
+        <canvas id="indicatorPie" style="max-height:220px"></canvas>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none">
+          <div style="font-family:var(--fontd);font-size:22px;font-weight:800;color:var(--th)" id="pieCenter">—</div>
+          <div style="font-size:10px;color:var(--ts)">overall</div>
+        </div>
+      </div>
+      <div id="pieLegend" style="display:flex;flex-direction:column;gap:8px"></div>
+    </div>
+  </div>
+</div>
+
+<div class="card fi5 mb4">
+  <div class="card-h"><div><div class="card-t">📊 Stacked Indicator Bars by Year</div><div class="card-sub">Each segment = one welfare indicator · Taller = better overall delivery</div></div></div>
+  <div class="card-b"><div style="position:relative;height:300px"><canvas id="stackedBar"></canvas></div></div>
+</div>
+
+<div class="card fi6 mb4">
+  <div class="card-h"><div><div class="card-t">🟩 State Performance Heatmap</div><div class="card-sub">Colour = welfare score · Green = excellent, Red = critical</div></div></div>
+  <div class="card-b" style="overflow-x:auto">
+    <div id="heatmapGrid" style="min-width:600px"></div>
+  </div>
+</div>
+
+{% endblock %}
+{% block extra_js %}
+<script src="{{ url_for('static',filename='js/charts.js') }}"></script>
+<script>
+initTrendCharts({{ years|tojson }});
+
+/* ── Indicator Doughnut (static national latest year) ── */
+const IND_COLORS=['#3B82F6','#10B981','#F59E0B','#8B5CF6'];
+const IND_LABELS=['Education','Healthcare','Food Security','Employment'];
+
+let pieChart;
+function updatePie(data){
+  const vals=[data.i1||0,data.i2||0,data.i3||0,data.i4||0];
+  const avg=data.avg||0;
+  document.getElementById('pieCenter').textContent=avg;
+  if(pieChart){
+    pieChart.data.datasets[0].data=vals;
+    pieChart.update();
+  } else {
+    pieChart=new Chart(document.getElementById('indicatorPie'),{type:'doughnut',
+      data:{labels:IND_LABELS,datasets:[{data:vals,backgroundColor:IND_COLORS,borderWidth:3,borderColor:'var(--surf)',hoverBorderColor:'var(--surf)'}]},
+      options:{responsive:true,cutout:'65%',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.label+': '+ctx.raw+'/100'}}},animation:{duration:600}}});
+  }
+  // Legend
+  const leg=document.getElementById('pieLegend');
+  leg.innerHTML=IND_LABELS.map((l,i)=>`
+    <div style="display:flex;align-items:center;gap:8px">
+      <div style="width:12px;height:12px;background:${IND_COLORS[i]};border-radius:3px;flex-shrink:0"></div>
+      <div style="flex:1;font-size:12px;color:var(--ts)">${l}</div>
+      <div style="font-family:var(--fontd);font-size:13px;font-weight:700;color:${IND_COLORS[i]}">${vals[i]}/100</div>
+    </div>`).join('');
+}
+
+/* ── Stacked bar ── */
+let stackedChart;
+function updateStacked(trendsData){
+  const years=Object.keys(trendsData).sort();
+  const i1=years.map(y=>trendsData[y].i1||0);
+  const i2=years.map(y=>trendsData[y].i2||0);
+  const i3=years.map(y=>trendsData[y].i3||0);
+  const i4=years.map(y=>trendsData[y].i4||0);
+  if(stackedChart){
+    stackedChart.data.labels=years;
+    stackedChart.data.datasets[0].data=i1;
+    stackedChart.data.datasets[1].data=i2;
+    stackedChart.data.datasets[2].data=i3;
+    stackedChart.data.datasets[3].data=i4;
+    stackedChart.update();
+  } else {
+    stackedChart=new Chart(document.getElementById('stackedBar'),{type:'bar',
+      data:{labels:years,datasets:[
+        {label:'Education',data:i1,backgroundColor:'rgba(59,130,246,.8)',stack:'s'},
+        {label:'Healthcare',data:i2,backgroundColor:'rgba(16,185,129,.8)',stack:'s'},
+        {label:'Food Security',data:i3,backgroundColor:'rgba(245,158,11,.8)',stack:'s'},
+        {label:'Employment',data:i4,backgroundColor:'rgba(139,92,246,.8)',stack:'s'}
+      ]},
+      options:{responsive:true,maintainAspectRatio:false,
+        plugins:{legend:{position:'bottom',labels:{font:{family:'Inter',size:12},padding:12}}},
+        scales:{
+          y:{stacked:true,ticks:{font:{family:'Inter',size:11},callback:v=>v+'/100'},grid:{color:'rgba(226,232,240,.6)'}},
+          x:{stacked:true,grid:{display:false},ticks:{font:{family:'Inter',size:11}}}
+        },animation:{duration:600}}});
+  }
+}
+
+/* ── Heatmap Grid ── */
+function scoreHexColor(v){
+  if(v>=80)return['#D1FAE5','#065F46'];if(v>=60)return['#EFF6FF','#1E40AF'];
+  if(v>=40)return['#FEF3C7','#92400E'];if(v>=20)return['#FFF7ED','#9A3412'];
+  return['#FEE2E2','#991B1B'];
+}
+function buildHeatmap(stateData,yearEnd){
+  const hm=document.getElementById('heatmapGrid');
+  if(!stateData||!Object.keys(stateData).length){hm.innerHTML='<p style="color:var(--ts);font-size:13px">Loading heatmap…</p>';return;}
+  const allYears=[...new Set(Object.values(stateData).flatMap(y=>Object.keys(y)))].sort();
+  const filtYears=allYears.filter(y=>+y<=yearEnd);
+  const states=Object.keys(stateData).sort();
+  let html=`<div style="display:grid;grid-template-columns:160px repeat(${filtYears.length},1fr);gap:3px;font-size:11px">`;
+  html+=`<div style="padding:4px;font-weight:700;color:var(--ts)">State</div>`;
+  filtYears.forEach(y=>html+=`<div style="text-align:center;padding:4px;font-weight:700;color:var(--ts)">${y}</div>`);
+  states.forEach(state=>{
+    html+=`<div style="padding:6px 4px;font-weight:600;color:var(--th);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${state}</div>`;
+    filtYears.forEach(y=>{
+      const v=stateData[state]?.[y];
+      if(v!=null){
+        const [bg,fg]=scoreHexColor(+v);
+        html+=`<div title="${state} ${y}: ${v}/100" style="background:${bg};color:${fg};text-align:center;padding:5px 2px;border-radius:4px;font-weight:700;font-size:10px;cursor:default;transition:transform .15s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform=''">${v}</div>`;
+      } else {
+        html+=`<div style="background:var(--surf2);border-radius:4px;padding:5px 2px;text-align:center;font-size:10px;color:var(--tm)">—</div>`;
+      }
+    });
+  });
+  html+='</div>';
+  hm.innerHTML=html;
+}
+
+/* Fetch and populate supplementary charts */
+let _heatmapData={};
+function fetchAndUpdateCharts(year,state){
+  fetch(`/api/trends?year=${year}${state?'&state='+encodeURIComponent(state):''}`)
+    .then(r=>r.json())
+    .then(d=>{
+      // Pie update
+      const trend=d.yearly_trend;
+      const latest=Object.keys(trend).sort().pop();
+      if(latest) updatePie(trend[latest]);
+      // Stacked bar
+      updateStacked(trend);
+    });
+  // Heatmap data (all years, no year filter on server side, we filter client side)
+  fetch('/api/heatmap-data'+(state?'?state='+encodeURIComponent(state):''))
+    .then(r=>r.json())
+    .then(d=>{ _heatmapData=d; buildHeatmap(d,year); });
+}
+
+// Hook into year slider + state filter changes
+document.addEventListener('DOMContentLoaded',()=>{
+  const slider=document.getElementById('yearSlider');
+  const stateF=document.getElementById('stateFilter');
+  if(slider&&stateF){
+    const label=document.getElementById('stateViewLabel');
+    const doUpdate=()=>{
+      const st=stateF.value;
+      if(label) label.textContent = st ? `Viewing: ${st}` : 'Viewing: National';
+      fetchAndUpdateCharts(+slider.value, st);
+    };
+    slider.addEventListener('input',()=>buildHeatmap(_heatmapData,+slider.value));
+    slider.addEventListener('change',doUpdate);
+    stateF.addEventListener('change',doUpdate);
+    // Initial load
+    setTimeout(doUpdate,400);
+  }
+});
+</script>
+{% endblock %}

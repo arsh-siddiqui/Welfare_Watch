@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Rankings{% endblock %}
+{% block topbar_title %}Welfare Rankings{% endblock %}
+{% block content %}
+<div class="ph fi flex jb items-c" style="flex-wrap:wrap;gap:12px">
+  <div><h1 class="ph-title">Welfare Rankings</h1><p class="ph-sub">State & district rankings by welfare score. <strong>Higher = better welfare delivery.</strong></p></div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <span style="font-size:13px;color:var(--ts)">Year:</span>
+    <form method="GET" style="margin:0">
+      <select name="year" class="fc" style="min-width:100px;font-size:13px" onchange="this.form.submit()">
+        {% for yr in years_avail %}<option value="{{ yr }}" {% if yr==year %}selected{% endif %}>{{ yr }}</option>{% endfor %}
+      </select>
+    </form>
+    {% set cu = current_user() %}{% if cu and cu.user_type in ("researcher","data_analyst","admin") %}
+    <a href="{{ url_for('export_dashboard') }}" class="btn btn-o btn-sm"><i class="fa fa-download"></i> Export</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="cg fi1">
+  
+  <div class="card col2">
+    <div class="card-h"><div><div class="card-t">🏆 State Welfare Rankings — {{ year }}</div><div class="card-sub">All 32 states & UTs · Sorted best welfare delivery first</div></div></div>
+    <div class="card-b" style="padding:0"><div class="tw"><table class="lb-table">
+      <thead><tr><th>Rank</th><th>State / UT</th><th>Welfare Score</th><th>Category</th><th>Districts</th><th>Analysis</th></tr></thead>
+      <tbody>
+      {% for row in top_states %}
+      {% set wl = welfare_label(row["avg"]) %}
+      <tr>
+        <td style="font-family:var(--fontd);font-size:16px;font-weight:800;color:var(--tm)">{{ loop.index }}</td>
+        <td><a href="{{ url_for('state_profile',state_name=row['state']) }}" style="font-weight:700;color:var(--p)">{{ row["state"] }}</a></td>
+        <td>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:100px;background:var(--surf2);border-radius:20px;height:7px">
+              <div style="width:{{ row['avg'] }}%;background:{{ wl.color }};border-radius:20px;height:7px"></div>
+            </div>
+            <span style="font-family:var(--fontd);font-weight:800;color:{{ wl.color }}">{{ row["avg"] }}/100</span>
+          </div>
+        </td>
+        <td><span class="badge b-{{ wl.cls }}">{{ wl.icon }} {{ wl.label }}</span></td>
+        <td style="color:var(--ts)">{{ row["districts"] }}</td>
+        <td><a href="{{ url_for('state_commentary',state_name=row['state']) }}" style="font-size:12px;color:var(--p);font-weight:600;white-space:nowrap"><i class="fa fa-comment-dots"></i> Analyse</a></td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div></div>
+  </div>
+</div>
+
+<div class="cg fi2">
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">🌟 Top Districts — {{ year }}</div><div class="card-sub">Highest welfare scores</div></div></div>
+    <div class="card-b" style="padding:0"><div class="tw"><table class="lb-table">
+      <thead><tr><th>Rank</th><th>District</th><th>State</th><th>Score</th><th>Analysis</th></tr></thead>
+      <tbody>
+      {% for row in top_districts %}
+      {% set wl = welfare_label(row["avg"]) %}
+      <tr>
+        <td style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--tm)">{{ loop.index }}</td>
+        <td style="font-weight:600">{{ row["district"] }}</td>
+        <td style="color:var(--ts);font-size:13px">{{ row["state"] }}</td>
+        <td><span style="font-family:var(--fontd);font-weight:800;color:{{ wl.color }}">{{ row["avg"] }}/100</span></td>
+        <td><a href="{{ url_for('district_commentary',district_name=row['district']) }}" style="font-size:12px;color:var(--p);font-weight:600;white-space:nowrap"><i class="fa fa-comment-dots"></i> Why?</a></td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">🚨 Districts Needing Support — {{ year }}</div><div class="card-sub">Lowest welfare scores — priority for government action</div></div></div>
+    <div class="card-b" style="padding:0"><div class="tw"><table>
+      <thead><tr><th>Rank</th><th>District</th><th>State</th><th>Score</th></tr></thead>
+      <tbody>
+      {% for row in bottom_districts %}
+      {% set wl = welfare_label(row["avg"]) %}
+      <tr>
+        <td style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--r)">{{ loop.index }}</td>
+        <td style="font-weight:600">{{ row["district"] }}</td>
+        <td style="color:var(--ts);font-size:13px">{{ row["state"] }}</td>
+        <td><span style="font-family:var(--fontd);font-weight:800;color:{{ wl.color }}">{{ row["avg"] }}/100</span></td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div></div>
+  </div>
+</div>
+
+<div class="card fi3">
+  <div class="card-h"><div><div class="card-t">📈 Most Improved Districts ({{ years_avail[0] }} → {{ year }})</div><div class="card-sub">Score increased = welfare delivery improved</div></div></div>
+  <div class="card-b" style="padding:0"><div class="tw"><table>
+    <thead><tr><th>Rank</th><th>District</th><th>State</th><th>{{ years_avail[0] }} Score</th><th>{{ year }} Score</th><th>Improvement</th></tr></thead>
+    <tbody>
+    {% for row in most_improved %}
+    <tr>
+      <td style="font-family:var(--fontd);font-weight:800;color:var(--g)">{{ loop.index }}</td>
+      <td style="font-weight:600">{{ row["district"] }}</td>
+      <td style="color:var(--ts);font-size:13px">{{ row["state"] }}</td>
+      <td style="color:var(--ts)">{{ row["prev"] }}/100</td>
+      <td><span style="font-weight:700;color:var(--g)">{{ row["cur"] }}/100</span></td>
+      <td><span style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--g)">+{{ row["delta"] }}</span></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table></div></div>
+</div>
+{% endblock %}

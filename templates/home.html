@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block topbar_title %}Home{% endblock %}
+{% block content %}
+<div class="home-wrapper">
+  <section class="hero home-hero">
+    <div class="hero-inner home-hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow"><i class="fa fa-shield-halved"></i> Open welfare insights for India</div>
+        <h1 class="hero-h1">See where welfare delivery is strong, and where support is needed.</h1>
+        <p class="hero-p">WelfareWatch turns complex district data into clear scores, maps, and comparisons so first-time users can understand the picture quickly.</p>
+        <div class="hero-btns">
+          <a href="{{ url_for('dashboard') }}" class="hbtn hbtn-p"><i class="fa fa-chart-line"></i> Start with dashboard</a>
+          <a href="{{ url_for('risk_map') }}" class="hbtn hbtn-g"><i class="fa fa-map-location-dot"></i> Browse the map</a>
+          <a href="{{ url_for('search') }}" class="hbtn hbtn-g"><i class="fa fa-magnifying-glass"></i> Find a district</a>
+        </div>
+        <div class="hero-badges">
+          <span class="hero-badge"><strong>{{ latest_year }}</strong> latest year</span>
+          <span class="hero-badge"><strong>{{ total_districts }}</strong> districts tracked</span>
+          <span class="hero-badge"><strong>{{ total_states }}</strong> states and UTs</span>
+        </div>
+      </div>
+      <div class="hero-right home-summary">
+        <div class="home-summary-card">
+          <span class="home-summary-label">National welfare score</span>
+          <div class="home-summary-value" style="color:{{ nat_wl.color }}"><span class="count-up" data-target="{{ nat_score }}">0</span>/100</div>
+          <p>{{ nat_wl.icon }} {{ nat_wl.label }} in {{ latest_year }}</p>
+        </div>
+        <div class="home-summary-grid">
+          <div class="home-mini-stat">
+            <span>Citizen reports</span>
+            <strong class="count-up" data-target="{{ total_reports }}">0</strong>
+          </div>
+          <div class="home-mini-stat">
+            <span>Datasets</span>
+            <strong class="count-up" data-target="{{ datasets }}">0</strong>
+          </div>
+          <div class="home-mini-stat">
+            <span>Coverage</span>
+            <strong>{{ years_avail|first }}-{{ years_avail|last }}</strong>
+          </div>
+          <div class="home-mini-stat">
+            <span>Benchmark</span>
+            <strong>{{ nat_2023 }}/100</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-panel home-panel-soft">
+    <div class="home-section-head">
+      <div>
+        <span class="section-kicker">Start here</span>
+        <h2>Three easy ways to begin</h2>
+      </div>
+      <p>If you are new to the platform, this is the fastest route to useful information.</p>
+    </div>
+    <div class="journey-grid">
+      <a href="{{ url_for('dashboard') }}" class="journey-card">
+        <span class="journey-step">1</span>
+        <h3>Get the big picture</h3>
+        <p>Open the dashboard for the national score, top trends, and a simple score guide.</p>
+      </a>
+      <a href="{{ url_for('risk_map') }}" class="journey-card">
+        <span class="journey-step">2</span>
+        <h3>Look at your area</h3>
+        <p>Use the map to move from India view to a specific state or district in a few clicks.</p>
+      </a>
+      <a href="{{ url_for('compare') }}" class="journey-card">
+        <span class="journey-step">3</span>
+        <h3>Compare places</h3>
+        <p>Check two districts side by side to understand where outcomes differ most.</p>
+      </a>
+    </div>
+  </section>
+
+  <div class="score-key-strip">
+    <div class="score-key-row">
+      <span class="score-key-label">Score guide</span>
+      {% for lo,hi,label,color,cls,desc in SCORE_BANDS %}
+      <span class="score-pill" style="background:{{ color }}18;color:{{ color }};border-color:{{ color }}40">{{ lo }}-{{ hi }} {{ label }}</span>
+      {% endfor %}
+      <span class="score-key-note">Higher score means stronger welfare delivery.</span>
+    </div>
+  </div>
+
+  <div class="strip fi1">
+    {% for v,l,ic,clr in [(total_states,"States and UTs","fa-map","var(--p)"),(total_districts,"Districts tracked","fa-city","var(--g)"),(total_reports,"Citizen reports","fa-flag","var(--a)"),(years_avail|first ~ '-' ~ years_avail|last,"Data coverage","fa-calendar","var(--v)")] %}
+    <div class="strip-item">
+      <div style="color:{{ clr }};font-size:20px;margin-bottom:8px"><i class="fa {{ ic }}"></i></div>
+      <div class="strip-v" style="color:{{ clr }}">{{ v }}</div>
+      <div class="strip-l">{{ l }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <section class="state-lookup fi2">
+    <div class="state-lookup-inner">
+      <div class="home-section-head centered">
+        <div>
+          <span class="section-kicker">Quick check</span>
+          <h2>See how your state is doing</h2>
+        </div>
+        <p>Select a state to instantly view its latest welfare score and national rank.</p>
+      </div>
+      <div class="state-lookup-controls">
+        <select id="stateRankSelect" class="fc state-select">
+          <option value="">Select your state</option>
+          {% for s in INDIA_STATES %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+        </select>
+        <button onclick="checkStateRank()" class="btn btn-p"><i class="fa fa-search"></i> Show result</button>
+      </div>
+      <div id="stateRankResult" class="state-rank-result" style="display:none"></div>
+    </div>
+  </section>
+
+  <section class="hs fi3">
+    <div class="home-section-head">
+      <div>
+        <span class="section-kicker">Explore</span>
+        <h2>Use the platform without the learning curve</h2>
+      </div>
+      <p>Each section is grouped by the kind of question a user usually has first.</p>
+    </div>
+    <div class="feat-grid home-feature-grid">
+      <a href="{{ url_for('dashboard') }}" class="feat-card home-feature-card">
+        <div class="feat-icon" style="background:var(--p-l);color:var(--p)"><i class="fa fa-chart-bar"></i></div>
+        <h3>Understand the overall picture</h3>
+        <p>See key national metrics, score bands, and summaries in one place.</p>
+      </a>
+      <a href="{{ url_for('risk_map') }}" class="feat-card home-feature-card">
+        <div class="feat-icon" style="background:var(--v-l);color:var(--v)"><i class="fa fa-map-location-dot"></i></div>
+        <h3>Explore state and district maps</h3>
+        <p>Navigate visually if you do not know exactly where to start.</p>
+      </a>
+      <a href="{{ url_for('search') }}" class="feat-card home-feature-card">
+        <div class="feat-icon" style="background:var(--a-l);color:var(--a)"><i class="fa fa-magnifying-glass"></i></div>
+        <h3>Search for one district</h3>
+        <p>Jump directly to a district profile when you already know the place name.</p>
+      </a>
+      <a href="{{ url_for('trends') }}" class="feat-card home-feature-card">
+        <div class="feat-icon" style="background:var(--g-l);color:var(--g)"><i class="fa fa-chart-line"></i></div>
+        <h3>Track changes over time</h3>
+        <p>Review progress or decline across years with trend-focused views.</p>
+      </a>
+      <a href="{{ url_for('compare') }}" class="feat-card home-feature-card">
+        <div class="feat-icon" style="background:var(--t-l);color:var(--t)"><i class="fa fa-scale-balanced"></i></div>
+        <h3>Compare two districts</h3>
+        <p>Spot the biggest differences fast with side-by-side comparisons.</p>
+      </a>
+      <a href="{{ url_for('report') }}" class="feat-card home-feature-card">
+        <div class="feat-icon" style="background:var(--r-l);color:var(--r)"><i class="fa fa-flag"></i></div>
+        <h3>Report a ground issue</h3>
+        <p>Submit local problems when welfare services are not reaching people.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="hs hs-alt fi4">
+    <div class="home-section-head">
+      <div>
+        <span class="section-kicker">Latest snapshot</span>
+        <h2>States to watch in {{ latest_year }}</h2>
+      </div>
+      <p>A quick view of leaders and states that may need more support.</p>
+    </div>
+    <div class="snapshot-grid">
+      <div class="snapshot-column snapshot-risk">
+        <h3>Need more support</h3>
+        {% for row in at_risk %}
+        {% set wl = welfare_label(row["avg"]) %}
+        <a href="{{ url_for('state_profile',state_name=row['state']) }}" class="snapshot-item">
+          <span class="snapshot-rank">{{ loop.index }}</span>
+          <div class="snapshot-copy">
+            <strong>{{ row["state"] }}</strong>
+            <span>{{ row["avg"] }}/100 - {{ wl.label }}</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      <div class="snapshot-column snapshot-best">
+        <h3>Leading performance</h3>
+        {% for row in best %}
+        {% set wl = welfare_label(row["avg"]) %}
+        <a href="{{ url_for('state_profile',state_name=row['state']) }}" class="snapshot-item">
+          <span class="snapshot-rank">{{ loop.index }}</span>
+          <div class="snapshot-copy">
+            <strong>{{ row["state"] }}</strong>
+            <span>{{ row["avg"] }}/100 - {{ wl.label }}</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="hs fi5 home-role-section">
+    <div class="home-section-head">
+      <div>
+        <span class="section-kicker">Accounts</span>
+        <h2>Choose the role that fits your work</h2>
+      </div>
+      <p>Every role is free, with features grouped around how people actually use the platform.</p>
+    </div>
+    <div class="role-grid">
+      {% for utype in ["citizen","researcher","data_analyst"] %}
+      {% set role = ROLES[utype] %}
+      <div class="role-card-lite">
+        <div class="role-icon">{{ role.icon }}</div>
+        <h3 style="color:{{ role.color }}">{{ role.label }}</h3>
+        <p>{{ role.tagline }}</p>
+        {% for perk in role.perks[:3] %}
+        <div class="role-perk"><i class="fa fa-check" style="color:{{ role.color }}"></i><span>{{ perk }}</span></div>
+        {% endfor %}
+        <a href="{{ url_for('auth_register') }}" class="btn btn-p btn-sm btn-full" style="margin-top:16px;justify-content:center;background:{{ role.color }};border-color:{{ role.color }}">Register as {{ role.label }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const target = parseFloat(el.dataset.target) || 0;
+    const duration = 1600;
+    const steps = 64;
+    const increment = target / steps;
+    let current = 0;
+    let step = 0;
+    const timer = setInterval(() => {
+      step += 1;
+      current = Math.min(step * increment, target);
+      el.textContent = Number.isInteger(target) ? Math.round(current) : current.toFixed(1);
+      if (step >= steps) {
+        el.textContent = target;
+        clearInterval(timer);
+      }
+    }, duration / steps);
+    obs.unobserve(el);
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.count-up').forEach(el => obs.observe(el));
+
+function checkStateRank() {
+  const state = document.getElementById('stateRankSelect').value;
+  const result = document.getElementById('stateRankResult');
+  if (!state) {
+    result.style.display = 'none';
+    return;
+  }
+  result.innerHTML = '<div class="state-result-message"><i class="fa fa-spinner fa-spin"></i> Looking up the latest score...</div>';
+  result.style.display = 'block';
+  fetch('/api/state-rank?state=' + encodeURIComponent(state))
+    .then(r => r.json())
+    .then(d => {
+      if (d.error) {
+        result.innerHTML = '<div class="state-result-message error">State not found in the dataset.</div>';
+        return;
+      }
+      const medal = d.rank === 1 ? 'Top ranked' : d.rank <= 3 ? 'Top 3' : d.rank <= 10 ? 'Top 10' : 'National view';
+      const pct = Math.round((d.total - d.rank) / d.total * 100);
+      result.innerHTML = `
+        <div class="state-result-card">
+          <div class="state-result-top">
+            <div>
+              <h3>${state}</h3>
+              <p>${medal}</p>
+            </div>
+            <div class="state-result-score" style="color:${d.color}">
+              <strong>${d.score}</strong>
+              <span>/100</span>
+            </div>
+          </div>
+          <div class="state-result-grid">
+            <div>
+              <strong>#${d.rank}</strong>
+              <span>National rank</span>
+            </div>
+            <div>
+              <strong>Top ${pct}%</strong>
+              <span>Among ${d.total} states</span>
+            </div>
+            <div>
+              <strong>${d.icon} ${d.label}</strong>
+              <span>Current band</span>
+            </div>
+          </div>
+          <a href="/state/${encodeURIComponent(state)}" class="btn btn-p btn-sm">Open full state profile</a>
+        </div>`;
+    })
+    .catch(() => {
+      result.innerHTML = '<div class="state-result-message error">Could not fetch the state score.</div>';
+    });
+}
+document.getElementById('stateRankSelect').addEventListener('change', checkStateRank);
+</script>
+{% endblock %}

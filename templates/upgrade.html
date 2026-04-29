@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Account Types{% endblock %}
+{% block topbar_title %}Account Types & Features{% endblock %}
+{% block content %}
+<div class="ph fi"><h1 class="ph-title">Choose Your Account Type</h1><p class="ph-sub">Each role unlocks specific features. All types are free — switch anytime.</p></div>
+<div class="role-grid fi1">
+{% for utype in ["citizen","researcher","data_analyst"] %}
+{% set role = ROLES[utype] %}
+<div class="role-card {% if cu and cu.user_type == utype %}current{% endif %}">
+  {% if cu and cu.user_type == utype %}<div style="position:absolute;top:14px;right:14px;background:var(--p-l);color:var(--p);padding:3px 9px;border-radius:20px;font-size:11px;font-weight:700">Current</div>{% endif %}
+  <div style="font-size:38px;margin-bottom:12px">{{ role.icon }}</div>
+  <div style="font-family:var(--fontd);font-size:19px;font-weight:800;color:{{ role.color }};margin-bottom:4px">{{ role.label }}</div>
+  <div style="font-size:13px;color:var(--ts);margin-bottom:14px">{{ role.tagline }}</div>
+  <div class="divider"></div>
+  {% for perk in role.perks %}<div class="role-perk"><i class="fa fa-check" style="color:var(--g);margin-top:2px;flex-shrink:0"></i><span>{{ perk }}</span></div>{% endfor %}
+  {% if role.locked %}<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--b)"><div style="font-size:11px;font-weight:700;color:var(--tm);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px">Not included</div>
+    {% for l in role.locked %}<div class="role-locked"><i class="fa fa-lock" style="color:var(--tm);margin-top:2px;flex-shrink:0"></i><span>{{ l }}</span></div>{% endfor %}
+  </div>{% endif %}
+  <div style="margin-top:16px">
+    {% if cu %}
+      {% if cu.user_type != utype %}
+      <form method="POST" action="{{ url_for('upgrade') }}"><input type="hidden" name="user_type" value="{{ utype }}"><button type="submit" class="btn btn-p btn-full" style="justify-content:center">Switch to {{ role.label }}</button></form>
+      {% else %}<button class="btn btn-o btn-full" disabled style="justify-content:center;opacity:.6">✅ Current Account</button>{% endif %}
+    {% else %}<a href="{{ url_for('auth_register') }}" class="btn btn-p btn-full" style="justify-content:center">Register as {{ role.label }}</a>{% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>
+<div class="ib ib-b fi2 mt4"><h4>💡 Switch anytime for free</h4><p>All account types are completely free. Switch between Citizen, Researcher, and Data Analyst whenever you want. Your reports and data are always preserved.</p></div>
+{% endblock %}

@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+{% block title %}Compare Districts{% endblock %}
+{% block topbar_title %}Compare Districts{% endblock %}
+
+{% block content %}
+<div class="ph fi"><h1 class="ph-title">Compare Two Districts</h1>
+<p class="ph-sub">Side-by-side welfare analysis with 5 chart types. <strong>Higher score = better welfare delivery.</strong></p></div>
+
+<div class="card fi1 mb4"><div class="card-b">
+  <form method="POST">
+    <div class="comp-sel">
+      <div class="fg">
+        <label class="fl"><i class="fa fa-circle" style="color:var(--p)"></i> District A</label>
+        <select name="district_a" class="fc" required>
+          <option value="">Choose district A…</option>
+          {% for state, dists in state_districts.items() %}
+          <optgroup label="{{ state }}">
+            {% for d in dists %}<option value="{{ d }}" {% if d==district_a %}selected{% endif %}>{{ d }}</option>{% endfor %}
+          </optgroup>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="vs-text">VS</div>
+      <div class="fg">
+        <label class="fl"><i class="fa fa-circle" style="color:var(--t)"></i> District B</label>
+        <select name="district_b" class="fc" required>
+          <option value="">Choose district B…</option>
+          {% for state, dists in state_districts.items() %}
+          <optgroup label="{{ state }}">
+            {% for d in dists %}<option value="{{ d }}" {% if d==district_b %}selected{% endif %}>{{ d }}</option>{% endfor %}
+          </optgroup>
+          {% endfor %}
+        </select>
+      </div>
+      <button type="submit" class="btn btn-p"><i class="fa fa-scale-balanced"></i> Compare</button>
+    </div>
+  </form>
+</div></div>
+
+{% if comparison and comp_data %}
+{% set da = comp_data.get(district_a, {}) %}
+{% set db = comp_data.get(district_b, {}) %}
+{% set da_i1 = da.get('indicator_1', 0) %}
+{% set da_i2 = da.get('indicator_2', 0) %}
+{% set da_i3 = da.get('indicator_3', 0) %}
+{% set da_i4 = da.get('indicator_4', 0) %}
+{% set db_i1 = db.get('indicator_1', 0) %}
+{% set db_i2 = db.get('indicator_2', 0) %}
+{% set db_i3 = db.get('indicator_3', 0) %}
+{% set db_i4 = db.get('indicator_4', 0) %}
+{% set da_sc = da.get('risk_score', 0) %}
+{% set db_sc = db.get('risk_score', 0) %}
+
+{% if diff_summary is defined and diff_summary %}
+<div class="card fi2 mb4" style="border-left:4px solid {% if overall_gap == 0 %}var(--tm){% elif overall_leader == district_a %}var(--p){% else %}var(--t){% endif %}">
+  <div class="card-b" style="padding:16px 20px">
+
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+      <div>
+        <div style="font-family:var(--fontd);font-size:17px;font-weight:800;color:var(--th)">
+          {% if overall_gap == 0 %}
+            🤝 Both districts are equally ranked overall
+          {% else %}
+            <span style="color:{% if overall_leader == district_a %}var(--p){% else %}var(--t){% endif %}">{{ overall_leader }}</span>
+            performs <span style="color:{% if overall_leader == district_a %}var(--p){% else %}var(--t){% endif %}">{{ overall_gap }} points</span> better overall
+          {% endif %}
+        </div>
+        <div style="font-size:13px;color:var(--ts);margin-top:3px">
+          {{ district_a }}: <strong>{{ da_sc }}/100</strong> &nbsp;vs&nbsp; {{ district_b }}: <strong>{{ db_sc }}/100</strong>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--tm)">
+        <i class="fa fa-circle-info"></i>
+        <span title="A higher welfare score means programmes are reaching more citizens effectively.">Hover rows below for detail</span>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      {% for item in diff_summary %}
+      <div title="{{ item.leader }} leads {{ item.trailer }} in {{ item.indicator }} by {{ item.diff }} points ({{ item.pct }}%)" style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:var(--surf2);border:1px solid var(--b);border-radius:20px;font-size:12px;font-weight:600;color:var(--th);cursor:help;transition:all .15s" onmouseover="this.style.background='var(--p-l)';this.style.borderColor='var(--p)'" onmouseout="this.style.background='var(--surf2)';this.style.borderColor='var(--b)'">
+        <span style="color:var(--p)">{{ item.indicator[:12] }}{% if item.indicator|length > 12 %}…{% endif %}</span>
+        <span style="color:var(--tm)">→</span>
+        <span style="color:{% if item.leader == district_a %}var(--p){% else %}var(--t){% endif %}">{{ item.leader[:10] }}{% if item.leader|length > 10 %}…{% endif %}</span>
+        <span style="font-family:var(--fontd);font-weight:800;color:{% if item.leader == district_a %}var(--p){% else %}var(--t){% endif %}">+{{ item.diff }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+{% endif %}
+
+<div class="comp-cards fi2">
+  {% for name, ca, data, state_n, sc in [(district_a,"cc-a",da,state_a,da_sc),(district_b,"cc-b",db,state_b,db_sc)] %}
+  {% set wl = data.get("wl", welfare_label(sc)) %}
+  <div class="comp-card {{ ca }}">
+    <div style="font-family:var(--fontd);font-size:19px;font-weight:800;color:{{ wl.color }}">{{ name }}</div>
+    <div style="font-size:13px;color:var(--ts);margin-bottom:14px">{{ state_n }}</div>
+    <div class="cc-score" style="color:{{ wl.color }}">{{ sc }}</div>
+    <div style="font-size:13px;color:var(--ts)">/100</div>
+    <div style="font-size:15px;font-weight:700;color:{{ wl.color }};margin-top:6px">{{ wl.icon }} {{ wl.label }}</div>
+    <div style="margin-top:8px;background:{{ wl.color }}15;border-radius:20px;height:6px">
+      <div style="width:{{ sc }}%;background:{{ wl.color }};height:6px;border-radius:20px"></div>
+    </div>
+    <div style="margin-top:10px;padding:10px;background:{{ wl.color }}10;border-radius:var(--rads);font-size:12px;color:var(--ts);line-height:1.5">{{ wl.description }}</div>
+    {% if name == district_a %}
+      {% if da_sc > db_sc %}<div style="margin-top:10px;font-size:13px;color:var(--ts)">✅ <strong>Better performing</strong> district</div>
+      {% elif da_sc < db_sc %}<div style="margin-top:10px;font-size:13px;color:var(--ts)">📉 Needs more support than {{ district_b }}</div>
+      {% else %}<div style="margin-top:10px;font-size:13px;color:var(--ts)">🤝 Equal performance</div>{% endif %}
+    {% else %}
+      {% if db_sc > da_sc %}<div style="margin-top:10px;font-size:13px;color:var(--ts)">✅ <strong>Better performing</strong> district</div>
+      {% elif db_sc < da_sc %}<div style="margin-top:10px;font-size:13px;color:var(--ts)">📉 Needs more support than {{ district_a }}</div>
+      {% else %}<div style="margin-top:10px;font-size:13px;color:var(--ts)">🤝 Equal performance</div>{% endif %}
+    {% endif %}
+    <a href="{{ url_for('generate_pdf_report', district_name=name) }}" class="btn btn-v btn-sm" style="margin-top:12px;width:100%;justify-content:center"><i class="fa fa-file-pdf"></i> Download PDF</a>
+    <a href="{{ url_for('district_commentary', district_name=name) }}" class="btn btn-o btn-sm" style="margin-top:6px;width:100%;justify-content:center"><i class="fa fa-comment-dots"></i> Full Analysis</a>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="card fi3 mb4">
+  <div class="card-h"><div><div class="card-t">Area-by-Area Breakdown</div><div class="card-sub">0 = Critical · 100 = Excellent · Higher is better</div></div></div>
+  <div class="card-b">
+    {% set ind_keys = [("indicator_1","📚","Education & Literacy","School enrollment, literacy, dropouts"),
+                       ("indicator_2","🏥","Healthcare Access","Hospital access, immunisation"),
+                       ("indicator_3","🌾","Food Security","PDS ration, nutrition, food"),
+                       ("indicator_4","💼","Employment & Income","MGNREGA, employment, income")] %}
+    {% for key, icon, label, desc in ind_keys %}
+    {% set sa = da.get(key, 0) %} {% set sb = db.get(key, 0) %}
+    {% set wla = welfare_label(sa) %} {% set wlb = welfare_label(sb) %}
+    <div style="padding:14px;background:var(--surf2);border-radius:var(--rads);border:1px solid var(--b);margin-bottom:10px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+        <span style="font-size:20px">{{ icon }}</span>
+        <div style="flex:1"><div style="font-weight:700;font-size:14px;color:var(--th)">{{ label }}</div><div style="font-size:12px;color:var(--tm)">{{ desc }}</div></div>
+        <div style="font-size:12px;font-weight:700;color:{{ '#10B981' if sa > sb else '#EF4444' if sa < sb else '#94A3B8' }}">
+          {% if sa > sb %}{{ district_a }} leads +{{ (sa - sb)|round(1) }}
+          {% elif sb > sa %}{{ district_b }} leads +{{ (sb - sa)|round(1) }}
+          {% else %}Tied{% endif %}
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        {% for dname, dsc, wlx in [(district_a, sa, wla), (district_b, sb, wlb)] %}
+        <div style="text-align:center;padding:12px;background:{{ wlx.color }}10;border-radius:var(--rads);border:1px solid {{ wlx.color }}30">
+          <div style="font-size:11px;font-weight:700;color:var(--ts);margin-bottom:5px">{{ dname }}</div>
+          <div style="font-family:var(--fontd);font-size:26px;font-weight:800;color:{{ wlx.color }}">{{ dsc }}</div>
+          <div style="font-size:11px;color:{{ wlx.color }};margin-top:3px">{{ wlx.icon }} {{ wlx.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="cg fi4">
+  <div class="card">
+    <div class="card-h"><div class="card-t">📊 Grouped Bar Chart</div><div class="card-sub">All indicators + overall · Higher = better</div></div>
+    <div class="card-b"><canvas id="compBar" height="260"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><div class="card-t">🕸️ Radar Chart</div><div class="card-sub">Outer ring = higher welfare score</div></div>
+    <div class="card-b" style="display:flex;justify-content:center"><canvas id="radarChart" style="max-width:300px;max-height:260px"></canvas></div>
+  </div>
+</div>
+
+<div class="cg fi4" style="margin-top:18px">
+  <div class="card">
+    <div class="card-h"><div class="card-t">📈 Welfare Trend Over Years</div><div class="card-sub">Year-by-year performance</div></div>
+    <div class="card-b"><canvas id="trendChart" height="240"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><div class="card-t">🥧 Indicator Score Split</div><div class="card-sub">Proportional breakdown per district</div></div>
+    <div class="card-b">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center">
+        <div>
+          <div style="font-size:12px;font-weight:700;color:var(--p);text-align:center;margin-bottom:6px">{{ district_a }}</div>
+          <div style="position:relative;max-width:160px;margin:0 auto">
+            <canvas id="donutA"></canvas>
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none">
+              <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--th)">{{ da_sc }}</div>
+              <div style="font-size:10px;color:var(--ts)">/100</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:700;color:var(--t);text-align:center;margin-bottom:6px">{{ district_b }}</div>
+          <div style="position:relative;max-width:160px;margin:0 auto">
+            <canvas id="donutB"></canvas>
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none">
+              <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--th)">{{ db_sc }}</div>
+              <div style="font-size:10px;color:var(--ts)">/100</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px">
+        {% for color, label in [("#3B82F6","Education"),("#10B981","Healthcare"),("#F59E0B","Food Security"),("#8B5CF6","Employment")] %}
+        <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--ts)"><div style="width:10px;height:10px;background:{{color}};border-radius:3px"></div>{{label}}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card fi5 mb4" style="margin-top:18px">
+  <div class="card-h"><div class="card-t">🟩 Performance Heatmap</div><div class="card-sub">Colour-coded welfare levels across all indicators</div></div>
+  <div class="card-b">
+    <div style="display:grid;grid-template-columns:180px 1fr 1fr;gap:4px;font-size:12px">
+      <div></div>
+      <div style="text-align:center;font-weight:700;color:var(--p);padding:6px">{{ district_a }}</div>
+      <div style="text-align:center;font-weight:700;color:var(--t);padding:6px">{{ district_b }}</div>
+      {% for key, icon, label in [("indicator_1","📚","Education"),("indicator_2","🏥","Healthcare"),("indicator_3","🌾","Food Security"),("indicator_4","💼","Employment"),("risk_score","🎯","Overall Score")] %}
+      {% set sa = da.get(key, 0) %} {% set sb = db.get(key, 0) %}
+      {% set wla = welfare_label(sa) %} {% set wlb = welfare_label(sb) %}
+      <div style="display:flex;align-items:center;gap:6px;padding:10px;font-weight:600;color:var(--th);background:var(--surf2);border-radius:var(--rads)">{{ icon }} {{ label }}</div>
+      <div style="background:{{ wla.color }}22;border:1px solid {{ wla.color }}40;border-radius:var(--rads);padding:10px 14px;text-align:center">
+        <div style="font-family:var(--fontd);font-size:18px;font-weight:800;color:{{ wla.color }}">{{ sa }}</div>
+        <div style="font-size:10px;font-weight:700;color:{{ wla.color }}">{{ wla.label }}</div>
+      </div>
+      <div style="background:{{ wlb.color }}22;border:1px solid {{ wlb.color }}40;border-radius:var(--rads);padding:10px 14px;text-align:center">
+        <div style="font-family:var(--fontd);font-size:18px;font-weight:800;color:{{ wlb.color }}">{{ sb }}</div>
+        <div style="font-size:10px;font-weight:700;color:{{ wlb.color }}">{{ wlb.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div id="chartData"
+  data-comp='{{ comparison }}'
+  data-trend='{{ trend_chart }}'
+  data-radar='{{ radar_data }}'
+  data-da-vals='[{{ da_i1 }},{{ da_i2 }},{{ da_i3 }},{{ da_i4 }}]'
+  data-db-vals='[{{ db_i1 }},{{ db_i2 }},{{ db_i3 }},{{ db_i4 }}]'
+  style="display:none">
+</div>
+
+{% else %}
+<div class="card fi2"><div class="card-b"><div class="empty">
+  <i class="fa fa-scale-balanced"></i>
+  <h3>Choose Two Districts Above</h3>
+  <p>Select from grouped dropdowns organised by state for easy navigation.</p>
+</div></div></div>
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const cd = document.getElementById('chartData');
+if (cd) {
+  const comp  = JSON.parse(cd.dataset.comp);
+  const trend = JSON.parse(cd.dataset.trend);
+  const radar = JSON.parse(cd.dataset.radar);
+  const daVals = JSON.parse(cd.dataset.daVals);
+  const dbVals = JSON.parse(cd.dataset.dbVals);
+  const IND_COLORS = ['#3B82F6','#10B981','#F59E0B','#8B5CF6'];
+  const IND_LABELS = ['Education','Healthcare','Food Security','Employment'];
+
+  /* 1. Grouped Bar */
+  new Chart(document.getElementById('compBar'), {
+    type: 'bar',
+    data: { labels: comp.labels, datasets: [
+      { label: comp.a.name, data: comp.a.values, backgroundColor: 'rgba(37,99,235,.8)', borderRadius: 5, borderSkipped: false },
+      { label: comp.b.name, data: comp.b.values, backgroundColor: 'rgba(20,184,166,.8)', borderRadius: 5, borderSkipped: false }
+    ]},
+    options: { responsive: true,
+      plugins: { legend: { labels: { font: { family:'Inter', size:12 } } } },
+      scales: {
+        y: { min:0, max:100, grid: { color:'rgba(226,232,240,.6)' }, ticks: { font:{family:'Inter',size:11}, callback: v => v+'/100' } },
+        x: { grid: { display:false }, ticks: { font:{family:'Inter',size:11} } }
+      }, animation: { duration:800 } }
+  });
+
+  /* 2. Radar */
+  new Chart(document.getElementById('radarChart'), {
+    type: 'radar',
+    data: { labels: radar.labels, datasets: [
+      { label: radar.a.name, data: radar.a.values, borderColor:'#2563EB', backgroundColor:'rgba(37,99,235,.15)', pointBackgroundColor:'#2563EB', borderWidth:2, pointRadius:4 },
+      { label: radar.b.name, data: radar.b.values, borderColor:'#14B8A6', backgroundColor:'rgba(20,184,166,.15)', pointBackgroundColor:'#14B8A6', borderWidth:2, pointRadius:4 }
+    ]},
+    options: { responsive: true,
+      plugins: { legend: { position:'bottom', labels: { font:{family:'Inter',size:12}, padding:12 } } },
+      scales: { r: { min:0, max:100, ticks: { font:{family:'Inter',size:10}, stepSize:20, callback: v => v+'' },
+        pointLabels: { font: { family:'Inter', size:11, weight:'600' } } } },
+      animation: { duration:800 } }
+  });
+
+  /* 3. Trend line */
+  new Chart(document.getElementById('trendChart'), {
+    type: 'line',
+    data: { labels: trend.a.years, datasets: [
+      { label: trend.a.name, data: trend.a.scores, borderColor:'#2563EB', backgroundColor:'rgba(37,99,235,.07)', fill:true, tension:.4, borderWidth:3, pointRadius:5, pointBackgroundColor:'#2563EB', pointBorderColor:'#fff', pointBorderWidth:2, spanGaps:true },
+      { label: trend.b.name, data: trend.b.scores, borderColor:'#14B8A6', backgroundColor:'rgba(20,184,166,.07)', fill:true, tension:.4, borderWidth:3, pointRadius:5, pointBackgroundColor:'#14B8A6', pointBorderColor:'#fff', pointBorderWidth:2, spanGaps:true }
+    ]},
+    options: { responsive: true,
+      plugins: { legend: { labels: { font:{family:'Inter',size:12} } } },
+      scales: {
+        y: { min:0, max:100, grid:{color:'rgba(226,232,240,.6)'}, ticks:{font:{family:'Inter',size:11},callback:v=>v+'/100'} },
+        x: { grid:{display:false}, ticks:{font:{family:'Inter',size:11}} }
+      }, animation: { duration:800 } }
+  });
+
+  /* 4. Donut A */
+  new Chart(document.getElementById('donutA'), {
+    type: 'doughnut',
+    data: { labels: IND_LABELS, datasets: [{ data: daVals, backgroundColor: IND_COLORS, borderWidth:3, borderColor:'var(--surf)', hoverBorderColor:'var(--surf)' }] },
+    options: { responsive:true, cutout:'68%', plugins: { legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.label+': '+ctx.raw+'/100'}} }, animation:{duration:800} }
+  });
+
+  /* 5. Donut B */
+  new Chart(document.getElementById('donutB'), {
+    type: 'doughnut',
+    data: { labels: IND_LABELS, datasets: [{ data: dbVals, backgroundColor: IND_COLORS, borderWidth:3, borderColor:'var(--surf)', hoverBorderColor:'var(--surf)' }] },
+    options: { responsive:true, cutout:'68%', plugins: { legend:{display:false}, tooltip:{callbacks:{label:ctx=>ctx.label+': '+ctx.raw+'/100'}} }, animation:{duration:800} }
+  });
+}
+</script>
+{% endblock %}

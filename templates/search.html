@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% block title %}Search Districts{% endblock %}
+{% block topbar_title %}Search Districts{% endblock %}
+{% block content %}
+<div class="ph fi"><h1 class="ph-title">Search Districts</h1>
+<p class="ph-sub">Find welfare scores for any district or state. Filter by state and year for precise results.</p></div>
+
+<div class="fi1" style="margin-bottom:16px">
+  <div style="position:relative">
+    <div class="search-bar" style="margin-bottom:0">
+      <input type="text" id="searchInput" name="q" value="{{ q }}" placeholder="Search district or state… (e.g. Patna, Kerala, Pune)" class="fc" autocomplete="off">
+      <button type="button" id="searchBtn"><i class="fa fa-magnifying-glass"></i></button>
+    </div>
+    <div id="acDrop" style="display:none;position:absolute;top:calc(100% + 3px);left:0;right:0;background:var(--surf);border:1px solid var(--b);border-radius:var(--rads);box-shadow:0 8px 28px rgba(0,0,0,.13);z-index:200;overflow:hidden;max-height:320px;overflow-y:auto"></div>
+  </div>
+</div>
+
+<div class="card fi1 mb4">
+  <div class="card-b" style="padding:14px 18px">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <span style="font-size:12px;font-weight:700;color:var(--ts);text-transform:uppercase;letter-spacing:.05em;flex-shrink:0"><i class="fa fa-filter" style="color:var(--p)"></i> Filters</span>
+      
+      <select id="stateFilter" class="fc" style="max-width:220px;font-size:13px;padding:7px 12px">
+        <option value="">All States</option>
+        {% for s in all_states %}<option value="{{ s }}" {% if s == state_f %}selected{% endif %}>{{ s }}</option>{% endfor %}
+      </select>
+      
+      <select id="yearFilter" class="fc" style="max-width:110px;font-size:13px;padding:7px 12px">
+        <option value="">All Years</option>
+        {% for y in all_years %}<option value="{{ y }}" {% if y == year_f %}selected{% endif %}>{{ y }}</option>{% endfor %}
+      </select>
+      <button id="applyFilters" class="btn btn-p btn-sm"><i class="fa fa-search"></i> Search</button>
+      {% if state_f or year_f or q %}
+      <a href="{{ url_for('search') }}" class="btn btn-ghost btn-sm"><i class="fa fa-xmark"></i> Clear all</a>
+      {% endif %}
+    </div>
+    {% if not q %}
+    <div style="margin-top:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+      <span style="font-size:12px;color:var(--tm)">Popular:</span>
+      {% for term in ["Mumbai","Patna","Kerala","Bihar","Pune","Delhi","Rajasthan","Lucknow","Chennai","Bengaluru"] %}
+      <a href="{{ url_for('search') }}?q={{ term }}" style="padding:4px 11px;background:var(--surf2);border:1px solid var(--b);border-radius:20px;font-size:12px;font-weight:600;color:var(--ts);transition:all .15s" onmouseover="this.style.borderColor='var(--p)';this.style.color='var(--p)'" onmouseout="this.style.borderColor='var(--b)';this.style.color='var(--ts)'">{{ term }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% if results %}
+<div style="font-size:14px;color:var(--ts);margin-bottom:12px" class="fi2">
+  Found <strong>{{ results|length }}</strong> result{% if results|length != 1 %}s{% endif %}
+  {% if q %} for "<strong>{{ q }}</strong>"{% endif %}
+  {% if state_f %} in <strong>{{ state_f }}</strong>{% endif %}
+  {% if year_f %} · Year: <strong>{{ year_f }}</strong>{% endif %}
+</div>
+<div class="card fi2">
+  <div class="card-b" style="padding:0"><div class="tw"><table>
+    <thead><tr><th>District</th><th>State</th><th>Welfare Score</th><th>Category</th><th>Actions</th></tr></thead>
+    <tbody>
+    {% for row in results %}
+    {% set wl = welfare_label(row["avg"]) %}
+    <tr title="Higher welfare score = better delivery of government schemes in this district">
+      <td style="font-weight:700;color:var(--th)">{{ row["district"] }}</td>
+      <td style="color:var(--ts)">{{ row["state"] }}</td>
+      <td>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="width:72px;background:var(--surf2);border-radius:20px;height:6px">
+            <div style="width:{{ row["avg"] }}%;background:{{ wl.color }};border-radius:20px;height:6px"></div>
+          </div>
+          <span title="Higher score = better welfare performance" style="font-family:var(--fontd);font-weight:800;color:{{ wl.color }};cursor:help">{{ row["avg"] }}/100</span>
+        </div>
+      </td>
+      <td><span class="badge b-{{ wl.cls }}">{{ wl.icon }} {{ wl.label }}</span></td>
+      <td style="white-space:nowrap">
+        <a href="{{ url_for('district_commentary',district_name=row['district']) }}" class="btn btn-p btn-sm"><i class="fa fa-comment-dots"></i> Analysis</a>
+        <a href="{{ url_for('generate_pdf_report',district_name=row['district']) }}" class="btn btn-v btn-sm" title="Download print-ready welfare report"><i class="fa fa-file-pdf"></i> PDF</a>
+        <a href="{{ url_for('state_commentary',state_name=row['state']) }}" class="btn btn-o btn-sm"><i class="fa fa-map-marker-alt"></i> {{ row['state']|truncate(10,True,'…') }}</a>
+      </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table></div></div>
+</div>
+
+{% elif q or state_f or year_f %}
+<div class="card fi2"><div class="card-b">
+  <div class="empty"><i class="fa fa-magnifying-glass"></i><h3>No Results Found</h3>
+  <p>Try a different search term or adjust your filters.</p>
+  <a href="{{ url_for('search') }}" class="btn btn-o btn-sm" style="margin-top:14px"><i class="fa fa-xmark"></i> Clear filters</a>
+  </div>
+</div></div>
+{% endif %}
+
+{% block extra_js %}
+<script>
+function scoreColor(v){
+  if(v>=80)return'#10B981';if(v>=60)return'#3B82F6';
+  if(v>=40)return'#F59E0B';if(v>=20)return'#F97316';return'#EF4444';
+}
+
+function buildURL(){
+  const q     = document.getElementById('searchInput').value.trim();
+  const state = document.getElementById('stateFilter').value;
+  const year  = document.getElementById('yearFilter').value;
+  const p     = new URLSearchParams();
+  if(q)     p.set('q', q);
+  if(state) p.set('state', state);
+  if(year)  p.set('year', year);
+  return '/search?' + p.toString();
+}
+
+document.getElementById('searchBtn').addEventListener('click', () => window.location.href = buildURL());
+document.getElementById('applyFilters').addEventListener('click', () => window.location.href = buildURL());
+document.getElementById('searchInput').addEventListener('keydown', e => { if(e.key==='Enter') window.location.href = buildURL(); });
+document.getElementById('stateFilter').addEventListener('change', () => window.location.href = buildURL());
+document.getElementById('yearFilter').addEventListener('change',  () => window.location.href = buildURL());
+
+/* Live autocomplete */
+const input = document.getElementById('searchInput');
+const drop  = document.getElementById('acDrop');
+let timer;
+
+input.addEventListener('input', function(){
+  clearTimeout(timer);
+  const q = this.value.trim();
+  if(q.length < 2){ drop.style.display='none'; return; }
+  timer = setTimeout(() => {
+    fetch('/api/search-suggest?q=' + encodeURIComponent(q))
+      .then(r => r.json())
+      .then(items => {
+        if(!items.length){ drop.style.display='none'; return; }
+        drop.innerHTML = items.map(item => {
+          const c = scoreColor(item.avg);
+          const label = item.avg>=80?'Excellent':item.avg>=60?'Good':item.avg>=40?'Moderate':item.avg>=20?'Weak':'Critical';
+          return `<div style="padding:11px 16px;cursor:pointer;border-bottom:1px solid var(--b);display:flex;align-items:center;justify-content:space-between;gap:12px"
+            onmouseover="this.style.background='var(--surf2)'" onmouseout="this.style.background=''"
+            onclick="window.location.href='/commentary/district/${encodeURIComponent(item.district)}'">
+            <div>
+              <div style="font-weight:700;font-size:14px;color:var(--th)">${item.district}</div>
+              <div style="font-size:12px;color:var(--ts);margin-top:1px">${item.state}</div>
+            </div>
+            <div style="text-align:right;flex-shrink:0">
+              <div style="font-family:var(--fontd);font-weight:800;color:${c};font-size:15px" title="Higher score = better welfare performance">${item.avg}/100</div>
+              <div style="font-size:10px;font-weight:700;color:${c}">${label}</div>
+            </div>
+          </div>`;
+        }).join('');
+        drop.style.display = 'block';
+      });
+  }, 200);
+});
+
+document.addEventListener('click', e => {
+  if(!e.target.closest('#searchInput') && !e.target.closest('#acDrop'))
+    drop.style.display = 'none';
+});
+input.addEventListener('focus', function(){
+  if(this.value.trim().length >= 2) drop.style.display='block';
+});
+</script>
+{% endblock %}
+{% endblock %}

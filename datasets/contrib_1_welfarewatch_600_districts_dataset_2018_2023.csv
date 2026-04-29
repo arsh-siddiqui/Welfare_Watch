@@ -1,0 +1,2701 @@
+State,District,Year,Education_Literacy_Index,Healthcare_Access_Index,Food_Security_Index,Employment_Income_Index
+Maharashtra,MH_District_1,2018,63.43,59.25,73.04,62.73
+Maharashtra,MH_District_1,2019,64.69,61.03,73.9,64.2
+Maharashtra,MH_District_1,2020,66.43,60.99,74.32,65.03
+Maharashtra,MH_District_1,2021,66.93,64.4,75.88,66.2
+Maharashtra,MH_District_1,2022,68.15,64.96,78.68,67.43
+Maharashtra,MH_District_1,2023,70.62,64.9,77.55,67.89
+Maharashtra,MH_District_2,2018,69.98,56.43,61.32,58.81
+Maharashtra,MH_District_2,2019,71.12,57.84,62.21,60.2
+Maharashtra,MH_District_2,2020,73.27,58.4,63.92,60.58
+Maharashtra,MH_District_2,2021,74.14,60.5,65.06,61.58
+Maharashtra,MH_District_2,2022,74.2,60.92,65.56,62.3
+Maharashtra,MH_District_2,2023,78.28,63.72,69.17,66.98
+Maharashtra,MH_District_3,2018,65.94,49.12,66.48,42.63
+Maharashtra,MH_District_3,2019,67.4,50.78,67.1,44.18
+Maharashtra,MH_District_3,2020,68.54,51.63,69.28,46.09
+Maharashtra,MH_District_3,2021,70.2,51.55,69.32,45.21
+Maharashtra,MH_District_3,2022,71.86,53.24,71.42,49.48
+Maharashtra,MH_District_3,2023,70.97,54.68,74.32,51.51
+Maharashtra,MH_District_4,2018,72.52,52.71,51.89,58.38
+Maharashtra,MH_District_4,2019,73.32,53.84,52.91,60.15
+Maharashtra,MH_District_4,2020,75.96,55.46,54.57,61.0
+Maharashtra,MH_District_4,2021,77.01,57.67,56.07,61.79
+Maharashtra,MH_District_4,2022,76.1,59.25,55.0,62.08
+Maharashtra,MH_District_4,2023,77.95,60.09,59.38,65.91
+Maharashtra,MH_District_5,2018,65.37,48.16,72.08,52.99
+Maharashtra,MH_District_5,2019,66.86,49.1,72.98,54.3
+Maharashtra,MH_District_5,2020,67.93,51.05,74.32,54.59
+Maharashtra,MH_District_5,2021,70.65,52.55,74.52,57.2
+Maharashtra,MH_District_5,2022,70.39,55.0,74.7,57.42
+Maharashtra,MH_District_5,2023,70.81,54.45,79.85,59.56
+Maharashtra,MH_District_6,2018,71.35,56.51,54.85,54.56
+Maharashtra,MH_District_6,2019,72.9,57.49,55.62,55.49
+Maharashtra,MH_District_6,2020,74.91,58.59,56.39,57.43
+Maharashtra,MH_District_6,2021,74.4,60.86,56.86,58.99
+Maharashtra,MH_District_6,2022,76.78,63.5,58.72,58.75
+Maharashtra,MH_District_6,2023,75.59,65.42,62.31,59.13
+Maharashtra,MH_District_7,2018,53.45,53.11,66.77,52.02
+Maharashtra,MH_District_7,2019,55.04,54.61,68.3,53.65
+Maharashtra,MH_District_7,2020,56.07,56.56,69.29,55.46
+Maharashtra,MH_District_7,2021,56.93,55.78,70.18,56.18
+Maharashtra,MH_District_7,2022,58.39,56.88,73.02,59.13
+Maharashtra,MH_District_7,2023,58.27,57.31,73.26,59.49
+Maharashtra,MH_District_8,2018,54.78,49.36,72.78,50.85
+Maharashtra,MH_District_8,2019,56.23,50.86,74.01,51.93
+Maharashtra,MH_District_8,2020,58.02,50.96,75.46,52.78
+Maharashtra,MH_District_8,2021,57.77,53.28,76.7,54.23
+Maharashtra,MH_District_8,2022,58.61,55.08,75.71,57.28
+Maharashtra,MH_District_8,2023,58.99,54.5,80.35,59.32
+Maharashtra,MH_District_9,2018,54.27,63.7,51.8,60.5
+Maharashtra,MH_District_9,2019,55.31,65.47,53.21,61.5
+Maharashtra,MH_District_9,2020,56.71,65.44,53.22,63.17
+Maharashtra,MH_District_9,2021,57.75,66.61,56.54,65.75
+Maharashtra,MH_District_9,2022,61.15,68.67,55.52,65.22
+Maharashtra,MH_District_9,2023,62.05,70.62,57.84,66.01
+Maharashtra,MH_District_10,2018,67.22,60.54,51.05,47.33
+Maharashtra,MH_District_10,2019,68.78,61.42,52.34,48.41
+Maharashtra,MH_District_10,2020,68.85,63.24,53.55,50.9
+Maharashtra,MH_District_10,2021,71.99,65.56,53.26,51.29
+Maharashtra,MH_District_10,2022,72.31,63.86,56.03,54.26
+Maharashtra,MH_District_10,2023,71.31,68.11,55.93,54.83
+Maharashtra,MH_District_11,2018,69.95,68.38,51.71,46.89
+Maharashtra,MH_District_11,2019,71.16,69.67,53.01,47.74
+Maharashtra,MH_District_11,2020,73.17,70.39,53.27,49.55
+Maharashtra,MH_District_11,2021,75.31,71.23,54.61,51.76
+Maharashtra,MH_District_11,2022,75.49,74.14,57.17,52.04
+Maharashtra,MH_District_11,2023,78.28,74.05,56.65,52.5
+Maharashtra,MH_District_12,2018,71.97,52.24,70.18,48.28
+Maharashtra,MH_District_12,2019,72.86,53.44,71.41,49.26
+Maharashtra,MH_District_12,2020,74.12,54.6,72.95,50.76
+Maharashtra,MH_District_12,2021,75.21,56.88,74.75,53.65
+Maharashtra,MH_District_12,2022,78.19,55.9,76.49,54.24
+Maharashtra,MH_District_12,2023,80.59,59.23,76.35,56.77
+Maharashtra,MH_District_13,2018,72.23,56.82,63.58,48.34
+Maharashtra,MH_District_13,2019,73.6,58.04,64.51,49.7
+Maharashtra,MH_District_13,2020,75.45,59.39,66.41,50.97
+Maharashtra,MH_District_13,2021,77.49,61.73,66.8,51.3
+Maharashtra,MH_District_13,2022,78.43,62.8,68.58,51.59
+Maharashtra,MH_District_13,2023,78.47,64.22,68.16,55.97
+Maharashtra,MH_District_14,2018,65.66,64.66,57.71,57.79
+Maharashtra,MH_District_14,2019,67.03,65.52,58.94,58.93
+Maharashtra,MH_District_14,2020,67.85,66.56,58.93,59.62
+Maharashtra,MH_District_14,2021,70.11,69.73,59.91,61.55
+Maharashtra,MH_District_14,2022,68.93,67.89,62.0,61.7
+Maharashtra,MH_District_14,2023,72.59,68.77,62.72,62.45
+Maharashtra,MH_District_15,2018,58.25,65.56,63.19,59.0
+Maharashtra,MH_District_15,2019,59.52,67.02,64.25,60.78
+Maharashtra,MH_District_15,2020,60.09,68.9,65.93,62.04
+Maharashtra,MH_District_15,2021,62.35,69.35,65.91,64.2
+Maharashtra,MH_District_15,2022,63.63,72.67,67.28,63.18
+Maharashtra,MH_District_15,2023,65.24,70.77,67.88,65.5
+Maharashtra,MH_District_16,2018,69.84,65.78,56.64,42.31
+Maharashtra,MH_District_16,2019,71.01,67.35,57.56,43.56
+Maharashtra,MH_District_16,2020,72.82,68.38,59.63,45.07
+Maharashtra,MH_District_16,2021,72.64,69.19,60.75,45.8
+Maharashtra,MH_District_16,2022,73.26,69.09,62.38,47.24
+Maharashtra,MH_District_16,2023,76.15,73.58,64.29,46.55
+Maharashtra,MH_District_17,2018,72.67,45.3,71.61,60.03
+Maharashtra,MH_District_17,2019,74.41,46.32,73.03,61.19
+Maharashtra,MH_District_17,2020,75.45,47.36,73.05,62.03
+Maharashtra,MH_District_17,2021,76.04,49.95,74.55,63.22
+Maharashtra,MH_District_17,2022,76.27,51.49,76.38,65.77
+Maharashtra,MH_District_17,2023,79.72,51.13,77.91,65.64
+Maharashtra,MH_District_18,2018,55.27,68.33,54.25,53.87
+Maharashtra,MH_District_18,2019,56.59,69.19,54.98,55.17
+Maharashtra,MH_District_18,2020,57.75,70.5,57.37,56.43
+Maharashtra,MH_District_18,2021,59.49,73.33,56.66,58.15
+Maharashtra,MH_District_18,2022,58.76,73.05,56.87,58.85
+Maharashtra,MH_District_18,2023,59.85,73.6,62.09,60.23
+Maharashtra,MH_District_19,2018,58.07,46.59,74.87,49.08
+Maharashtra,MH_District_19,2019,59.22,47.67,76.21,50.14
+Maharashtra,MH_District_19,2020,59.71,48.5,77.91,52.42
+Maharashtra,MH_District_19,2021,63.04,50.67,77.5,54.18
+Maharashtra,MH_District_19,2022,63.58,50.64,80.31,55.89
+Maharashtra,MH_District_19,2023,64.51,50.86,77.97,57.16
+Maharashtra,MH_District_20,2018,63.47,66.51,69.79,57.99
+Maharashtra,MH_District_20,2019,64.62,67.48,70.68,59.27
+Maharashtra,MH_District_20,2020,66.36,69.03,71.23,60.75
+Maharashtra,MH_District_20,2021,65.98,71.22,72.66,62.24
+Maharashtra,MH_District_20,2022,69.1,70.65,72.65,62.48
+Maharashtra,MH_District_20,2023,69.29,71.36,76.45,62.05
+Uttar Pradesh,UP_District_1,2018,63.45,61.57,59.95,40.48
+Uttar Pradesh,UP_District_1,2019,64.91,62.96,60.95,41.62
+Uttar Pradesh,UP_District_1,2020,65.99,64.85,62.63,43.26
+Uttar Pradesh,UP_District_1,2021,68.38,65.8,63.07,45.05
+Uttar Pradesh,UP_District_1,2022,70.35,67.5,65.56,46.18
+Uttar Pradesh,UP_District_1,2023,69.86,70.57,66.49,46.34
+Uttar Pradesh,UP_District_2,2018,61.87,52.33,72.43,46.13
+Uttar Pradesh,UP_District_2,2019,63.08,53.17,73.34,47.24
+Uttar Pradesh,UP_District_2,2020,64.92,54.53,75.54,49.22
+Uttar Pradesh,UP_District_2,2021,64.81,57.16,75.77,50.95
+Uttar Pradesh,UP_District_2,2022,67.23,58.25,75.47,50.02
+Uttar Pradesh,UP_District_2,2023,65.96,58.32,77.62,51.15
+Uttar Pradesh,UP_District_3,2018,61.04,64.99,53.77,53.77
+Uttar Pradesh,UP_District_3,2019,62.31,66.02,54.92,54.59
+Uttar Pradesh,UP_District_3,2020,63.4,68.32,56.48,56.85
+Uttar Pradesh,UP_District_3,2021,64.48,68.41,56.96,58.31
+Uttar Pradesh,UP_District_3,2022,64.85,70.98,57.63,59.44
+Uttar Pradesh,UP_District_3,2023,67.78,69.97,60.59,60.83
+Uttar Pradesh,UP_District_4,2018,62.77,61.51,70.9,47.37
+Uttar Pradesh,UP_District_4,2019,64.0,62.83,71.63,49.0
+Uttar Pradesh,UP_District_4,2020,65.23,64.35,72.68,49.33
+Uttar Pradesh,UP_District_4,2021,66.07,64.08,75.32,50.57
+Uttar Pradesh,UP_District_4,2022,66.48,66.93,74.09,54.0
+Uttar Pradesh,UP_District_4,2023,68.39,69.8,75.25,53.44
+Uttar Pradesh,UP_District_5,2018,52.91,56.67,52.71,63.82
+Uttar Pradesh,UP_District_5,2019,53.85,58.18,53.37,65.41
+Uttar Pradesh,UP_District_5,2020,54.95,59.24,54.1,66.17
+Uttar Pradesh,UP_District_5,2021,57.39,61.18,55.01,67.24
+Uttar Pradesh,UP_District_5,2022,58.08,62.79,55.16,68.85
+Uttar Pradesh,UP_District_5,2023,56.94,61.91,59.99,70.82
+Uttar Pradesh,UP_District_6,2018,57.98,59.37,73.27,52.53
+Uttar Pradesh,UP_District_6,2019,59.09,60.28,74.55,53.83
+Uttar Pradesh,UP_District_6,2020,61.55,61.18,75.75,55.03
+Uttar Pradesh,UP_District_6,2021,60.46,64.04,75.41,57.07
+Uttar Pradesh,UP_District_6,2022,61.6,64.0,75.82,58.0
+Uttar Pradesh,UP_District_6,2023,66.57,67.53,80.09,61.2
+Uttar Pradesh,UP_District_7,2018,64.45,50.43,53.59,64.45
+Uttar Pradesh,UP_District_7,2019,65.91,52.15,54.73,65.35
+Uttar Pradesh,UP_District_7,2020,67.44,52.93,55.28,67.24
+Uttar Pradesh,UP_District_7,2021,68.18,54.5,58.3,67.49
+Uttar Pradesh,UP_District_7,2022,70.69,56.47,56.72,68.81
+Uttar Pradesh,UP_District_7,2023,71.4,57.63,59.52,72.77
+Uttar Pradesh,UP_District_8,2018,52.05,68.85,55.84,55.67
+Uttar Pradesh,UP_District_8,2019,53.43,70.33,57.15,57.12
+Uttar Pradesh,UP_District_8,2020,55.33,71.75,58.61,57.9
+Uttar Pradesh,UP_District_8,2021,54.97,74.24,59.9,59.63
+Uttar Pradesh,UP_District_8,2022,56.07,73.16,58.95,61.8
+Uttar Pradesh,UP_District_8,2023,58.63,77.43,61.81,64.12
+Uttar Pradesh,UP_District_9,2018,74.58,65.46,62.34,52.22
+Uttar Pradesh,UP_District_9,2019,75.69,67.0,63.59,53.03
+Uttar Pradesh,UP_District_9,2020,77.1,68.63,64.85,54.4
+Uttar Pradesh,UP_District_9,2021,77.44,69.64,65.15,55.94
+Uttar Pradesh,UP_District_9,2022,78.1,68.89,65.68,58.14
+Uttar Pradesh,UP_District_9,2023,82.22,72.98,65.44,59.53
+Uttar Pradesh,UP_District_10,2018,53.6,63.98,60.72,49.72
+Uttar Pradesh,UP_District_10,2019,54.75,65.43,62.2,50.85
+Uttar Pradesh,UP_District_10,2020,55.67,66.93,63.35,52.3
+Uttar Pradesh,UP_District_10,2021,56.15,66.87,63.78,54.27
+Uttar Pradesh,UP_District_10,2022,58.83,70.36,66.46,53.55
+Uttar Pradesh,UP_District_10,2023,61.43,72.06,67.19,56.29
+Uttar Pradesh,UP_District_11,2018,56.62,69.91,55.9,49.6
+Uttar Pradesh,UP_District_11,2019,58.32,70.88,56.83,50.78
+Uttar Pradesh,UP_District_11,2020,59.21,73.09,58.63,52.18
+Uttar Pradesh,UP_District_11,2021,60.86,73.4,59.47,53.31
+Uttar Pradesh,UP_District_11,2022,63.81,76.62,59.47,56.68
+Uttar Pradesh,UP_District_11,2023,65.57,78.14,59.09,54.55
+Uttar Pradesh,UP_District_12,2018,69.15,63.78,57.07,52.47
+Uttar Pradesh,UP_District_12,2019,70.03,64.72,58.05,53.38
+Uttar Pradesh,UP_District_12,2020,72.61,65.49,58.74,54.48
+Uttar Pradesh,UP_District_12,2021,73.15,67.87,61.06,56.57
+Uttar Pradesh,UP_District_12,2022,73.76,69.91,63.42,56.02
+Uttar Pradesh,UP_District_12,2023,75.24,68.14,63.41,57.19
+Uttar Pradesh,UP_District_13,2018,52.48,50.73,69.77,54.97
+Uttar Pradesh,UP_District_13,2019,54.21,51.61,70.94,56.61
+Uttar Pradesh,UP_District_13,2020,54.72,54.14,72.45,58.17
+Uttar Pradesh,UP_District_13,2021,57.44,53.65,73.38,57.92
+Uttar Pradesh,UP_District_13,2022,59.18,56.46,75.76,58.32
+Uttar Pradesh,UP_District_13,2023,58.24,58.14,74.28,61.61
+Uttar Pradesh,UP_District_14,2018,53.86,67.6,64.57,51.52
+Uttar Pradesh,UP_District_14,2019,54.96,68.78,65.18,53.26
+Uttar Pradesh,UP_District_14,2020,56.07,71.19,66.54,53.78
+Uttar Pradesh,UP_District_14,2021,56.36,71.25,67.82,54.23
+Uttar Pradesh,UP_District_14,2022,60.66,72.77,67.03,55.89
+Uttar Pradesh,UP_District_14,2023,59.44,71.69,71.05,57.51
+Uttar Pradesh,UP_District_15,2018,69.83,51.33,70.03,58.22
+Uttar Pradesh,UP_District_15,2019,71.14,53.0,71.38,59.96
+Uttar Pradesh,UP_District_15,2020,73.05,54.5,72.45,60.38
+Uttar Pradesh,UP_District_15,2021,72.77,56.33,74.37,61.09
+Uttar Pradesh,UP_District_15,2022,75.34,57.28,75.09,61.48
+Uttar Pradesh,UP_District_15,2023,75.63,56.22,75.77,63.31
+Uttar Pradesh,UP_District_16,2018,50.44,62.59,58.68,42.63
+Uttar Pradesh,UP_District_16,2019,51.28,63.57,60.14,43.84
+Uttar Pradesh,UP_District_16,2020,52.84,64.49,61.52,44.32
+Uttar Pradesh,UP_District_16,2021,53.58,67.54,62.18,46.82
+Uttar Pradesh,UP_District_16,2022,54.53,68.32,64.21,49.3
+Uttar Pradesh,UP_District_16,2023,56.82,69.73,63.8,49.13
+Uttar Pradesh,UP_District_17,2018,50.06,49.31,50.1,49.98
+Uttar Pradesh,UP_District_17,2019,51.39,50.24,50.81,51.41
+Uttar Pradesh,UP_District_17,2020,53.23,52.38,52.0,53.22
+Uttar Pradesh,UP_District_17,2021,54.49,52.23,52.61,54.95
+Uttar Pradesh,UP_District_17,2022,54.66,56.21,55.98,54.84
+Uttar Pradesh,UP_District_17,2023,57.03,57.7,57.03,56.33
+Uttar Pradesh,UP_District_18,2018,61.46,59.16,55.25,54.08
+Uttar Pradesh,UP_District_18,2019,62.65,60.45,56.55,55.17
+Uttar Pradesh,UP_District_18,2020,64.9,62.57,57.32,55.88
+Uttar Pradesh,UP_District_18,2021,66.3,62.86,59.8,58.32
+Uttar Pradesh,UP_District_18,2022,67.99,66.13,58.88,58.94
+Uttar Pradesh,UP_District_18,2023,65.62,65.44,62.64,58.11
+Uttar Pradesh,UP_District_19,2018,64.8,51.83,54.82,57.97
+Uttar Pradesh,UP_District_19,2019,65.99,52.88,55.51,59.46
+Uttar Pradesh,UP_District_19,2020,68.07,54.94,57.32,59.87
+Uttar Pradesh,UP_District_19,2021,68.69,55.37,56.93,62.46
+Uttar Pradesh,UP_District_19,2022,70.41,55.63,59.53,63.05
+Uttar Pradesh,UP_District_19,2023,73.31,56.75,59.06,61.98
+Uttar Pradesh,UP_District_20,2018,73.66,54.13,57.44,53.51
+Uttar Pradesh,UP_District_20,2019,74.47,55.35,58.59,55.28
+Uttar Pradesh,UP_District_20,2020,76.12,56.89,58.99,57.07
+Uttar Pradesh,UP_District_20,2021,76.61,58.1,59.76,57.16
+Uttar Pradesh,UP_District_20,2022,79.27,59.81,63.36,57.71
+Uttar Pradesh,UP_District_20,2023,79.89,59.88,62.07,62.32
+Tamil Nadu,TN_District_1,2018,69.22,55.78,68.59,44.25
+Tamil Nadu,TN_District_1,2019,70.73,56.75,69.57,45.17
+Tamil Nadu,TN_District_1,2020,72.63,58.08,69.92,46.0
+Tamil Nadu,TN_District_1,2021,74.08,60.44,72.52,48.76
+Tamil Nadu,TN_District_1,2022,75.86,62.22,74.53,48.26
+Tamil Nadu,TN_District_1,2023,77.34,64.45,76.23,49.64
+Tamil Nadu,TN_District_2,2018,60.61,58.24,64.37,44.92
+Tamil Nadu,TN_District_2,2019,61.44,59.76,65.79,46.22
+Tamil Nadu,TN_District_2,2020,62.77,61.15,66.84,47.02
+Tamil Nadu,TN_District_2,2021,65.71,61.81,67.85,47.81
+Tamil Nadu,TN_District_2,2022,65.78,64.02,68.01,50.85
+Tamil Nadu,TN_District_2,2023,66.49,65.76,69.86,49.59
+Tamil Nadu,TN_District_3,2018,59.91,67.07,57.16,50.49
+Tamil Nadu,TN_District_3,2019,61.32,68.45,58.24,51.6
+Tamil Nadu,TN_District_3,2020,62.25,70.52,58.7,53.56
+Tamil Nadu,TN_District_3,2021,64.8,71.78,59.47,54.25
+Tamil Nadu,TN_District_3,2022,64.56,73.39,61.27,54.12
+Tamil Nadu,TN_District_3,2023,66.75,72.38,63.95,58.54
+Tamil Nadu,TN_District_4,2018,60.91,66.3,70.21,49.35
+Tamil Nadu,TN_District_4,2019,62.55,67.42,71.39,50.34
+Tamil Nadu,TN_District_4,2020,64.0,68.27,71.88,52.87
+Tamil Nadu,TN_District_4,2021,63.41,69.03,73.84,53.22
+Tamil Nadu,TN_District_4,2022,64.89,69.72,73.07,55.91
+Tamil Nadu,TN_District_4,2023,66.45,75.04,74.6,56.97
+Tamil Nadu,TN_District_5,2018,68.66,48.99,62.32,48.87
+Tamil Nadu,TN_District_5,2019,70.42,49.86,63.03,49.73
+Tamil Nadu,TN_District_5,2020,71.95,51.37,65.45,51.28
+Tamil Nadu,TN_District_5,2021,73.67,53.4,65.77,53.49
+Tamil Nadu,TN_District_5,2022,74.44,54.21,68.17,55.48
+Tamil Nadu,TN_District_5,2023,75.32,53.77,67.56,56.13
+Tamil Nadu,TN_District_6,2018,53.71,55.09,70.58,53.25
+Tamil Nadu,TN_District_6,2019,55.43,56.09,71.95,54.22
+Tamil Nadu,TN_District_6,2020,56.34,57.78,72.43,55.9
+Tamil Nadu,TN_District_6,2021,56.14,59.64,73.09,57.44
+Tamil Nadu,TN_District_6,2022,60.9,60.5,72.98,56.86
+Tamil Nadu,TN_District_6,2023,62.13,61.19,75.17,62.1
+Tamil Nadu,TN_District_7,2018,53.2,59.88,54.87,47.85
+Tamil Nadu,TN_District_7,2019,54.28,61.29,56.17,48.88
+Tamil Nadu,TN_District_7,2020,56.14,62.55,56.77,49.88
+Tamil Nadu,TN_District_7,2021,57.75,64.43,58.19,51.91
+Tamil Nadu,TN_District_7,2022,59.56,63.24,58.93,53.11
+Tamil Nadu,TN_District_7,2023,58.22,67.16,58.68,51.9
+Tamil Nadu,TN_District_8,2018,68.52,66.98,65.03,63.46
+Tamil Nadu,TN_District_8,2019,69.34,68.5,65.75,64.82
+Tamil Nadu,TN_District_8,2020,71.28,69.76,67.43,65.58
+Tamil Nadu,TN_District_8,2021,72.94,71.46,69.13,67.69
+Tamil Nadu,TN_District_8,2022,74.39,70.82,68.46,70.59
+Tamil Nadu,TN_District_8,2023,74.6,71.88,68.15,69.11
+Tamil Nadu,TN_District_9,2018,66.81,60.18,66.97,54.09
+Tamil Nadu,TN_District_9,2019,68.02,61.42,68.06,55.57
+Tamil Nadu,TN_District_9,2020,70.08,63.35,68.44,56.21
+Tamil Nadu,TN_District_9,2021,72.17,63.42,70.5,57.27
+Tamil Nadu,TN_District_9,2022,73.47,63.72,71.19,58.95
+Tamil Nadu,TN_District_9,2023,74.91,67.33,73.88,62.84
+Tamil Nadu,TN_District_10,2018,73.48,58.23,51.08,43.55
+Tamil Nadu,TN_District_10,2019,74.67,59.1,52.35,45.07
+Tamil Nadu,TN_District_10,2020,76.68,61.42,53.92,45.3
+Tamil Nadu,TN_District_10,2021,77.38,60.99,55.53,47.53
+Tamil Nadu,TN_District_10,2022,77.34,61.92,55.07,48.97
+Tamil Nadu,TN_District_10,2023,79.02,63.45,56.72,52.3
+Tamil Nadu,TN_District_11,2018,67.55,69.65,69.46,42.64
+Tamil Nadu,TN_District_11,2019,68.38,70.5,70.21,43.98
+Tamil Nadu,TN_District_11,2020,70.24,71.92,71.61,45.83
+Tamil Nadu,TN_District_11,2021,71.26,72.26,72.27,47.8
+Tamil Nadu,TN_District_11,2022,72.61,76.2,73.42,46.33
+Tamil Nadu,TN_District_11,2023,72.71,75.98,74.5,49.12
+Tamil Nadu,TN_District_12,2018,69.63,58.64,61.48,52.17
+Tamil Nadu,TN_District_12,2019,71.15,60.11,63.02,53.76
+Tamil Nadu,TN_District_12,2020,71.25,60.42,64.45,55.62
+Tamil Nadu,TN_District_12,2021,73.86,61.58,65.33,55.49
+Tamil Nadu,TN_District_12,2022,73.52,64.56,64.52,58.4
+Tamil Nadu,TN_District_12,2023,73.68,64.17,68.75,56.67
+Tamil Nadu,TN_District_13,2018,61.81,50.52,65.5,53.42
+Tamil Nadu,TN_District_13,2019,62.79,51.35,66.71,54.74
+Tamil Nadu,TN_District_13,2020,63.41,54.05,66.94,56.02
+Tamil Nadu,TN_District_13,2021,65.1,54.06,68.19,55.99
+Tamil Nadu,TN_District_13,2022,68.03,53.99,70.61,60.6
+Tamil Nadu,TN_District_13,2023,68.78,58.96,70.93,61.86
+Tamil Nadu,TN_District_14,2018,57.3,68.33,54.85,61.6
+Tamil Nadu,TN_District_14,2019,59.1,69.24,55.75,63.18
+Tamil Nadu,TN_District_14,2020,59.45,70.71,57.84,64.99
+Tamil Nadu,TN_District_14,2021,60.13,73.53,58.16,65.65
+Tamil Nadu,TN_District_14,2022,61.87,74.71,57.96,67.87
+Tamil Nadu,TN_District_14,2023,65.69,77.05,59.76,69.45
+Tamil Nadu,TN_District_15,2018,62.11,56.99,67.13,57.55
+Tamil Nadu,TN_District_15,2019,63.9,58.32,68.73,59.1
+Tamil Nadu,TN_District_15,2020,64.93,59.68,70.2,60.92
+Tamil Nadu,TN_District_15,2021,66.55,59.49,70.28,61.29
+Tamil Nadu,TN_District_15,2022,67.69,63.85,70.7,64.12
+Tamil Nadu,TN_District_15,2023,71.07,62.99,73.27,62.21
+Tamil Nadu,TN_District_16,2018,55.59,67.35,50.0,59.48
+Tamil Nadu,TN_District_16,2019,56.69,69.13,50.68,60.98
+Tamil Nadu,TN_District_16,2020,58.92,69.66,52.25,61.77
+Tamil Nadu,TN_District_16,2021,58.39,70.51,52.07,62.76
+Tamil Nadu,TN_District_16,2022,61.21,71.12,52.77,65.28
+Tamil Nadu,TN_District_16,2023,64.47,73.53,57.54,64.3
+Tamil Nadu,TN_District_17,2018,67.6,68.71,53.44,45.08
+Tamil Nadu,TN_District_17,2019,69.28,69.84,54.1,46.03
+Tamil Nadu,TN_District_17,2020,70.96,71.68,56.01,48.36
+Tamil Nadu,TN_District_17,2021,72.95,71.25,58.16,50.1
+Tamil Nadu,TN_District_17,2022,72.25,75.18,58.16,48.33
+Tamil Nadu,TN_District_17,2023,73.57,75.82,58.92,52.49
+Tamil Nadu,TN_District_18,2018,65.0,46.49,63.47,44.75
+Tamil Nadu,TN_District_18,2019,66.14,47.3,64.58,46.1
+Tamil Nadu,TN_District_18,2020,67.46,49.54,64.89,47.52
+Tamil Nadu,TN_District_18,2021,69.9,49.33,65.32,49.53
+Tamil Nadu,TN_District_18,2022,69.52,52.26,67.86,50.57
+Tamil Nadu,TN_District_18,2023,72.62,52.98,67.29,50.18
+Tamil Nadu,TN_District_19,2018,70.41,53.27,52.56,61.81
+Tamil Nadu,TN_District_19,2019,71.61,54.58,53.63,63.18
+Tamil Nadu,TN_District_19,2020,73.32,56.25,55.24,65.04
+Tamil Nadu,TN_District_19,2021,73.27,56.53,56.84,65.56
+Tamil Nadu,TN_District_19,2022,76.44,58.81,56.26,68.1
+Tamil Nadu,TN_District_19,2023,77.57,58.27,57.58,66.79
+Tamil Nadu,TN_District_20,2018,68.01,69.33,66.88,45.45
+Tamil Nadu,TN_District_20,2019,68.83,70.52,68.26,46.91
+Tamil Nadu,TN_District_20,2020,70.11,72.83,68.22,47.36
+Tamil Nadu,TN_District_20,2021,72.91,72.74,71.41,50.58
+Tamil Nadu,TN_District_20,2022,71.35,74.48,72.43,50.88
+Tamil Nadu,TN_District_20,2023,76.82,77.37,71.04,51.79
+Karnataka,KA_District_1,2018,70.62,59.65,57.36,49.24
+Karnataka,KA_District_1,2019,72.04,60.85,58.52,50.91
+Karnataka,KA_District_1,2020,73.24,63.1,59.43,52.5
+Karnataka,KA_District_1,2021,74.87,64.15,60.24,53.65
+Karnataka,KA_District_1,2022,77.34,63.55,60.76,53.89
+Karnataka,KA_District_1,2023,76.21,65.84,64.11,58.13
+Karnataka,KA_District_2,2018,55.88,50.58,66.6,46.05
+Karnataka,KA_District_2,2019,57.21,51.44,67.62,47.62
+Karnataka,KA_District_2,2020,58.65,54.07,68.19,48.6
+Karnataka,KA_District_2,2021,58.68,55.8,68.95,49.38
+Karnataka,KA_District_2,2022,59.12,57.04,69.77,52.74
+Karnataka,KA_District_2,2023,63.17,59.16,74.36,54.19
+Karnataka,KA_District_3,2018,61.84,66.18,53.93,48.85
+Karnataka,KA_District_3,2019,63.07,67.19,54.71,49.89
+Karnataka,KA_District_3,2020,64.8,68.13,56.4,52.33
+Karnataka,KA_District_3,2021,65.98,69.22,56.71,53.91
+Karnataka,KA_District_3,2022,66.79,71.08,57.04,52.93
+Karnataka,KA_District_3,2023,67.59,71.32,59.68,56.11
+Karnataka,KA_District_4,2018,72.43,64.69,73.24,58.31
+Karnataka,KA_District_4,2019,73.74,66.16,74.32,59.97
+Karnataka,KA_District_4,2020,75.71,67.51,76.23,60.26
+Karnataka,KA_District_4,2021,76.52,68.09,76.67,61.53
+Karnataka,KA_District_4,2022,79.18,68.65,77.63,64.44
+Karnataka,KA_District_4,2023,79.83,70.13,76.3,65.32
+Karnataka,KA_District_5,2018,68.85,57.84,72.68,42.43
+Karnataka,KA_District_5,2019,70.1,58.71,73.62,43.89
+Karnataka,KA_District_5,2020,71.02,61.02,74.78,44.32
+Karnataka,KA_District_5,2021,73.12,62.77,77.06,45.09
+Karnataka,KA_District_5,2022,75.31,61.46,76.43,46.37
+Karnataka,KA_District_5,2023,74.64,64.73,76.95,47.02
+Karnataka,KA_District_6,2018,72.9,56.19,67.99,58.47
+Karnataka,KA_District_6,2019,74.21,57.49,69.03,59.54
+Karnataka,KA_District_6,2020,75.36,58.25,69.35,60.95
+Karnataka,KA_District_6,2021,77.21,61.06,69.98,62.82
+Karnataka,KA_District_6,2022,78.48,62.25,72.9,62.55
+Karnataka,KA_District_6,2023,81.5,62.83,74.88,62.73
+Karnataka,KA_District_7,2018,74.39,59.33,71.76,42.1
+Karnataka,KA_District_7,2019,75.72,60.43,72.49,43.2
+Karnataka,KA_District_7,2020,76.75,61.11,74.67,45.2
+Karnataka,KA_District_7,2021,77.13,63.42,76.47,46.8
+Karnataka,KA_District_7,2022,81.15,64.43,74.61,45.89
+Karnataka,KA_District_7,2023,82.72,64.49,76.95,46.45
+Karnataka,KA_District_8,2018,63.12,55.15,59.55,61.08
+Karnataka,KA_District_8,2019,64.92,56.3,60.16,62.33
+Karnataka,KA_District_8,2020,65.27,58.09,61.37,64.34
+Karnataka,KA_District_8,2021,66.77,58.15,61.97,64.63
+Karnataka,KA_District_8,2022,66.96,59.38,65.13,65.43
+Karnataka,KA_District_8,2023,70.6,60.14,64.43,67.65
+Karnataka,KA_District_9,2018,50.09,47.29,74.59,59.19
+Karnataka,KA_District_9,2019,51.87,48.57,75.82,60.55
+Karnataka,KA_District_9,2020,52.42,49.22,77.18,62.23
+Karnataka,KA_District_9,2021,54.95,51.61,77.19,62.01
+Karnataka,KA_District_9,2022,53.68,52.06,78.82,66.36
+Karnataka,KA_District_9,2023,54.31,52.05,79.0,67.29
+Karnataka,KA_District_10,2018,67.6,49.88,70.75,54.07
+Karnataka,KA_District_10,2019,68.82,51.28,71.9,55.03
+Karnataka,KA_District_10,2020,70.66,52.92,73.71,57.16
+Karnataka,KA_District_10,2021,71.33,52.9,75.47,57.72
+Karnataka,KA_District_10,2022,70.86,55.32,73.74,58.4
+Karnataka,KA_District_10,2023,75.37,55.01,74.31,60.31
+Karnataka,KA_District_11,2018,58.61,59.82,52.26,41.1
+Karnataka,KA_District_11,2019,59.91,61.04,52.97,42.48
+Karnataka,KA_District_11,2020,61.13,62.35,54.66,42.9
+Karnataka,KA_District_11,2021,63.71,64.44,54.33,44.24
+Karnataka,KA_District_11,2022,64.33,65.71,56.17,46.61
+Karnataka,KA_District_11,2023,66.01,65.25,56.55,45.18
+Karnataka,KA_District_12,2018,59.25,49.49,64.54,50.26
+Karnataka,KA_District_12,2019,60.17,50.31,65.96,51.78
+Karnataka,KA_District_12,2020,62.58,52.76,66.99,52.84
+Karnataka,KA_District_12,2021,62.69,53.03,68.45,55.46
+Karnataka,KA_District_12,2022,63.02,54.25,67.65,55.35
+Karnataka,KA_District_12,2023,66.76,55.64,71.39,58.53
+Karnataka,KA_District_13,2018,65.16,49.47,57.95,60.91
+Karnataka,KA_District_13,2019,66.51,51.1,59.01,62.32
+Karnataka,KA_District_13,2020,67.24,53.0,61.06,62.86
+Karnataka,KA_District_13,2021,67.92,52.82,62.14,63.87
+Karnataka,KA_District_13,2022,70.19,54.05,61.4,64.61
+Karnataka,KA_District_13,2023,72.6,57.47,61.72,67.66
+Karnataka,KA_District_14,2018,73.38,57.5,52.67,41.89
+Karnataka,KA_District_14,2019,74.9,59.02,54.23,43.06
+Karnataka,KA_District_14,2020,74.99,61.02,55.52,43.72
+Karnataka,KA_District_14,2021,76.21,62.39,57.23,44.53
+Karnataka,KA_District_14,2022,80.13,64.4,57.55,45.68
+Karnataka,KA_District_14,2023,80.66,61.54,57.17,46.76
+Karnataka,KA_District_15,2018,52.47,58.28,65.28,41.63
+Karnataka,KA_District_15,2019,53.51,59.08,66.44,43.4
+Karnataka,KA_District_15,2020,54.94,61.14,67.95,43.39
+Karnataka,KA_District_15,2021,55.76,63.24,67.57,46.12
+Karnataka,KA_District_15,2022,59.45,63.93,70.61,47.41
+Karnataka,KA_District_15,2023,58.8,63.93,69.54,50.34
+Karnataka,KA_District_16,2018,51.36,47.4,58.45,43.98
+Karnataka,KA_District_16,2019,52.31,48.27,59.43,44.79
+Karnataka,KA_District_16,2020,53.38,49.16,60.87,47.24
+Karnataka,KA_District_16,2021,55.94,52.11,60.84,47.31
+Karnataka,KA_District_16,2022,58.05,52.03,62.53,47.28
+Karnataka,KA_District_16,2023,59.77,54.42,64.25,51.63
+Karnataka,KA_District_17,2018,54.12,46.36,61.41,53.68
+Karnataka,KA_District_17,2019,55.38,47.55,62.32,55.19
+Karnataka,KA_District_17,2020,56.53,49.76,62.85,56.18
+Karnataka,KA_District_17,2021,57.71,51.01,64.03,58.67
+Karnataka,KA_District_17,2022,58.0,52.51,64.79,57.77
+Karnataka,KA_District_17,2023,60.99,54.62,67.0,62.17
+Karnataka,KA_District_18,2018,51.59,54.43,72.81,52.66
+Karnataka,KA_District_18,2019,52.92,56.06,73.61,54.35
+Karnataka,KA_District_18,2020,55.04,56.76,75.83,56.06
+Karnataka,KA_District_18,2021,55.35,59.36,75.34,57.14
+Karnataka,KA_District_18,2022,55.75,60.91,75.54,56.94
+Karnataka,KA_District_18,2023,57.1,59.98,80.63,60.81
+Karnataka,KA_District_19,2018,51.51,59.93,58.18,61.95
+Karnataka,KA_District_19,2019,52.69,61.1,59.44,62.83
+Karnataka,KA_District_19,2020,54.84,63.39,61.21,64.59
+Karnataka,KA_District_19,2021,56.87,63.69,60.14,64.46
+Karnataka,KA_District_19,2022,57.02,65.11,62.91,67.82
+Karnataka,KA_District_19,2023,56.6,64.85,61.37,67.94
+Karnataka,KA_District_20,2018,64.47,45.58,66.86,51.31
+Karnataka,KA_District_20,2019,66.19,46.58,67.66,52.28
+Karnataka,KA_District_20,2020,67.46,47.37,69.43,54.54
+Karnataka,KA_District_20,2021,68.66,50.94,70.97,54.46
+Karnataka,KA_District_20,2022,71.29,51.79,69.73,54.53
+Karnataka,KA_District_20,2023,68.93,51.61,72.27,57.22
+West Bengal,WB_District_1,2018,74.34,52.19,61.5,40.12
+West Bengal,WB_District_1,2019,75.22,53.09,62.83,41.49
+West Bengal,WB_District_1,2020,76.82,55.15,63.68,42.24
+West Bengal,WB_District_1,2021,79.46,56.43,64.27,45.3
+West Bengal,WB_District_1,2022,78.68,55.98,64.31,45.75
+West Bengal,WB_District_1,2023,81.21,56.9,64.56,44.61
+West Bengal,WB_District_2,2018,52.21,50.98,67.82,54.59
+West Bengal,WB_District_2,2019,53.68,51.81,69.16,56.0
+West Bengal,WB_District_2,2020,53.82,54.4,69.96,57.27
+West Bengal,WB_District_2,2021,56.84,55.44,70.19,58.45
+West Bengal,WB_District_2,2022,56.17,55.43,70.58,59.07
+West Bengal,WB_District_2,2023,57.06,58.0,75.6,62.21
+West Bengal,WB_District_3,2018,74.31,52.98,71.34,49.72
+West Bengal,WB_District_3,2019,75.66,54.35,72.8,50.97
+West Bengal,WB_District_3,2020,77.38,55.04,72.73,51.72
+West Bengal,WB_District_3,2021,76.8,57.33,74.56,53.91
+West Bengal,WB_District_3,2022,78.68,56.53,74.6,56.19
+West Bengal,WB_District_3,2023,79.23,61.94,75.92,58.45
+West Bengal,WB_District_4,2018,67.06,46.05,51.35,50.93
+West Bengal,WB_District_4,2019,68.22,46.94,52.05,52.51
+West Bengal,WB_District_4,2020,69.99,49.37,53.36,53.14
+West Bengal,WB_District_4,2021,69.48,50.59,53.4,55.8
+West Bengal,WB_District_4,2022,71.96,49.97,56.7,55.1
+West Bengal,WB_District_4,2023,73.69,53.08,55.23,59.02
+West Bengal,WB_District_5,2018,51.98,67.34,62.16,61.44
+West Bengal,WB_District_5,2019,53.71,68.61,63.05,62.89
+West Bengal,WB_District_5,2020,53.97,70.86,64.58,63.9
+West Bengal,WB_District_5,2021,55.01,71.43,66.95,65.81
+West Bengal,WB_District_5,2022,56.83,73.0,67.09,66.84
+West Bengal,WB_District_5,2023,59.78,74.76,65.51,65.51
+West Bengal,WB_District_6,2018,51.98,48.31,61.8,53.62
+West Bengal,WB_District_6,2019,53.19,49.33,63.25,54.84
+West Bengal,WB_District_6,2020,53.73,51.9,63.3,55.5
+West Bengal,WB_District_6,2021,55.95,52.37,66.57,56.29
+West Bengal,WB_District_6,2022,57.63,54.0,64.87,60.19
+West Bengal,WB_District_6,2023,58.15,53.01,66.77,62.56
+West Bengal,WB_District_7,2018,70.24,61.19,62.08,57.51
+West Bengal,WB_District_7,2019,71.88,62.82,63.62,59.16
+West Bengal,WB_District_7,2020,73.35,63.44,65.07,59.16
+West Bengal,WB_District_7,2021,74.76,64.61,65.98,60.05
+West Bengal,WB_District_7,2022,76.54,64.84,65.32,63.2
+West Bengal,WB_District_7,2023,75.74,69.47,66.99,63.2
+West Bengal,WB_District_8,2018,59.69,63.24,66.4,53.77
+West Bengal,WB_District_8,2019,60.62,65.04,67.47,54.83
+West Bengal,WB_District_8,2020,62.31,65.78,68.9,56.57
+West Bengal,WB_District_8,2021,63.99,68.4,70.1,57.12
+West Bengal,WB_District_8,2022,63.98,66.97,71.89,58.91
+West Bengal,WB_District_8,2023,65.92,71.48,72.42,59.63
+West Bengal,WB_District_9,2018,51.95,60.97,53.6,58.91
+West Bengal,WB_District_9,2019,53.72,62.04,54.93,60.35
+West Bengal,WB_District_9,2020,54.12,63.87,55.03,62.24
+West Bengal,WB_District_9,2021,55.21,65.75,55.41,61.93
+West Bengal,WB_District_9,2022,57.23,67.59,56.13,64.28
+West Bengal,WB_District_9,2023,56.61,68.8,57.97,66.38
+West Bengal,WB_District_10,2018,73.29,59.96,60.94,47.61
+West Bengal,WB_District_10,2019,74.71,60.77,61.75,48.79
+West Bengal,WB_District_10,2020,76.12,62.73,62.78,50.34
+West Bengal,WB_District_10,2021,77.3,63.49,64.62,50.34
+West Bengal,WB_District_10,2022,76.75,63.65,67.24,53.3
+West Bengal,WB_District_10,2023,80.65,65.3,65.91,53.79
+West Bengal,WB_District_11,2018,70.42,58.5,55.03,51.45
+West Bengal,WB_District_11,2019,71.66,60.03,55.85,52.77
+West Bengal,WB_District_11,2020,72.72,60.85,56.36,54.99
+West Bengal,WB_District_11,2021,73.59,62.78,57.03,55.58
+West Bengal,WB_District_11,2022,74.01,61.8,59.16,54.74
+West Bengal,WB_District_11,2023,78.75,64.66,60.55,56.85
+West Bengal,WB_District_12,2018,71.25,51.09,68.21,45.2
+West Bengal,WB_District_12,2019,72.64,52.26,69.6,46.06
+West Bengal,WB_District_12,2020,73.82,54.01,69.78,48.56
+West Bengal,WB_District_12,2021,75.11,55.56,72.93,49.59
+West Bengal,WB_District_12,2022,77.21,55.31,70.72,49.33
+West Bengal,WB_District_12,2023,76.56,58.43,76.21,53.37
+West Bengal,WB_District_13,2018,67.61,69.44,60.93,54.24
+West Bengal,WB_District_13,2019,68.53,70.43,61.95,55.22
+West Bengal,WB_District_13,2020,70.6,71.22,63.26,57.12
+West Bengal,WB_District_13,2021,71.52,73.42,64.96,58.97
+West Bengal,WB_District_13,2022,73.86,75.58,63.42,58.71
+West Bengal,WB_District_13,2023,75.02,75.21,65.81,58.66
+West Bengal,WB_District_14,2018,71.67,60.72,74.53,60.54
+West Bengal,WB_District_14,2019,73.32,62.03,75.56,61.67
+West Bengal,WB_District_14,2020,73.97,64.22,76.61,63.17
+West Bengal,WB_District_14,2021,76.17,63.75,76.34,64.45
+West Bengal,WB_District_14,2022,78.44,66.29,78.33,63.87
+West Bengal,WB_District_14,2023,79.34,68.63,81.96,69.15
+West Bengal,WB_District_15,2018,60.26,68.87,63.16,56.79
+West Bengal,WB_District_15,2019,61.98,70.08,64.26,57.83
+West Bengal,WB_District_15,2020,63.39,72.41,64.71,60.05
+West Bengal,WB_District_15,2021,63.8,72.47,67.15,61.79
+West Bengal,WB_District_15,2022,64.52,74.16,68.56,60.91
+West Bengal,WB_District_15,2023,68.41,74.19,67.94,64.02
+West Bengal,WB_District_16,2018,63.37,69.27,62.82,40.71
+West Bengal,WB_District_16,2019,64.22,70.4,63.64,42.45
+West Bengal,WB_District_16,2020,65.5,71.14,64.09,43.56
+West Bengal,WB_District_16,2021,67.69,73.34,65.15,44.88
+West Bengal,WB_District_16,2022,69.83,72.59,69.15,45.89
+West Bengal,WB_District_16,2023,69.57,76.73,67.66,47.21
+West Bengal,WB_District_17,2018,57.88,55.12,55.07,46.53
+West Bengal,WB_District_17,2019,59.36,55.98,56.65,47.72
+West Bengal,WB_District_17,2020,61.28,58.06,57.16,48.31
+West Bengal,WB_District_17,2021,61.08,59.36,58.58,50.81
+West Bengal,WB_District_17,2022,63.65,59.38,59.23,50.14
+West Bengal,WB_District_17,2023,62.34,61.09,60.5,52.3
+West Bengal,WB_District_18,2018,51.57,53.5,73.82,59.42
+West Bengal,WB_District_18,2019,53.08,54.33,75.02,60.88
+West Bengal,WB_District_18,2020,53.48,56.51,76.39,62.29
+West Bengal,WB_District_18,2021,56.68,57.52,76.76,64.62
+West Bengal,WB_District_18,2022,56.8,58.19,78.96,64.82
+West Bengal,WB_District_18,2023,59.46,60.14,81.82,65.16
+West Bengal,WB_District_19,2018,74.51,66.52,71.78,44.23
+West Bengal,WB_District_19,2019,75.66,67.94,73.3,45.12
+West Bengal,WB_District_19,2020,76.67,69.24,73.29,46.38
+West Bengal,WB_District_19,2021,77.19,69.4,76.26,48.38
+West Bengal,WB_District_19,2022,80.22,72.83,74.71,49.81
+West Bengal,WB_District_19,2023,80.07,72.74,79.2,52.95
+West Bengal,WB_District_20,2018,55.5,55.39,72.03,55.31
+West Bengal,WB_District_20,2019,57.25,56.3,73.61,56.99
+West Bengal,WB_District_20,2020,59.07,57.42,74.5,57.0
+West Bengal,WB_District_20,2021,58.56,58.68,73.98,60.32
+West Bengal,WB_District_20,2022,60.73,59.14,75.14,62.24
+West Bengal,WB_District_20,2023,62.72,59.72,78.84,63.77
+Gujarat,GJ_District_1,2018,52.01,55.85,54.66,48.65
+Gujarat,GJ_District_1,2019,53.75,56.98,55.39,49.47
+Gujarat,GJ_District_1,2020,55.22,58.44,56.82,51.49
+Gujarat,GJ_District_1,2021,55.24,60.62,59.08,52.78
+Gujarat,GJ_District_1,2022,55.81,59.88,61.0,55.01
+Gujarat,GJ_District_1,2023,57.04,63.5,58.55,57.32
+Gujarat,GJ_District_2,2018,55.54,54.92,54.46,40.13
+Gujarat,GJ_District_2,2019,56.6,56.27,55.32,40.99
+Gujarat,GJ_District_2,2020,58.58,57.16,57.15,42.5
+Gujarat,GJ_District_2,2021,60.38,58.86,57.24,43.1
+Gujarat,GJ_District_2,2022,62.22,61.58,58.25,47.03
+Gujarat,GJ_District_2,2023,61.89,62.29,58.51,46.15
+Gujarat,GJ_District_3,2018,57.26,46.51,53.48,60.66
+Gujarat,GJ_District_3,2019,58.57,48.03,54.57,61.56
+Gujarat,GJ_District_3,2020,60.02,48.72,56.42,63.82
+Gujarat,GJ_District_3,2021,62.56,50.16,58.09,65.67
+Gujarat,GJ_District_3,2022,62.39,51.34,58.16,66.69
+Gujarat,GJ_District_3,2023,62.46,51.96,60.66,65.67
+Gujarat,GJ_District_4,2018,53.34,54.89,72.24,51.74
+Gujarat,GJ_District_4,2019,54.41,56.19,73.72,53.49
+Gujarat,GJ_District_4,2020,56.14,57.41,75.29,53.84
+Gujarat,GJ_District_4,2021,57.35,60.07,74.22,56.37
+Gujarat,GJ_District_4,2022,56.76,61.47,75.0,55.26
+Gujarat,GJ_District_4,2023,59.36,61.11,77.63,59.24
+Gujarat,GJ_District_5,2018,56.5,60.56,65.58,43.53
+Gujarat,GJ_District_5,2019,57.79,61.94,66.41,44.96
+Gujarat,GJ_District_5,2020,58.31,63.55,67.54,45.38
+Gujarat,GJ_District_5,2021,61.03,63.49,68.01,48.74
+Gujarat,GJ_District_5,2022,62.0,64.57,71.34,48.59
+Gujarat,GJ_District_5,2023,64.69,69.49,72.74,50.81
+Gujarat,GJ_District_6,2018,67.97,49.52,62.35,60.5
+Gujarat,GJ_District_6,2019,68.99,50.78,63.67,61.79
+Gujarat,GJ_District_6,2020,70.48,52.46,64.97,62.75
+Gujarat,GJ_District_6,2021,70.69,54.09,65.64,65.5
+Gujarat,GJ_District_6,2022,71.25,56.18,65.5,64.72
+Gujarat,GJ_District_6,2023,73.28,56.65,69.78,65.46
+Gujarat,GJ_District_7,2018,57.02,57.71,61.16,46.51
+Gujarat,GJ_District_7,2019,57.9,58.98,62.19,48.01
+Gujarat,GJ_District_7,2020,58.75,60.81,62.6,49.13
+Gujarat,GJ_District_7,2021,62.02,62.93,65.27,49.6
+Gujarat,GJ_District_7,2022,63.65,64.36,64.51,51.87
+Gujarat,GJ_District_7,2023,62.93,64.47,66.62,54.86
+Gujarat,GJ_District_8,2018,72.63,49.72,63.47,64.96
+Gujarat,GJ_District_8,2019,74.19,50.79,65.05,66.26
+Gujarat,GJ_District_8,2020,76.08,51.71,65.81,67.51
+Gujarat,GJ_District_8,2021,75.3,54.25,65.77,67.74
+Gujarat,GJ_District_8,2022,77.0,56.86,67.47,70.29
+Gujarat,GJ_District_8,2023,80.59,56.4,70.82,72.17
+Gujarat,GJ_District_9,2018,65.01,53.89,68.89,44.24
+Gujarat,GJ_District_9,2019,66.32,55.3,70.27,45.21
+Gujarat,GJ_District_9,2020,68.21,55.56,71.88,47.44
+Gujarat,GJ_District_9,2021,68.59,57.94,71.04,48.29
+Gujarat,GJ_District_9,2022,70.89,57.56,71.57,49.78
+Gujarat,GJ_District_9,2023,71.7,58.76,76.35,51.46
+Gujarat,GJ_District_10,2018,69.07,64.2,74.65,51.87
+Gujarat,GJ_District_10,2019,70.87,65.64,75.38,52.94
+Gujarat,GJ_District_10,2020,71.52,66.46,76.82,55.26
+Gujarat,GJ_District_10,2021,73.09,67.48,79.42,55.63
+Gujarat,GJ_District_10,2022,74.01,69.85,77.19,57.92
+Gujarat,GJ_District_10,2023,74.79,69.0,78.8,57.47
+Gujarat,GJ_District_11,2018,67.85,48.24,53.86,46.28
+Gujarat,GJ_District_11,2019,69.32,49.91,54.94,47.16
+Gujarat,GJ_District_11,2020,71.12,50.35,56.92,48.76
+Gujarat,GJ_District_11,2021,72.81,51.38,56.22,51.56
+Gujarat,GJ_District_11,2022,71.78,54.39,59.65,52.4
+Gujarat,GJ_District_11,2023,72.66,53.1,59.35,54.08
+Gujarat,GJ_District_12,2018,74.05,53.03,51.11,63.79
+Gujarat,GJ_District_12,2019,74.92,54.11,52.44,65.23
+Gujarat,GJ_District_12,2020,76.59,55.53,52.36,66.2
+Gujarat,GJ_District_12,2021,76.54,57.55,53.1,68.63
+Gujarat,GJ_District_12,2022,78.84,57.25,56.81,70.95
+Gujarat,GJ_District_12,2023,79.74,57.43,56.46,70.48
+Gujarat,GJ_District_13,2018,62.18,58.91,59.17,60.39
+Gujarat,GJ_District_13,2019,63.71,60.28,60.59,61.74
+Gujarat,GJ_District_13,2020,64.17,62.21,61.57,62.11
+Gujarat,GJ_District_13,2021,67.31,63.68,62.14,64.89
+Gujarat,GJ_District_13,2022,69.25,65.94,63.91,66.64
+Gujarat,GJ_District_13,2023,71.01,67.68,65.11,66.05
+Gujarat,GJ_District_14,2018,59.31,49.14,65.08,64.94
+Gujarat,GJ_District_14,2019,60.43,50.2,66.56,66.73
+Gujarat,GJ_District_14,2020,62.44,50.75,67.56,66.65
+Gujarat,GJ_District_14,2021,62.42,51.61,67.03,68.69
+Gujarat,GJ_District_14,2022,62.81,53.59,67.74,70.88
+Gujarat,GJ_District_14,2023,65.1,57.62,72.79,71.61
+Gujarat,GJ_District_15,2018,72.22,46.39,71.12,51.9
+Gujarat,GJ_District_15,2019,73.93,48.18,72.21,53.03
+Gujarat,GJ_District_15,2020,73.97,49.62,73.4,54.72
+Gujarat,GJ_District_15,2021,75.86,49.46,75.04,55.81
+Gujarat,GJ_District_15,2022,75.7,51.72,75.2,58.02
+Gujarat,GJ_District_15,2023,79.03,53.41,74.88,56.19
+Gujarat,GJ_District_16,2018,74.68,57.29,71.84,55.09
+Gujarat,GJ_District_16,2019,75.97,58.26,73.17,56.46
+Gujarat,GJ_District_16,2020,76.95,59.19,74.0,58.26
+Gujarat,GJ_District_16,2021,79.59,60.57,76.6,58.0
+Gujarat,GJ_District_16,2022,78.43,64.16,78.21,59.8
+Gujarat,GJ_District_16,2023,80.06,62.49,75.98,60.15
+Gujarat,GJ_District_17,2018,71.68,65.64,60.87,53.76
+Gujarat,GJ_District_17,2019,72.81,66.9,62.09,55.0
+Gujarat,GJ_District_17,2020,73.53,67.34,62.15,55.73
+Gujarat,GJ_District_17,2021,75.3,70.81,64.92,57.1
+Gujarat,GJ_District_17,2022,78.81,70.99,63.36,57.22
+Gujarat,GJ_District_17,2023,78.11,73.85,64.93,60.96
+Gujarat,GJ_District_18,2018,68.56,49.05,60.76,46.57
+Gujarat,GJ_District_18,2019,69.44,50.45,61.66,47.51
+Gujarat,GJ_District_18,2020,71.37,52.34,63.61,48.95
+Gujarat,GJ_District_18,2021,72.57,51.97,62.83,51.58
+Gujarat,GJ_District_18,2022,72.81,53.78,64.09,51.0
+Gujarat,GJ_District_18,2023,76.97,55.02,68.58,53.97
+Gujarat,GJ_District_19,2018,67.69,69.69,50.69,43.88
+Gujarat,GJ_District_19,2019,68.89,71.47,51.45,45.67
+Gujarat,GJ_District_19,2020,69.8,72.6,53.65,46.0
+Gujarat,GJ_District_19,2021,71.54,73.32,55.13,48.07
+Gujarat,GJ_District_19,2022,72.01,74.15,54.81,47.23
+Gujarat,GJ_District_19,2023,73.21,75.96,56.75,49.49
+Gujarat,GJ_District_20,2018,69.58,46.83,74.64,52.0
+Gujarat,GJ_District_20,2019,71.2,47.67,75.79,53.62
+Gujarat,GJ_District_20,2020,72.93,50.19,76.13,54.51
+Gujarat,GJ_District_20,2021,73.87,50.88,78.21,54.73
+Gujarat,GJ_District_20,2022,73.95,50.05,80.06,57.5
+Gujarat,GJ_District_20,2023,75.1,53.02,80.87,58.62
+Rajasthan,RJ_District_1,2018,59.59,48.05,71.25,51.83
+Rajasthan,RJ_District_1,2019,60.86,49.85,72.15,52.95
+Rajasthan,RJ_District_1,2020,62.25,50.58,73.14,53.98
+Rajasthan,RJ_District_1,2021,64.62,51.01,73.56,54.67
+Rajasthan,RJ_District_1,2022,63.42,52.73,76.52,58.93
+Rajasthan,RJ_District_1,2023,66.87,54.23,77.42,57.01
+Rajasthan,RJ_District_2,2018,60.11,49.11,63.72,41.21
+Rajasthan,RJ_District_2,2019,60.93,50.71,65.14,42.8
+Rajasthan,RJ_District_2,2020,61.9,50.81,65.51,44.29
+Rajasthan,RJ_District_2,2021,62.88,52.02,66.39,46.41
+Rajasthan,RJ_District_2,2022,67.16,54.92,66.95,45.09
+Rajasthan,RJ_District_2,2023,65.42,57.21,68.26,45.81
+Rajasthan,RJ_District_3,2018,52.79,50.6,63.0,52.35
+Rajasthan,RJ_District_3,2019,54.44,52.1,64.48,53.71
+Rajasthan,RJ_District_3,2020,55.94,53.18,64.57,55.27
+Rajasthan,RJ_District_3,2021,55.78,54.21,66.83,56.26
+Rajasthan,RJ_District_3,2022,59.6,55.11,69.08,56.24
+Rajasthan,RJ_District_3,2023,57.49,54.82,70.54,61.09
+Rajasthan,RJ_District_4,2018,50.36,67.81,63.31,53.71
+Rajasthan,RJ_District_4,2019,51.64,68.95,64.05,54.99
+Rajasthan,RJ_District_4,2020,53.31,71.07,66.29,55.34
+Rajasthan,RJ_District_4,2021,53.1,71.46,65.63,58.2
+Rajasthan,RJ_District_4,2022,56.22,72.96,68.17,57.37
+Rajasthan,RJ_District_4,2023,58.59,76.11,67.03,61.68
+Rajasthan,RJ_District_5,2018,66.11,57.95,66.52,45.27
+Rajasthan,RJ_District_5,2019,67.29,59.1,67.82,46.15
+Rajasthan,RJ_District_5,2020,67.98,60.64,68.66,48.0
+Rajasthan,RJ_District_5,2021,70.57,61.21,69.46,50.44
+Rajasthan,RJ_District_5,2022,72.53,63.93,71.32,50.25
+Rajasthan,RJ_District_5,2023,71.25,64.21,71.9,50.89
+Rajasthan,RJ_District_6,2018,61.56,64.54,55.08,57.08
+Rajasthan,RJ_District_6,2019,63.15,65.82,56.24,58.48
+Rajasthan,RJ_District_6,2020,63.83,66.29,57.55,59.42
+Rajasthan,RJ_District_6,2021,64.95,69.09,57.87,60.82
+Rajasthan,RJ_District_6,2022,68.0,71.51,60.3,60.88
+Rajasthan,RJ_District_6,2023,69.38,73.04,58.18,65.52
+Rajasthan,RJ_District_7,2018,50.37,58.3,54.57,62.22
+Rajasthan,RJ_District_7,2019,52.07,59.96,55.24,63.62
+Rajasthan,RJ_District_7,2020,53.85,61.06,57.73,64.21
+Rajasthan,RJ_District_7,2021,52.83,62.26,56.6,65.15
+Rajasthan,RJ_District_7,2022,55.25,64.85,57.59,66.2
+Rajasthan,RJ_District_7,2023,58.37,66.21,58.81,69.11
+Rajasthan,RJ_District_8,2018,53.44,45.04,73.82,52.5
+Rajasthan,RJ_District_8,2019,54.62,46.31,75.34,53.69
+Rajasthan,RJ_District_8,2020,55.63,47.46,75.45,54.14
+Rajasthan,RJ_District_8,2021,57.01,49.08,76.36,55.63
+Rajasthan,RJ_District_8,2022,57.37,51.09,76.88,56.33
+Rajasthan,RJ_District_8,2023,57.81,49.14,78.48,58.67
+Rajasthan,RJ_District_9,2018,69.88,68.18,58.96,43.96
+Rajasthan,RJ_District_9,2019,70.84,69.53,60.21,45.41
+Rajasthan,RJ_District_9,2020,71.71,70.14,62.13,47.46
+Rajasthan,RJ_District_9,2021,74.33,72.84,62.14,47.27
+Rajasthan,RJ_District_9,2022,73.56,73.85,63.24,49.43
+Rajasthan,RJ_District_9,2023,78.04,74.15,66.01,50.64
+Rajasthan,RJ_District_10,2018,54.95,54.7,73.22,58.37
+Rajasthan,RJ_District_10,2019,56.71,55.98,73.98,59.85
+Rajasthan,RJ_District_10,2020,58.3,57.32,75.01,60.3
+Rajasthan,RJ_District_10,2021,58.45,58.81,76.28,63.37
+Rajasthan,RJ_District_10,2022,60.98,58.88,76.9,64.67
+Rajasthan,RJ_District_10,2023,61.51,63.19,78.92,66.28
+Rajasthan,RJ_District_11,2018,65.83,53.76,71.92,50.99
+Rajasthan,RJ_District_11,2019,67.33,54.79,73.44,51.8
+Rajasthan,RJ_District_11,2020,69.4,57.3,74.03,53.31
+Rajasthan,RJ_District_11,2021,70.06,58.47,75.61,56.0
+Rajasthan,RJ_District_11,2022,72.69,58.49,74.99,55.72
+Rajasthan,RJ_District_11,2023,73.5,61.43,77.69,56.11
+Rajasthan,RJ_District_12,2018,59.74,69.37,68.21,56.28
+Rajasthan,RJ_District_12,2019,61.33,70.63,69.62,57.48
+Rajasthan,RJ_District_12,2020,61.42,71.92,69.92,59.47
+Rajasthan,RJ_District_12,2021,62.93,73.57,72.52,58.94
+Rajasthan,RJ_District_12,2022,66.59,73.75,71.72,61.13
+Rajasthan,RJ_District_12,2023,63.81,77.17,74.72,61.08
+Rajasthan,RJ_District_13,2018,70.74,47.57,64.85,55.15
+Rajasthan,RJ_District_13,2019,72.02,49.11,66.23,56.11
+Rajasthan,RJ_District_13,2020,73.73,49.96,67.39,57.0
+Rajasthan,RJ_District_13,2021,75.02,51.14,67.99,59.92
+Rajasthan,RJ_District_13,2022,76.95,51.2,70.76,58.61
+Rajasthan,RJ_District_13,2023,75.52,56.42,67.98,63.81
+Rajasthan,RJ_District_14,2018,56.76,65.22,74.61,45.68
+Rajasthan,RJ_District_14,2019,58.24,66.66,75.26,47.19
+Rajasthan,RJ_District_14,2020,59.74,67.92,77.39,48.22
+Rajasthan,RJ_District_14,2021,60.73,69.2,78.24,49.43
+Rajasthan,RJ_District_14,2022,61.94,68.92,80.07,51.62
+Rajasthan,RJ_District_14,2023,62.82,71.59,78.81,53.26
+Rajasthan,RJ_District_15,2018,65.09,46.11,72.22,46.8
+Rajasthan,RJ_District_15,2019,66.1,47.02,73.29,48.41
+Rajasthan,RJ_District_15,2020,67.7,49.43,73.79,50.05
+Rajasthan,RJ_District_15,2021,68.69,49.9,76.48,51.57
+Rajasthan,RJ_District_15,2022,69.65,50.0,76.2,52.33
+Rajasthan,RJ_District_15,2023,73.55,53.2,75.22,55.55
+Rajasthan,RJ_District_16,2018,52.36,58.95,67.81,48.95
+Rajasthan,RJ_District_16,2019,53.82,60.42,69.3,50.59
+Rajasthan,RJ_District_16,2020,54.76,61.61,70.08,51.15
+Rajasthan,RJ_District_16,2021,55.97,61.46,72.22,52.78
+Rajasthan,RJ_District_16,2022,59.2,66.07,71.61,54.59
+Rajasthan,RJ_District_16,2023,59.58,64.6,75.06,55.85
+Rajasthan,RJ_District_17,2018,73.24,66.17,59.33,56.93
+Rajasthan,RJ_District_17,2019,74.47,67.73,60.88,57.95
+Rajasthan,RJ_District_17,2020,75.23,69.06,60.8,60.5
+Rajasthan,RJ_District_17,2021,76.57,69.42,62.74,59.89
+Rajasthan,RJ_District_17,2022,76.57,72.11,65.17,61.07
+Rajasthan,RJ_District_17,2023,78.5,75.09,62.68,65.87
+Rajasthan,RJ_District_18,2018,57.54,51.23,55.01,49.45
+Rajasthan,RJ_District_18,2019,58.74,52.25,55.95,50.91
+Rajasthan,RJ_District_18,2020,59.64,54.15,56.41,51.77
+Rajasthan,RJ_District_18,2021,60.01,55.0,58.8,52.87
+Rajasthan,RJ_District_18,2022,62.92,56.09,57.86,55.78
+Rajasthan,RJ_District_18,2023,63.32,57.74,59.28,57.18
+Rajasthan,RJ_District_19,2018,56.39,48.53,74.27,43.43
+Rajasthan,RJ_District_19,2019,57.62,49.55,75.47,44.81
+Rajasthan,RJ_District_19,2020,59.73,51.82,75.53,46.35
+Rajasthan,RJ_District_19,2021,60.91,53.29,77.45,48.59
+Rajasthan,RJ_District_19,2022,61.77,53.63,80.54,48.73
+Rajasthan,RJ_District_19,2023,60.9,55.7,82.11,51.87
+Rajasthan,RJ_District_20,2018,64.56,52.66,61.7,60.24
+Rajasthan,RJ_District_20,2019,66.04,54.46,63.07,62.0
+Rajasthan,RJ_District_20,2020,68.13,54.33,62.97,62.93
+Rajasthan,RJ_District_20,2021,67.55,57.99,65.89,63.12
+Rajasthan,RJ_District_20,2022,70.1,57.47,64.54,64.49
+Rajasthan,RJ_District_20,2023,72.6,58.14,68.52,65.04
+Madhya Pradesh,MP_District_1,2018,50.11,60.47,53.95,47.04
+Madhya Pradesh,MP_District_1,2019,51.38,61.38,55.45,48.83
+Madhya Pradesh,MP_District_1,2020,53.16,62.54,55.87,48.85
+Madhya Pradesh,MP_District_1,2021,54.91,63.12,57.6,51.66
+Madhya Pradesh,MP_District_1,2022,55.33,64.15,59.7,50.65
+Madhya Pradesh,MP_District_1,2023,56.54,68.65,61.41,52.27
+Madhya Pradesh,MP_District_2,2018,72.69,68.85,53.87,46.72
+Madhya Pradesh,MP_District_2,2019,73.56,70.64,54.94,47.6
+Madhya Pradesh,MP_District_2,2020,75.18,71.62,56.37,50.02
+Madhya Pradesh,MP_District_2,2021,77.48,73.25,58.21,51.4
+Madhya Pradesh,MP_District_2,2022,79.25,73.45,59.26,50.76
+Madhya Pradesh,MP_District_2,2023,81.28,73.17,57.1,52.85
+Madhya Pradesh,MP_District_3,2018,62.19,65.37,72.52,45.63
+Madhya Pradesh,MP_District_3,2019,63.44,67.08,73.7,46.78
+Madhya Pradesh,MP_District_3,2020,64.98,68.65,75.09,47.3
+Madhya Pradesh,MP_District_3,2021,67.0,70.07,76.86,49.81
+Madhya Pradesh,MP_District_3,2022,68.76,71.88,75.25,48.91
+Madhya Pradesh,MP_District_3,2023,70.04,72.13,78.61,53.91
+Madhya Pradesh,MP_District_4,2018,68.15,56.48,71.11,46.27
+Madhya Pradesh,MP_District_4,2019,69.31,57.41,72.14,47.11
+Madhya Pradesh,MP_District_4,2020,71.17,59.34,72.93,48.32
+Madhya Pradesh,MP_District_4,2021,71.6,61.56,75.53,49.78
+Madhya Pradesh,MP_District_4,2022,74.2,61.87,76.75,52.36
+Madhya Pradesh,MP_District_4,2023,75.95,63.43,74.55,52.92
+Madhya Pradesh,MP_District_5,2018,54.75,62.25,55.88,42.15
+Madhya Pradesh,MP_District_5,2019,55.95,63.18,56.65,43.74
+Madhya Pradesh,MP_District_5,2020,57.75,64.89,57.19,45.64
+Madhya Pradesh,MP_District_5,2021,58.92,65.42,59.59,45.22
+Madhya Pradesh,MP_District_5,2022,58.97,67.07,61.49,45.71
+Madhya Pradesh,MP_District_5,2023,58.99,69.63,60.92,46.2
+Madhya Pradesh,MP_District_6,2018,63.41,68.52,52.94,62.77
+Madhya Pradesh,MP_District_6,2019,64.36,69.82,53.87,63.85
+Madhya Pradesh,MP_District_6,2020,66.4,70.82,55.76,65.71
+Madhya Pradesh,MP_District_6,2021,65.9,72.78,55.19,67.88
+Madhya Pradesh,MP_District_6,2022,68.02,72.44,58.22,66.71
+Madhya Pradesh,MP_District_6,2023,70.66,75.83,60.66,68.7
+Madhya Pradesh,MP_District_7,2018,69.98,57.0,60.29,64.38
+Madhya Pradesh,MP_District_7,2019,71.46,58.53,60.94,65.45
+Madhya Pradesh,MP_District_7,2020,72.23,59.11,62.17,67.39
+Madhya Pradesh,MP_District_7,2021,73.63,61.88,64.67,67.07
+Madhya Pradesh,MP_District_7,2022,76.54,60.34,65.05,69.86
+Madhya Pradesh,MP_District_7,2023,76.85,65.25,66.37,72.29
+Madhya Pradesh,MP_District_8,2018,63.97,53.97,70.35,51.48
+Madhya Pradesh,MP_District_8,2019,64.89,55.45,71.77,52.51
+Madhya Pradesh,MP_District_8,2020,67.47,56.42,72.36,54.22
+Madhya Pradesh,MP_District_8,2021,68.99,57.38,73.72,55.36
+Madhya Pradesh,MP_District_8,2022,67.36,57.89,76.37,57.08
+Madhya Pradesh,MP_District_8,2023,68.78,60.21,77.36,59.59
+Madhya Pradesh,MP_District_9,2018,62.59,67.58,57.2,50.26
+Madhya Pradesh,MP_District_9,2019,63.51,69.16,58.48,51.76
+Madhya Pradesh,MP_District_9,2020,65.85,71.09,59.66,53.68
+Madhya Pradesh,MP_District_9,2021,65.85,70.2,60.78,52.74
+Madhya Pradesh,MP_District_9,2022,68.58,70.82,60.02,53.72
+Madhya Pradesh,MP_District_9,2023,66.86,73.56,64.59,58.96
+Madhya Pradesh,MP_District_10,2018,70.7,57.04,53.78,57.06
+Madhya Pradesh,MP_District_10,2019,71.63,58.17,54.93,58.16
+Madhya Pradesh,MP_District_10,2020,73.93,58.78,55.29,60.54
+Madhya Pradesh,MP_District_10,2021,74.64,61.53,56.99,61.91
+Madhya Pradesh,MP_District_10,2022,75.85,61.93,57.62,61.44
+Madhya Pradesh,MP_District_10,2023,74.87,63.76,56.89,61.78
+Madhya Pradesh,MP_District_11,2018,59.22,50.27,70.01,49.52
+Madhya Pradesh,MP_District_11,2019,60.88,51.46,71.3,50.77
+Madhya Pradesh,MP_District_11,2020,61.09,52.58,71.47,52.56
+Madhya Pradesh,MP_District_11,2021,63.15,53.12,73.31,51.99
+Madhya Pradesh,MP_District_11,2022,63.53,57.13,74.12,53.6
+Madhya Pradesh,MP_District_11,2023,66.92,58.09,77.85,57.5
+Madhya Pradesh,MP_District_12,2018,71.28,57.26,54.9,52.07
+Madhya Pradesh,MP_District_12,2019,72.55,58.91,55.52,53.58
+Madhya Pradesh,MP_District_12,2020,72.99,60.67,56.74,55.24
+Madhya Pradesh,MP_District_12,2021,75.46,61.34,59.31,54.78
+Madhya Pradesh,MP_District_12,2022,77.11,61.8,58.1,57.11
+Madhya Pradesh,MP_District_12,2023,78.61,62.53,58.16,57.8
+Madhya Pradesh,MP_District_13,2018,60.34,59.96,52.7,51.25
+Madhya Pradesh,MP_District_13,2019,61.34,61.37,53.43,52.6
+Madhya Pradesh,MP_District_13,2020,63.29,63.3,54.73,54.73
+Madhya Pradesh,MP_District_13,2021,64.92,62.76,55.87,55.1
+Madhya Pradesh,MP_District_13,2022,64.22,64.29,59.04,56.2
+Madhya Pradesh,MP_District_13,2023,65.67,65.28,58.02,58.6
+Madhya Pradesh,MP_District_14,2018,71.53,64.59,74.27,60.9
+Madhya Pradesh,MP_District_14,2019,72.47,65.44,75.48,62.5
+Madhya Pradesh,MP_District_14,2020,73.93,66.25,76.06,63.86
+Madhya Pradesh,MP_District_14,2021,75.83,67.85,77.94,63.78
+Madhya Pradesh,MP_District_14,2022,77.43,71.37,79.37,64.66
+Madhya Pradesh,MP_District_14,2023,80.33,69.54,77.43,67.58
+Madhya Pradesh,MP_District_15,2018,71.81,67.63,71.73,40.52
+Madhya Pradesh,MP_District_15,2019,72.85,68.52,73.32,41.34
+Madhya Pradesh,MP_District_15,2020,73.94,69.55,74.87,42.97
+Madhya Pradesh,MP_District_15,2021,76.1,72.31,73.59,44.2
+Madhya Pradesh,MP_District_15,2022,77.97,73.26,75.74,44.28
+Madhya Pradesh,MP_District_15,2023,77.81,73.64,75.64,48.98
+Madhya Pradesh,MP_District_16,2018,64.49,60.79,51.49,51.66
+Madhya Pradesh,MP_District_16,2019,65.31,61.86,52.93,52.98
+Madhya Pradesh,MP_District_16,2020,66.66,62.49,54.12,55.06
+Madhya Pradesh,MP_District_16,2021,68.38,65.73,54.04,56.3
+Madhya Pradesh,MP_District_16,2022,68.66,67.0,57.77,58.78
+Madhya Pradesh,MP_District_16,2023,71.71,68.46,58.03,60.42
+Madhya Pradesh,MP_District_17,2018,67.74,51.0,64.63,64.63
+Madhya Pradesh,MP_District_17,2019,68.76,52.07,65.26,65.83
+Madhya Pradesh,MP_District_17,2020,70.01,53.33,66.77,66.99
+Madhya Pradesh,MP_District_17,2021,70.98,53.53,66.62,69.25
+Madhya Pradesh,MP_District_17,2022,71.93,56.81,68.77,68.7
+Madhya Pradesh,MP_District_17,2023,76.33,55.29,70.82,69.6
+Madhya Pradesh,MP_District_18,2018,65.18,55.9,60.65,51.19
+Madhya Pradesh,MP_District_18,2019,66.83,57.43,61.61,52.34
+Madhya Pradesh,MP_District_18,2020,68.36,57.79,61.96,53.86
+Madhya Pradesh,MP_District_18,2021,69.5,59.75,63.23,54.31
+Madhya Pradesh,MP_District_18,2022,71.62,59.3,65.85,54.59
+Madhya Pradesh,MP_District_18,2023,73.6,60.65,67.12,59.63
+Madhya Pradesh,MP_District_19,2018,50.47,57.05,57.28,64.34
+Madhya Pradesh,MP_District_19,2019,52.11,58.66,58.69,65.26
+Madhya Pradesh,MP_District_19,2020,52.49,60.54,58.95,67.57
+Madhya Pradesh,MP_District_19,2021,54.07,60.83,61.31,67.82
+Madhya Pradesh,MP_District_19,2022,54.69,60.73,60.07,68.54
+Madhya Pradesh,MP_District_19,2023,59.09,63.34,62.02,71.0
+Madhya Pradesh,MP_District_20,2018,54.57,51.22,73.35,44.93
+Madhya Pradesh,MP_District_20,2019,56.35,52.99,74.41,46.47
+Madhya Pradesh,MP_District_20,2020,57.42,52.84,75.44,48.4
+Madhya Pradesh,MP_District_20,2021,57.24,55.07,77.56,50.06
+Madhya Pradesh,MP_District_20,2022,61.72,58.28,79.38,51.75
+Madhya Pradesh,MP_District_20,2023,61.51,56.28,77.42,53.91
+Bihar,BR_District_1,2018,65.77,68.91,50.53,61.97
+Bihar,BR_District_1,2019,67.52,69.74,51.27,63.47
+Bihar,BR_District_1,2020,68.41,71.66,53.3,63.58
+Bihar,BR_District_1,2021,68.19,74.27,53.92,66.38
+Bihar,BR_District_1,2022,69.15,72.37,55.23,66.11
+Bihar,BR_District_1,2023,73.81,75.87,57.31,68.31
+Bihar,BR_District_2,2018,58.73,62.26,53.47,51.07
+Bihar,BR_District_2,2019,60.53,63.48,54.07,52.68
+Bihar,BR_District_2,2020,62.29,65.22,55.17,53.19
+Bihar,BR_District_2,2021,63.16,65.0,57.63,55.11
+Bihar,BR_District_2,2022,64.43,67.93,58.32,55.39
+Bihar,BR_District_2,2023,67.27,69.16,57.74,59.85
+Bihar,BR_District_3,2018,51.42,66.04,54.59,44.1
+Bihar,BR_District_3,2019,53.0,67.69,56.18,44.99
+Bihar,BR_District_3,2020,53.2,69.13,57.3,45.95
+Bihar,BR_District_3,2021,55.82,71.34,57.99,47.01
+Bihar,BR_District_3,2022,57.6,72.62,59.0,49.36
+Bihar,BR_District_3,2023,58.58,70.12,58.97,52.32
+Bihar,BR_District_4,2018,54.12,52.57,51.04,46.6
+Bihar,BR_District_4,2019,55.37,53.59,52.02,47.6
+Bihar,BR_District_4,2020,57.06,55.35,52.72,49.8
+Bihar,BR_District_4,2021,59.28,57.76,52.92,50.4
+Bihar,BR_District_4,2022,57.84,58.06,57.0,51.56
+Bihar,BR_District_4,2023,60.97,61.02,57.83,51.53
+Bihar,BR_District_5,2018,66.47,50.58,57.89,62.71
+Bihar,BR_District_5,2019,68.12,51.9,58.67,64.38
+Bihar,BR_District_5,2020,70.0,53.41,60.29,65.84
+Bihar,BR_District_5,2021,71.48,54.96,61.35,66.54
+Bihar,BR_District_5,2022,71.2,57.08,61.51,67.64
+Bihar,BR_District_5,2023,74.91,59.19,61.15,68.48
+Bihar,BR_District_6,2018,60.62,52.02,54.67,40.62
+Bihar,BR_District_6,2019,62.23,53.24,56.22,41.92
+Bihar,BR_District_6,2020,63.97,54.31,56.08,43.05
+Bihar,BR_District_6,2021,63.91,54.71,56.49,43.87
+Bihar,BR_District_6,2022,66.51,57.67,59.81,46.8
+Bihar,BR_District_6,2023,69.48,56.21,60.11,45.68
+Bihar,BR_District_7,2018,62.01,56.8,51.03,60.85
+Bihar,BR_District_7,2019,63.12,58.46,51.72,62.48
+Bihar,BR_District_7,2020,65.47,59.37,52.85,63.3
+Bihar,BR_District_7,2021,64.95,59.32,54.69,63.54
+Bihar,BR_District_7,2022,66.0,63.55,53.95,65.24
+Bihar,BR_District_7,2023,67.02,63.86,54.86,67.44
+Bihar,BR_District_8,2018,62.4,69.45,60.38,43.28
+Bihar,BR_District_8,2019,63.43,70.69,61.2,44.69
+Bihar,BR_District_8,2020,64.91,71.37,63.46,46.87
+Bihar,BR_District_8,2021,66.56,72.34,62.24,46.36
+Bihar,BR_District_8,2022,67.38,76.58,64.43,48.16
+Bihar,BR_District_8,2023,71.19,74.13,68.09,50.74
+Bihar,BR_District_9,2018,64.58,61.84,61.32,49.61
+Bihar,BR_District_9,2019,66.1,62.88,62.83,50.63
+Bihar,BR_District_9,2020,67.09,64.37,63.38,51.44
+Bihar,BR_District_9,2021,67.03,64.4,64.78,54.95
+Bihar,BR_District_9,2022,69.78,68.63,65.88,53.65
+Bihar,BR_District_9,2023,69.84,65.85,69.13,58.57
+Bihar,BR_District_10,2018,55.25,58.95,52.65,42.09
+Bihar,BR_District_10,2019,56.39,60.49,53.49,43.01
+Bihar,BR_District_10,2020,57.95,61.84,54.71,44.51
+Bihar,BR_District_10,2021,60.21,62.38,54.93,46.1
+Bihar,BR_District_10,2022,58.8,63.1,55.66,46.27
+Bihar,BR_District_10,2023,61.64,67.06,56.16,47.33
+Bihar,BR_District_11,2018,73.37,58.22,69.56,40.96
+Bihar,BR_District_11,2019,74.19,59.15,70.44,42.47
+Bihar,BR_District_11,2020,75.37,61.81,72.61,44.46
+Bihar,BR_District_11,2021,78.72,62.38,72.62,45.48
+Bihar,BR_District_11,2022,80.05,62.88,73.07,48.09
+Bihar,BR_District_11,2023,77.65,67.0,74.63,48.23
+Bihar,BR_District_12,2018,74.44,50.65,62.85,61.03
+Bihar,BR_District_12,2019,75.81,51.59,64.15,62.0
+Bihar,BR_District_12,2020,76.86,53.03,64.89,64.54
+Bihar,BR_District_12,2021,79.76,55.92,65.77,64.18
+Bihar,BR_District_12,2022,80.79,57.77,65.44,65.96
+Bihar,BR_District_12,2023,80.04,56.05,68.96,68.88
+Bihar,BR_District_13,2018,71.97,48.87,61.27,57.75
+Bihar,BR_District_13,2019,73.52,50.55,62.56,59.37
+Bihar,BR_District_13,2020,74.9,50.59,63.84,59.92
+Bihar,BR_District_13,2021,75.87,52.53,65.18,62.2
+Bihar,BR_District_13,2022,78.39,54.03,66.0,61.18
+Bihar,BR_District_13,2023,79.3,57.25,67.1,62.65
+Bihar,BR_District_14,2018,53.41,49.81,68.53,54.32
+Bihar,BR_District_14,2019,54.25,50.87,69.31,55.91
+Bihar,BR_District_14,2020,55.94,53.29,70.42,56.3
+Bihar,BR_District_14,2021,56.32,54.6,73.13,57.33
+Bihar,BR_District_14,2022,59.28,56.06,72.08,57.57
+Bihar,BR_District_14,2023,57.62,57.76,72.68,59.14
+Bihar,BR_District_15,2018,57.17,60.1,51.18,41.54
+Bihar,BR_District_15,2019,58.8,61.65,52.64,43.16
+Bihar,BR_District_15,2020,59.37,63.13,54.34,43.97
+Bihar,BR_District_15,2021,61.69,65.15,53.15,45.07
+Bihar,BR_District_15,2022,64.19,66.72,56.54,44.84
+Bihar,BR_District_15,2023,63.94,64.35,56.28,47.6
+Bihar,BR_District_16,2018,56.15,64.07,65.34,47.33
+Bihar,BR_District_16,2019,57.64,65.27,66.81,48.71
+Bihar,BR_District_16,2020,59.38,66.12,68.28,50.44
+Bihar,BR_District_16,2021,59.5,67.71,68.22,50.03
+Bihar,BR_District_16,2022,59.9,67.52,69.53,50.74
+Bihar,BR_District_16,2023,60.67,69.64,71.96,55.78
+Bihar,BR_District_17,2018,70.49,54.06,73.1,62.6
+Bihar,BR_District_17,2019,71.47,55.24,74.06,63.99
+Bihar,BR_District_17,2020,73.59,57.24,74.68,64.71
+Bihar,BR_District_17,2021,74.1,57.37,76.48,65.48
+Bihar,BR_District_17,2022,76.41,58.37,76.71,68.11
+Bihar,BR_District_17,2023,77.11,60.71,77.89,70.1
+Bihar,BR_District_18,2018,69.5,69.57,63.13,57.82
+Bihar,BR_District_18,2019,70.89,70.65,64.63,59.26
+Bihar,BR_District_18,2020,72.92,72.44,66.3,61.19
+Bihar,BR_District_18,2021,73.39,73.78,67.88,61.62
+Bihar,BR_District_18,2022,75.33,75.51,67.93,61.37
+Bihar,BR_District_18,2023,75.21,78.24,70.52,61.97
+Bihar,BR_District_19,2018,53.76,61.15,57.18,42.73
+Bihar,BR_District_19,2019,55.24,62.32,58.08,44.29
+Bihar,BR_District_19,2020,56.23,63.07,59.19,45.92
+Bihar,BR_District_19,2021,56.92,63.81,61.85,47.57
+Bihar,BR_District_19,2022,57.01,65.26,63.41,46.41
+Bihar,BR_District_19,2023,61.28,67.15,64.92,49.32
+Bihar,BR_District_20,2018,62.31,65.97,56.04,64.44
+Bihar,BR_District_20,2019,63.86,67.66,57.33,66.06
+Bihar,BR_District_20,2020,64.78,68.22,58.5,66.42
+Bihar,BR_District_20,2021,65.95,70.28,58.26,69.71
+Bihar,BR_District_20,2022,66.55,72.95,59.67,70.81
+Bihar,BR_District_20,2023,67.35,71.94,60.25,69.43
+Punjab,PB_District_1,2018,74.5,53.03,56.07,54.98
+Punjab,PB_District_1,2019,75.94,53.88,57.62,56.55
+Punjab,PB_District_1,2020,77.81,55.63,58.15,57.85
+Punjab,PB_District_1,2021,79.41,56.41,58.84,59.94
+Punjab,PB_District_1,2022,79.93,57.58,60.48,61.51
+Punjab,PB_District_1,2023,79.48,58.77,60.88,63.32
+Punjab,PB_District_2,2018,61.06,67.58,74.62,44.49
+Punjab,PB_District_2,2019,62.44,68.81,75.65,46.09
+Punjab,PB_District_2,2020,63.66,70.59,77.1,46.94
+Punjab,PB_District_2,2021,63.76,70.88,78.6,48.75
+Punjab,PB_District_2,2022,67.53,73.1,80.1,49.95
+Punjab,PB_District_2,2023,69.78,75.49,80.56,50.53
+Punjab,PB_District_3,2018,62.64,48.57,67.2,60.96
+Punjab,PB_District_3,2019,64.33,50.19,68.75,62.26
+Punjab,PB_District_3,2020,64.76,51.86,69.16,63.21
+Punjab,PB_District_3,2021,67.81,51.85,70.38,64.14
+Punjab,PB_District_3,2022,69.79,53.02,70.94,65.86
+Punjab,PB_District_3,2023,70.12,53.77,71.93,66.86
+Punjab,PB_District_4,2018,71.94,55.94,74.01,57.72
+Punjab,PB_District_4,2019,72.96,57.2,75.03,58.71
+Punjab,PB_District_4,2020,73.93,57.66,76.37,59.7
+Punjab,PB_District_4,2021,75.65,59.21,78.5,62.03
+Punjab,PB_District_4,2022,76.58,61.8,78.64,63.42
+Punjab,PB_District_4,2023,79.87,62.21,80.88,64.35
+Punjab,PB_District_5,2018,51.31,55.56,60.26,59.32
+Punjab,PB_District_5,2019,52.65,56.55,60.91,60.44
+Punjab,PB_District_5,2020,54.72,58.54,61.68,61.55
+Punjab,PB_District_5,2021,54.06,58.6,64.81,63.35
+Punjab,PB_District_5,2022,55.69,60.76,65.76,63.52
+Punjab,PB_District_5,2023,56.3,61.34,68.22,66.88
+Punjab,PB_District_6,2018,73.68,52.23,53.65,64.95
+Punjab,PB_District_6,2019,75.3,53.77,54.8,65.92
+Punjab,PB_District_6,2020,76.22,54.47,55.91,67.58
+Punjab,PB_District_6,2021,77.04,57.17,57.76,69.63
+Punjab,PB_District_6,2022,79.8,56.83,57.14,71.7
+Punjab,PB_District_6,2023,82.63,59.68,61.37,73.47
+Punjab,PB_District_7,2018,74.31,54.34,62.22,63.7
+Punjab,PB_District_7,2019,75.17,55.39,63.45,64.69
+Punjab,PB_District_7,2020,76.63,57.81,64.59,66.12
+Punjab,PB_District_7,2021,77.57,59.16,65.1,68.94
+Punjab,PB_District_7,2022,77.73,58.12,65.24,68.44
+Punjab,PB_District_7,2023,81.8,61.3,66.59,70.97
+Punjab,PB_District_8,2018,52.15,50.2,67.42,64.35
+Punjab,PB_District_8,2019,53.29,51.82,68.85,65.7
+Punjab,PB_District_8,2020,54.36,53.0,68.72,67.32
+Punjab,PB_District_8,2021,55.67,52.65,71.89,69.36
+Punjab,PB_District_8,2022,56.5,56.18,73.68,70.74
+Punjab,PB_District_8,2023,58.39,58.16,70.86,69.14
+Punjab,PB_District_9,2018,51.13,58.91,67.65,57.25
+Punjab,PB_District_9,2019,52.02,59.97,69.09,58.61
+Punjab,PB_District_9,2020,54.31,60.87,69.58,59.95
+Punjab,PB_District_9,2021,54.9,61.84,69.58,59.77
+Punjab,PB_District_9,2022,57.42,63.73,70.35,61.68
+Punjab,PB_District_9,2023,59.37,65.6,74.9,62.03
+Punjab,PB_District_10,2018,63.37,46.1,62.12,48.64
+Punjab,PB_District_10,2019,65.03,47.71,63.51,50.28
+Punjab,PB_District_10,2020,65.08,48.99,63.68,51.91
+Punjab,PB_District_10,2021,66.63,50.24,65.94,53.76
+Punjab,PB_District_10,2022,69.06,51.26,66.37,52.6
+Punjab,PB_District_10,2023,72.02,51.48,66.92,54.64
+Punjab,PB_District_11,2018,63.61,51.07,63.74,59.32
+Punjab,PB_District_11,2019,65.18,52.26,64.91,60.82
+Punjab,PB_District_11,2020,66.87,53.69,65.39,61.26
+Punjab,PB_District_11,2021,67.45,56.32,67.91,62.3
+Punjab,PB_District_11,2022,69.32,56.66,68.89,63.68
+Punjab,PB_District_11,2023,69.44,58.9,67.94,66.54
+Punjab,PB_District_12,2018,65.46,59.56,66.93,63.27
+Punjab,PB_District_12,2019,67.06,60.68,68.08,64.49
+Punjab,PB_District_12,2020,67.41,61.57,68.68,65.86
+Punjab,PB_District_12,2021,70.75,64.04,70.33,67.77
+Punjab,PB_District_12,2022,69.99,63.13,70.09,70.36
+Punjab,PB_District_12,2023,70.92,66.89,70.43,68.69
+Punjab,PB_District_13,2018,58.28,65.73,57.86,54.65
+Punjab,PB_District_13,2019,59.59,67.16,58.88,55.85
+Punjab,PB_District_13,2020,61.54,68.88,59.4,56.51
+Punjab,PB_District_13,2021,62.7,68.48,59.92,58.5
+Punjab,PB_District_13,2022,64.6,71.0,63.12,60.22
+Punjab,PB_District_13,2023,64.61,73.86,65.04,60.95
+Punjab,PB_District_14,2018,69.13,53.8,71.71,55.1
+Punjab,PB_District_14,2019,70.77,55.52,73.27,56.78
+Punjab,PB_District_14,2020,72.44,56.62,73.69,56.97
+Punjab,PB_District_14,2021,73.66,57.24,74.64,58.53
+Punjab,PB_District_14,2022,74.68,58.94,74.14,58.8
+Punjab,PB_District_14,2023,75.63,61.51,76.24,61.41
+Punjab,PB_District_15,2018,60.11,61.31,53.66,49.56
+Punjab,PB_District_15,2019,61.16,62.68,55.11,50.8
+Punjab,PB_District_15,2020,63.64,64.1,56.11,51.48
+Punjab,PB_District_15,2021,64.7,64.13,55.66,52.06
+Punjab,PB_District_15,2022,64.99,66.07,58.44,53.8
+Punjab,PB_District_15,2023,66.6,69.23,60.47,56.82
+Punjab,PB_District_16,2018,50.17,60.5,50.24,61.83
+Punjab,PB_District_16,2019,51.02,61.8,51.75,63.59
+Punjab,PB_District_16,2020,52.06,63.41,53.07,64.17
+Punjab,PB_District_16,2021,55.17,64.31,53.35,66.61
+Punjab,PB_District_16,2022,56.26,64.63,54.18,68.32
+Punjab,PB_District_16,2023,55.31,67.07,57.13,66.5
+Punjab,PB_District_17,2018,73.98,48.86,72.92,59.93
+Punjab,PB_District_17,2019,75.47,50.28,73.89,61.72
+Punjab,PB_District_17,2020,77.21,52.2,75.79,63.26
+Punjab,PB_District_17,2021,76.93,52.46,77.42,65.11
+Punjab,PB_District_17,2022,78.11,54.4,77.01,64.87
+Punjab,PB_District_17,2023,79.8,57.57,76.32,64.27
+Punjab,PB_District_18,2018,68.16,62.44,54.35,50.45
+Punjab,PB_District_18,2019,69.73,64.15,55.14,51.72
+Punjab,PB_District_18,2020,69.76,65.56,55.68,52.14
+Punjab,PB_District_18,2021,71.2,66.95,58.13,53.34
+Punjab,PB_District_18,2022,71.66,68.53,59.19,55.33
+Punjab,PB_District_18,2023,77.12,71.39,58.47,56.6
+Punjab,PB_District_19,2018,52.59,69.32,58.83,63.41
+Punjab,PB_District_19,2019,53.47,70.29,60.38,64.97
+Punjab,PB_District_19,2020,54.72,72.61,61.38,66.56
+Punjab,PB_District_19,2021,56.74,73.84,63.37,67.72
+Punjab,PB_District_19,2022,57.48,73.4,62.83,68.5
+Punjab,PB_District_19,2023,58.45,76.85,64.29,67.62
+Punjab,PB_District_20,2018,72.99,46.36,70.0,43.86
+Punjab,PB_District_20,2019,74.43,47.34,70.89,44.74
+Punjab,PB_District_20,2020,75.85,49.13,71.81,46.35
+Punjab,PB_District_20,2021,76.22,50.54,74.26,47.16
+Punjab,PB_District_20,2022,78.52,51.91,72.81,47.72
+Punjab,PB_District_20,2023,79.12,54.22,77.99,52.61
+Haryana,HR_District_1,2018,63.07,57.9,56.1,58.61
+Haryana,HR_District_1,2019,64.32,59.12,57.69,60.31
+Haryana,HR_District_1,2020,65.85,60.85,58.35,60.79
+Haryana,HR_District_1,2021,66.79,60.5,59.76,63.62
+Haryana,HR_District_1,2022,68.65,62.1,62.48,64.02
+Haryana,HR_District_1,2023,70.37,64.83,60.54,64.69
+Haryana,HR_District_2,2018,63.76,51.71,63.56,63.54
+Haryana,HR_District_2,2019,65.54,53.09,64.25,64.79
+Haryana,HR_District_2,2020,66.16,54.25,66.71,65.61
+Haryana,HR_District_2,2021,68.68,54.4,65.93,66.32
+Haryana,HR_District_2,2022,67.95,57.11,68.19,69.11
+Haryana,HR_District_2,2023,68.54,57.73,66.6,69.61
+Haryana,HR_District_3,2018,58.51,63.72,61.74,55.12
+Haryana,HR_District_3,2019,59.79,65.32,62.76,56.28
+Haryana,HR_District_3,2020,61.54,65.44,63.6,56.75
+Haryana,HR_District_3,2021,62.05,68.84,63.84,58.82
+Haryana,HR_District_3,2022,65.62,68.25,66.81,61.26
+Haryana,HR_District_3,2023,65.05,69.86,64.97,63.93
+Haryana,HR_District_4,2018,60.72,67.36,68.48,45.61
+Haryana,HR_District_4,2019,62.38,69.03,69.78,47.34
+Haryana,HR_District_4,2020,63.16,70.41,69.84,47.56
+Haryana,HR_District_4,2021,65.16,72.03,72.02,50.49
+Haryana,HR_District_4,2022,63.95,73.19,74.33,52.75
+Haryana,HR_District_4,2023,66.11,75.92,74.13,51.03
+Haryana,HR_District_5,2018,55.0,61.63,64.68,63.51
+Haryana,HR_District_5,2019,55.93,63.07,66.09,64.7
+Haryana,HR_District_5,2020,57.39,64.95,67.41,65.41
+Haryana,HR_District_5,2021,59.02,64.94,69.21,66.16
+Haryana,HR_District_5,2022,60.93,68.63,67.55,67.0
+Haryana,HR_District_5,2023,61.33,66.56,69.38,70.89
+Haryana,HR_District_6,2018,68.3,54.46,54.39,61.02
+Haryana,HR_District_6,2019,69.42,55.31,55.76,62.14
+Haryana,HR_District_6,2020,70.85,56.11,56.57,64.18
+Haryana,HR_District_6,2021,71.8,56.96,57.94,65.65
+Haryana,HR_District_6,2022,75.11,59.16,59.55,67.96
+Haryana,HR_District_6,2023,76.19,62.07,60.59,66.77
+Haryana,HR_District_7,2018,59.62,61.92,54.04,49.68
+Haryana,HR_District_7,2019,60.88,63.42,55.12,51.08
+Haryana,HR_District_7,2020,62.29,65.08,56.55,52.45
+Haryana,HR_District_7,2021,63.09,65.8,57.55,53.2
+Haryana,HR_District_7,2022,66.7,67.71,58.95,54.83
+Haryana,HR_District_7,2023,68.31,67.94,61.52,54.99
+Haryana,HR_District_8,2018,51.08,64.48,73.97,59.82
+Haryana,HR_District_8,2019,52.76,65.95,75.02,60.8
+Haryana,HR_District_8,2020,53.27,66.89,76.31,62.41
+Haryana,HR_District_8,2021,55.89,68.56,77.02,63.4
+Haryana,HR_District_8,2022,56.57,70.2,77.15,63.75
+Haryana,HR_District_8,2023,56.25,70.06,79.93,67.03
+Haryana,HR_District_9,2018,54.27,61.27,51.66,53.68
+Haryana,HR_District_9,2019,55.31,62.35,52.93,54.5
+Haryana,HR_District_9,2020,57.12,63.33,54.23,56.58
+Haryana,HR_District_9,2021,57.84,65.52,53.75,57.23
+Haryana,HR_District_9,2022,61.08,68.3,55.84,60.25
+Haryana,HR_District_9,2023,62.62,66.7,57.44,59.61
+Haryana,HR_District_10,2018,50.85,47.19,57.56,52.13
+Haryana,HR_District_10,2019,52.38,48.19,58.43,53.48
+Haryana,HR_District_10,2020,53.12,50.09,60.52,54.54
+Haryana,HR_District_10,2021,54.07,50.47,59.54,56.47
+Haryana,HR_District_10,2022,57.95,52.41,63.77,55.5
+Haryana,HR_District_10,2023,57.01,51.77,64.36,57.69
+Haryana,HR_District_11,2018,52.93,60.39,70.9,46.29
+Haryana,HR_District_11,2019,54.2,61.68,72.17,47.28
+Haryana,HR_District_11,2020,55.68,63.27,72.91,49.8
+Haryana,HR_District_11,2021,56.57,65.51,73.07,50.92
+Haryana,HR_District_11,2022,59.91,63.91,76.07,53.19
+Haryana,HR_District_11,2023,59.89,67.19,78.61,55.13
+Haryana,HR_District_12,2018,68.97,61.34,73.71,41.48
+Haryana,HR_District_12,2019,70.45,62.3,74.66,43.27
+Haryana,HR_District_12,2020,71.03,64.05,75.94,44.58
+Haryana,HR_District_12,2021,71.77,65.07,75.66,45.34
+Haryana,HR_District_12,2022,74.6,67.56,79.18,46.64
+Haryana,HR_District_12,2023,75.99,69.57,80.58,45.48
+Haryana,HR_District_13,2018,56.0,55.34,72.67,53.18
+Haryana,HR_District_13,2019,57.41,57.06,73.45,54.17
+Haryana,HR_District_13,2020,57.71,57.35,74.66,54.8
+Haryana,HR_District_13,2021,58.61,58.06,74.94,56.86
+Haryana,HR_District_13,2022,60.11,60.71,76.75,58.62
+Haryana,HR_District_13,2023,63.49,60.01,77.18,59.85
+Haryana,HR_District_14,2018,56.6,59.39,56.01,42.47
+Haryana,HR_District_14,2019,57.97,60.69,57.14,43.76
+Haryana,HR_District_14,2020,59.81,62.87,58.08,44.19
+Haryana,HR_District_14,2021,60.87,62.96,60.27,47.28
+Haryana,HR_District_14,2022,60.6,65.94,59.18,47.28
+Haryana,HR_District_14,2023,62.08,67.53,59.7,49.38
+Haryana,HR_District_15,2018,60.8,62.38,64.63,62.93
+Haryana,HR_District_15,2019,61.79,63.18,66.07,64.65
+Haryana,HR_District_15,2020,63.11,64.1,67.29,66.03
+Haryana,HR_District_15,2021,63.57,65.23,66.54,67.11
+Haryana,HR_District_15,2022,67.82,65.79,67.66,66.65
+Haryana,HR_District_15,2023,67.69,68.32,72.28,67.78
+Haryana,HR_District_16,2018,72.04,65.34,71.55,43.35
+Haryana,HR_District_16,2019,72.99,66.63,72.22,45.0
+Haryana,HR_District_16,2020,74.96,68.46,74.2,46.55
+Haryana,HR_District_16,2021,76.14,67.74,74.73,46.36
+Haryana,HR_District_16,2022,78.7,71.8,77.42,47.89
+Haryana,HR_District_16,2023,77.83,69.79,76.3,47.42
+Haryana,HR_District_17,2018,66.4,68.9,66.19,51.31
+Haryana,HR_District_17,2019,68.18,70.43,67.78,52.16
+Haryana,HR_District_17,2020,69.01,71.89,69.04,53.61
+Haryana,HR_District_17,2021,71.07,72.99,70.04,54.67
+Haryana,HR_District_17,2022,72.15,74.92,71.65,54.74
+Haryana,HR_District_17,2023,75.05,73.02,72.49,55.41
+Haryana,HR_District_18,2018,58.9,68.47,66.26,55.76
+Haryana,HR_District_18,2019,60.17,69.91,67.39,57.22
+Haryana,HR_District_18,2020,62.31,70.38,67.64,57.82
+Haryana,HR_District_18,2021,62.29,71.43,68.07,59.15
+Haryana,HR_District_18,2022,64.24,71.94,71.57,61.88
+Haryana,HR_District_18,2023,62.96,73.08,71.11,62.4
+Haryana,HR_District_19,2018,68.88,67.0,51.95,52.92
+Haryana,HR_District_19,2019,70.64,68.18,52.58,54.59
+Haryana,HR_District_19,2020,72.35,68.82,53.62,56.0
+Haryana,HR_District_19,2021,73.67,70.34,55.99,57.99
+Haryana,HR_District_19,2022,73.64,71.57,57.74,58.09
+Haryana,HR_District_19,2023,77.75,73.44,56.91,57.62
+Haryana,HR_District_20,2018,66.21,51.53,68.65,54.81
+Haryana,HR_District_20,2019,67.11,52.38,69.82,56.45
+Haryana,HR_District_20,2020,68.48,53.64,70.43,57.04
+Haryana,HR_District_20,2021,70.97,56.79,73.3,59.89
+Haryana,HR_District_20,2022,69.59,54.86,74.33,59.43
+Haryana,HR_District_20,2023,70.38,60.14,72.4,60.79
+Kerala,KL_District_1,2018,64.18,53.95,61.79,52.29
+Kerala,KL_District_1,2019,65.9,55.42,62.59,53.11
+Kerala,KL_District_1,2020,67.38,57.03,64.28,55.7
+Kerala,KL_District_1,2021,68.86,58.07,64.22,55.37
+Kerala,KL_District_1,2022,70.9,60.13,67.48,55.56
+Kerala,KL_District_1,2023,70.28,62.31,65.64,60.17
+Kerala,KL_District_2,2018,58.78,53.85,73.77,48.45
+Kerala,KL_District_2,2019,60.44,54.76,74.69,50.1
+Kerala,KL_District_2,2020,61.75,56.33,75.3,50.37
+Kerala,KL_District_2,2021,63.86,58.92,78.01,51.77
+Kerala,KL_District_2,2022,62.52,57.54,77.9,52.81
+Kerala,KL_District_2,2023,64.15,60.4,79.12,56.95
+Kerala,KL_District_3,2018,59.39,47.23,62.91,58.43
+Kerala,KL_District_3,2019,61.0,48.75,63.73,59.35
+Kerala,KL_District_3,2020,62.03,49.66,64.92,60.95
+Kerala,KL_District_3,2021,64.07,50.69,66.0,62.69
+Kerala,KL_District_3,2022,63.7,54.31,67.11,64.88
+Kerala,KL_District_3,2023,68.37,54.6,68.97,64.62
+Kerala,KL_District_4,2018,64.59,54.89,55.3,51.13
+Kerala,KL_District_4,2019,66.14,55.76,56.36,52.17
+Kerala,KL_District_4,2020,67.71,57.55,58.08,53.78
+Kerala,KL_District_4,2021,67.32,60.08,58.72,56.48
+Kerala,KL_District_4,2022,71.55,58.66,60.14,55.41
+Kerala,KL_District_4,2023,72.57,63.58,62.11,59.73
+Kerala,KL_District_5,2018,50.11,53.62,52.87,61.79
+Kerala,KL_District_5,2019,50.91,54.54,53.6,63.27
+Kerala,KL_District_5,2020,53.22,57.08,54.77,64.23
+Kerala,KL_District_5,2021,54.1,56.67,57.16,66.99
+Kerala,KL_District_5,2022,54.83,59.14,58.74,68.98
+Kerala,KL_District_5,2023,54.53,58.85,59.47,69.92
+Kerala,KL_District_6,2018,58.68,53.69,62.89,57.67
+Kerala,KL_District_6,2019,60.45,54.67,63.8,59.1
+Kerala,KL_District_6,2020,60.51,55.38,64.72,59.54
+Kerala,KL_District_6,2021,61.56,57.57,66.65,60.36
+Kerala,KL_District_6,2022,64.52,58.01,66.53,62.43
+Kerala,KL_District_6,2023,63.1,62.53,68.22,63.06
+Kerala,KL_District_7,2018,73.09,62.17,66.56,54.39
+Kerala,KL_District_7,2019,74.39,63.57,67.55,56.1
+Kerala,KL_District_7,2020,76.24,65.67,69.28,57.82
+Kerala,KL_District_7,2021,75.75,64.72,68.76,57.66
+Kerala,KL_District_7,2022,76.94,67.42,71.77,58.78
+Kerala,KL_District_7,2023,77.57,67.4,72.78,63.32
+Kerala,KL_District_8,2018,51.6,66.91,69.83,51.76
+Kerala,KL_District_8,2019,52.43,68.57,70.92,53.12
+Kerala,KL_District_8,2020,55.13,69.96,71.07,54.93
+Kerala,KL_District_8,2021,54.71,69.71,73.2,55.96
+Kerala,KL_District_8,2022,58.2,70.82,74.81,57.51
+Kerala,KL_District_8,2023,57.79,71.19,77.77,58.32
+Kerala,KL_District_9,2018,59.78,46.72,65.21,51.22
+Kerala,KL_District_9,2019,61.17,47.76,66.69,52.91
+Kerala,KL_District_9,2020,62.95,49.52,66.44,53.81
+Kerala,KL_District_9,2021,62.64,49.6,69.94,56.03
+Kerala,KL_District_9,2022,64.8,53.67,67.94,55.61
+Kerala,KL_District_9,2023,64.06,54.46,70.67,59.99
+Kerala,KL_District_10,2018,69.58,55.06,69.24,42.94
+Kerala,KL_District_10,2019,71.15,56.63,70.34,44.53
+Kerala,KL_District_10,2020,71.69,57.36,72.07,44.71
+Kerala,KL_District_10,2021,74.06,58.02,71.41,46.37
+Kerala,KL_District_10,2022,73.88,61.24,73.03,47.81
+Kerala,KL_District_10,2023,76.81,59.06,72.41,51.86
+Kerala,KL_District_11,2018,61.16,64.83,52.64,50.51
+Kerala,KL_District_11,2019,62.73,65.7,53.35,52.01
+Kerala,KL_District_11,2020,63.01,67.24,54.52,53.86
+Kerala,KL_District_11,2021,64.61,69.05,55.94,54.15
+Kerala,KL_District_11,2022,65.99,71.36,56.03,56.77
+Kerala,KL_District_11,2023,66.97,71.9,59.61,56.1
+Kerala,KL_District_12,2018,67.09,63.38,55.97,46.49
+Kerala,KL_District_12,2019,68.72,64.69,56.72,47.97
+Kerala,KL_District_12,2020,69.73,65.71,58.0,49.35
+Kerala,KL_District_12,2021,71.83,66.54,58.91,50.98
+Kerala,KL_District_12,2022,70.67,68.68,61.26,51.21
+Kerala,KL_District_12,2023,74.82,67.54,60.25,52.41
+Kerala,KL_District_13,2018,50.89,47.04,61.89,54.16
+Kerala,KL_District_13,2019,52.02,48.11,63.31,55.22
+Kerala,KL_District_13,2020,53.44,49.01,64.73,55.97
+Kerala,KL_District_13,2021,55.26,52.02,65.16,56.72
+Kerala,KL_District_13,2022,56.96,52.57,65.67,58.71
+Kerala,KL_District_13,2023,55.71,53.29,67.36,60.67
+Kerala,KL_District_14,2018,59.61,62.86,68.01,50.26
+Kerala,KL_District_14,2019,60.92,64.24,69.12,51.21
+Kerala,KL_District_14,2020,61.86,65.13,69.25,52.59
+Kerala,KL_District_14,2021,62.97,67.35,70.11,52.87
+Kerala,KL_District_14,2022,63.79,68.84,73.92,56.24
+Kerala,KL_District_14,2023,65.84,70.53,72.13,58.27
+Kerala,KL_District_15,2018,61.2,58.74,61.76,50.83
+Kerala,KL_District_15,2019,62.41,59.9,62.84,52.54
+Kerala,KL_District_15,2020,63.18,61.66,64.77,54.24
+Kerala,KL_District_15,2021,64.56,63.33,64.36,53.8
+Kerala,KL_District_15,2022,66.04,65.62,66.85,55.85
+Kerala,KL_District_15,2023,69.47,66.18,68.77,56.58
+Kerala,KL_District_16,2018,60.53,53.0,51.24,62.67
+Kerala,KL_District_16,2019,62.2,53.99,52.17,64.14
+Kerala,KL_District_16,2020,63.18,56.2,53.82,66.1
+Kerala,KL_District_16,2021,64.84,55.85,55.87,66.49
+Kerala,KL_District_16,2022,65.99,58.22,55.16,66.79
+Kerala,KL_District_16,2023,66.39,57.49,55.62,69.77
+Kerala,KL_District_17,2018,56.28,50.84,55.26,42.6
+Kerala,KL_District_17,2019,57.48,52.14,55.88,44.07
+Kerala,KL_District_17,2020,58.21,52.53,57.14,44.6
+Kerala,KL_District_17,2021,59.1,53.37,58.21,46.24
+Kerala,KL_District_17,2022,61.46,57.97,61.14,45.96
+Kerala,KL_District_17,2023,62.88,58.72,60.54,47.01
+Kerala,KL_District_18,2018,56.33,63.06,59.37,52.29
+Kerala,KL_District_18,2019,58.03,64.48,60.07,53.63
+Kerala,KL_District_18,2020,59.24,64.8,62.52,54.99
+Kerala,KL_District_18,2021,60.38,68.35,63.0,54.82
+Kerala,KL_District_18,2022,62.95,68.37,62.9,57.61
+Kerala,KL_District_18,2023,60.91,70.38,64.0,60.75
+Kerala,KL_District_19,2018,56.99,62.32,58.84,50.64
+Kerala,KL_District_19,2019,57.88,63.26,60.35,51.48
+Kerala,KL_District_19,2020,58.71,64.46,61.95,54.22
+Kerala,KL_District_19,2021,60.05,66.03,62.16,55.74
+Kerala,KL_District_19,2022,61.5,65.99,62.89,53.92
+Kerala,KL_District_19,2023,61.89,66.49,62.7,57.22
+Kerala,KL_District_20,2018,60.98,63.56,64.56,53.52
+Kerala,KL_District_20,2019,62.63,65.16,65.99,54.52
+Kerala,KL_District_20,2020,64.14,66.73,67.66,56.41
+Kerala,KL_District_20,2021,64.3,66.52,68.86,56.03
+Kerala,KL_District_20,2022,65.5,67.76,69.54,57.53
+Kerala,KL_District_20,2023,69.81,70.25,71.94,59.47
+Odisha,OD_District_1,2018,72.8,49.62,62.68,43.35
+Odisha,OD_District_1,2019,73.63,50.61,63.59,44.48
+Odisha,OD_District_1,2020,75.51,51.92,63.9,45.82
+Odisha,OD_District_1,2021,78.12,54.62,65.9,48.3
+Odisha,OD_District_1,2022,77.46,54.33,65.18,46.97
+Odisha,OD_District_1,2023,80.94,55.86,68.0,51.73
+Odisha,OD_District_2,2018,63.71,48.74,70.47,60.53
+Odisha,OD_District_2,2019,64.53,49.75,72.04,61.81
+Odisha,OD_District_2,2020,67.07,51.45,73.37,62.65
+Odisha,OD_District_2,2021,69.11,53.39,73.6,65.44
+Odisha,OD_District_2,2022,67.5,55.62,74.72,66.46
+Odisha,OD_District_2,2023,71.57,53.12,75.62,68.93
+Odisha,OD_District_3,2018,56.07,52.93,70.46,62.12
+Odisha,OD_District_3,2019,57.45,53.91,71.29,63.52
+Odisha,OD_District_3,2020,57.82,54.87,71.79,63.9
+Odisha,OD_District_3,2021,60.56,56.13,72.68,65.79
+Odisha,OD_District_3,2022,59.93,57.53,74.17,68.46
+Odisha,OD_District_3,2023,63.24,60.44,73.94,70.08
+Odisha,OD_District_4,2018,74.54,64.43,62.8,57.73
+Odisha,OD_District_4,2019,76.31,65.59,63.74,58.6
+Odisha,OD_District_4,2020,76.57,66.69,64.64,60.88
+Odisha,OD_District_4,2021,78.47,68.94,64.65,61.59
+Odisha,OD_District_4,2022,78.71,70.12,67.94,61.22
+Odisha,OD_District_4,2023,79.85,70.5,69.57,63.92
+Odisha,OD_District_5,2018,69.54,57.99,55.66,47.4
+Odisha,OD_District_5,2019,70.86,59.6,56.74,49.02
+Odisha,OD_District_5,2020,73.05,60.99,57.48,49.46
+Odisha,OD_District_5,2021,72.41,62.56,59.24,52.02
+Odisha,OD_District_5,2022,74.4,62.24,60.18,51.94
+Odisha,OD_District_5,2023,75.99,66.8,62.05,54.77
+Odisha,OD_District_6,2018,53.23,64.21,56.43,61.47
+Odisha,OD_District_6,2019,54.74,65.8,57.25,62.79
+Odisha,OD_District_6,2020,56.24,67.02,58.94,63.11
+Odisha,OD_District_6,2021,55.99,69.15,60.12,64.22
+Odisha,OD_District_6,2022,58.89,70.69,60.81,66.7
+Odisha,OD_District_6,2023,59.87,70.71,61.3,69.69
+Odisha,OD_District_7,2018,71.91,61.9,65.48,62.64
+Odisha,OD_District_7,2019,73.46,63.14,66.48,63.62
+Odisha,OD_District_7,2020,74.92,63.63,68.54,64.33
+Odisha,OD_District_7,2021,75.55,64.69,67.33,67.11
+Odisha,OD_District_7,2022,76.98,67.26,67.89,67.52
+Odisha,OD_District_7,2023,77.49,69.83,72.39,66.91
+Odisha,OD_District_8,2018,67.41,65.62,62.65,46.63
+Odisha,OD_District_8,2019,68.95,66.71,63.35,48.15
+Odisha,OD_District_8,2020,69.87,68.76,64.82,49.22
+Odisha,OD_District_8,2021,70.9,70.98,66.52,51.86
+Odisha,OD_District_8,2022,73.89,71.12,67.96,53.14
+Odisha,OD_District_8,2023,73.28,69.77,66.15,54.01
+Odisha,OD_District_9,2018,56.75,53.45,62.09,43.9
+Odisha,OD_District_9,2019,58.21,54.91,62.73,45.21
+Odisha,OD_District_9,2020,59.75,56.14,64.72,46.82
+Odisha,OD_District_9,2021,61.61,56.84,66.15,48.02
+Odisha,OD_District_9,2022,63.32,56.74,65.11,50.58
+Odisha,OD_District_9,2023,65.66,59.47,69.21,51.57
+Odisha,OD_District_10,2018,74.83,45.6,52.61,53.48
+Odisha,OD_District_10,2019,76.43,46.83,53.94,54.58
+Odisha,OD_District_10,2020,77.13,48.49,55.46,55.13
+Odisha,OD_District_10,2021,78.96,50.07,55.71,58.01
+Odisha,OD_District_10,2022,81.55,50.04,58.71,59.28
+Odisha,OD_District_10,2023,83.47,50.09,59.11,59.12
+Odisha,OD_District_11,2018,65.19,52.45,61.16,64.98
+Odisha,OD_District_11,2019,66.25,53.81,62.73,66.64
+Odisha,OD_District_11,2020,68.11,54.93,62.44,67.89
+Odisha,OD_District_11,2021,69.6,56.3,63.11,69.54
+Odisha,OD_District_11,2022,71.83,58.33,65.31,70.23
+Odisha,OD_District_11,2023,70.04,59.86,64.99,69.7
+Odisha,OD_District_12,2018,63.17,60.64,64.32,64.91
+Odisha,OD_District_12,2019,64.48,61.78,65.8,65.72
+Odisha,OD_District_12,2020,65.35,63.17,66.64,68.12
+Odisha,OD_District_12,2021,66.4,65.78,68.43,69.54
+Odisha,OD_District_12,2022,67.18,66.67,69.08,71.21
+Odisha,OD_District_12,2023,70.99,66.54,72.16,72.76
+Odisha,OD_District_13,2018,57.95,52.47,63.73,54.47
+Odisha,OD_District_13,2019,59.59,53.58,64.45,55.86
+Odisha,OD_District_13,2020,61.07,55.27,65.7,56.97
+Odisha,OD_District_13,2021,62.36,57.38,65.85,57.49
+Odisha,OD_District_13,2022,61.4,57.9,68.6,60.81
+Odisha,OD_District_13,2023,63.1,61.41,68.98,58.8
+Odisha,OD_District_14,2018,62.63,53.09,61.47,45.08
+Odisha,OD_District_14,2019,63.94,54.8,62.23,46.41
+Odisha,OD_District_14,2020,64.63,55.04,64.02,48.32
+Odisha,OD_District_14,2021,67.79,55.8,65.11,49.47
+Odisha,OD_District_14,2022,67.7,59.35,66.78,51.66
+Odisha,OD_District_14,2023,69.2,58.02,67.8,52.54
+Odisha,OD_District_15,2018,73.85,49.9,64.39,63.9
+Odisha,OD_District_15,2019,74.81,51.49,65.19,64.84
+Odisha,OD_District_15,2020,76.42,53.16,67.58,66.36
+Odisha,OD_District_15,2021,76.92,55.08,66.6,68.84
+Odisha,OD_District_15,2022,77.28,53.16,70.58,68.07
+Odisha,OD_District_15,2023,78.3,54.58,71.83,72.02
+Odisha,OD_District_16,2018,56.41,46.66,69.59,61.12
+Odisha,OD_District_16,2019,57.86,48.32,70.63,62.41
+Odisha,OD_District_16,2020,58.64,48.41,72.75,62.85
+Odisha,OD_District_16,2021,60.53,52.02,71.66,63.57
+Odisha,OD_District_16,2022,63.22,53.71,75.09,67.15
+Odisha,OD_District_16,2023,64.64,52.35,75.5,67.11
+Odisha,OD_District_17,2018,72.34,69.36,56.72,54.5
+Odisha,OD_District_17,2019,73.16,70.68,57.42,56.19
+Odisha,OD_District_17,2020,75.61,72.24,58.96,56.68
+Odisha,OD_District_17,2021,76.52,74.04,59.72,59.04
+Odisha,OD_District_17,2022,78.27,75.62,62.25,61.38
+Odisha,OD_District_17,2023,76.65,73.9,61.78,62.26
+Odisha,OD_District_18,2018,68.98,47.16,70.61,49.63
+Odisha,OD_District_18,2019,70.06,48.23,71.86,50.65
+Odisha,OD_District_18,2020,70.75,49.55,72.54,51.38
+Odisha,OD_District_18,2021,73.02,49.69,73.48,55.01
+Odisha,OD_District_18,2022,75.47,50.87,74.24,56.26
+Odisha,OD_District_18,2023,77.76,52.0,74.55,54.2
+Odisha,OD_District_19,2018,62.23,46.98,65.44,52.07
+Odisha,OD_District_19,2019,63.8,48.51,66.92,53.37
+Odisha,OD_District_19,2020,65.73,49.25,67.0,55.5
+Odisha,OD_District_19,2021,66.92,49.74,67.67,54.97
+Odisha,OD_District_19,2022,66.13,52.41,70.03,57.02
+Odisha,OD_District_19,2023,69.96,55.58,70.48,59.97
+Odisha,OD_District_20,2018,68.36,61.97,69.89,43.51
+Odisha,OD_District_20,2019,69.69,62.9,70.85,45.03
+Odisha,OD_District_20,2020,70.78,64.61,71.68,45.85
+Odisha,OD_District_20,2021,72.91,65.43,74.61,47.21
+Odisha,OD_District_20,2022,72.49,68.04,74.28,48.59
+Odisha,OD_District_20,2023,73.76,67.6,75.35,48.27
+Jharkhand,JH_District_1,2018,74.79,63.57,62.07,58.9
+Jharkhand,JH_District_1,2019,75.98,65.36,62.74,60.0
+Jharkhand,JH_District_1,2020,77.56,67.09,63.76,61.57
+Jharkhand,JH_District_1,2021,79.54,67.5,65.44,64.02
+Jharkhand,JH_District_1,2022,79.69,67.57,65.71,64.7
+Jharkhand,JH_District_1,2023,80.71,69.42,69.2,63.3
+Jharkhand,JH_District_2,2018,62.35,54.42,64.94,58.38
+Jharkhand,JH_District_2,2019,63.56,55.54,66.5,59.69
+Jharkhand,JH_District_2,2020,65.94,56.24,67.02,60.78
+Jharkhand,JH_District_2,2021,66.9,56.97,67.05,60.98
+Jharkhand,JH_District_2,2022,66.78,58.99,67.54,61.62
+Jharkhand,JH_District_2,2023,70.04,62.58,68.43,66.33
+Jharkhand,JH_District_3,2018,63.25,52.99,61.53,54.13
+Jharkhand,JH_District_3,2019,64.97,54.77,62.69,55.18
+Jharkhand,JH_District_3,2020,65.82,56.44,62.79,56.97
+Jharkhand,JH_District_3,2021,67.01,55.64,63.49,58.03
+Jharkhand,JH_District_3,2022,69.31,60.0,65.04,57.42
+Jharkhand,JH_District_3,2023,69.69,61.55,65.18,59.23
+Jharkhand,JH_District_4,2018,67.96,62.09,62.82,52.17
+Jharkhand,JH_District_4,2019,69.68,63.6,64.22,53.96
+Jharkhand,JH_District_4,2020,70.75,65.26,64.32,55.09
+Jharkhand,JH_District_4,2021,71.4,64.76,65.06,57.05
+Jharkhand,JH_District_4,2022,72.85,67.92,68.47,56.32
+Jharkhand,JH_District_4,2023,72.69,69.61,69.1,57.55
+Jharkhand,JH_District_5,2018,63.8,48.44,62.41,44.08
+Jharkhand,JH_District_5,2019,64.61,50.05,63.52,45.72
+Jharkhand,JH_District_5,2020,65.46,51.04,64.32,45.98
+Jharkhand,JH_District_5,2021,68.74,52.27,66.76,48.4
+Jharkhand,JH_District_5,2022,67.91,53.57,65.35,49.67
+Jharkhand,JH_District_5,2023,72.78,56.46,68.98,52.63
+Jharkhand,JH_District_6,2018,57.63,51.93,65.87,60.02
+Jharkhand,JH_District_6,2019,58.84,53.69,67.0,61.53
+Jharkhand,JH_District_6,2020,60.34,53.53,68.9,62.19
+Jharkhand,JH_District_6,2021,60.34,56.96,69.38,63.31
+Jharkhand,JH_District_6,2022,61.65,56.83,69.48,65.0
+Jharkhand,JH_District_6,2023,66.21,56.66,72.81,68.74
+Jharkhand,JH_District_7,2018,57.33,61.21,74.01,41.4
+Jharkhand,JH_District_7,2019,58.45,62.75,74.72,42.81
+Jharkhand,JH_District_7,2020,59.92,63.63,76.56,43.45
+Jharkhand,JH_District_7,2021,60.87,65.09,78.15,46.77
+Jharkhand,JH_District_7,2022,63.35,67.52,79.36,46.22
+Jharkhand,JH_District_7,2023,63.77,69.86,77.94,49.35
+Jharkhand,JH_District_8,2018,70.88,64.73,54.52,46.1
+Jharkhand,JH_District_8,2019,71.84,65.68,55.17,47.33
+Jharkhand,JH_District_8,2020,74.3,67.79,55.88,49.04
+Jharkhand,JH_District_8,2021,75.84,68.08,58.19,50.14
+Jharkhand,JH_District_8,2022,75.42,70.7,60.27,51.85
+Jharkhand,JH_District_8,2023,78.14,70.48,60.46,51.54
+Jharkhand,JH_District_9,2018,62.9,61.56,58.01,50.26
+Jharkhand,JH_District_9,2019,64.11,62.5,59.25,51.32
+Jharkhand,JH_District_9,2020,65.91,64.55,60.28,52.17
+Jharkhand,JH_District_9,2021,66.48,65.21,62.28,55.26
+Jharkhand,JH_District_9,2022,67.89,67.45,64.29,56.75
+Jharkhand,JH_District_9,2023,69.5,66.63,65.0,56.29
+Jharkhand,JH_District_10,2018,58.75,51.18,64.93,50.39
+Jharkhand,JH_District_10,2019,60.24,52.32,65.64,52.01
+Jharkhand,JH_District_10,2020,60.48,53.18,68.02,53.44
+Jharkhand,JH_District_10,2021,61.63,55.62,68.39,54.62
+Jharkhand,JH_District_10,2022,63.49,58.3,70.5,57.3
+Jharkhand,JH_District_10,2023,63.25,57.43,70.3,55.49
+Jharkhand,JH_District_11,2018,58.78,54.49,69.5,57.24
+Jharkhand,JH_District_11,2019,59.66,55.79,70.92,58.12
+Jharkhand,JH_District_11,2020,60.4,57.78,71.62,59.39
+Jharkhand,JH_District_11,2021,61.42,59.79,74.09,61.35
+Jharkhand,JH_District_11,2022,63.88,60.06,73.47,63.0
+Jharkhand,JH_District_11,2023,67.17,62.58,72.56,63.6
+Jharkhand,JH_District_12,2018,65.03,56.41,50.97,45.17
+Jharkhand,JH_District_12,2019,65.87,57.28,52.31,46.59
+Jharkhand,JH_District_12,2020,66.83,59.26,53.3,48.73
+Jharkhand,JH_District_12,2021,68.17,60.09,54.5,48.47
+Jharkhand,JH_District_12,2022,69.19,62.6,53.65,48.84
+Jharkhand,JH_District_12,2023,69.93,60.69,56.41,52.22
+Jharkhand,JH_District_13,2018,66.44,61.2,70.87,54.54
+Jharkhand,JH_District_13,2019,67.38,62.95,72.17,55.93
+Jharkhand,JH_District_13,2020,69.12,64.8,72.52,57.95
+Jharkhand,JH_District_13,2021,71.72,63.68,74.51,58.91
+Jharkhand,JH_District_13,2022,73.37,64.66,75.09,59.47
+Jharkhand,JH_District_13,2023,70.92,69.6,74.9,60.51
+Jharkhand,JH_District_14,2018,69.86,56.74,72.4,44.41
+Jharkhand,JH_District_14,2019,71.13,58.47,73.09,45.58
+Jharkhand,JH_District_14,2020,73.0,59.0,74.52,47.02
+Jharkhand,JH_District_14,2021,74.79,61.52,75.92,47.63
+Jharkhand,JH_District_14,2022,75.18,61.83,74.81,51.4
+Jharkhand,JH_District_14,2023,75.92,64.91,76.07,50.6
+Jharkhand,JH_District_15,2018,56.31,50.5,60.84,64.71
+Jharkhand,JH_District_15,2019,58.1,52.0,62.3,65.92
+Jharkhand,JH_District_15,2020,58.11,52.55,63.04,66.77
+Jharkhand,JH_District_15,2021,61.44,55.86,64.35,68.88
+Jharkhand,JH_District_15,2022,59.88,57.19,64.13,71.31
+Jharkhand,JH_District_15,2023,64.17,55.54,65.65,73.39
+Jharkhand,JH_District_16,2018,56.87,56.23,72.44,57.71
+Jharkhand,JH_District_16,2019,58.3,57.33,73.81,59.06
+Jharkhand,JH_District_16,2020,59.41,59.1,73.64,60.07
+Jharkhand,JH_District_16,2021,61.46,59.0,76.21,60.52
+Jharkhand,JH_District_16,2022,62.93,62.77,78.47,61.41
+Jharkhand,JH_District_16,2023,64.41,62.57,77.95,65.07
+Jharkhand,JH_District_17,2018,72.46,60.58,62.08,46.35
+Jharkhand,JH_District_17,2019,73.84,61.65,62.86,47.59
+Jharkhand,JH_District_17,2020,74.14,63.62,64.41,48.12
+Jharkhand,JH_District_17,2021,76.23,63.9,65.04,49.77
+Jharkhand,JH_District_17,2022,78.08,66.04,66.67,53.1
+Jharkhand,JH_District_17,2023,77.23,66.3,69.05,50.95
+Jharkhand,JH_District_18,2018,74.86,65.57,61.44,43.39
+Jharkhand,JH_District_18,2019,76.17,66.91,62.05,45.11
+Jharkhand,JH_District_18,2020,77.84,67.4,63.41,45.51
+Jharkhand,JH_District_18,2021,78.63,68.85,65.76,47.64
+Jharkhand,JH_District_18,2022,81.21,70.81,67.76,49.26
+Jharkhand,JH_District_18,2023,80.69,69.95,66.41,48.6
+Jharkhand,JH_District_19,2018,66.92,45.81,66.98,41.99
+Jharkhand,JH_District_19,2019,68.09,46.95,67.64,42.9
+Jharkhand,JH_District_19,2020,68.77,47.6,68.91,45.34
+Jharkhand,JH_District_19,2021,71.05,50.44,69.76,47.02
+Jharkhand,JH_District_19,2022,71.61,52.2,73.04,48.76
+Jharkhand,JH_District_19,2023,75.19,52.63,74.58,46.47
+Jharkhand,JH_District_20,2018,54.5,50.13,56.24,51.06
+Jharkhand,JH_District_20,2019,55.31,51.36,57.31,52.16
+Jharkhand,JH_District_20,2020,57.09,52.82,59.13,52.72
+Jharkhand,JH_District_20,2021,59.23,53.56,59.58,55.0
+Jharkhand,JH_District_20,2022,60.33,55.7,59.44,54.58
+Jharkhand,JH_District_20,2023,63.01,58.97,61.55,58.53
+Chhattisgarh,CG_District_1,2018,66.26,63.92,65.64,49.59
+Chhattisgarh,CG_District_1,2019,67.41,64.73,66.39,51.22
+Chhattisgarh,CG_District_1,2020,69.17,65.78,67.07,51.64
+Chhattisgarh,CG_District_1,2021,70.72,66.83,70.33,54.89
+Chhattisgarh,CG_District_1,2022,72.05,70.64,69.03,55.31
+Chhattisgarh,CG_District_1,2023,71.15,68.99,71.72,54.72
+Chhattisgarh,CG_District_2,2018,64.12,60.41,50.03,63.66
+Chhattisgarh,CG_District_2,2019,65.24,61.9,50.76,65.27
+Chhattisgarh,CG_District_2,2020,67.35,62.34,51.65,66.34
+Chhattisgarh,CG_District_2,2021,68.72,62.91,54.31,66.63
+Chhattisgarh,CG_District_2,2022,70.65,64.29,55.37,70.73
+Chhattisgarh,CG_District_2,2023,69.28,65.53,57.52,69.22
+Chhattisgarh,CG_District_3,2018,58.72,55.94,70.42,41.75
+Chhattisgarh,CG_District_3,2019,59.67,56.91,71.66,43.43
+Chhattisgarh,CG_District_3,2020,62.29,59.24,72.68,43.49
+Chhattisgarh,CG_District_3,2021,61.94,60.99,72.97,44.84
+Chhattisgarh,CG_District_3,2022,63.63,60.46,75.19,48.29
+Chhattisgarh,CG_District_3,2023,67.35,62.63,77.26,50.62
+Chhattisgarh,CG_District_4,2018,63.13,53.81,50.67,40.97
+Chhattisgarh,CG_District_4,2019,64.45,54.62,51.99,42.22
+Chhattisgarh,CG_District_4,2020,66.02,55.52,52.88,42.96
+Chhattisgarh,CG_District_4,2021,68.17,57.14,53.11,45.31
+Chhattisgarh,CG_District_4,2022,67.0,59.76,56.91,46.61
+Chhattisgarh,CG_District_4,2023,68.3,61.43,54.48,49.23
+Chhattisgarh,CG_District_5,2018,58.77,69.75,68.56,41.84
+Chhattisgarh,CG_District_5,2019,60.4,71.39,69.51,42.85
+Chhattisgarh,CG_District_5,2020,61.18,71.48,70.6,44.72
+Chhattisgarh,CG_District_5,2021,62.31,74.0,73.09,44.82
+Chhattisgarh,CG_District_5,2022,63.53,73.26,72.58,46.94
+Chhattisgarh,CG_District_5,2023,64.21,77.87,75.86,50.01
+Chhattisgarh,CG_District_6,2018,68.43,68.23,67.51,43.14
+Chhattisgarh,CG_District_6,2019,69.52,69.62,69.0,44.25
+Chhattisgarh,CG_District_6,2020,70.38,71.73,69.16,46.54
+Chhattisgarh,CG_District_6,2021,72.65,72.86,72.12,46.32
+Chhattisgarh,CG_District_6,2022,72.78,71.48,73.8,47.15
+Chhattisgarh,CG_District_6,2023,77.0,75.03,73.98,50.4
+Chhattisgarh,CG_District_7,2018,66.41,45.14,72.32,59.02
+Chhattisgarh,CG_District_7,2019,67.3,46.53,73.87,59.97
+Chhattisgarh,CG_District_7,2020,68.08,48.27,74.56,62.15
+Chhattisgarh,CG_District_7,2021,71.47,48.45,76.16,63.56
+Chhattisgarh,CG_District_7,2022,72.73,52.12,75.17,62.87
+Chhattisgarh,CG_District_7,2023,71.71,49.67,76.67,64.12
+Chhattisgarh,CG_District_8,2018,71.83,58.43,67.83,63.49
+Chhattisgarh,CG_District_8,2019,72.92,59.89,68.95,64.83
+Chhattisgarh,CG_District_8,2020,74.51,60.18,70.58,66.77
+Chhattisgarh,CG_District_8,2021,75.53,63.04,72.16,68.08
+Chhattisgarh,CG_District_8,2022,76.8,65.59,70.76,66.91
+Chhattisgarh,CG_District_8,2023,76.07,65.42,72.68,69.78
+Chhattisgarh,CG_District_9,2018,66.95,46.13,53.35,54.58
+Chhattisgarh,CG_District_9,2019,68.27,47.64,54.94,55.96
+Chhattisgarh,CG_District_9,2020,70.5,49.2,55.14,57.95
+Chhattisgarh,CG_District_9,2021,71.99,50.71,57.45,57.81
+Chhattisgarh,CG_District_9,2022,71.94,53.11,57.64,58.21
+Chhattisgarh,CG_District_9,2023,73.61,51.93,59.99,59.21
+Chhattisgarh,CG_District_10,2018,55.58,64.46,66.94,60.61
+Chhattisgarh,CG_District_10,2019,57.19,65.6,68.27,61.85
+Chhattisgarh,CG_District_10,2020,59.05,68.01,68.18,64.18
+Chhattisgarh,CG_District_10,2021,58.56,69.43,71.63,63.15
+Chhattisgarh,CG_District_10,2022,60.45,71.41,70.96,66.87
+Chhattisgarh,CG_District_10,2023,62.39,71.59,71.24,65.13
+Chhattisgarh,CG_District_11,2018,74.33,69.1,69.26,50.28
+Chhattisgarh,CG_District_11,2019,75.9,70.86,70.15,51.52
+Chhattisgarh,CG_District_11,2020,77.55,71.74,71.03,52.81
+Chhattisgarh,CG_District_11,2021,76.9,71.78,73.4,54.6
+Chhattisgarh,CG_District_11,2022,78.94,72.79,74.08,56.25
+Chhattisgarh,CG_District_11,2023,82.82,74.33,74.14,57.7
+Chhattisgarh,CG_District_12,2018,66.56,46.67,50.57,49.6
+Chhattisgarh,CG_District_12,2019,67.58,47.91,51.55,51.05
+Chhattisgarh,CG_District_12,2020,68.91,49.48,52.56,51.44
+Chhattisgarh,CG_District_12,2021,69.8,49.42,54.45,54.32
+Chhattisgarh,CG_District_12,2022,71.98,53.47,55.29,55.33
+Chhattisgarh,CG_District_12,2023,71.66,55.47,57.45,56.32
+Chhattisgarh,CG_District_13,2018,72.89,58.44,63.63,45.03
+Chhattisgarh,CG_District_13,2019,74.0,59.27,64.89,46.36
+Chhattisgarh,CG_District_13,2020,75.34,61.36,66.65,48.1
+Chhattisgarh,CG_District_13,2021,76.76,63.5,66.82,49.17
+Chhattisgarh,CG_District_13,2022,76.17,62.43,66.7,50.95
+Chhattisgarh,CG_District_13,2023,79.27,64.86,66.65,51.65
+Chhattisgarh,CG_District_14,2018,68.52,52.27,50.99,58.58
+Chhattisgarh,CG_District_14,2019,69.56,53.76,52.25,59.5
+Chhattisgarh,CG_District_14,2020,70.83,55.24,52.53,61.22
+Chhattisgarh,CG_District_14,2021,72.72,55.11,53.86,62.49
+Chhattisgarh,CG_District_14,2022,74.73,58.53,56.93,63.41
+Chhattisgarh,CG_District_14,2023,74.6,58.27,55.13,64.97
+Chhattisgarh,CG_District_15,2018,57.77,50.51,69.04,54.16
+Chhattisgarh,CG_District_15,2019,58.8,51.99,70.06,55.91
+Chhattisgarh,CG_District_15,2020,61.21,52.5,71.82,56.03
+Chhattisgarh,CG_District_15,2021,62.46,55.24,73.33,58.94
+Chhattisgarh,CG_District_15,2022,63.52,54.92,73.54,57.81
+Chhattisgarh,CG_District_15,2023,64.82,59.34,73.94,60.67
+Chhattisgarh,CG_District_16,2018,67.58,63.4,57.57,59.01
+Chhattisgarh,CG_District_16,2019,69.3,64.63,58.84,60.54
+Chhattisgarh,CG_District_16,2020,70.95,66.07,59.82,62.11
+Chhattisgarh,CG_District_16,2021,70.04,66.82,59.88,61.94
+Chhattisgarh,CG_District_16,2022,74.54,67.57,61.11,62.83
+Chhattisgarh,CG_District_16,2023,73.8,68.93,63.24,67.64
+Chhattisgarh,CG_District_17,2018,51.93,64.09,73.54,49.76
+Chhattisgarh,CG_District_17,2019,53.02,65.65,74.26,51.25
+Chhattisgarh,CG_District_17,2020,54.05,65.75,76.39,53.09
+Chhattisgarh,CG_District_17,2021,57.19,67.1,77.32,53.2
+Chhattisgarh,CG_District_17,2022,58.3,67.48,78.69,55.05
+Chhattisgarh,CG_District_17,2023,56.86,72.68,81.44,54.22
+Chhattisgarh,CG_District_18,2018,53.15,61.57,61.49,58.48
+Chhattisgarh,CG_District_18,2019,54.72,63.08,62.46,59.8
+Chhattisgarh,CG_District_18,2020,55.04,63.92,64.55,61.39
+Chhattisgarh,CG_District_18,2021,56.08,64.58,65.46,62.28
+Chhattisgarh,CG_District_18,2022,57.09,66.33,66.76,64.81
+Chhattisgarh,CG_District_18,2023,60.39,68.39,68.0,63.28
+Chhattisgarh,CG_District_19,2018,72.01,54.24,61.26,52.34
+Chhattisgarh,CG_District_19,2019,73.57,55.74,62.06,53.72
+Chhattisgarh,CG_District_19,2020,75.33,56.1,63.04,54.9
+Chhattisgarh,CG_District_19,2021,76.35,58.45,65.99,54.77
+Chhattisgarh,CG_District_19,2022,78.45,58.01,64.92,58.16
+Chhattisgarh,CG_District_19,2023,79.11,62.66,67.99,60.72
+Chhattisgarh,CG_District_20,2018,58.31,47.83,54.43,51.12
+Chhattisgarh,CG_District_20,2019,59.18,48.98,55.67,52.88
+Chhattisgarh,CG_District_20,2020,59.98,50.9,57.23,54.45
+Chhattisgarh,CG_District_20,2021,62.27,50.8,57.11,54.93
+Chhattisgarh,CG_District_20,2022,62.43,52.35,56.95,55.81
+Chhattisgarh,CG_District_20,2023,62.86,52.15,61.09,58.24
+Assam,AS_District_1,2018,65.72,51.5,74.26,59.4
+Assam,AS_District_1,2019,66.72,52.67,75.43,60.99
+Assam,AS_District_1,2020,67.76,53.17,77.19,62.53
+Assam,AS_District_1,2021,70.34,55.94,77.15,63.31
+Assam,AS_District_1,2022,69.25,57.08,80.38,63.92
+Assam,AS_District_1,2023,73.24,58.53,79.69,63.72
+Assam,AS_District_2,2018,67.5,49.75,61.32,53.17
+Assam,AS_District_2,2019,68.72,51.04,62.78,54.9
+Assam,AS_District_2,2020,70.24,52.99,64.19,55.58
+Assam,AS_District_2,2021,72.79,54.61,64.39,57.11
+Assam,AS_District_2,2022,73.55,55.84,67.57,58.71
+Assam,AS_District_2,2023,75.39,53.84,68.72,59.9
+Assam,AS_District_3,2018,74.23,46.74,70.45,61.12
+Assam,AS_District_3,2019,75.57,48.19,71.36,62.49
+Assam,AS_District_3,2020,77.66,49.38,73.4,63.49
+Assam,AS_District_3,2021,79.04,49.88,73.17,66.03
+Assam,AS_District_3,2022,79.94,50.59,75.69,67.35
+Assam,AS_District_3,2023,80.21,53.0,74.47,65.36
+Assam,AS_District_4,2018,60.49,69.29,70.16,50.4
+Assam,AS_District_4,2019,61.67,70.1,71.72,51.27
+Assam,AS_District_4,2020,63.06,70.93,72.42,53.23
+Assam,AS_District_4,2021,63.17,72.47,73.71,55.76
+Assam,AS_District_4,2022,65.87,74.66,72.8,56.43
+Assam,AS_District_4,2023,67.96,74.43,73.43,54.89
+Assam,AS_District_5,2018,69.01,55.25,55.71,63.05
+Assam,AS_District_5,2019,69.96,56.48,57.01,64.12
+Assam,AS_District_5,2020,70.92,58.81,58.0,64.85
+Assam,AS_District_5,2021,71.9,58.48,57.87,67.56
+Assam,AS_District_5,2022,73.15,59.73,61.65,67.22
+Assam,AS_District_5,2023,73.06,62.64,58.84,71.6
+Assam,AS_District_6,2018,70.3,69.98,63.71,59.02
+Assam,AS_District_6,2019,71.79,71.4,65.13,60.22
+Assam,AS_District_6,2020,72.1,72.05,66.67,62.1
+Assam,AS_District_6,2021,75.17,75.17,66.22,61.98
+Assam,AS_District_6,2022,77.12,73.78,69.88,63.45
+Assam,AS_District_6,2023,79.22,76.49,69.31,67.75
+Assam,AS_District_7,2018,54.58,46.54,71.52,49.1
+Assam,AS_District_7,2019,55.73,47.38,72.39,50.09
+Assam,AS_District_7,2020,56.6,49.08,74.25,51.42
+Assam,AS_District_7,2021,57.66,50.73,73.39,52.42
+Assam,AS_District_7,2022,58.64,52.17,76.43,53.04
+Assam,AS_District_7,2023,60.45,50.8,76.0,55.95
+Assam,AS_District_8,2018,68.68,63.52,65.84,63.78
+Assam,AS_District_8,2019,69.7,64.58,66.65,64.99
+Assam,AS_District_8,2020,71.27,65.6,68.29,65.6
+Assam,AS_District_8,2021,71.84,67.56,69.15,66.7
+Assam,AS_District_8,2022,74.84,68.47,69.14,70.17
+Assam,AS_District_8,2023,77.56,69.35,72.78,69.46
+Assam,AS_District_9,2018,53.96,69.66,58.08,57.24
+Assam,AS_District_9,2019,55.73,71.4,59.5,58.5
+Assam,AS_District_9,2020,56.21,71.8,60.97,60.75
+Assam,AS_District_9,2021,56.97,73.78,62.02,60.67
+Assam,AS_District_9,2022,58.58,74.19,61.39,64.19
+Assam,AS_District_9,2023,60.82,77.27,63.48,66.0
+Assam,AS_District_10,2018,62.64,55.28,57.11,53.83
+Assam,AS_District_10,2019,63.5,56.91,58.54,54.77
+Assam,AS_District_10,2020,66.21,57.82,59.79,57.11
+Assam,AS_District_10,2021,66.3,58.9,58.99,58.04
+Assam,AS_District_10,2022,66.51,61.83,60.58,58.62
+Assam,AS_District_10,2023,70.17,61.63,62.78,58.45
+Assam,AS_District_11,2018,52.47,55.05,58.97,59.76
+Assam,AS_District_11,2019,53.54,56.73,60.36,60.95
+Assam,AS_District_11,2020,55.03,57.61,60.54,63.01
+Assam,AS_District_11,2021,55.25,59.51,61.46,64.29
+Assam,AS_District_11,2022,57.72,61.65,65.17,63.53
+Assam,AS_District_11,2023,58.66,59.23,62.86,66.37
+Assam,AS_District_12,2018,53.46,61.18,52.12,63.66
+Assam,AS_District_12,2019,54.88,62.75,53.41,65.13
+Assam,AS_District_12,2020,57.02,64.21,53.64,67.17
+Assam,AS_District_12,2021,56.67,66.08,54.88,67.43
+Assam,AS_District_12,2022,59.12,66.84,55.19,70.79
+Assam,AS_District_12,2023,61.8,68.36,59.34,70.88
+Assam,AS_District_13,2018,60.09,53.02,60.99,49.56
+Assam,AS_District_13,2019,61.22,54.74,61.64,50.76
+Assam,AS_District_13,2020,62.57,55.78,62.97,52.04
+Assam,AS_District_13,2021,63.71,56.41,63.34,52.37
+Assam,AS_District_13,2022,63.49,59.73,67.13,54.98
+Assam,AS_District_13,2023,64.17,58.77,65.81,54.43
+Assam,AS_District_14,2018,70.97,48.57,73.92,61.62
+Assam,AS_District_14,2019,72.33,50.05,74.83,62.81
+Assam,AS_District_14,2020,73.12,50.47,75.68,65.0
+Assam,AS_District_14,2021,75.52,53.16,77.73,66.25
+Assam,AS_District_14,2022,77.7,54.61,78.65,64.83
+Assam,AS_District_14,2023,76.97,54.59,77.91,68.47
+Assam,AS_District_15,2018,72.11,65.17,65.86,59.82
+Assam,AS_District_15,2019,73.86,66.27,66.56,61.12
+Assam,AS_District_15,2020,74.1,67.25,67.34,62.08
+Assam,AS_District_15,2021,76.46,69.24,69.33,62.41
+Assam,AS_District_15,2022,76.43,72.16,71.31,63.39
+Assam,AS_District_15,2023,76.38,71.33,73.5,67.92
+Assam,AS_District_16,2018,65.34,52.95,66.95,60.62
+Assam,AS_District_16,2019,66.19,54.37,67.65,61.93
+Assam,AS_District_16,2020,67.74,55.92,68.59,62.49
+Assam,AS_District_16,2021,70.46,55.46,70.06,64.77
+Assam,AS_District_16,2022,71.95,60.0,70.28,66.86
+Assam,AS_District_16,2023,74.25,60.88,72.39,69.14
+Assam,AS_District_17,2018,71.02,54.69,61.1,60.9
+Assam,AS_District_17,2019,72.44,56.03,61.95,62.47
+Assam,AS_District_17,2020,72.93,57.07,62.79,63.09
+Assam,AS_District_17,2021,75.23,57.61,63.63,65.78
+Assam,AS_District_17,2022,77.17,58.59,65.29,65.88
+Assam,AS_District_17,2023,78.6,63.04,64.82,65.26
+Assam,AS_District_18,2018,63.03,65.11,70.67,46.63
+Assam,AS_District_18,2019,64.53,66.15,71.71,47.58
+Assam,AS_District_18,2020,65.49,68.26,72.28,49.8
+Assam,AS_District_18,2021,66.02,69.13,72.47,49.99
+Assam,AS_District_18,2022,66.51,69.48,74.08,51.63
+Assam,AS_District_18,2023,68.06,71.11,76.85,53.68
+Assam,AS_District_19,2018,57.29,69.5,55.24,45.16
+Assam,AS_District_19,2019,58.35,70.55,56.13,46.86
+Assam,AS_District_19,2020,59.18,72.96,58.36,47.63
+Assam,AS_District_19,2021,61.02,74.56,57.08,48.83
+Assam,AS_District_19,2022,60.79,76.2,60.33,49.65
+Assam,AS_District_19,2023,64.28,73.73,61.26,50.7
+Assam,AS_District_20,2018,72.52,61.23,61.65,58.86
+Assam,AS_District_20,2019,73.37,62.81,62.63,59.72
+Assam,AS_District_20,2020,75.23,63.52,63.32,61.54
+Assam,AS_District_20,2021,75.46,65.67,63.97,62.27
+Assam,AS_District_20,2022,77.98,66.76,65.1,65.91
+Assam,AS_District_20,2023,79.3,67.79,69.58,63.09
+Telangana,TS_District_1,2018,74.54,65.35,56.84,57.49
+Telangana,TS_District_1,2019,75.97,67.11,58.31,58.8
+Telangana,TS_District_1,2020,77.96,67.79,59.27,60.14
+Telangana,TS_District_1,2021,79.7,67.8,60.18,60.04
+Telangana,TS_District_1,2022,81.31,70.55,62.56,61.19
+Telangana,TS_District_1,2023,79.67,70.98,63.18,61.52
+Telangana,TS_District_2,2018,74.29,59.73,52.03,49.87
+Telangana,TS_District_2,2019,75.47,61.17,52.94,50.92
+Telangana,TS_District_2,2020,77.85,61.89,54.3,52.11
+Telangana,TS_District_2,2021,78.34,63.49,55.25,54.5
+Telangana,TS_District_2,2022,80.07,65.78,57.07,53.57
+Telangana,TS_District_2,2023,79.2,65.9,55.72,58.7
+Telangana,TS_District_3,2018,51.86,55.24,57.41,58.7
+Telangana,TS_District_3,2019,52.91,57.03,58.8,60.38
+Telangana,TS_District_3,2020,54.06,57.93,59.35,60.73
+Telangana,TS_District_3,2021,55.89,59.14,61.42,63.31
+Telangana,TS_District_3,2022,55.79,59.25,60.06,62.95
+Telangana,TS_District_3,2023,56.39,63.22,61.34,63.48
+Telangana,TS_District_4,2018,50.21,60.33,61.24,48.06
+Telangana,TS_District_4,2019,51.67,61.68,62.75,49.06
+Telangana,TS_District_4,2020,52.49,62.56,63.79,50.53
+Telangana,TS_District_4,2021,54.74,63.16,64.53,51.13
+Telangana,TS_District_4,2022,55.81,65.79,66.11,52.91
+Telangana,TS_District_4,2023,56.23,65.3,64.37,54.45
+Telangana,TS_District_5,2018,73.53,49.59,53.21,53.37
+Telangana,TS_District_5,2019,74.89,51.09,54.09,54.56
+Telangana,TS_District_5,2020,76.74,52.58,55.09,56.12
+Telangana,TS_District_5,2021,76.78,53.33,57.76,56.57
+Telangana,TS_District_5,2022,80.3,52.98,57.86,59.6
+Telangana,TS_District_5,2023,79.12,58.55,61.2,60.88
+Telangana,TS_District_6,2018,54.66,46.99,57.54,62.88
+Telangana,TS_District_6,2019,56.11,48.23,59.01,64.49
+Telangana,TS_District_6,2020,56.83,48.63,59.39,64.64
+Telangana,TS_District_6,2021,58.37,50.47,60.15,66.49
+Telangana,TS_District_6,2022,60.79,51.86,62.97,67.63
+Telangana,TS_District_6,2023,63.34,55.21,60.94,71.49
+Telangana,TS_District_7,2018,66.97,53.35,58.58,42.61
+Telangana,TS_District_7,2019,67.84,54.63,59.94,44.34
+Telangana,TS_District_7,2020,69.96,56.58,60.61,44.83
+Telangana,TS_District_7,2021,71.94,58.27,61.34,45.08
+Telangana,TS_District_7,2022,72.73,58.87,62.97,46.67
+Telangana,TS_District_7,2023,74.19,60.23,62.65,46.62
+Telangana,TS_District_8,2018,53.65,69.14,59.24,64.69
+Telangana,TS_District_8,2019,54.65,70.09,60.72,65.69
+Telangana,TS_District_8,2020,57.18,71.86,61.2,68.07
+Telangana,TS_District_8,2021,56.45,71.6,62.84,67.87
+Telangana,TS_District_8,2022,60.54,74.42,63.06,69.59
+Telangana,TS_District_8,2023,62.3,76.11,66.67,73.55
+Telangana,TS_District_9,2018,58.35,55.41,63.6,64.1
+Telangana,TS_District_9,2019,60.06,56.62,64.35,65.68
+Telangana,TS_District_9,2020,61.05,58.82,66.77,66.16
+Telangana,TS_District_9,2021,62.65,58.62,67.89,68.83
+Telangana,TS_District_9,2022,63.65,60.96,67.63,71.0
+Telangana,TS_District_9,2023,63.2,63.92,67.77,68.79
+Telangana,TS_District_10,2018,60.34,57.47,53.53,43.96
+Telangana,TS_District_10,2019,61.36,58.89,55.04,45.76
+Telangana,TS_District_10,2020,62.95,60.52,55.27,46.3
+Telangana,TS_District_10,2021,64.0,62.23,56.02,48.3
+Telangana,TS_District_10,2022,67.24,62.45,58.25,49.82
+Telangana,TS_District_10,2023,68.19,65.69,59.39,49.16
+Telangana,TS_District_11,2018,65.73,58.09,67.84,64.65
+Telangana,TS_District_11,2019,66.7,59.84,68.76,65.62
+Telangana,TS_District_11,2020,67.44,61.55,69.11,67.68
+Telangana,TS_District_11,2021,68.65,61.54,71.46,67.07
+Telangana,TS_District_11,2022,71.01,61.52,71.2,71.03
+Telangana,TS_District_11,2023,70.55,63.28,74.82,72.85
+Telangana,TS_District_12,2018,63.42,47.22,60.64,63.24
+Telangana,TS_District_12,2019,64.94,48.61,61.93,64.11
+Telangana,TS_District_12,2020,65.52,50.23,62.74,65.22
+Telangana,TS_District_12,2021,66.71,51.48,62.51,68.02
+Telangana,TS_District_12,2022,70.35,52.87,65.22,70.22
+Telangana,TS_District_12,2023,68.09,53.16,63.84,72.01
+Telangana,TS_District_13,2018,67.37,55.8,54.72,44.48
+Telangana,TS_District_13,2019,68.9,56.85,56.06,45.96
+Telangana,TS_District_13,2020,69.95,59.15,57.55,47.47
+Telangana,TS_District_13,2021,70.89,61.03,57.13,48.74
+Telangana,TS_District_13,2022,71.03,60.37,60.73,50.49
+Telangana,TS_District_13,2023,73.23,61.42,57.73,52.8
+Telangana,TS_District_14,2018,58.45,57.03,74.56,59.8
+Telangana,TS_District_14,2019,60.22,57.94,75.32,61.6
+Telangana,TS_District_14,2020,60.05,58.81,76.68,61.49
+Telangana,TS_District_14,2021,63.63,60.11,78.02,64.03
+Telangana,TS_District_14,2022,64.91,62.84,79.31,64.58
+Telangana,TS_District_14,2023,64.37,63.61,80.06,64.22
+Telangana,TS_District_15,2018,71.05,56.2,54.1,48.27
+Telangana,TS_District_15,2019,72.37,57.1,54.81,49.92
+Telangana,TS_District_15,2020,72.88,59.25,55.71,50.98
+Telangana,TS_District_15,2021,73.91,59.7,57.01,51.85
+Telangana,TS_District_15,2022,77.92,63.2,59.48,53.12
+Telangana,TS_District_15,2023,76.39,63.22,60.83,52.9
+Telangana,TS_District_16,2018,69.96,64.95,70.1,46.89
+Telangana,TS_District_16,2019,71.55,66.66,71.19,48.44
+Telangana,TS_District_16,2020,72.24,66.76,72.97,49.02
+Telangana,TS_District_16,2021,75.01,68.71,72.34,50.98
+Telangana,TS_District_16,2022,74.38,72.11,74.65,52.02
+Telangana,TS_District_16,2023,77.82,73.25,77.81,55.82
+Telangana,TS_District_17,2018,70.24,63.04,58.76,62.59
+Telangana,TS_District_17,2019,71.43,64.77,60.24,63.87
+Telangana,TS_District_17,2020,73.62,65.08,60.56,64.52
+Telangana,TS_District_17,2021,72.94,67.0,61.69,65.25
+Telangana,TS_District_17,2022,73.65,67.18,62.68,67.52
+Telangana,TS_District_17,2023,75.98,67.94,64.32,70.88
+Telangana,TS_District_18,2018,52.23,66.91,50.67,45.41
+Telangana,TS_District_18,2019,53.15,68.49,51.63,47.11
+Telangana,TS_District_18,2020,55.09,70.29,52.32,47.07
+Telangana,TS_District_18,2021,56.47,69.55,54.37,48.94
+Telangana,TS_District_18,2022,57.74,71.68,55.55,50.06
+Telangana,TS_District_18,2023,58.51,73.39,56.62,51.12
+Telangana,TS_District_19,2018,70.0,53.93,73.14,54.48
+Telangana,TS_District_19,2019,71.4,54.78,73.83,56.2
+Telangana,TS_District_19,2020,73.26,57.21,74.64,57.66
+Telangana,TS_District_19,2021,73.59,57.87,77.19,57.76
+Telangana,TS_District_19,2022,75.18,58.35,79.14,61.62
+Telangana,TS_District_19,2023,78.06,59.79,80.98,62.01
+Telangana,TS_District_20,2018,60.22,63.57,56.09,58.4
+Telangana,TS_District_20,2019,61.25,65.18,56.86,60.09
+Telangana,TS_District_20,2020,63.29,67.01,57.4,61.74
+Telangana,TS_District_20,2021,63.77,68.95,58.24,63.52
+Telangana,TS_District_20,2022,65.17,70.55,60.64,65.53
+Telangana,TS_District_20,2023,65.69,68.78,62.51,63.41
+Andhra Pradesh,AP_District_1,2018,70.74,61.68,52.47,48.09
+Andhra Pradesh,AP_District_1,2019,71.75,63.2,54.03,49.47
+Andhra Pradesh,AP_District_1,2020,72.58,63.89,54.72,51.59
+Andhra Pradesh,AP_District_1,2021,74.82,65.63,55.18,50.82
+Andhra Pradesh,AP_District_1,2022,75.78,66.23,56.39,54.31
+Andhra Pradesh,AP_District_1,2023,77.14,69.62,58.36,56.25
+Andhra Pradesh,AP_District_2,2018,50.83,65.82,74.38,64.62
+Andhra Pradesh,AP_District_2,2019,51.99,67.23,75.06,66.15
+Andhra Pradesh,AP_District_2,2020,52.6,69.14,76.35,66.28
+Andhra Pradesh,AP_District_2,2021,54.16,71.13,76.31,67.14
+Andhra Pradesh,AP_District_2,2022,54.45,72.24,79.41,70.36
+Andhra Pradesh,AP_District_2,2023,59.36,69.92,81.51,69.08
+Andhra Pradesh,AP_District_3,2018,57.8,64.63,56.8,61.13
+Andhra Pradesh,AP_District_3,2019,59.03,65.52,57.81,62.06
+Andhra Pradesh,AP_District_3,2020,61.04,67.4,59.06,63.57
+Andhra Pradesh,AP_District_3,2021,62.09,68.35,60.82,65.6
+Andhra Pradesh,AP_District_3,2022,64.03,70.44,60.71,64.92
+Andhra Pradesh,AP_District_3,2023,64.28,68.92,64.26,67.15
+Andhra Pradesh,AP_District_4,2018,71.22,64.89,50.91,42.23
+Andhra Pradesh,AP_District_4,2019,72.86,66.42,52.02,43.91
+Andhra Pradesh,AP_District_4,2020,73.35,68.42,53.87,45.52
+Andhra Pradesh,AP_District_4,2021,74.0,69.24,53.52,47.1
+Andhra Pradesh,AP_District_4,2022,76.98,70.83,55.69,46.54
+Andhra Pradesh,AP_District_4,2023,77.07,71.77,57.62,47.93
+Andhra Pradesh,AP_District_5,2018,62.98,57.99,73.18,46.93
+Andhra Pradesh,AP_District_5,2019,64.23,59.01,74.04,48.65
+Andhra Pradesh,AP_District_5,2020,65.37,60.34,74.85,50.29
+Andhra Pradesh,AP_District_5,2021,67.43,62.51,77.2,51.2
+Andhra Pradesh,AP_District_5,2022,68.04,61.34,77.91,54.1
+Andhra Pradesh,AP_District_5,2023,71.33,65.0,78.93,54.71
+Andhra Pradesh,AP_District_6,2018,53.47,57.75,52.58,46.34
+Andhra Pradesh,AP_District_6,2019,54.99,58.7,53.36,47.41
+Andhra Pradesh,AP_District_6,2020,56.21,60.97,54.0,48.14
+Andhra Pradesh,AP_District_6,2021,58.24,60.45,56.49,50.79
+Andhra Pradesh,AP_District_6,2022,59.77,63.55,55.61,50.94
+Andhra Pradesh,AP_District_6,2023,57.94,64.38,56.13,55.16
+Andhra Pradesh,AP_District_7,2018,64.48,60.84,54.23,43.84
+Andhra Pradesh,AP_District_7,2019,66.25,61.75,55.06,44.85
+Andhra Pradesh,AP_District_7,2020,67.74,63.99,56.95,46.26
+Andhra Pradesh,AP_District_7,2021,68.76,65.37,57.1,49.11
+Andhra Pradesh,AP_District_7,2022,71.53,64.18,57.35,48.97
+Andhra Pradesh,AP_District_7,2023,71.63,68.74,59.5,48.29
+Andhra Pradesh,AP_District_8,2018,62.27,66.09,70.65,62.68
+Andhra Pradesh,AP_District_8,2019,64.05,67.25,71.53,63.75
+Andhra Pradesh,AP_District_8,2020,64.71,68.29,73.29,64.3
+Andhra Pradesh,AP_District_8,2021,66.09,69.35,74.94,65.56
+Andhra Pradesh,AP_District_8,2022,66.75,69.36,76.36,68.83
+Andhra Pradesh,AP_District_8,2023,70.2,73.59,75.87,66.8
+Andhra Pradesh,AP_District_9,2018,63.59,53.26,69.52,52.62
+Andhra Pradesh,AP_District_9,2019,64.58,54.26,70.42,53.48
+Andhra Pradesh,AP_District_9,2020,65.3,55.17,70.9,54.5
+Andhra Pradesh,AP_District_9,2021,67.01,58.35,72.74,56.35
+Andhra Pradesh,AP_District_9,2022,70.75,58.27,73.54,59.33
+Andhra Pradesh,AP_District_9,2023,67.65,61.82,77.42,59.68
+Andhra Pradesh,AP_District_10,2018,68.74,67.52,56.78,56.73
+Andhra Pradesh,AP_District_10,2019,69.57,69.01,58.03,58.14
+Andhra Pradesh,AP_District_10,2020,70.86,70.19,58.75,58.36
+Andhra Pradesh,AP_District_10,2021,73.06,70.44,61.11,60.7
+Andhra Pradesh,AP_District_10,2022,72.54,70.75,60.2,60.21
+Andhra Pradesh,AP_District_10,2023,75.47,75.1,62.34,64.44
+Andhra Pradesh,AP_District_11,2018,55.17,51.89,68.6,58.79
+Andhra Pradesh,AP_District_11,2019,56.83,53.49,69.2,60.01
+Andhra Pradesh,AP_District_11,2020,58.38,55.26,70.07,61.27
+Andhra Pradesh,AP_District_11,2021,58.76,57.24,71.13,61.92
+Andhra Pradesh,AP_District_11,2022,59.79,58.95,73.81,62.39
+Andhra Pradesh,AP_District_11,2023,59.57,59.52,72.8,64.29
+Andhra Pradesh,AP_District_12,2018,61.83,55.06,66.07,61.24
+Andhra Pradesh,AP_District_12,2019,63.32,56.43,66.85,62.92
+Andhra Pradesh,AP_District_12,2020,65.03,58.49,67.28,62.92
+Andhra Pradesh,AP_District_12,2021,66.24,60.28,67.99,66.05
+Andhra Pradesh,AP_District_12,2022,68.81,61.66,69.73,65.03
+Andhra Pradesh,AP_District_12,2023,68.98,62.8,70.39,66.51
+Andhra Pradesh,AP_District_13,2018,50.71,56.39,54.16,59.7
+Andhra Pradesh,AP_District_13,2019,52.04,58.1,54.97,61.15
+Andhra Pradesh,AP_District_13,2020,54.17,59.8,56.22,61.36
+Andhra Pradesh,AP_District_13,2021,53.97,61.53,57.46,62.13
+Andhra Pradesh,AP_District_13,2022,54.86,62.15,59.21,65.43
+Andhra Pradesh,AP_District_13,2023,55.99,64.15,58.38,66.57
+Andhra Pradesh,AP_District_14,2018,70.41,68.17,73.53,54.31
+Andhra Pradesh,AP_District_14,2019,72.14,69.95,74.64,55.34
+Andhra Pradesh,AP_District_14,2020,72.72,71.09,75.64,57.56
+Andhra Pradesh,AP_District_14,2021,74.19,70.73,76.49,59.0
+Andhra Pradesh,AP_District_14,2022,74.15,73.1,77.58,57.53
+Andhra Pradesh,AP_District_14,2023,74.96,74.11,77.3,62.98
+Andhra Pradesh,AP_District_15,2018,67.17,69.39,63.2,51.17
+Andhra Pradesh,AP_District_15,2019,68.67,70.38,64.13,52.77
+Andhra Pradesh,AP_District_15,2020,68.78,71.46,65.93,54.61
+Andhra Pradesh,AP_District_15,2021,71.7,74.6,66.15,54.37
+Andhra Pradesh,AP_District_15,2022,71.01,73.15,66.03,57.06
+Andhra Pradesh,AP_District_15,2023,73.15,75.57,69.53,58.0
+Andhra Pradesh,AP_District_16,2018,68.64,64.67,59.69,40.8
+Andhra Pradesh,AP_District_16,2019,69.56,65.52,60.54,42.23
+Andhra Pradesh,AP_District_16,2020,71.22,67.69,62.41,43.57
+Andhra Pradesh,AP_District_16,2021,72.77,67.8,63.91,43.2
+Andhra Pradesh,AP_District_16,2022,74.93,70.82,63.98,45.39
+Andhra Pradesh,AP_District_16,2023,76.72,72.35,64.65,49.15
+Andhra Pradesh,AP_District_17,2018,52.47,69.61,65.41,59.81
+Andhra Pradesh,AP_District_17,2019,53.36,70.91,66.15,61.2
+Andhra Pradesh,AP_District_17,2020,54.58,71.67,66.92,62.41
+Andhra Pradesh,AP_District_17,2021,55.59,74.1,69.67,62.66
+Andhra Pradesh,AP_District_17,2022,55.91,73.72,69.91,65.35
+Andhra Pradesh,AP_District_17,2023,59.86,75.49,71.93,68.1
+Andhra Pradesh,AP_District_18,2018,68.91,49.12,53.61,47.34
+Andhra Pradesh,AP_District_18,2019,70.61,50.88,54.3,48.32
+Andhra Pradesh,AP_District_18,2020,70.73,52.44,55.94,50.36
+Andhra Pradesh,AP_District_18,2021,72.68,53.28,56.09,52.05
+Andhra Pradesh,AP_District_18,2022,74.26,53.76,56.46,53.61
+Andhra Pradesh,AP_District_18,2023,75.57,55.94,61.49,55.73
+Andhra Pradesh,AP_District_19,2018,56.04,52.67,71.92,45.71
+Andhra Pradesh,AP_District_19,2019,57.63,53.75,73.28,47.07
+Andhra Pradesh,AP_District_19,2020,57.96,55.05,73.21,47.79
+Andhra Pradesh,AP_District_19,2021,59.04,55.19,74.44,50.32
+Andhra Pradesh,AP_District_19,2022,61.68,58.33,75.7,50.58
+Andhra Pradesh,AP_District_19,2023,61.28,57.91,75.32,54.01
+Andhra Pradesh,AP_District_20,2018,59.01,54.27,63.77,48.9
+Andhra Pradesh,AP_District_20,2019,60.19,55.67,64.42,50.22
+Andhra Pradesh,AP_District_20,2020,62.45,57.26,66.64,51.79
+Andhra Pradesh,AP_District_20,2021,64.34,58.7,67.88,51.75
+Andhra Pradesh,AP_District_20,2022,63.69,58.61,68.14,53.29
+Andhra Pradesh,AP_District_20,2023,67.78,61.06,71.0,56.05
+Himachal Pradesh,HP_District_1,2018,52.24,57.45,55.05,61.69
+Himachal Pradesh,HP_District_1,2019,53.54,59.07,55.84,62.83
+Himachal Pradesh,HP_District_1,2020,55.69,59.66,56.93,65.05
+Himachal Pradesh,HP_District_1,2021,56.36,61.24,57.75,65.99
+Himachal Pradesh,HP_District_1,2022,59.41,60.9,58.72,65.9
+Himachal Pradesh,HP_District_1,2023,59.05,63.58,62.72,67.45
+Himachal Pradesh,HP_District_2,2018,70.89,67.6,73.53,63.89
+Himachal Pradesh,HP_District_2,2019,72.09,68.84,74.81,65.63
+Himachal Pradesh,HP_District_2,2020,73.17,70.89,76.53,65.88
+Himachal Pradesh,HP_District_2,2021,74.81,70.46,76.04,67.43
+Himachal Pradesh,HP_District_2,2022,74.1,71.17,78.13,69.47
+Himachal Pradesh,HP_District_2,2023,79.89,75.51,77.68,69.61
+Himachal Pradesh,HP_District_3,2018,53.23,46.45,65.18,54.14
+Himachal Pradesh,HP_District_3,2019,54.14,47.38,65.88,55.68
+Himachal Pradesh,HP_District_3,2020,55.6,49.49,66.46,55.98
+Himachal Pradesh,HP_District_3,2021,56.43,49.15,69.29,58.74
+Himachal Pradesh,HP_District_3,2022,57.17,51.16,69.62,58.7
+Himachal Pradesh,HP_District_3,2023,57.26,50.47,69.5,61.89
+Himachal Pradesh,HP_District_4,2018,52.33,58.49,72.04,45.11
+Himachal Pradesh,HP_District_4,2019,53.55,59.39,72.67,46.29
+Himachal Pradesh,HP_District_4,2020,55.85,61.69,73.45,47.37
+Himachal Pradesh,HP_District_4,2021,56.89,62.28,76.24,48.36
+Himachal Pradesh,HP_District_4,2022,57.83,62.33,76.9,50.14
+Himachal Pradesh,HP_District_4,2023,58.66,65.65,79.71,53.94
+Himachal Pradesh,HP_District_5,2018,69.08,59.33,56.52,54.59
+Himachal Pradesh,HP_District_5,2019,70.28,60.29,57.86,55.99
+Himachal Pradesh,HP_District_5,2020,72.32,62.12,58.52,57.29
+Himachal Pradesh,HP_District_5,2021,72.92,62.29,60.7,59.63
+Himachal Pradesh,HP_District_5,2022,74.5,64.36,61.73,59.72
+Himachal Pradesh,HP_District_5,2023,75.34,66.16,63.84,60.82
+Himachal Pradesh,HP_District_6,2018,58.37,66.92,74.79,55.28
+Himachal Pradesh,HP_District_6,2019,59.55,68.61,75.63,56.48
+Himachal Pradesh,HP_District_6,2020,61.31,68.91,76.2,57.11
+Himachal Pradesh,HP_District_6,2021,62.72,70.89,78.37,59.52
+Himachal Pradesh,HP_District_6,2022,63.51,70.35,78.82,62.25
+Himachal Pradesh,HP_District_6,2023,65.49,72.71,82.78,60.8
+Himachal Pradesh,HP_District_7,2018,60.37,46.35,73.65,55.91
+Himachal Pradesh,HP_District_7,2019,61.86,47.87,74.72,57.12
+Himachal Pradesh,HP_District_7,2020,62.02,49.69,75.35,58.8
+Himachal Pradesh,HP_District_7,2021,65.26,49.82,77.07,61.23
+Himachal Pradesh,HP_District_7,2022,66.66,50.93,78.48,60.76
+Himachal Pradesh,HP_District_7,2023,67.91,53.33,80.66,61.39
+Himachal Pradesh,HP_District_8,2018,59.87,61.57,56.93,56.51
+Himachal Pradesh,HP_District_8,2019,61.24,62.85,58.49,58.21
+Himachal Pradesh,HP_District_8,2020,61.6,63.6,58.83,58.95
+Himachal Pradesh,HP_District_8,2021,64.38,64.97,58.92,61.33
+Himachal Pradesh,HP_District_8,2022,63.66,67.98,60.56,60.9
+Himachal Pradesh,HP_District_8,2023,65.21,68.15,62.23,60.76
+Himachal Pradesh,HP_District_9,2018,72.98,59.74,52.24,61.92
+Himachal Pradesh,HP_District_9,2019,73.99,61.05,53.26,63.43
+Himachal Pradesh,HP_District_9,2020,74.66,63.29,54.08,63.99
+Himachal Pradesh,HP_District_9,2021,77.68,65.13,54.22,66.34
+Himachal Pradesh,HP_District_9,2022,77.31,64.7,58.15,65.29
+Himachal Pradesh,HP_District_9,2023,78.24,68.73,58.85,68.22
+Himachal Pradesh,HP_District_10,2018,55.21,45.86,59.71,45.29
+Himachal Pradesh,HP_District_10,2019,56.79,47.28,61.16,46.6
+Himachal Pradesh,HP_District_10,2020,57.2,48.11,61.28,48.54
+Himachal Pradesh,HP_District_10,2021,57.76,51.2,61.78,48.17
+Himachal Pradesh,HP_District_10,2022,59.53,51.83,65.85,50.09
+Himachal Pradesh,HP_District_10,2023,62.21,53.2,65.43,51.44
+Himachal Pradesh,HP_District_11,2018,53.81,63.33,69.63,42.65
+Himachal Pradesh,HP_District_11,2019,54.79,64.9,70.92,43.81
+Himachal Pradesh,HP_District_11,2020,57.21,65.68,70.98,45.86
+Himachal Pradesh,HP_District_11,2021,56.32,68.36,72.49,47.37
+Himachal Pradesh,HP_District_11,2022,57.9,69.56,74.7,48.5
+Himachal Pradesh,HP_District_11,2023,57.89,69.32,76.75,47.49
+Himachal Pradesh,HP_District_12,2018,65.11,66.6,50.79,48.68
+Himachal Pradesh,HP_District_12,2019,66.17,67.55,51.8,49.57
+Himachal Pradesh,HP_District_12,2020,67.92,69.49,53.04,51.55
+Himachal Pradesh,HP_District_12,2021,69.42,71.98,55.07,52.31
+Himachal Pradesh,HP_District_12,2022,70.31,70.54,54.12,54.05
+Himachal Pradesh,HP_District_12,2023,74.04,70.64,58.48,53.28
+Himachal Pradesh,HP_District_13,2018,66.81,47.89,55.35,59.21
+Himachal Pradesh,HP_District_13,2019,68.4,49.42,56.45,60.54
+Himachal Pradesh,HP_District_13,2020,69.03,50.21,58.11,61.28
+Himachal Pradesh,HP_District_13,2021,70.05,51.58,57.41,63.01
+Himachal Pradesh,HP_District_13,2022,70.07,53.15,58.94,62.91
+Himachal Pradesh,HP_District_13,2023,71.97,53.71,60.69,67.81
+Himachal Pradesh,HP_District_14,2018,63.85,45.56,50.85,47.66
+Himachal Pradesh,HP_District_14,2019,65.26,46.74,51.93,48.78
+Himachal Pradesh,HP_District_14,2020,67.23,48.9,52.16,49.53
+Himachal Pradesh,HP_District_14,2021,67.31,48.2,54.99,52.78
+Himachal Pradesh,HP_District_14,2022,69.15,51.29,54.03,51.22
+Himachal Pradesh,HP_District_14,2023,68.15,51.64,56.35,53.8
+Himachal Pradesh,HP_District_15,2018,72.5,61.7,67.82,47.19
+Himachal Pradesh,HP_District_15,2019,73.37,63.09,68.59,48.41
+Himachal Pradesh,HP_District_15,2020,74.75,63.72,70.9,49.56
+Himachal Pradesh,HP_District_15,2021,75.99,66.35,72.57,50.39
+Himachal Pradesh,HP_District_15,2022,78.47,68.39,71.39,53.26
+Himachal Pradesh,HP_District_15,2023,79.74,69.54,75.78,54.96
+Himachal Pradesh,HP_District_16,2018,51.38,57.23,52.48,55.38
+Himachal Pradesh,HP_District_16,2019,52.42,58.56,53.95,56.6
+Himachal Pradesh,HP_District_16,2020,52.99,60.43,54.58,57.42
+Himachal Pradesh,HP_District_16,2021,54.08,61.42,55.84,58.27
+Himachal Pradesh,HP_District_16,2022,58.4,61.4,56.63,59.98
+Himachal Pradesh,HP_District_16,2023,58.85,61.72,56.04,60.86
+Himachal Pradesh,HP_District_17,2018,54.84,67.09,53.31,58.47
+Himachal Pradesh,HP_District_17,2019,56.38,68.81,54.61,59.36
+Himachal Pradesh,HP_District_17,2020,57.29,70.56,56.11,60.27
+Himachal Pradesh,HP_District_17,2021,58.03,69.58,55.97,63.68
+Himachal Pradesh,HP_District_17,2022,58.06,72.93,58.58,65.07
+Himachal Pradesh,HP_District_17,2023,62.58,71.88,57.22,63.31
+Himachal Pradesh,HP_District_18,2018,56.85,69.62,64.08,53.5
+Himachal Pradesh,HP_District_18,2019,58.14,71.07,64.78,54.44
+Himachal Pradesh,HP_District_18,2020,59.45,71.8,66.77,56.04
+Himachal Pradesh,HP_District_18,2021,60.0,72.99,67.14,57.0
+Himachal Pradesh,HP_District_18,2022,60.54,76.45,69.54,60.62
+Himachal Pradesh,HP_District_18,2023,63.17,78.17,71.12,59.46
+Himachal Pradesh,HP_District_19,2018,69.4,67.78,58.39,41.9
+Himachal Pradesh,HP_District_19,2019,70.97,69.21,59.06,43.47
+Himachal Pradesh,HP_District_19,2020,72.2,70.2,61.35,45.05
+Himachal Pradesh,HP_District_19,2021,74.68,72.33,60.38,46.35
+Himachal Pradesh,HP_District_19,2022,75.45,71.46,64.28,45.64
+Himachal Pradesh,HP_District_19,2023,76.3,72.02,63.2,47.78
+Himachal Pradesh,HP_District_20,2018,53.58,64.28,73.85,52.32
+Himachal Pradesh,HP_District_20,2019,55.34,65.77,75.14,53.81
+Himachal Pradesh,HP_District_20,2020,56.67,66.79,75.78,54.39
+Himachal Pradesh,HP_District_20,2021,58.44,67.41,78.48,55.74
+Himachal Pradesh,HP_District_20,2022,58.01,69.57,79.23,57.97
+Himachal Pradesh,HP_District_20,2023,61.68,73.22,79.65,57.78
+Uttarakhand,UK_District_1,2018,53.07,46.04,64.72,62.84
+Uttarakhand,UK_District_1,2019,54.85,47.2,65.72,64.22
+Uttarakhand,UK_District_1,2020,56.09,47.77,66.74,65.53
+Uttarakhand,UK_District_1,2021,56.47,49.68,68.27,67.66
+Uttarakhand,UK_District_1,2022,58.74,49.73,67.76,68.63
+Uttarakhand,UK_District_1,2023,58.86,53.95,69.58,67.17
+Uttarakhand,UK_District_2,2018,68.98,54.53,73.13,57.12
+Uttarakhand,UK_District_2,2019,70.55,55.9,74.7,58.35
+Uttarakhand,UK_District_2,2020,70.78,58.08,75.56,60.66
+Uttarakhand,UK_District_2,2021,73.77,57.09,76.61,61.61
+Uttarakhand,UK_District_2,2022,76.03,60.25,78.63,61.27
+Uttarakhand,UK_District_2,2023,73.04,62.82,80.4,65.7
+Uttarakhand,UK_District_3,2018,56.6,68.76,65.53,49.38
+Uttarakhand,UK_District_3,2019,58.12,70.5,67.11,51.06
+Uttarakhand,UK_District_3,2020,59.87,72.14,67.61,52.37
+Uttarakhand,UK_District_3,2021,60.47,72.68,69.26,52.55
+Uttarakhand,UK_District_3,2022,61.11,75.73,68.61,56.03
+Uttarakhand,UK_District_3,2023,63.22,75.35,73.13,56.78
+Uttarakhand,UK_District_4,2018,50.21,52.22,72.84,49.35
+Uttarakhand,UK_District_4,2019,51.43,53.76,73.9,50.78
+Uttarakhand,UK_District_4,2020,52.77,54.71,75.79,50.98
+Uttarakhand,UK_District_4,2021,53.28,57.52,76.65,53.28
+Uttarakhand,UK_District_4,2022,54.03,57.55,76.02,54.59
+Uttarakhand,UK_District_4,2023,55.28,56.23,80.26,56.44
+Uttarakhand,UK_District_5,2018,70.65,68.85,66.21,58.0
+Uttarakhand,UK_District_5,2019,71.71,70.22,67.73,59.34
+Uttarakhand,UK_District_5,2020,74.07,71.33,68.84,60.48
+Uttarakhand,UK_District_5,2021,76.04,71.91,69.99,62.55
+Uttarakhand,UK_District_5,2022,74.85,72.53,72.51,65.11
+Uttarakhand,UK_District_5,2023,77.6,77.25,73.86,64.79
+Uttarakhand,UK_District_6,2018,62.19,56.86,68.25,63.11
+Uttarakhand,UK_District_6,2019,63.28,58.01,69.49,63.99
+Uttarakhand,UK_District_6,2020,63.87,59.41,69.69,66.47
+Uttarakhand,UK_District_6,2021,65.6,61.1,72.33,66.31
+Uttarakhand,UK_District_6,2022,67.97,62.12,73.9,70.3
+Uttarakhand,UK_District_6,2023,67.89,64.43,71.7,70.34
+Uttarakhand,UK_District_7,2018,72.42,51.8,56.29,54.26
+Uttarakhand,UK_District_7,2019,73.89,52.63,57.55,55.72
+Uttarakhand,UK_District_7,2020,74.75,54.0,59.32,57.47
+Uttarakhand,UK_District_7,2021,77.13,57.04,59.89,59.41
+Uttarakhand,UK_District_7,2022,76.93,58.2,59.55,60.73
+Uttarakhand,UK_District_7,2023,76.47,58.08,60.74,60.8
+Uttarakhand,UK_District_8,2018,58.64,53.48,55.67,49.54
+Uttarakhand,UK_District_8,2019,60.4,54.5,57.26,50.67
+Uttarakhand,UK_District_8,2020,60.53,56.92,58.44,52.92
+Uttarakhand,UK_District_8,2021,63.98,56.29,58.75,53.96
+Uttarakhand,UK_District_8,2022,62.74,58.07,61.45,54.23
+Uttarakhand,UK_District_8,2023,67.18,59.15,62.41,55.43
+Uttarakhand,UK_District_9,2018,72.78,46.49,59.79,63.9
+Uttarakhand,UK_District_9,2019,74.18,47.64,60.43,65.0
+Uttarakhand,UK_District_9,2020,75.29,49.26,62.8,66.24
+Uttarakhand,UK_District_9,2021,77.34,51.86,63.18,68.07
+Uttarakhand,UK_District_9,2022,76.94,53.01,63.99,70.5
+Uttarakhand,UK_District_9,2023,78.86,51.01,63.07,71.92
+Uttarakhand,UK_District_10,2018,56.92,67.6,51.23,48.29
+Uttarakhand,UK_District_10,2019,58.51,69.07,51.97,49.84
+Uttarakhand,UK_District_10,2020,60.19,70.5,53.47,50.36
+Uttarakhand,UK_District_10,2021,60.23,72.0,53.81,50.76
+Uttarakhand,UK_District_10,2022,62.21,74.0,57.39,52.06
+Uttarakhand,UK_District_10,2023,63.63,75.19,59.11,53.25
+Uttarakhand,UK_District_11,2018,53.22,54.54,69.0,64.01
+Uttarakhand,UK_District_11,2019,54.08,55.37,69.93,65.75
+Uttarakhand,UK_District_11,2020,55.06,56.26,71.68,66.87
+Uttarakhand,UK_District_11,2021,55.96,57.61,72.43,66.55
+Uttarakhand,UK_District_11,2022,60.14,60.42,72.64,68.64
+Uttarakhand,UK_District_11,2023,61.19,60.18,75.14,72.32
+Uttarakhand,UK_District_12,2018,51.74,55.23,65.05,51.03
+Uttarakhand,UK_District_12,2019,52.65,56.13,66.34,52.59
+Uttarakhand,UK_District_12,2020,54.76,58.69,67.54,54.29
+Uttarakhand,UK_District_12,2021,55.64,59.26,69.47,55.69
+Uttarakhand,UK_District_12,2022,58.45,58.72,68.06,56.66
+Uttarakhand,UK_District_12,2023,59.45,61.17,70.93,58.91
+Uttarakhand,UK_District_13,2018,58.65,63.35,65.17,48.98
+Uttarakhand,UK_District_13,2019,59.76,64.93,65.98,50.72
+Uttarakhand,UK_District_13,2020,61.65,65.65,66.43,51.27
+Uttarakhand,UK_District_13,2021,61.25,68.45,69.69,53.49
+Uttarakhand,UK_District_13,2022,63.69,69.94,69.53,54.05
+Uttarakhand,UK_District_13,2023,63.48,67.66,72.82,56.85
+Uttarakhand,UK_District_14,2018,65.29,59.61,67.38,46.44
+Uttarakhand,UK_District_14,2019,66.86,60.51,68.56,47.57
+Uttarakhand,UK_District_14,2020,68.19,62.15,70.43,48.63
+Uttarakhand,UK_District_14,2021,70.33,62.97,71.9,50.38
+Uttarakhand,UK_District_14,2022,71.89,63.09,72.04,51.53
+Uttarakhand,UK_District_14,2023,69.97,67.81,72.35,52.88
+Uttarakhand,UK_District_15,2018,64.04,46.01,69.9,49.1
+Uttarakhand,UK_District_15,2019,65.11,47.02,70.9,50.61
+Uttarakhand,UK_District_15,2020,66.02,48.92,72.95,51.2
+Uttarakhand,UK_District_15,2021,68.96,50.99,74.56,51.93
+Uttarakhand,UK_District_15,2022,68.94,49.76,73.28,54.1
+Uttarakhand,UK_District_15,2023,69.75,54.42,73.44,55.06
+Uttarakhand,UK_District_16,2018,61.8,46.72,62.02,59.42
+Uttarakhand,UK_District_16,2019,63.13,48.1,63.05,61.1
+Uttarakhand,UK_District_16,2020,63.47,49.07,65.14,62.0
+Uttarakhand,UK_District_16,2021,66.29,51.12,66.63,62.72
+Uttarakhand,UK_District_16,2022,66.4,53.88,68.08,66.37
+Uttarakhand,UK_District_16,2023,67.22,51.67,66.94,65.59
+Uttarakhand,UK_District_17,2018,66.86,66.7,67.8,49.61
+Uttarakhand,UK_District_17,2019,68.57,68.44,69.34,50.58
+Uttarakhand,UK_District_17,2020,70.35,68.98,69.22,52.35
+Uttarakhand,UK_District_17,2021,72.23,69.53,69.95,52.33
+Uttarakhand,UK_District_17,2022,72.86,70.8,72.15,52.95
+Uttarakhand,UK_District_17,2023,72.43,72.24,73.9,57.68
+Uttarakhand,UK_District_18,2018,63.29,58.5,67.67,59.49
+Uttarakhand,UK_District_18,2019,64.29,59.67,68.58,60.8
+Uttarakhand,UK_District_18,2020,66.77,61.33,68.88,61.81
+Uttarakhand,UK_District_18,2021,68.41,63.04,69.6,63.09
+Uttarakhand,UK_District_18,2022,67.89,62.02,71.98,62.96
+Uttarakhand,UK_District_18,2023,69.46,64.56,71.71,63.92
+Uttarakhand,UK_District_19,2018,63.43,49.98,68.35,56.63
+Uttarakhand,UK_District_19,2019,65.21,51.42,69.59,57.54
+Uttarakhand,UK_District_19,2020,66.64,51.74,70.64,59.48
+Uttarakhand,UK_District_19,2021,66.91,54.42,70.2,60.16
+Uttarakhand,UK_District_19,2022,70.49,53.35,72.09,62.78
+Uttarakhand,UK_District_19,2023,69.56,54.77,71.93,62.41
+Uttarakhand,UK_District_20,2018,60.08,48.17,72.22,57.35
+Uttarakhand,UK_District_20,2019,61.35,49.23,73.42,58.74
+Uttarakhand,UK_District_20,2020,62.63,51.48,74.7,60.77
+Uttarakhand,UK_District_20,2021,65.36,53.29,76.58,62.51
+Uttarakhand,UK_District_20,2022,66.29,54.65,75.31,61.26
+Uttarakhand,UK_District_20,2023,64.63,56.29,78.64,65.07
+Delhi,DL_District_1,2018,69.17,69.92,57.2,61.5
+Delhi,DL_District_1,2019,70.49,71.08,58.17,62.44
+Delhi,DL_District_1,2020,72.31,72.92,58.8,63.97
+Delhi,DL_District_1,2021,71.86,74.85,59.85,64.51
+Delhi,DL_District_1,2022,73.24,73.48,61.97,67.33
+Delhi,DL_District_1,2023,77.27,76.35,60.99,70.03
+Delhi,DL_District_2,2018,63.99,58.31,74.58,53.72
+Delhi,DL_District_2,2019,65.32,59.22,75.57,54.54
+Delhi,DL_District_2,2020,66.32,61.1,77.12,56.09
+Delhi,DL_District_2,2021,69.04,61.34,76.38,56.93
+Delhi,DL_District_2,2022,71.09,62.48,80.22,59.87
+Delhi,DL_District_2,2023,72.61,66.44,79.78,60.75
+Delhi,DL_District_3,2018,56.57,55.38,63.98,56.68
+Delhi,DL_District_3,2019,57.68,57.0,65.35,57.64
+Delhi,DL_District_3,2020,58.18,58.4,66.95,59.95
+Delhi,DL_District_3,2021,60.05,59.73,66.67,59.51
+Delhi,DL_District_3,2022,61.7,60.48,68.34,63.47
+Delhi,DL_District_3,2023,62.77,60.32,69.41,65.58
+Delhi,DL_District_4,2018,68.4,67.67,50.05,46.44
+Delhi,DL_District_4,2019,69.65,69.03,51.04,48.19
+Delhi,DL_District_4,2020,71.09,69.84,51.46,49.22
+Delhi,DL_District_4,2021,72.22,70.81,54.36,51.71
+Delhi,DL_District_4,2022,75.04,74.67,54.92,50.28
+Delhi,DL_District_4,2023,76.06,73.24,55.63,55.32
+Delhi,DL_District_5,2018,68.87,54.17,61.78,49.14
+Delhi,DL_District_5,2019,70.33,55.61,63.04,50.3
+Delhi,DL_District_5,2020,72.23,57.28,64.6,51.95
+Delhi,DL_District_5,2021,73.12,56.72,66.05,53.33
+Delhi,DL_District_5,2022,73.53,58.58,64.52,55.25
+Delhi,DL_District_5,2023,77.48,58.74,65.85,56.55
+Delhi,DL_District_6,2018,74.21,57.43,50.07,53.71
+Delhi,DL_District_6,2019,75.11,58.67,51.31,54.6
+Delhi,DL_District_6,2020,76.2,60.13,52.34,55.37
+Delhi,DL_District_6,2021,77.49,62.8,53.64,58.88
+Delhi,DL_District_6,2022,79.46,60.83,53.83,60.65
+Delhi,DL_District_6,2023,81.88,65.67,55.44,61.88
+Delhi,DL_District_7,2018,72.97,69.15,64.19,57.06
+Delhi,DL_District_7,2019,74.0,70.78,65.3,58.78
+Delhi,DL_District_7,2020,75.7,72.45,65.59,60.63
+Delhi,DL_District_7,2021,78.08,73.9,67.1,60.12
+Delhi,DL_District_7,2022,78.65,73.75,70.57,63.79
+Delhi,DL_District_7,2023,80.18,74.8,71.38,62.61
+Delhi,DL_District_8,2018,72.91,59.19,51.69,50.55
+Delhi,DL_District_8,2019,74.21,60.29,52.72,51.37
+Delhi,DL_District_8,2020,76.31,62.19,54.58,54.11
+Delhi,DL_District_8,2021,76.28,62.32,53.69,52.97
+Delhi,DL_District_8,2022,79.98,65.4,55.84,55.91
+Delhi,DL_District_8,2023,77.63,63.84,59.65,56.64
+Delhi,DL_District_9,2018,73.47,52.43,56.44,55.62
+Delhi,DL_District_9,2019,75.25,53.41,57.13,56.7
+Delhi,DL_District_9,2020,76.5,55.39,57.88,59.17
+Delhi,DL_District_9,2021,75.98,55.03,60.76,58.85
+Delhi,DL_District_9,2022,78.57,56.92,61.42,61.26
+Delhi,DL_District_9,2023,78.7,57.3,64.06,61.41
+Delhi,DL_District_10,2018,51.86,50.31,57.16,46.26
+Delhi,DL_District_10,2019,52.76,51.82,58.62,48.05
+Delhi,DL_District_10,2020,53.74,52.98,59.98,48.18
+Delhi,DL_District_10,2021,56.56,53.46,60.5,49.41
+Delhi,DL_District_10,2022,57.13,57.28,63.05,51.39
+Delhi,DL_District_10,2023,58.78,54.32,64.54,53.39
+Goa,GA_District_1,2018,65.02,62.78,64.63,42.24
+Goa,GA_District_1,2019,66.64,64.2,65.77,43.77
+Goa,GA_District_1,2020,67.77,65.49,67.81,45.51
+Goa,GA_District_1,2021,69.01,66.19,66.56,45.23
+Goa,GA_District_1,2022,69.53,68.17,67.75,48.43
+Goa,GA_District_1,2023,70.08,70.01,71.69,48.22
+Goa,GA_District_2,2018,74.57,45.7,63.15,53.24
+Goa,GA_District_2,2019,75.41,47.31,64.59,54.57
+Goa,GA_District_2,2020,77.31,48.4,65.54,55.25
+Goa,GA_District_2,2021,79.63,50.09,65.39,57.72
+Goa,GA_District_2,2022,81.69,49.29,65.97,57.64
+Goa,GA_District_2,2023,82.73,53.02,70.88,58.66
+Goa,GA_District_3,2018,68.36,65.23,63.23,64.97
+Goa,GA_District_3,2019,69.64,66.68,63.87,66.17
+Goa,GA_District_3,2020,70.73,67.94,64.66,68.26
+Goa,GA_District_3,2021,71.36,68.21,67.81,69.38
+Goa,GA_District_3,2022,71.88,71.48,65.85,71.83
+Goa,GA_District_3,2023,76.73,72.92,68.6,69.13
+Goa,GA_District_4,2018,73.45,63.29,56.39,62.12
+Goa,GA_District_4,2019,75.14,64.3,57.08,62.96
+Goa,GA_District_4,2020,75.68,65.29,57.74,64.9
+Goa,GA_District_4,2021,77.44,67.06,60.3,67.46
+Goa,GA_District_4,2022,78.33,66.73,61.57,66.91
+Goa,GA_District_4,2023,77.95,69.99,63.57,68.05
+Goa,GA_District_5,2018,65.12,49.83,55.65,44.08
+Goa,GA_District_5,2019,66.08,51.06,57.03,44.96
+Goa,GA_District_5,2020,67.6,53.39,58.12,47.25
+Goa,GA_District_5,2021,69.57,53.05,58.94,48.57
+Goa,GA_District_5,2022,70.52,54.77,60.7,48.72
+Goa,GA_District_5,2023,70.27,58.03,61.79,49.83
+Tripura,TR_District_1,2018,70.12,65.92,50.2,64.23
+Tripura,TR_District_1,2019,71.52,67.53,51.38,65.82
+Tripura,TR_District_1,2020,73.41,68.71,52.81,66.78
+Tripura,TR_District_1,2021,74.72,71.02,53.61,67.57
+Tripura,TR_District_1,2022,73.61,70.84,54.25,67.5
+Tripura,TR_District_1,2023,78.05,73.97,55.19,72.52
+Tripura,TR_District_2,2018,58.62,59.8,71.92,61.81
+Tripura,TR_District_2,2019,59.45,60.87,72.78,63.32
+Tripura,TR_District_2,2020,61.39,62.24,74.92,65.27
+Tripura,TR_District_2,2021,62.87,63.44,75.3,66.97
+Tripura,TR_District_2,2022,65.03,65.16,74.9,68.57
+Tripura,TR_District_2,2023,63.54,68.57,78.53,70.02
+Tripura,TR_District_3,2018,54.26,60.63,61.98,45.83
+Tripura,TR_District_3,2019,55.89,62.31,62.65,47.0
+Tripura,TR_District_3,2020,56.01,63.66,65.02,49.41
+Tripura,TR_District_3,2021,57.5,65.95,64.66,50.38
+Tripura,TR_District_3,2022,58.98,64.62,67.07,50.16
+Tripura,TR_District_3,2023,61.32,68.68,69.81,54.53
+Tripura,TR_District_4,2018,64.33,54.14,56.12,62.09
+Tripura,TR_District_4,2019,65.47,55.15,56.96,63.41
+Tripura,TR_District_4,2020,67.54,56.22,59.2,64.48
+Tripura,TR_District_4,2021,68.64,58.8,59.51,65.06
+Tripura,TR_District_4,2022,68.98,57.74,59.69,67.62
+Tripura,TR_District_4,2023,72.67,60.93,62.98,68.48
+Tripura,TR_District_5,2018,69.84,68.63,54.54,50.11
+Tripura,TR_District_5,2019,70.83,70.3,55.96,51.1
+Tripura,TR_District_5,2020,71.95,70.62,56.65,52.85
+Tripura,TR_District_5,2021,74.7,71.68,57.79,53.72
+Tripura,TR_District_5,2022,74.29,75.56,57.4,56.73
+Tripura,TR_District_5,2023,77.02,77.3,61.97,56.71
+Manipur,MN_District_1,2018,52.63,47.56,64.0,54.27
+Manipur,MN_District_1,2019,54.2,49.25,65.45,55.84
+Manipur,MN_District_1,2020,55.21,50.87,66.98,56.31
+Manipur,MN_District_1,2021,57.36,51.05,66.61,57.85
+Manipur,MN_District_1,2022,55.85,53.25,67.66,58.08
+Manipur,MN_District_1,2023,59.17,52.03,67.58,62.65
+Manipur,MN_District_2,2018,57.89,56.79,56.88,56.03
+Manipur,MN_District_2,2019,59.0,58.12,57.57,57.1
+Manipur,MN_District_2,2020,60.77,60.01,59.22,58.79
+Manipur,MN_District_2,2021,61.5,61.5,61.11,58.45
+Manipur,MN_District_2,2022,64.13,61.31,62.29,61.91
+Manipur,MN_District_2,2023,62.9,62.69,64.46,61.91
+Manipur,MN_District_3,2018,55.68,62.65,61.92,54.14
+Manipur,MN_District_3,2019,57.34,63.75,62.93,55.62
+Manipur,MN_District_3,2020,59.14,65.56,63.52,57.64
+Manipur,MN_District_3,2021,60.11,65.12,64.95,58.82
+Manipur,MN_District_3,2022,60.77,69.61,64.43,57.46
+Manipur,MN_District_3,2023,61.43,67.1,66.38,61.89
+Manipur,MN_District_4,2018,50.34,69.76,55.03,64.46
+Manipur,MN_District_4,2019,51.68,71.02,55.96,65.52
+Manipur,MN_District_4,2020,52.55,71.93,56.63,66.77
+Manipur,MN_District_4,2021,54.75,74.62,58.49,68.11
+Manipur,MN_District_4,2022,56.45,74.59,59.92,69.41
+Manipur,MN_District_4,2023,58.34,73.84,62.86,70.4
+Manipur,MN_District_5,2018,65.24,54.79,59.34,45.46
+Manipur,MN_District_5,2019,66.04,55.73,60.75,46.74
+Manipur,MN_District_5,2020,68.66,58.1,60.98,48.35
+Manipur,MN_District_5,2021,69.79,58.19,61.52,48.16
+Manipur,MN_District_5,2022,70.15,60.58,63.9,49.23
+Manipur,MN_District_5,2023,72.65,62.18,64.29,50.68
+Meghalaya,ML_District_1,2018,60.16,61.72,60.88,58.25
+Meghalaya,ML_District_1,2019,61.74,63.13,61.87,59.2
+Meghalaya,ML_District_1,2020,63.11,64.78,63.65,61.1
+Meghalaya,ML_District_1,2021,64.62,65.69,63.42,62.59
+Meghalaya,ML_District_1,2022,65.99,65.89,67.09,63.6
+Meghalaya,ML_District_1,2023,68.86,68.88,66.92,67.18
+Meghalaya,ML_District_2,2018,72.4,62.21,63.56,41.81
+Meghalaya,ML_District_2,2019,74.03,63.35,64.51,43.55
+Meghalaya,ML_District_2,2020,74.83,64.47,65.34,44.24
+Meghalaya,ML_District_2,2021,76.19,66.95,66.0,44.29
+Meghalaya,ML_District_2,2022,77.27,68.68,68.19,47.78
+Meghalaya,ML_District_2,2023,81.11,67.36,69.87,46.38
+Meghalaya,ML_District_3,2018,70.5,55.07,62.54,53.17
+Meghalaya,ML_District_3,2019,72.29,56.09,63.29,54.01
+Meghalaya,ML_District_3,2020,73.91,57.93,65.08,55.48
+Meghalaya,ML_District_3,2021,74.53,59.47,65.33,57.4
+Meghalaya,ML_District_3,2022,76.8,59.22,66.43,59.94
+Meghalaya,ML_District_3,2023,79.17,61.73,68.49,59.42
+Meghalaya,ML_District_4,2018,68.8,53.55,61.33,45.06
+Meghalaya,ML_District_4,2019,69.72,54.8,62.55,46.16
+Meghalaya,ML_District_4,2020,72.01,56.79,63.56,47.62
+Meghalaya,ML_District_4,2021,72.39,57.86,65.65,48.47
+Meghalaya,ML_District_4,2022,73.81,59.22,67.43,49.08
+Meghalaya,ML_District_4,2023,75.03,60.88,69.27,53.09
+Meghalaya,ML_District_5,2018,58.77,60.49,61.0,47.86
+Meghalaya,ML_District_5,2019,60.24,61.98,62.28,48.82
+Meghalaya,ML_District_5,2020,61.97,63.34,62.89,49.95
+Meghalaya,ML_District_5,2021,62.48,65.69,63.62,50.72
+Meghalaya,ML_District_5,2022,63.88,63.73,63.83,52.72
+Meghalaya,ML_District_5,2023,67.74,68.49,66.27,54.99
+Nagaland,NL_District_1,2018,67.54,59.37,60.2,45.24
+Nagaland,NL_District_1,2019,69.05,60.94,60.85,46.92
+Nagaland,NL_District_1,2020,70.3,61.61,62.93,48.15
+Nagaland,NL_District_1,2021,70.35,64.47,62.73,48.23
+Nagaland,NL_District_1,2022,71.76,62.95,62.71,49.07
+Nagaland,NL_District_1,2023,75.83,64.3,67.7,53.32
+Nagaland,NL_District_2,2018,65.55,50.22,51.58,51.76
+Nagaland,NL_District_2,2019,67.2,51.43,52.97,53.45
+Nagaland,NL_District_2,2020,67.57,53.18,54.19,54.21
+Nagaland,NL_District_2,2021,69.54,53.17,54.47,54.95
+Nagaland,NL_District_2,2022,71.89,53.79,56.85,55.45
+Nagaland,NL_District_2,2023,69.55,59.03,55.25,59.29
+Nagaland,NL_District_3,2018,65.05,61.96,72.11,64.02
+Nagaland,NL_District_3,2019,65.97,63.64,73.23,65.22
+Nagaland,NL_District_3,2020,68.52,65.23,74.84,67.21
+Nagaland,NL_District_3,2021,68.46,64.94,74.1,69.34
+Nagaland,NL_District_3,2022,70.89,68.63,75.76,69.05
+Nagaland,NL_District_3,2023,70.36,69.6,75.62,71.46
+Nagaland,NL_District_4,2018,59.87,65.87,59.36,60.42
+Nagaland,NL_District_4,2019,61.19,66.85,60.46,61.52
+Nagaland,NL_District_4,2020,62.37,69.32,61.97,62.08
+Nagaland,NL_District_4,2021,65.14,69.3,63.62,64.14
+Nagaland,NL_District_4,2022,66.38,71.15,64.24,64.53
+Nagaland,NL_District_4,2023,66.3,71.05,66.29,68.15
+Nagaland,NL_District_5,2018,62.6,46.48,63.86,54.48
+Nagaland,NL_District_5,2019,63.65,47.83,64.5,55.78
+Nagaland,NL_District_5,2020,65.33,48.82,65.18,57.25
+Nagaland,NL_District_5,2021,65.34,50.3,66.52,58.59
+Nagaland,NL_District_5,2022,68.52,53.37,67.26,59.1
+Nagaland,NL_District_5,2023,69.16,52.38,69.48,62.45
+Sikkim,SK_District_1,2018,66.46,61.4,55.19,59.88
+Sikkim,SK_District_1,2019,68.21,62.68,56.21,61.62
+Sikkim,SK_District_1,2020,68.57,63.94,57.96,63.42
+Sikkim,SK_District_1,2021,70.85,63.93,58.11,62.79
+Sikkim,SK_District_1,2022,71.86,65.82,58.61,64.11
+Sikkim,SK_District_1,2023,74.12,68.58,59.81,68.51
+Sikkim,SK_District_2,2018,74.18,53.22,74.02,40.27
+Sikkim,SK_District_2,2019,75.06,54.76,74.94,41.44
+Sikkim,SK_District_2,2020,75.95,56.61,75.78,42.65
+Sikkim,SK_District_2,2021,79.54,56.82,78.6,45.18
+Sikkim,SK_District_2,2022,79.23,57.18,76.66,44.22
+Sikkim,SK_District_2,2023,80.06,61.52,81.09,45.3
+Sikkim,SK_District_3,2018,51.3,59.61,56.18,46.49
+Sikkim,SK_District_3,2019,52.93,60.58,57.39,48.26
+Sikkim,SK_District_3,2020,53.17,62.81,58.07,49.31
+Sikkim,SK_District_3,2021,54.14,63.08,60.54,50.97
+Sikkim,SK_District_3,2022,58.27,64.89,59.37,50.96
+Sikkim,SK_District_3,2023,57.86,66.36,62.41,53.12
+Sikkim,SK_District_4,2018,68.9,48.13,64.89,58.55
+Sikkim,SK_District_4,2019,70.68,49.4,66.47,59.4
+Sikkim,SK_District_4,2020,71.77,50.07,68.06,62.0
+Sikkim,SK_District_4,2021,73.46,52.14,67.54,61.08
+Sikkim,SK_District_4,2022,74.55,53.69,67.89,64.23
+Sikkim,SK_District_4,2023,73.81,52.44,68.75,62.94
+Arunachal Pradesh,AR_District_1,2018,54.32,66.4,50.79,51.77
+Arunachal Pradesh,AR_District_1,2019,55.27,67.54,51.41,52.73
+Arunachal Pradesh,AR_District_1,2020,57.36,68.59,52.33,55.01
+Arunachal Pradesh,AR_District_1,2021,58.83,69.82,54.76,56.38
+Arunachal Pradesh,AR_District_1,2022,61.46,70.88,54.13,58.52
+Arunachal Pradesh,AR_District_1,2023,62.97,70.69,57.56,58.73
+Arunachal Pradesh,AR_District_2,2018,74.63,61.79,68.15,40.09
+Arunachal Pradesh,AR_District_2,2019,75.47,63.53,69.14,41.51
+Arunachal Pradesh,AR_District_2,2020,77.2,64.17,69.67,43.66
+Arunachal Pradesh,AR_District_2,2021,77.81,64.49,72.41,44.5
+Arunachal Pradesh,AR_District_2,2022,77.88,66.15,73.99,43.5
+Arunachal Pradesh,AR_District_2,2023,80.34,67.87,74.93,44.91
+Arunachal Pradesh,AR_District_3,2018,56.0,60.65,64.22,54.21
+Arunachal Pradesh,AR_District_3,2019,56.8,61.86,65.28,55.65
+Arunachal Pradesh,AR_District_3,2020,59.59,64.1,65.89,56.77
+Arunachal Pradesh,AR_District_3,2021,60.92,64.21,67.04,59.01
+Arunachal Pradesh,AR_District_3,2022,63.07,64.62,69.23,57.8
+Arunachal Pradesh,AR_District_3,2023,60.86,66.66,71.13,62.76
+Arunachal Pradesh,AR_District_4,2018,72.44,45.29,72.34,55.87
+Arunachal Pradesh,AR_District_4,2019,73.35,46.7,73.04,57.25
+Arunachal Pradesh,AR_District_4,2020,75.28,48.02,74.35,58.76
+Arunachal Pradesh,AR_District_4,2021,75.19,49.26,75.18,60.79
+Arunachal Pradesh,AR_District_4,2022,76.76,50.38,76.16,63.01
+Arunachal Pradesh,AR_District_4,2023,79.31,51.66,79.3,63.3
+Arunachal Pradesh,AR_District_5,2018,65.86,63.71,53.77,61.69
+Arunachal Pradesh,AR_District_5,2019,67.46,65.2,54.44,63.47
+Arunachal Pradesh,AR_District_5,2020,68.92,65.9,56.01,64.49
+Arunachal Pradesh,AR_District_5,2021,69.1,66.57,55.91,66.27
+Arunachal Pradesh,AR_District_5,2022,71.64,70.05,58.4,68.15
+Arunachal Pradesh,AR_District_5,2023,72.58,69.02,58.61,68.02
+Mizoram,MZ_District_1,2018,60.55,52.29,54.41,59.04
+Mizoram,MZ_District_1,2019,61.62,53.18,55.03,60.78
+Mizoram,MZ_District_1,2020,62.4,54.12,56.77,61.64
+Mizoram,MZ_District_1,2021,65.8,57.67,57.96,64.38
+Mizoram,MZ_District_1,2022,64.37,56.08,57.7,63.79
+Mizoram,MZ_District_1,2023,67.64,57.12,58.84,63.32
+Mizoram,MZ_District_2,2018,64.41,65.46,70.84,41.33
+Mizoram,MZ_District_2,2019,65.69,66.82,72.36,43.02
+Mizoram,MZ_District_2,2020,66.34,67.42,73.54,44.51
+Mizoram,MZ_District_2,2021,67.78,70.76,74.01,43.74
+Mizoram,MZ_District_2,2022,68.19,68.92,75.18,48.34
+Mizoram,MZ_District_2,2023,69.19,73.09,74.26,46.15
+Mizoram,MZ_District_3,2018,72.01,45.65,61.77,53.24
+Mizoram,MZ_District_3,2019,73.77,46.96,62.79,54.46
+Mizoram,MZ_District_3,2020,74.11,49.09,63.75,55.85
+Mizoram,MZ_District_3,2021,74.71,50.75,66.47,58.07
+Mizoram,MZ_District_3,2022,75.4,52.51,67.2,57.59
+Mizoram,MZ_District_3,2023,78.46,51.96,65.66,61.14
+Mizoram,MZ_District_4,2018,66.46,60.29,58.47,51.35
+Mizoram,MZ_District_4,2019,67.83,61.53,59.09,52.38
+Mizoram,MZ_District_4,2020,69.01,62.53,60.61,54.42
+Mizoram,MZ_District_4,2021,69.06,64.32,62.22,56.24
+Mizoram,MZ_District_4,2022,70.95,64.04,61.88,54.83
+Mizoram,MZ_District_4,2023,71.92,66.43,63.95,56.5
+Ladakh,LA_District_1,2018,52.09,50.33,67.42,64.19
+Ladakh,LA_District_1,2019,53.45,51.78,68.08,65.58
+Ladakh,LA_District_1,2020,55.53,52.39,69.72,65.84
+Ladakh,LA_District_1,2021,57.25,55.7,70.53,66.91
+Ladakh,LA_District_1,2022,56.62,55.79,71.7,69.82
+Ladakh,LA_District_1,2023,60.88,57.99,72.1,70.12
+Ladakh,LA_District_2,2018,72.15,55.49,71.49,57.91
+Ladakh,LA_District_2,2019,73.09,56.99,72.6,59.32
+Ladakh,LA_District_2,2020,74.4,59.03,73.55,59.71
+Ladakh,LA_District_2,2021,76.15,59.3,75.38,61.44
+Ladakh,LA_District_2,2022,75.95,58.91,74.6,62.41
+Ladakh,LA_District_2,2023,80.73,63.61,78.57,62.81

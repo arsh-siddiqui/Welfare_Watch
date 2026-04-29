@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Sign In{% endblock %}
+{% block full_page %}
+<div class="auth-page">
+  <div class="auth-card">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:26px">
+      <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--p),var(--t));display:grid;place-items:center;color:#fff;font-size:16px"><i class="fa fa-shield-halved"></i></div>
+      <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--th)">WelfareWatch</div>
+    </div>
+    <h2 class="auth-h">Welcome back</h2>
+    <p class="auth-sub">Sign in to track reports, access full data, and see your area's welfare score.</p>
+    <form method="POST">
+      <div class="fg"><label class="fl">Username</label><input type="text" name="username" class="fc" placeholder="Your username" required autofocus></div>
+      <div class="fg"><label class="fl">Password</label><input type="password" name="password" class="fc" placeholder="Your password" required></div>
+      <button type="submit" class="btn btn-p btn-full" style="padding:12px"><i class="fa fa-sign-in-alt"></i> Sign In</button>
+    </form>
+    <div class="auth-foot">New here? <a href="{{ url_for('auth_register') }}" style="font-weight:700">Create a free account →</a></div>
+  </div>
+</div>
+<script src="{{ url_for('static',filename='js/theme.js') }}"></script>
+{% endblock %}

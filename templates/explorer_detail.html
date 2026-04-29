@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{ dataset['name'] }}{% endblock %}
+{% block topbar_title %}{{ dataset['name']|truncate(40) }}{% endblock %}
+{% block content %}
+<div class="ph fi flex jb items-c" style="flex-wrap:wrap;gap:12px">
+  <div><h1 class="ph-title">{{ dataset['name'] }}</h1>
+  <p class="ph-sub">{{ dataset['row_count'] }} rows · {{ dataset['uploaded_at'][:10] }}{% if dataset['source'] %} · {{ dataset['source'] }}{% endif %}</p></div>
+  <div style="display:flex;gap:8px">
+    {% if feats.download %}<a href="{{ url_for('download_dataset',dataset_id=dataset['id']) }}" class="btn btn-p"><i class="fa fa-download"></i> Download CSV</a>{% else %}<a href="{{ url_for('upgrade') }}" class="btn btn-o"><i class="fa fa-lock"></i> Unlock Download</a>{% endif %}
+    <a href="{{ url_for('explorer') }}" class="btn btn-o btn-sm"><i class="fa fa-arrow-left"></i> Back</a>
+  </div>
+</div>
+<div class="card fi1 mb4">
+  <div class="card-h"><div class="card-t">Columns ({{ columns|length }})</div><div class="card-sub">All data fields in this dataset</div></div>
+  <div class="card-b">
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      {% for col in columns %}<span style="background:var(--p-l);color:var(--p);padding:5px 13px;border-radius:20px;font-size:13px;font-weight:600"><i class="fa fa-table-columns" style="font-size:10px;margin-right:5px"></i>{{ col }}</span>{% endfor %}
+    </div>
+    {% if stats %}
+    <div style="margin-top:16px;font-size:13px;color:var(--ts)"><strong>Numeric column stats (first 25 rows):</strong>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
+        {% for col, st in stats.items() %}<span style="background:var(--surf2);border:1px solid var(--b);padding:5px 11px;border-radius:var(--rads);font-size:12px;color:var(--ts)"><strong>{{ col }}</strong>: min={{ st.min }}, max={{ st.max }}, avg={{ st.mean }}</span>{% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+<div class="card fi2">
+  <div class="card-h"><div><div class="card-t">Data Preview — first 25 rows</div><div class="card-sub">{{ dataset['row_count'] }} rows total</div></div>
+    {% if feats.download %}<a href="{{ url_for('download_dataset',dataset_id=dataset['id']) }}" class="btn btn-sm" style="background:var(--t);color:#fff"><i class="fa fa-download"></i> Full CSV</a>{% endif %}
+  </div>
+  <div class="card-b" style="padding:0">
+    {% if preview %}<div class="tw" style="max-height:480px;overflow-y:auto"><table><thead><tr>{% for col in columns %}<th>{{ col }}</th>{% endfor %}</tr></thead><tbody>{% for row in preview %}<tr>{% for col in columns %}<td>{{ row.get(col,'') }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>
+    {% else %}<div class="empty"><i class="fa fa-table"></i><p>Preview unavailable</p></div>{% endif %}
+  </div>
+</div>
+{% endblock %}

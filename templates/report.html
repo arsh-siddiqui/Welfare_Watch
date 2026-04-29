@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Report Ground-Level Welfare Issue{% endblock %}
+{% block topbar_title %}Report a Welfare Issue{% endblock %}
+{% block content %}
+<div class="ph fi">
+  <h1 class="ph-title">Report Ground-Level Welfare Issue</h1>
+  <p class="ph-sub">This helps improve welfare analysis and identify risk areas.</p>
+</div>
+
+<div style="display:grid;grid-template-columns:1.6fr 1fr;gap:24px" class="fi1">
+
+  <div class="card">
+    <div class="card-h">
+      <div class="card-t"><i class="fa fa-pen-to-square" style="color:var(--p);margin-right:6px"></i>Submit Your Report</div>
+    </div>
+    <div class="card-b">
+      <form method="POST">
+
+        <div class="fr">
+          <div class="fg">
+            <label class="fl">State <span class="freq">*</span></label>
+            <select name="state" class="fc" required>
+              <option value="">Select state…</option>
+              {% for s in INDIA_STATES %}<option>{{ s }}</option>{% endfor %}
+            </select>
+          </div>
+          <div class="fg">
+            <label class="fl">District <span class="freq">*</span></label>
+            <input type="text" name="district" class="fc" placeholder="e.g. Patna, Varanasi…" required>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label class="fl">Category <span class="freq">*</span>
+            <small title="Which welfare area does this issue relate to?"><i class="fa fa-circle-info" style="color:var(--p);cursor:help"></i></small>
+          </label>
+          <select name="category" class="fc" required>
+            <option value="">Select category…</option>
+            <option value="Education">📚 Education</option>
+            <option value="Healthcare">🏥 Healthcare</option>
+            <option value="Food Security">🌾 Food Security</option>
+            <option value="Employment">💼 Employment</option>
+          </select>
+        </div>
+
+        <div class="fr">
+          <div class="fg">
+            <label class="fl">Severity <span class="freq">*</span>
+              <small title="Low = minor inconvenience · Medium = significant problem · High = people are seriously affected"><i class="fa fa-circle-info" style="color:var(--p);cursor:help"></i></small>
+            </label>
+            <select name="severity" class="fc" required>
+              <option value="">Select severity…</option>
+              <option value="Low">🟢 Low — Minor issue</option>
+              <option value="Medium">🟡 Medium — Significant problem</option>
+              <option value="High">🔴 High — Serious impact</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label class="fl">People Affected <span class="freq">*</span>
+              <small title="Approximate number of people impacted by this issue"><i class="fa fa-circle-info" style="color:var(--p);cursor:help"></i></small>
+            </label>
+            <select name="impact" class="fc" required>
+              <option value="">Select impact…</option>
+              <option value="Few (1-50)">👤 Few — 1 to 50 people</option>
+              <option value="Moderate (50-500)">👥 Moderate — 50 to 500 people</option>
+              <option value="Large (500+)">🏘 Large — 500+ people</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label class="fl">Describe the Problem <span class="freq">*</span></label>
+          <textarea name="description" class="fc" rows="5"
+            placeholder="Tell us what happened. What scheme or service is failing? When did it start? Who did you contact? What was the response?"
+            required></textarea>
+          <div class="fhint"><i class="fa fa-lightbulb" style="color:var(--a)"></i> Be specific — it helps researchers and policymakers understand ground reality.</div>
+        </div>
+
+        <div style="display:flex;gap:10px">
+          <button type="submit" class="btn btn-p"><i class="fa fa-paper-plane"></i> Submit Report</button>
+          <button type="reset" class="btn btn-o">Clear</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div>
+
+    <div class="card mb4">
+      <div class="card-h"><div class="card-t"><i class="fa fa-chart-line" style="color:var(--g);margin-right:6px"></i>How This Helps</div></div>
+      <div class="card-b" style="padding-top:12px">
+        {% for icon, title, desc in [
+          ("fa-bullseye","Identifies Real Ground Problems","Captures welfare failures that data alone cannot detect."),
+          ("fa-chart-bar","Supports Welfare Analytics","Your report feeds directly into district risk analysis."),
+          ("fa-map-location-dot","Highlights High-Risk Districts","Districts with many reports are flagged for attention."),
+          ("fa-landmark","Helps Policy Decisions","Policy researchers use aggregated reports to prioritise action."),
+        ] %}
+        <div style="display:flex;gap:12px;margin-bottom:14px{% if not loop.last %};padding-bottom:14px;border-bottom:1px solid var(--b){% endif %}">
+          <div style="width:34px;height:34px;border-radius:9px;background:var(--p-l);color:var(--p);display:grid;place-items:center;font-size:14px;flex-shrink:0"><i class="fa {{ icon }}"></i></div>
+          <div><div style="font-weight:700;font-size:13px;color:var(--th)">{{ title }}</div><div style="font-size:12px;color:var(--ts);margin-top:2px;line-height:1.5">{{ desc }}</div></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ib ib-b mb4">
+      <h4><i class="fa fa-circle-info"></i> Severity Guide</h4>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">
+        <div style="font-size:13px;color:var(--tb)">🟢 <strong>Low</strong> — Minor delay or inconvenience. Issue exists but people still access the service.</div>
+        <div style="font-size:13px;color:var(--tb)">🟡 <strong>Medium</strong> — Significant problem. Benefits not reaching eligible people regularly.</div>
+        <div style="font-size:13px;color:var(--tb)">🔴 <strong>High</strong> — Serious impact. People are being excluded, harmed, or left without critical support.</div>
+      </div>
+    </div>
+
+    <div class="ib ib-g mb4">
+      <h4>🔒 Your Privacy is Protected</h4>
+      <p>Reports are never shared publicly. You can report without signing in. Your identity stays private.</p>
+    </div>
+
+    {% set cu = current_user() %}
+    {% if not cu %}
+    <div class="ib ib-b">
+      <h4>💡 Track Your Report</h4>
+      <p><a href="{{ url_for('auth_login') }}" style="font-weight:700">Sign in</a> to track your report status and see admin responses.</p>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+{% endblock %}

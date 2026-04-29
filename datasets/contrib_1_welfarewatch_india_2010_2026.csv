@@ -1,0 +1,3894 @@
+State,District,Year,Education_Index,Healthcare_Index,Food_Security_Index,Employment_Index
+Kerala,Thiruvananthapuram,2010,92.74,70.22,69.98,40.02
+Kerala,Thiruvananthapuram,2011,93.02,71.82,70.4,41.39
+Kerala,Thiruvananthapuram,2012,93.3,73.42,70.83,42.76
+Kerala,Thiruvananthapuram,2013,93.58,75.01,71.25,44.13
+Kerala,Thiruvananthapuram,2014,93.86,76.61,72.88,45.5
+Kerala,Thiruvananthapuram,2015,94.14,78.2,74.5,46.86
+Kerala,Thiruvananthapuram,2016,94.54,79.8,76.12,48.23
+Kerala,Thiruvananthapuram,2017,94.94,81.4,77.83,49.6
+Kerala,Thiruvananthapuram,2018,95.34,83.0,79.54,51.52
+Kerala,Thiruvananthapuram,2019,95.74,84.6,81.25,53.44
+Kerala,Thiruvananthapuram,2020,96.14,86.2,82.96,50.4
+Kerala,Thiruvananthapuram,2021,96.54,86.2,85.12,53.93
+Kerala,Thiruvananthapuram,2022,96.94,87.35,87.28,59.2
+Kerala,Thiruvananthapuram,2023,97.34,88.5,89.44,60.74
+Kerala,Thiruvananthapuram,2024,97.74,89.66,91.6,62.27
+Kerala,Thiruvananthapuram,2025,98.14,90.81,93.76,63.81
+Kerala,Thiruvananthapuram,2026,98.54,91.96,95.92,65.34
+Kerala,Ernakulam,2010,95.61,72.51,73.95,45.42
+Kerala,Ernakulam,2011,95.89,74.16,74.31,46.79
+Kerala,Ernakulam,2012,96.17,75.81,74.68,48.16
+Kerala,Ernakulam,2013,96.45,77.46,75.05,49.53
+Kerala,Ernakulam,2014,96.73,79.1,76.62,50.9
+Kerala,Ernakulam,2015,97.01,80.75,78.19,52.26
+Kerala,Ernakulam,2016,97.41,82.4,79.75,53.63
+Kerala,Ernakulam,2017,97.81,84.15,81.4,55.0
+Kerala,Ernakulam,2018,98.21,85.9,83.04,56.92
+Kerala,Ernakulam,2019,98.61,87.65,84.68,58.84
+Kerala,Ernakulam,2020,99.0,89.4,86.32,55.8
+Kerala,Ernakulam,2021,99.0,89.4,88.48,59.33
+Kerala,Ernakulam,2022,99.0,90.66,90.64,64.6
+Kerala,Ernakulam,2023,99.0,91.92,92.8,66.14
+Kerala,Ernakulam,2024,99.0,93.18,94.96,67.67
+Kerala,Ernakulam,2025,99.0,94.44,97,69.21
+Kerala,Ernakulam,2026,99.0,95.7,97,70.74
+Kerala,Kozhikode,2010,94.83,69.61,69.7,43.22
+Kerala,Kozhikode,2011,95.11,71.19,70.13,44.59
+Kerala,Kozhikode,2012,95.39,72.77,70.55,45.96
+Kerala,Kozhikode,2013,95.67,74.35,70.98,47.33
+Kerala,Kozhikode,2014,95.95,75.94,72.61,48.7
+Kerala,Kozhikode,2015,96.23,77.52,74.24,50.06
+Kerala,Kozhikode,2016,96.63,79.1,75.87,51.43
+Kerala,Kozhikode,2017,97.03,80.92,77.58,52.8
+Kerala,Kozhikode,2018,97.43,82.75,79.29,54.72
+Kerala,Kozhikode,2019,97.83,84.58,81.01,56.64
+Kerala,Kozhikode,2020,98.23,86.4,82.72,53.6
+Kerala,Kozhikode,2021,98.63,86.4,84.88,57.13
+Kerala,Kozhikode,2022,99.0,87.71,87.04,62.4
+Kerala,Kozhikode,2023,99.0,89.03,89.2,63.94
+Kerala,Kozhikode,2024,99.0,90.34,91.36,65.47
+Kerala,Kozhikode,2025,99.0,91.66,93.52,67.01
+Kerala,Kozhikode,2026,99.0,92.97,95.68,68.54
+Kerala,Thrissur,2010,94.77,71.19,73.38,40.02
+Kerala,Thrissur,2011,95.05,72.81,73.76,41.39
+Kerala,Thrissur,2012,95.33,74.43,74.13,42.76
+Kerala,Thrissur,2013,95.61,76.05,74.51,44.13
+Kerala,Thrissur,2014,95.89,77.66,76.08,45.5
+Kerala,Thrissur,2015,96.17,79.28,77.66,46.86
+Kerala,Thrissur,2016,96.57,80.9,79.24,48.23
+Kerala,Thrissur,2017,96.97,82.62,80.89,49.6
+Kerala,Thrissur,2018,97.37,84.35,82.54,51.52
+Kerala,Thrissur,2019,97.77,86.08,84.19,53.44
+Kerala,Thrissur,2020,98.17,87.8,85.84,50.4
+Kerala,Thrissur,2021,98.57,87.8,88.0,53.93
+Kerala,Thrissur,2022,98.97,89.04,90.16,59.2
+Kerala,Thrissur,2023,99.0,90.28,92.32,60.74
+Kerala,Thrissur,2024,99.0,91.53,94.48,62.27
+Kerala,Thrissur,2025,99.0,92.77,96.64,63.81
+Kerala,Thrissur,2026,99.0,94.01,97,65.34
+Kerala,Kollam,2010,93.49,69.17,71.11,40.02
+Kerala,Kollam,2011,93.77,70.74,71.52,41.39
+Kerala,Kollam,2012,94.05,72.31,71.93,42.76
+Kerala,Kollam,2013,94.33,73.88,72.34,44.13
+Kerala,Kollam,2014,94.61,75.46,73.95,45.5
+Kerala,Kollam,2015,94.89,77.03,75.55,46.86
+Kerala,Kollam,2016,95.29,78.6,77.16,48.23
+Kerala,Kollam,2017,95.69,80.3,78.85,49.6
+Kerala,Kollam,2018,96.09,82.0,80.54,51.52
+Kerala,Kollam,2019,96.49,83.7,82.23,53.44
+Kerala,Kollam,2020,96.89,85.4,83.92,50.4
+Kerala,Kollam,2021,97.29,85.4,86.08,53.93
+Kerala,Kollam,2022,97.69,86.62,88.24,59.2
+Kerala,Kollam,2023,98.09,87.85,90.4,60.74
+Kerala,Kollam,2024,98.49,89.07,92.56,62.27
+Kerala,Kollam,2025,98.89,90.3,94.72,63.81
+Kerala,Kollam,2026,99.0,91.52,96.88,65.34
+Kerala,Kannur,2010,94.83,70.22,72.25,40.02
+Kerala,Kannur,2011,95.11,71.82,72.64,41.39
+Kerala,Kannur,2012,95.39,73.42,73.03,42.76
+Kerala,Kannur,2013,95.67,75.01,73.42,44.13
+Kerala,Kannur,2014,95.95,76.61,75.01,45.5
+Kerala,Kannur,2015,96.23,78.2,76.61,46.86
+Kerala,Kannur,2016,96.63,79.8,78.2,48.23
+Kerala,Kannur,2017,97.03,81.55,79.87,49.6
+Kerala,Kannur,2018,97.43,83.3,81.54,51.52
+Kerala,Kannur,2019,97.83,85.05,83.21,53.44
+Kerala,Kannur,2020,98.23,86.8,84.88,50.4
+Kerala,Kannur,2021,98.63,86.8,87.04,53.93
+Kerala,Kannur,2022,99.0,88.06,89.2,59.2
+Kerala,Kannur,2023,99.0,89.32,91.36,60.74
+Kerala,Kannur,2024,99.0,90.58,93.52,62.27
+Kerala,Kannur,2025,99.0,91.84,95.68,63.81
+Kerala,Kannur,2026,99.0,93.1,97,65.34
+Kerala,Palakkad,2010,89.04,64.77,62.05,40.02
+Kerala,Palakkad,2011,89.32,66.24,62.59,41.39
+Kerala,Palakkad,2012,89.6,67.71,63.12,42.76
+Kerala,Palakkad,2013,89.88,69.18,63.66,44.13
+Kerala,Palakkad,2014,90.16,70.66,65.4,45.5
+Kerala,Palakkad,2015,90.44,72.13,67.13,46.86
+Kerala,Palakkad,2016,90.84,73.6,68.87,48.23
+Kerala,Palakkad,2017,91.24,75.8,70.71,49.6
+Kerala,Palakkad,2018,91.64,78.0,72.55,51.52
+Kerala,Palakkad,2019,92.04,80.2,74.4,53.44
+Kerala,Palakkad,2020,92.44,82.4,76.24,50.4
+Kerala,Palakkad,2021,92.84,82.4,78.4,53.93
+Kerala,Palakkad,2022,93.24,83.98,80.56,59.2
+Kerala,Palakkad,2023,93.64,85.57,82.72,60.74
+Kerala,Palakkad,2024,94.04,87.15,84.88,62.27
+Kerala,Palakkad,2025,94.44,88.74,87.04,63.81
+Kerala,Palakkad,2026,94.84,90.32,89.2,65.34
+Kerala,Malappuram,2010,89.05,63.71,61.2,40.02
+Kerala,Malappuram,2011,89.33,65.16,61.75,41.39
+Kerala,Malappuram,2012,89.61,66.61,62.3,42.76
+Kerala,Malappuram,2013,89.89,68.06,62.85,44.13
+Kerala,Malappuram,2014,90.17,69.5,64.59,45.5
+Kerala,Malappuram,2015,90.45,70.95,66.34,46.86
+Kerala,Malappuram,2016,90.85,72.4,68.09,48.23
+Kerala,Malappuram,2017,91.25,74.6,69.95,49.6
+Kerala,Malappuram,2018,91.65,76.8,71.8,51.52
+Kerala,Malappuram,2019,92.05,79.0,73.66,53.44
+Kerala,Malappuram,2020,92.45,81.2,75.52,50.4
+Kerala,Malappuram,2021,92.85,81.2,77.68,53.93
+Kerala,Malappuram,2022,93.25,82.78,79.84,59.2
+Kerala,Malappuram,2023,93.65,84.37,82.0,60.74
+Kerala,Malappuram,2024,94.05,85.95,84.16,62.27
+Kerala,Malappuram,2025,94.45,87.54,86.32,63.81
+Kerala,Malappuram,2026,94.85,89.12,88.48,65.34
+Kerala,Idukki,2010,91.71,67.14,65.73,40.02
+Kerala,Idukki,2011,91.99,68.67,66.22,41.39
+Kerala,Idukki,2012,92.27,70.2,66.7,42.76
+Kerala,Idukki,2013,92.55,71.72,67.18,44.13
+Kerala,Idukki,2014,92.83,73.25,68.87,45.5
+Kerala,Idukki,2015,93.11,74.77,70.55,46.86
+Kerala,Idukki,2016,93.51,76.3,72.24,48.23
+Kerala,Idukki,2017,93.91,78.12,74.02,49.6
+Kerala,Idukki,2018,94.31,79.95,75.8,51.52
+Kerala,Idukki,2019,94.71,81.77,77.58,53.44
+Kerala,Idukki,2020,95.11,83.6,79.36,50.4
+Kerala,Idukki,2021,95.51,83.6,81.52,53.93
+Kerala,Idukki,2022,95.91,84.91,83.68,59.2
+Kerala,Idukki,2023,96.31,86.23,85.84,60.74
+Kerala,Idukki,2024,96.71,87.54,88.0,62.27
+Kerala,Idukki,2025,97.11,88.86,90.16,63.81
+Kerala,Idukki,2026,97.51,90.17,92.32,65.34
+Kerala,Wayanad,2010,88.76,61.95,60.07,40.02
+Kerala,Wayanad,2011,89.04,63.36,60.63,41.39
+Kerala,Wayanad,2012,89.32,64.77,61.2,42.76
+Kerala,Wayanad,2013,89.6,66.18,61.76,44.13
+Kerala,Wayanad,2014,89.88,67.58,63.52,45.5
+Kerala,Wayanad,2015,90.16,68.99,65.29,46.86
+Kerala,Wayanad,2016,90.56,70.4,67.05,48.23
+Kerala,Wayanad,2017,90.96,73.0,68.93,49.6
+Kerala,Wayanad,2018,91.36,75.6,70.81,51.52
+Kerala,Wayanad,2019,91.76,78.2,72.68,53.44
+Kerala,Wayanad,2020,92.16,80.8,74.56,50.4
+Kerala,Wayanad,2021,92.56,80.8,76.72,53.93
+Kerala,Wayanad,2022,92.96,82.67,78.88,59.2
+Kerala,Wayanad,2023,93.36,84.54,81.04,60.74
+Kerala,Wayanad,2024,93.76,86.42,83.2,62.27
+Kerala,Wayanad,2025,94.16,88.29,85.36,63.81
+Kerala,Wayanad,2026,94.56,90.16,87.52,65.34
+Kerala,Pathanamthitta,2010,96.27,72.86,77.06,40.02
+Kerala,Pathanamthitta,2011,96.55,74.52,77.38,41.39
+Kerala,Pathanamthitta,2012,96.83,76.18,77.71,42.76
+Kerala,Pathanamthitta,2013,97.11,77.83,78.03,44.13
+Kerala,Pathanamthitta,2014,97.39,79.49,79.56,45.5
+Kerala,Pathanamthitta,2015,97.67,81.14,81.08,46.86
+Kerala,Pathanamthitta,2016,98.07,82.8,82.6,48.23
+Kerala,Pathanamthitta,2017,98.47,84.5,84.19,49.6
+Kerala,Pathanamthitta,2018,98.87,86.2,85.78,51.52
+Kerala,Pathanamthitta,2019,99.0,87.9,87.37,53.44
+Kerala,Pathanamthitta,2020,99.0,89.6,88.96,50.4
+Kerala,Pathanamthitta,2021,99.0,89.6,91.12,53.93
+Kerala,Pathanamthitta,2022,99.0,90.82,93.28,59.2
+Kerala,Pathanamthitta,2023,99.0,92.05,95.44,60.74
+Kerala,Pathanamthitta,2024,99.0,93.27,97,62.27
+Kerala,Pathanamthitta,2025,99.0,94.5,97,63.81
+Kerala,Pathanamthitta,2026,99.0,95.72,97,65.34
+Kerala,Kasaragod,2010,89.57,62.66,59.79,40.02
+Kerala,Kasaragod,2011,89.85,64.08,60.35,41.39
+Kerala,Kasaragod,2012,90.13,65.5,60.92,42.76
+Kerala,Kasaragod,2013,90.41,66.93,61.49,44.13
+Kerala,Kasaragod,2014,90.69,68.35,63.26,45.5
+Kerala,Kasaragod,2015,90.97,69.78,65.03,46.86
+Kerala,Kasaragod,2016,91.37,71.2,66.79,48.23
+Kerala,Kasaragod,2017,91.77,73.5,68.68,49.6
+Kerala,Kasaragod,2018,92.17,75.8,70.56,51.52
+Kerala,Kasaragod,2019,92.57,78.1,72.44,53.44
+Kerala,Kasaragod,2020,92.97,80.4,74.32,50.4
+Kerala,Kasaragod,2021,93.37,80.4,76.48,53.93
+Kerala,Kasaragod,2022,93.77,82.06,78.64,59.2
+Kerala,Kasaragod,2023,94.17,83.71,80.8,60.74
+Kerala,Kasaragod,2024,94.57,85.37,82.96,62.27
+Kerala,Kasaragod,2025,94.97,87.02,85.12,63.81
+Kerala,Kasaragod,2026,95.37,88.68,87.28,65.34
+Kerala,Alappuzha,2010,95.74,71.46,75.08,40.02
+Kerala,Alappuzha,2011,96.02,73.08,75.43,41.39
+Kerala,Alappuzha,2012,96.3,74.7,75.78,42.76
+Kerala,Alappuzha,2013,96.58,76.33,76.13,44.13
+Kerala,Alappuzha,2014,96.86,77.95,77.69,45.5
+Kerala,Alappuzha,2015,97.14,79.58,79.24,46.86
+Kerala,Alappuzha,2016,97.54,81.2,80.79,48.23
+Kerala,Alappuzha,2017,97.94,83.0,82.41,49.6
+Kerala,Alappuzha,2018,98.34,84.8,84.04,51.52
+Kerala,Alappuzha,2019,98.74,86.6,85.66,53.44
+Kerala,Alappuzha,2020,99.0,88.4,87.28,50.4
+Kerala,Alappuzha,2021,99.0,88.4,89.44,53.93
+Kerala,Alappuzha,2022,99.0,89.7,91.6,59.2
+Kerala,Alappuzha,2023,99.0,90.99,93.76,60.74
+Kerala,Alappuzha,2024,99.0,92.29,95.92,62.27
+Kerala,Alappuzha,2025,99.0,93.58,97,63.81
+Kerala,Alappuzha,2026,99.0,94.88,97,65.34
+Kerala,Kottayam,2010,96.93,74.01,77.63,40.02
+Kerala,Kottayam,2011,97.21,75.69,77.94,41.39
+Kerala,Kottayam,2012,97.49,77.37,78.26,42.76
+Kerala,Kottayam,2013,97.77,79.05,78.58,44.13
+Kerala,Kottayam,2014,98.05,80.74,80.09,45.5
+Kerala,Kottayam,2015,98.33,82.42,81.61,46.86
+Kerala,Kottayam,2016,98.73,84.1,83.12,48.23
+Kerala,Kottayam,2017,99.0,85.77,84.7,49.6
+Kerala,Kottayam,2018,99.0,87.45,86.28,51.52
+Kerala,Kottayam,2019,99.0,89.12,87.86,53.44
+Kerala,Kottayam,2020,99.0,90.8,89.44,50.4
+Kerala,Kottayam,2021,99.0,90.8,91.6,53.93
+Kerala,Kottayam,2022,99.0,92.01,93.76,59.2
+Kerala,Kottayam,2023,99.0,93.21,95.92,60.74
+Kerala,Kottayam,2024,99.0,94.42,97,62.27
+Kerala,Kottayam,2025,99.0,95.62,97,63.81
+Kerala,Kottayam,2026,99.0,96.83,97,65.34
+Tamil Nadu,Chennai,2010,89.9,67.94,68.28,52.61
+Tamil Nadu,Chennai,2011,90.18,69.48,68.73,54.01
+Tamil Nadu,Chennai,2012,90.46,71.02,69.18,55.41
+Tamil Nadu,Chennai,2013,90.74,72.57,69.63,56.8
+Tamil Nadu,Chennai,2014,91.02,74.11,71.27,58.2
+Tamil Nadu,Chennai,2015,91.3,75.66,72.92,59.6
+Tamil Nadu,Chennai,2016,91.7,77.2,74.57,61.0
+Tamil Nadu,Chennai,2017,92.1,79.05,76.31,62.4
+Tamil Nadu,Chennai,2018,92.5,80.9,78.04,63.84
+Tamil Nadu,Chennai,2019,92.9,82.75,79.78,65.28
+Tamil Nadu,Chennai,2020,93.3,84.6,81.52,61.69
+Tamil Nadu,Chennai,2021,93.7,84.6,83.68,64.78
+Tamil Nadu,Chennai,2022,94.1,85.93,85.84,69.6
+Tamil Nadu,Chennai,2023,94.5,87.26,88.0,70.75
+Tamil Nadu,Chennai,2024,94.9,88.6,90.16,71.9
+Tamil Nadu,Chennai,2025,95.3,89.93,92.32,73.06
+Tamil Nadu,Chennai,2026,95.7,91.26,94.48,74.21
+Tamil Nadu,Coimbatore,2010,85.21,64.94,69.13,51.21
+Tamil Nadu,Coimbatore,2011,85.49,66.42,69.57,52.61
+Tamil Nadu,Coimbatore,2012,85.77,67.9,70.0,54.01
+Tamil Nadu,Coimbatore,2013,86.05,69.37,70.44,55.4
+Tamil Nadu,Coimbatore,2014,86.33,70.85,72.08,56.8
+Tamil Nadu,Coimbatore,2015,86.61,72.32,73.71,58.2
+Tamil Nadu,Coimbatore,2016,87.01,73.8,75.35,59.6
+Tamil Nadu,Coimbatore,2017,87.41,75.65,77.07,61.0
+Tamil Nadu,Coimbatore,2018,87.81,77.5,78.79,62.44
+Tamil Nadu,Coimbatore,2019,88.21,79.35,80.52,63.88
+Tamil Nadu,Coimbatore,2020,88.61,81.2,82.24,60.29
+Tamil Nadu,Coimbatore,2021,89.01,81.2,84.4,63.38
+Tamil Nadu,Coimbatore,2022,89.41,82.53,86.56,68.2
+Tamil Nadu,Coimbatore,2023,89.81,83.86,88.72,69.35
+Tamil Nadu,Coimbatore,2024,90.21,85.2,90.88,70.5
+Tamil Nadu,Coimbatore,2025,90.61,86.53,93.04,71.66
+Tamil Nadu,Coimbatore,2026,91.01,87.86,95.2,72.81
+Tamil Nadu,Madurai,2010,82.27,61.07,62.62,43.41
+Tamil Nadu,Madurai,2011,82.72,62.46,63.15,44.81
+Tamil Nadu,Madurai,2012,83.17,63.85,63.67,46.21
+Tamil Nadu,Madurai,2013,83.62,65.24,64.2,47.6
+Tamil Nadu,Madurai,2014,84.07,66.62,65.93,49.0
+Tamil Nadu,Madurai,2015,84.52,68.01,67.66,50.4
+Tamil Nadu,Madurai,2016,85.09,69.4,69.39,51.8
+Tamil Nadu,Madurai,2017,85.66,71.4,71.22,53.2
+Tamil Nadu,Madurai,2018,86.23,73.4,73.05,54.64
+Tamil Nadu,Madurai,2019,86.8,75.4,74.89,56.08
+Tamil Nadu,Madurai,2020,87.37,77.4,76.72,52.49
+Tamil Nadu,Madurai,2021,87.94,77.4,78.88,55.58
+Tamil Nadu,Madurai,2022,88.51,78.84,81.04,60.4
+Tamil Nadu,Madurai,2023,89.08,80.28,83.2,61.55
+Tamil Nadu,Madurai,2024,89.65,81.72,85.36,62.7
+Tamil Nadu,Madurai,2025,90.22,83.16,87.52,63.86
+Tamil Nadu,Madurai,2026,90.79,84.6,89.68,65.01
+Tamil Nadu,Salem,2010,78.09,57.9,57.24,48.61
+Tamil Nadu,Salem,2011,78.54,59.22,57.84,50.01
+Tamil Nadu,Salem,2012,78.99,60.54,58.44,51.41
+Tamil Nadu,Salem,2013,79.44,61.85,59.05,52.8
+Tamil Nadu,Salem,2014,79.89,63.17,60.85,54.2
+Tamil Nadu,Salem,2015,80.34,64.48,62.66,55.6
+Tamil Nadu,Salem,2016,80.91,65.8,64.46,57.0
+Tamil Nadu,Salem,2017,81.48,67.8,66.39,58.4
+Tamil Nadu,Salem,2018,82.05,69.8,68.31,59.84
+Tamil Nadu,Salem,2019,82.62,71.8,70.24,61.28
+Tamil Nadu,Salem,2020,83.19,73.8,72.16,57.69
+Tamil Nadu,Salem,2021,83.76,73.8,74.32,60.78
+Tamil Nadu,Salem,2022,84.33,75.24,76.48,65.6
+Tamil Nadu,Salem,2023,84.9,76.68,78.64,66.75
+Tamil Nadu,Salem,2024,85.47,78.12,80.8,67.9
+Tamil Nadu,Salem,2025,86.04,79.56,82.96,69.06
+Tamil Nadu,Salem,2026,86.61,81.0,85.12,70.21
+Tamil Nadu,Tiruchirappalli,2010,82.17,61.78,64.88,43.41
+Tamil Nadu,Tiruchirappalli,2011,82.62,63.18,65.38,44.81
+Tamil Nadu,Tiruchirappalli,2012,83.07,64.58,65.88,46.21
+Tamil Nadu,Tiruchirappalli,2013,83.52,65.99,66.37,47.6
+Tamil Nadu,Tiruchirappalli,2014,83.97,67.39,68.07,49.0
+Tamil Nadu,Tiruchirappalli,2015,84.42,68.8,69.76,50.4
+Tamil Nadu,Tiruchirappalli,2016,84.99,70.2,71.46,51.8
+Tamil Nadu,Tiruchirappalli,2017,85.56,72.25,73.25,53.2
+Tamil Nadu,Tiruchirappalli,2018,86.13,74.3,75.05,54.64
+Tamil Nadu,Tiruchirappalli,2019,86.7,76.35,76.84,56.08
+Tamil Nadu,Tiruchirappalli,2020,87.27,78.4,78.64,52.49
+Tamil Nadu,Tiruchirappalli,2021,87.84,78.4,80.8,55.58
+Tamil Nadu,Tiruchirappalli,2022,88.41,79.88,82.96,60.4
+Tamil Nadu,Tiruchirappalli,2023,88.98,81.35,85.12,61.55
+Tamil Nadu,Tiruchirappalli,2024,89.55,82.83,87.28,62.7
+Tamil Nadu,Tiruchirappalli,2025,90.12,84.3,89.44,63.86
+Tamil Nadu,Tiruchirappalli,2026,90.69,85.78,91.6,65.01
+Tamil Nadu,Tirunelveli,2010,87.35,65.65,68.0,43.41
+Tamil Nadu,Tirunelveli,2011,87.63,67.14,68.45,44.81
+Tamil Nadu,Tirunelveli,2012,87.91,68.63,68.9,46.21
+Tamil Nadu,Tirunelveli,2013,88.19,70.12,69.35,47.6
+Tamil Nadu,Tirunelveli,2014,88.47,71.62,71.01,49.0
+Tamil Nadu,Tirunelveli,2015,88.75,73.11,72.66,50.4
+Tamil Nadu,Tirunelveli,2016,89.15,74.6,74.31,51.8
+Tamil Nadu,Tirunelveli,2017,89.55,76.6,76.05,53.2
+Tamil Nadu,Tirunelveli,2018,89.95,78.6,77.8,54.64
+Tamil Nadu,Tirunelveli,2019,90.35,80.6,79.54,56.08
+Tamil Nadu,Tirunelveli,2020,90.75,82.6,81.28,52.49
+Tamil Nadu,Tirunelveli,2021,91.15,82.6,83.44,55.58
+Tamil Nadu,Tirunelveli,2022,91.55,84.04,85.6,60.4
+Tamil Nadu,Tirunelveli,2023,91.95,85.48,87.76,61.55
+Tamil Nadu,Tirunelveli,2024,92.35,86.92,89.92,62.7
+Tamil Nadu,Tirunelveli,2025,92.75,88.36,92.08,63.86
+Tamil Nadu,Tirunelveli,2026,93.15,89.8,94.24,65.01
+Tamil Nadu,Vellore,2010,81.87,59.31,59.79,43.41
+Tamil Nadu,Vellore,2011,82.32,60.66,60.35,44.81
+Tamil Nadu,Vellore,2012,82.77,62.01,60.92,46.21
+Tamil Nadu,Vellore,2013,83.22,63.36,61.49,47.6
+Tamil Nadu,Vellore,2014,83.67,64.7,63.26,49.0
+Tamil Nadu,Vellore,2015,84.12,66.05,65.03,50.4
+Tamil Nadu,Vellore,2016,84.69,67.4,66.79,51.8
+Tamil Nadu,Vellore,2017,85.26,69.4,68.68,53.2
+Tamil Nadu,Vellore,2018,85.83,71.4,70.56,54.64
+Tamil Nadu,Vellore,2019,86.4,73.4,72.44,56.08
+Tamil Nadu,Vellore,2020,86.97,75.4,74.32,52.49
+Tamil Nadu,Vellore,2021,87.54,75.4,76.48,55.58
+Tamil Nadu,Vellore,2022,88.11,76.84,78.64,60.4
+Tamil Nadu,Vellore,2023,88.68,78.28,80.8,61.55
+Tamil Nadu,Vellore,2024,89.25,79.72,82.96,62.7
+Tamil Nadu,Vellore,2025,89.82,81.16,85.12,63.86
+Tamil Nadu,Vellore,2026,90.39,82.6,87.28,65.01
+Tamil Nadu,Erode,2010,79.8,58.78,60.64,49.81
+Tamil Nadu,Erode,2011,80.25,60.12,61.19,51.21
+Tamil Nadu,Erode,2012,80.7,61.46,61.75,52.61
+Tamil Nadu,Erode,2013,81.15,62.79,62.3,54.0
+Tamil Nadu,Erode,2014,81.6,64.13,64.06,55.4
+Tamil Nadu,Erode,2015,82.05,65.46,65.82,56.8
+Tamil Nadu,Erode,2016,82.62,66.8,67.57,58.2
+Tamil Nadu,Erode,2017,83.19,68.8,69.44,59.6
+Tamil Nadu,Erode,2018,83.76,70.8,71.31,61.04
+Tamil Nadu,Erode,2019,84.33,72.8,73.17,62.48
+Tamil Nadu,Erode,2020,84.9,74.8,75.04,58.89
+Tamil Nadu,Erode,2021,85.47,74.8,77.2,61.98
+Tamil Nadu,Erode,2022,86.04,76.24,79.36,66.8
+Tamil Nadu,Erode,2023,86.61,77.68,81.52,67.95
+Tamil Nadu,Erode,2024,87.18,79.12,83.68,69.1
+Tamil Nadu,Erode,2025,87.75,80.56,85.84,70.26
+Tamil Nadu,Erode,2026,88.32,82.0,88.0,71.41
+Tamil Nadu,Thanjavur,2010,83.46,63.71,65.45,43.41
+Tamil Nadu,Thanjavur,2011,83.91,65.16,65.94,44.81
+Tamil Nadu,Thanjavur,2012,84.36,66.61,66.43,46.21
+Tamil Nadu,Thanjavur,2013,84.81,68.06,66.91,47.6
+Tamil Nadu,Thanjavur,2014,85.26,69.5,68.6,49.0
+Tamil Nadu,Thanjavur,2015,85.71,70.95,70.29,50.4
+Tamil Nadu,Thanjavur,2016,86.28,72.4,71.98,51.8
+Tamil Nadu,Thanjavur,2017,86.85,74.35,73.76,53.2
+Tamil Nadu,Thanjavur,2018,87.42,76.3,75.55,54.64
+Tamil Nadu,Thanjavur,2019,87.99,78.25,77.33,56.08
+Tamil Nadu,Thanjavur,2020,88.56,80.2,79.12,52.49
+Tamil Nadu,Thanjavur,2021,89.13,80.2,81.28,55.58
+Tamil Nadu,Thanjavur,2022,89.7,81.6,83.44,60.4
+Tamil Nadu,Thanjavur,2023,90.27,83.01,85.6,61.55
+Tamil Nadu,Thanjavur,2024,90.84,84.41,87.76,62.7
+Tamil Nadu,Thanjavur,2025,91.41,85.82,89.92,63.86
+Tamil Nadu,Thanjavur,2026,91.98,87.22,92.08,65.01
+Tamil Nadu,Dharmapuri,2010,67.9,48.05,45.91,43.41
+Tamil Nadu,Dharmapuri,2011,68.48,49.14,46.67,44.81
+Tamil Nadu,Dharmapuri,2012,69.06,50.23,47.44,46.21
+Tamil Nadu,Dharmapuri,2013,69.64,51.32,48.2,47.6
+Tamil Nadu,Dharmapuri,2014,70.22,52.42,50.16,49.0
+Tamil Nadu,Dharmapuri,2015,70.8,53.51,52.13,50.4
+Tamil Nadu,Dharmapuri,2016,71.5,54.6,54.09,51.8
+Tamil Nadu,Dharmapuri,2017,72.2,56.8,56.21,53.2
+Tamil Nadu,Dharmapuri,2018,72.9,59.0,58.33,54.64
+Tamil Nadu,Dharmapuri,2019,73.6,61.2,60.44,56.08
+Tamil Nadu,Dharmapuri,2020,74.3,63.4,62.56,52.49
+Tamil Nadu,Dharmapuri,2021,75.0,63.4,64.72,55.58
+Tamil Nadu,Dharmapuri,2022,75.7,64.98,66.88,60.4
+Tamil Nadu,Dharmapuri,2023,76.4,66.57,69.04,61.55
+Tamil Nadu,Dharmapuri,2024,77.1,68.15,71.2,62.7
+Tamil Nadu,Dharmapuri,2025,77.8,69.74,73.36,63.86
+Tamil Nadu,Dharmapuri,2026,78.5,71.32,75.52,65.01
+Tamil Nadu,Cuddalore,2010,78.99,54.91,52.42,43.41
+Tamil Nadu,Cuddalore,2011,79.44,56.16,53.09,44.81
+Tamil Nadu,Cuddalore,2012,79.89,57.41,53.77,46.21
+Tamil Nadu,Cuddalore,2013,80.34,58.66,54.44,47.6
+Tamil Nadu,Cuddalore,2014,80.79,59.9,56.31,49.0
+Tamil Nadu,Cuddalore,2015,81.24,61.15,58.18,50.4
+Tamil Nadu,Cuddalore,2016,81.81,62.4,60.05,51.8
+Tamil Nadu,Cuddalore,2017,82.38,64.65,62.06,53.2
+Tamil Nadu,Cuddalore,2018,82.95,66.9,64.07,54.64
+Tamil Nadu,Cuddalore,2019,83.52,69.15,66.07,56.08
+Tamil Nadu,Cuddalore,2020,84.09,71.4,68.08,52.49
+Tamil Nadu,Cuddalore,2021,84.66,71.4,70.24,55.58
+Tamil Nadu,Cuddalore,2022,85.23,73.02,72.4,60.4
+Tamil Nadu,Cuddalore,2023,85.8,74.64,74.56,61.55
+Tamil Nadu,Cuddalore,2024,86.37,76.26,76.72,62.7
+Tamil Nadu,Cuddalore,2025,86.94,77.88,78.88,63.86
+Tamil Nadu,Cuddalore,2026,87.51,79.5,81.04,65.01
+Tamil Nadu,Villupuram,2010,70.21,51.74,48.46,43.41
+Tamil Nadu,Villupuram,2011,70.79,52.92,49.19,44.81
+Tamil Nadu,Villupuram,2012,71.37,54.1,49.91,46.21
+Tamil Nadu,Villupuram,2013,71.95,55.27,50.64,47.6
+Tamil Nadu,Villupuram,2014,72.53,56.45,52.57,49.0
+Tamil Nadu,Villupuram,2015,73.11,57.62,54.5,50.4
+Tamil Nadu,Villupuram,2016,73.81,58.8,56.43,51.8
+Tamil Nadu,Villupuram,2017,74.51,60.8,58.5,53.2
+Tamil Nadu,Villupuram,2018,75.21,62.8,60.57,54.64
+Tamil Nadu,Villupuram,2019,75.91,64.8,62.65,56.08
+Tamil Nadu,Villupuram,2020,76.61,66.8,64.72,52.49
+Tamil Nadu,Villupuram,2021,77.31,66.8,66.88,55.58
+Tamil Nadu,Villupuram,2022,78.01,68.24,69.04,60.4
+Tamil Nadu,Villupuram,2023,78.71,69.68,71.2,61.55
+Tamil Nadu,Villupuram,2024,79.41,71.12,73.36,62.7
+Tamil Nadu,Villupuram,2025,80.11,72.56,75.52,63.86
+Tamil Nadu,Villupuram,2026,80.81,74.0,77.68,65.01
+Tamil Nadu,Krishnagiri,2010,69.86,50.34,49.31,43.41
+Tamil Nadu,Krishnagiri,2011,70.44,51.48,50.02,44.81
+Tamil Nadu,Krishnagiri,2012,71.02,52.62,50.74,46.21
+Tamil Nadu,Krishnagiri,2013,71.6,53.77,51.46,47.6
+Tamil Nadu,Krishnagiri,2014,72.18,54.91,53.37,49.0
+Tamil Nadu,Krishnagiri,2015,72.76,56.06,55.29,50.4
+Tamil Nadu,Krishnagiri,2016,73.46,57.2,57.2,51.8
+Tamil Nadu,Krishnagiri,2017,74.16,59.25,59.26,53.2
+Tamil Nadu,Krishnagiri,2018,74.86,61.3,61.32,54.64
+Tamil Nadu,Krishnagiri,2019,75.56,63.35,63.38,56.08
+Tamil Nadu,Krishnagiri,2020,76.26,65.4,65.44,52.49
+Tamil Nadu,Krishnagiri,2021,76.96,65.4,67.6,55.58
+Tamil Nadu,Krishnagiri,2022,77.66,66.88,69.76,60.4
+Tamil Nadu,Krishnagiri,2023,78.36,68.35,71.92,61.55
+Tamil Nadu,Krishnagiri,2024,79.06,69.83,74.08,62.7
+Tamil Nadu,Krishnagiri,2025,79.76,71.3,76.24,63.86
+Tamil Nadu,Krishnagiri,2026,80.46,72.78,78.4,65.01
+Tamil Nadu,Tiruppur,2010,77.34,60.19,64.03,52.61
+Tamil Nadu,Tiruppur,2011,77.79,61.56,64.54,54.01
+Tamil Nadu,Tiruppur,2012,78.24,62.93,65.05,55.41
+Tamil Nadu,Tiruppur,2013,78.69,64.3,65.56,56.8
+Tamil Nadu,Tiruppur,2014,79.14,65.66,67.27,58.2
+Tamil Nadu,Tiruppur,2015,79.59,67.03,68.97,59.6
+Tamil Nadu,Tiruppur,2016,80.16,68.4,70.68,61.0
+Tamil Nadu,Tiruppur,2017,80.73,70.5,72.49,62.4
+Tamil Nadu,Tiruppur,2018,81.3,72.6,74.3,63.84
+Tamil Nadu,Tiruppur,2019,81.87,74.7,76.11,65.28
+Tamil Nadu,Tiruppur,2020,82.44,76.8,77.92,61.69
+Tamil Nadu,Tiruppur,2021,83.01,76.8,80.08,64.78
+Tamil Nadu,Tiruppur,2022,83.58,78.31,82.24,69.6
+Tamil Nadu,Tiruppur,2023,84.15,79.82,84.4,70.75
+Tamil Nadu,Tiruppur,2024,84.72,81.34,86.56,71.9
+Tamil Nadu,Tiruppur,2025,85.29,82.85,88.72,73.06
+Tamil Nadu,Tiruppur,2026,85.86,84.36,90.88,74.21
+Maharashtra,Mumbai,2010,88.93,65.65,65.17,47.3
+Maharashtra,Mumbai,2011,89.21,67.14,65.66,48.65
+Maharashtra,Mumbai,2012,89.49,68.63,66.15,50.01
+Maharashtra,Mumbai,2013,89.77,70.12,66.64,51.37
+Maharashtra,Mumbai,2014,90.05,71.62,68.33,52.73
+Maharashtra,Mumbai,2015,90.33,73.11,70.03,54.08
+Maharashtra,Mumbai,2016,90.73,74.6,71.72,55.44
+Maharashtra,Mumbai,2017,91.13,76.55,73.51,56.8
+Maharashtra,Mumbai,2018,91.53,78.5,75.3,58.24
+Maharashtra,Mumbai,2019,91.93,80.45,77.09,59.68
+Maharashtra,Mumbai,2020,92.33,82.4,78.88,56.24
+Maharashtra,Mumbai,2021,92.73,82.4,81.04,59.28
+Maharashtra,Mumbai,2022,93.13,83.8,83.2,64.0
+Maharashtra,Mumbai,2023,93.53,85.21,85.36,65.15
+Maharashtra,Mumbai,2024,93.93,86.61,87.52,66.3
+Maharashtra,Mumbai,2025,94.33,88.02,89.68,67.46
+Maharashtra,Mumbai,2026,94.73,89.42,91.84,68.61
+Maharashtra,Pune,2010,86.9,63.71,66.3,46.1
+Maharashtra,Pune,2011,87.18,65.16,66.78,47.45
+Maharashtra,Pune,2012,87.46,66.61,67.25,48.81
+Maharashtra,Pune,2013,87.74,68.06,67.73,50.17
+Maharashtra,Pune,2014,88.02,69.5,69.4,51.53
+Maharashtra,Pune,2015,88.3,70.95,71.08,52.88
+Maharashtra,Pune,2016,88.7,72.4,72.76,54.24
+Maharashtra,Pune,2017,89.1,74.35,74.53,55.6
+Maharashtra,Pune,2018,89.5,76.3,76.3,57.04
+Maharashtra,Pune,2019,89.9,78.25,78.07,58.48
+Maharashtra,Pune,2020,90.3,80.2,79.84,55.04
+Maharashtra,Pune,2021,90.7,80.2,82.0,58.08
+Maharashtra,Pune,2022,91.1,81.6,84.16,62.8
+Maharashtra,Pune,2023,91.5,83.01,86.32,63.95
+Maharashtra,Pune,2024,91.9,84.41,88.48,65.1
+Maharashtra,Pune,2025,92.3,85.82,90.64,66.26
+Maharashtra,Pune,2026,92.7,87.22,92.8,67.41
+Maharashtra,Nagpur,2010,88.1,61.42,62.62,44.3
+Maharashtra,Nagpur,2011,88.38,62.82,63.15,45.65
+Maharashtra,Nagpur,2012,88.66,64.22,63.67,47.01
+Maharashtra,Nagpur,2013,88.94,65.61,64.2,48.37
+Maharashtra,Nagpur,2014,89.22,67.01,65.93,49.73
+Maharashtra,Nagpur,2015,89.5,68.4,67.66,51.08
+Maharashtra,Nagpur,2016,89.9,69.8,69.39,52.44
+Maharashtra,Nagpur,2017,90.3,71.75,71.22,53.8
+Maharashtra,Nagpur,2018,90.7,73.7,73.05,55.24
+Maharashtra,Nagpur,2019,91.1,75.65,74.89,56.68
+Maharashtra,Nagpur,2020,91.5,77.6,76.72,53.24
+Maharashtra,Nagpur,2021,91.9,77.6,78.88,56.28
+Maharashtra,Nagpur,2022,92.3,79.0,81.04,61.0
+Maharashtra,Nagpur,2023,92.7,80.41,83.2,62.15
+Maharashtra,Nagpur,2024,93.1,81.81,85.36,63.3
+Maharashtra,Nagpur,2025,93.5,83.22,87.52,64.46
+Maharashtra,Nagpur,2026,93.9,84.62,89.68,65.61
+Maharashtra,Nashik,2010,79.8,54.91,53.56,38.9
+Maharashtra,Nashik,2011,80.25,56.16,54.21,40.25
+Maharashtra,Nashik,2012,80.7,57.41,54.87,41.61
+Maharashtra,Nashik,2013,81.15,58.66,55.52,42.97
+Maharashtra,Nashik,2014,81.6,59.9,57.38,44.33
+Maharashtra,Nashik,2015,82.05,61.15,59.24,45.68
+Maharashtra,Nashik,2016,82.62,62.4,61.09,47.04
+Maharashtra,Nashik,2017,83.19,64.5,63.08,48.4
+Maharashtra,Nashik,2018,83.76,66.6,65.07,49.84
+Maharashtra,Nashik,2019,84.33,68.7,67.05,51.28
+Maharashtra,Nashik,2020,84.9,70.8,69.04,47.84
+Maharashtra,Nashik,2021,85.47,70.8,71.2,50.88
+Maharashtra,Nashik,2022,86.04,72.31,73.36,55.6
+Maharashtra,Nashik,2023,86.61,73.82,75.52,56.75
+Maharashtra,Nashik,2024,87.18,75.34,77.68,57.9
+Maharashtra,Nashik,2025,87.75,76.85,79.84,59.06
+Maharashtra,Nashik,2026,88.32,78.36,82.0,60.21
+Maharashtra,Thane,2010,85.0,60.37,61.2,38.9
+Maharashtra,Thane,2011,85.28,61.74,61.75,40.25
+Maharashtra,Thane,2012,85.56,63.11,62.3,41.61
+Maharashtra,Thane,2013,85.84,64.48,62.85,42.97
+Maharashtra,Thane,2014,86.12,65.86,64.59,44.33
+Maharashtra,Thane,2015,86.4,67.23,66.34,45.68
+Maharashtra,Thane,2016,86.8,68.6,68.09,47.04
+Maharashtra,Thane,2017,87.2,70.55,69.95,48.4
+Maharashtra,Thane,2018,87.6,72.5,71.8,49.84
+Maharashtra,Thane,2019,88.0,74.45,73.66,51.28
+Maharashtra,Thane,2020,88.4,76.4,75.52,47.84
+Maharashtra,Thane,2021,88.8,76.4,77.68,50.88
+Maharashtra,Thane,2022,89.2,77.8,79.84,55.6
+Maharashtra,Thane,2023,89.6,79.21,82.0,56.75
+Maharashtra,Thane,2024,90.0,80.61,84.16,57.9
+Maharashtra,Thane,2025,90.4,82.02,86.32,59.06
+Maharashtra,Thane,2026,90.8,83.42,88.48,60.21
+Maharashtra,Aurangabad,2010,66.69,39.25,28.63,38.9
+Maharashtra,Aurangabad,2011,67.27,40.14,29.64,40.25
+Maharashtra,Aurangabad,2012,67.85,41.03,30.65,41.61
+Maharashtra,Aurangabad,2013,68.43,41.92,31.66,42.97
+Maharashtra,Aurangabad,2014,69.01,42.82,33.87,44.33
+Maharashtra,Aurangabad,2015,69.59,43.71,36.07,45.68
+Maharashtra,Aurangabad,2016,70.29,44.6,38.28,47.04
+Maharashtra,Aurangabad,2017,70.99,46.8,40.69,48.4
+Maharashtra,Aurangabad,2018,71.69,49.0,43.1,49.84
+Maharashtra,Aurangabad,2019,72.39,51.2,45.51,51.28
+Maharashtra,Aurangabad,2020,73.09,53.4,47.92,47.84
+Maharashtra,Aurangabad,2021,73.79,53.4,50.08,50.88
+Maharashtra,Aurangabad,2022,74.49,54.98,52.24,55.6
+Maharashtra,Aurangabad,2023,75.19,56.57,54.4,56.75
+Maharashtra,Aurangabad,2024,75.89,58.15,56.56,57.9
+Maharashtra,Aurangabad,2025,76.59,59.74,58.72,59.06
+Maharashtra,Aurangabad,2026,77.29,61.32,60.88,60.21
+Maharashtra,Solapur,2010,78.81,53.86,50.16,38.9
+Maharashtra,Solapur,2011,79.26,55.08,50.86,40.25
+Maharashtra,Solapur,2012,79.71,56.3,51.56,41.61
+Maharashtra,Solapur,2013,80.16,57.53,52.27,42.97
+Maharashtra,Solapur,2014,80.61,58.75,54.17,44.33
+Maharashtra,Solapur,2015,81.06,59.98,56.08,45.68
+Maharashtra,Solapur,2016,81.63,61.2,57.98,47.04
+Maharashtra,Solapur,2017,82.2,63.25,60.03,48.4
+Maharashtra,Solapur,2018,82.77,65.3,62.07,49.84
+Maharashtra,Solapur,2019,83.34,67.35,64.12,51.28
+Maharashtra,Solapur,2020,83.91,69.4,66.16,47.84
+Maharashtra,Solapur,2021,84.48,69.4,68.32,50.88
+Maharashtra,Solapur,2022,85.05,70.88,70.48,55.6
+Maharashtra,Solapur,2023,85.62,72.35,72.64,56.75
+Maharashtra,Solapur,2024,86.19,73.83,74.8,57.9
+Maharashtra,Solapur,2025,86.76,75.3,76.96,59.06
+Maharashtra,Solapur,2026,87.33,76.78,79.12,60.21
+Maharashtra,Kolhapur,2010,84.51,59.66,59.79,38.9
+Maharashtra,Kolhapur,2011,84.96,61.02,60.35,40.25
+Maharashtra,Kolhapur,2012,85.41,62.38,60.92,41.61
+Maharashtra,Kolhapur,2013,85.86,63.73,61.49,42.97
+Maharashtra,Kolhapur,2014,86.31,65.09,63.26,44.33
+Maharashtra,Kolhapur,2015,86.76,66.44,65.03,45.68
+Maharashtra,Kolhapur,2016,87.33,67.8,66.79,47.04
+Maharashtra,Kolhapur,2017,87.9,69.75,68.68,48.4
+Maharashtra,Kolhapur,2018,88.47,71.7,70.56,49.84
+Maharashtra,Kolhapur,2019,89.04,73.65,72.44,51.28
+Maharashtra,Kolhapur,2020,89.61,75.6,74.32,47.84
+Maharashtra,Kolhapur,2021,90.18,75.6,76.48,50.88
+Maharashtra,Kolhapur,2022,90.75,77.0,78.64,55.6
+Maharashtra,Kolhapur,2023,91.32,78.41,80.8,56.75
+Maharashtra,Kolhapur,2024,91.89,79.81,82.96,57.9
+Maharashtra,Kolhapur,2025,92.46,81.22,85.12,59.06
+Maharashtra,Kolhapur,2026,93.03,82.62,87.28,60.21
+Maharashtra,Amravati,2010,82.1,55.09,52.42,38.9
+Maharashtra,Amravati,2011,82.55,56.34,53.09,40.25
+Maharashtra,Amravati,2012,83.0,57.59,53.77,41.61
+Maharashtra,Amravati,2013,83.45,58.84,54.44,42.97
+Maharashtra,Amravati,2014,83.9,60.1,56.31,44.33
+Maharashtra,Amravati,2015,84.35,61.35,58.18,45.68
+Maharashtra,Amravati,2016,84.92,62.6,60.05,47.04
+Maharashtra,Amravati,2017,85.49,64.55,62.06,48.4
+Maharashtra,Amravati,2018,86.06,66.5,64.07,49.84
+Maharashtra,Amravati,2019,86.63,68.45,66.07,51.28
+Maharashtra,Amravati,2020,87.2,70.4,68.08,47.84
+Maharashtra,Amravati,2021,87.77,70.4,70.24,50.88
+Maharashtra,Amravati,2022,88.34,71.8,72.4,55.6
+Maharashtra,Amravati,2023,88.91,73.21,74.56,56.75
+Maharashtra,Amravati,2024,89.48,74.61,76.72,57.9
+Maharashtra,Amravati,2025,90.05,76.02,78.88,59.06
+Maharashtra,Amravati,2026,90.62,77.42,81.04,60.21
+Maharashtra,Nanded,2010,72.93,46.11,39.96,38.9
+Maharashtra,Nanded,2011,73.51,47.16,40.81,40.25
+Maharashtra,Nanded,2012,74.09,48.21,41.66,41.61
+Maharashtra,Nanded,2013,74.67,49.26,42.51,42.97
+Maharashtra,Nanded,2014,75.25,50.3,44.55,44.33
+Maharashtra,Nanded,2015,75.83,51.35,46.6,45.68
+Maharashtra,Nanded,2016,76.53,52.4,48.65,47.04
+Maharashtra,Nanded,2017,77.23,54.6,50.87,48.4
+Maharashtra,Nanded,2018,77.93,56.8,53.08,49.84
+Maharashtra,Nanded,2019,78.63,59.0,55.3,51.28
+Maharashtra,Nanded,2020,79.33,61.2,57.52,47.84
+Maharashtra,Nanded,2021,80.03,61.2,59.68,50.88
+Maharashtra,Nanded,2022,80.73,62.78,61.84,55.6
+Maharashtra,Nanded,2023,81.43,64.37,64.0,56.75
+Maharashtra,Nanded,2024,82.13,65.95,66.16,57.9
+Maharashtra,Nanded,2025,82.83,67.54,68.32,59.06
+Maharashtra,Nanded,2026,83.53,69.12,70.48,60.21
+Maharashtra,Latur,2010,73.17,44.7,36.56,38.9
+Maharashtra,Latur,2011,73.75,45.72,37.46,40.25
+Maharashtra,Latur,2012,74.33,46.74,38.36,41.61
+Maharashtra,Latur,2013,74.91,47.75,39.25,42.97
+Maharashtra,Latur,2014,75.49,48.77,41.35,44.33
+Maharashtra,Latur,2015,76.07,49.78,43.44,45.68
+Maharashtra,Latur,2016,76.77,50.8,45.54,47.04
+Maharashtra,Latur,2017,77.47,53.0,47.81,48.4
+Maharashtra,Latur,2018,78.17,55.2,50.09,49.84
+Maharashtra,Latur,2019,78.87,57.4,52.36,51.28
+Maharashtra,Latur,2020,79.57,59.6,54.64,47.84
+Maharashtra,Latur,2021,80.27,59.6,56.8,50.88
+Maharashtra,Latur,2022,80.97,61.18,58.96,55.6
+Maharashtra,Latur,2023,81.67,62.77,61.12,56.75
+Maharashtra,Latur,2024,82.37,64.35,63.28,57.9
+Maharashtra,Latur,2025,83.07,65.94,65.44,59.06
+Maharashtra,Latur,2026,83.77,67.52,67.6,60.21
+Maharashtra,Jalgaon,2010,79.04,51.39,48.46,38.9
+Maharashtra,Jalgaon,2011,79.49,52.56,49.19,40.25
+Maharashtra,Jalgaon,2012,79.94,53.73,49.91,41.61
+Maharashtra,Jalgaon,2013,80.39,54.9,50.64,42.97
+Maharashtra,Jalgaon,2014,80.84,56.06,52.57,44.33
+Maharashtra,Jalgaon,2015,81.29,57.23,54.5,45.68
+Maharashtra,Jalgaon,2016,81.86,58.4,56.43,47.04
+Maharashtra,Jalgaon,2017,82.43,60.5,58.5,48.4
+Maharashtra,Jalgaon,2018,83.0,62.6,60.57,49.84
+Maharashtra,Jalgaon,2019,83.57,64.7,62.65,51.28
+Maharashtra,Jalgaon,2020,84.14,66.8,64.72,47.84
+Maharashtra,Jalgaon,2021,84.71,66.8,66.88,50.88
+Maharashtra,Jalgaon,2022,85.28,68.31,69.04,55.6
+Maharashtra,Jalgaon,2023,85.85,69.82,71.2,56.75
+Maharashtra,Jalgaon,2024,86.42,71.34,73.36,57.9
+Maharashtra,Jalgaon,2025,86.99,72.85,75.52,59.06
+Maharashtra,Jalgaon,2026,87.56,74.36,77.68,60.21
+Maharashtra,Ratnagiri,2010,85.89,60.9,62.05,38.9
+Maharashtra,Ratnagiri,2011,86.17,62.28,62.59,40.25
+Maharashtra,Ratnagiri,2012,86.45,63.66,63.12,41.61
+Maharashtra,Ratnagiri,2013,86.73,65.05,63.66,42.97
+Maharashtra,Ratnagiri,2014,87.01,66.43,65.4,44.33
+Maharashtra,Ratnagiri,2015,87.29,67.82,67.13,45.68
+Maharashtra,Ratnagiri,2016,87.69,69.2,68.87,47.04
+Maharashtra,Ratnagiri,2017,88.09,71.25,70.71,48.4
+Maharashtra,Ratnagiri,2018,88.49,73.3,72.55,49.84
+Maharashtra,Ratnagiri,2019,88.89,75.35,74.4,51.28
+Maharashtra,Ratnagiri,2020,89.29,77.4,76.24,47.84
+Maharashtra,Ratnagiri,2021,89.69,77.4,78.4,50.88
+Maharashtra,Ratnagiri,2022,90.09,78.88,80.56,55.6
+Maharashtra,Ratnagiri,2023,90.49,80.35,82.72,56.75
+Maharashtra,Ratnagiri,2024,90.89,81.83,84.88,57.9
+Maharashtra,Ratnagiri,2025,91.29,83.3,87.04,59.06
+Maharashtra,Ratnagiri,2026,91.69,84.78,89.2,60.21
+Maharashtra,Ahmednagar,2010,79.97,53.15,49.87,38.9
+Maharashtra,Ahmednagar,2011,80.42,54.36,50.58,40.25
+Maharashtra,Ahmednagar,2012,80.87,55.57,51.29,41.61
+Maharashtra,Ahmednagar,2013,81.32,56.78,52.0,42.97
+Maharashtra,Ahmednagar,2014,81.77,57.98,53.91,44.33
+Maharashtra,Ahmednagar,2015,82.22,59.19,55.81,45.68
+Maharashtra,Ahmednagar,2016,82.79,60.4,57.72,47.04
+Maharashtra,Ahmednagar,2017,83.36,62.45,59.77,48.4
+Maharashtra,Ahmednagar,2018,83.93,64.5,61.82,49.84
+Maharashtra,Ahmednagar,2019,84.5,66.55,63.87,51.28
+Maharashtra,Ahmednagar,2020,85.07,68.6,65.92,47.84
+Maharashtra,Ahmednagar,2021,85.64,68.6,68.08,50.88
+Maharashtra,Ahmednagar,2022,86.21,70.08,70.24,55.6
+Maharashtra,Ahmednagar,2023,86.78,71.55,72.4,56.75
+Maharashtra,Ahmednagar,2024,87.35,73.03,74.56,57.9
+Maharashtra,Ahmednagar,2025,87.92,74.5,76.72,59.06
+Maharashtra,Ahmednagar,2026,88.49,75.98,78.88,60.21
+Gujarat,Ahmedabad,2010,87.45,64.06,62.62,58.98
+Gujarat,Ahmedabad,2011,87.73,65.52,63.15,60.44
+Gujarat,Ahmedabad,2012,88.01,66.98,63.67,61.9
+Gujarat,Ahmedabad,2013,88.29,68.43,64.2,63.36
+Gujarat,Ahmedabad,2014,88.57,69.89,65.93,64.82
+Gujarat,Ahmedabad,2015,88.85,71.34,67.66,66.28
+Gujarat,Ahmedabad,2016,89.25,72.8,69.39,67.74
+Gujarat,Ahmedabad,2017,89.65,74.7,71.22,69.2
+Gujarat,Ahmedabad,2018,90.05,76.6,73.05,70.16
+Gujarat,Ahmedabad,2019,90.45,78.5,74.89,71.12
+Gujarat,Ahmedabad,2020,90.85,80.4,76.72,66.88
+Gujarat,Ahmedabad,2021,91.25,80.4,78.88,69.56
+Gujarat,Ahmedabad,2022,91.65,81.77,81.04,74.0
+Gujarat,Ahmedabad,2023,92.05,83.14,83.2,74.77
+Gujarat,Ahmedabad,2024,92.45,84.5,85.36,75.54
+Gujarat,Ahmedabad,2025,92.85,85.87,87.52,76.3
+Gujarat,Ahmedabad,2026,93.25,87.24,89.68,77.07
+Gujarat,Surat,2010,84.93,61.07,59.22,59.58
+Gujarat,Surat,2011,85.21,62.46,59.8,61.04
+Gujarat,Surat,2012,85.49,63.85,60.37,62.5
+Gujarat,Surat,2013,85.77,65.24,60.95,63.96
+Gujarat,Surat,2014,86.05,66.62,62.72,65.42
+Gujarat,Surat,2015,86.33,68.01,64.5,66.88
+Gujarat,Surat,2016,86.73,69.4,66.28,68.34
+Gujarat,Surat,2017,87.13,71.35,68.17,69.8
+Gujarat,Surat,2018,87.53,73.3,70.06,70.76
+Gujarat,Surat,2019,87.93,75.25,71.95,71.72
+Gujarat,Surat,2020,88.33,77.2,73.84,67.48
+Gujarat,Surat,2021,88.73,77.2,76.0,70.16
+Gujarat,Surat,2022,89.13,78.6,78.16,74.6
+Gujarat,Surat,2023,89.53,80.01,80.32,75.37
+Gujarat,Surat,2024,89.93,81.41,82.48,76.14
+Gujarat,Surat,2025,90.33,82.82,84.64,76.9
+Gujarat,Surat,2026,90.73,84.22,86.8,77.67
+Gujarat,Vadodara,2010,85.97,62.13,62.9,56.98
+Gujarat,Vadodara,2011,86.25,63.54,63.42,58.44
+Gujarat,Vadodara,2012,86.53,64.95,63.95,59.9
+Gujarat,Vadodara,2013,86.81,66.36,64.47,61.36
+Gujarat,Vadodara,2014,87.09,67.78,66.2,62.82
+Gujarat,Vadodara,2015,87.37,69.19,67.92,64.28
+Gujarat,Vadodara,2016,87.77,70.6,69.64,65.74
+Gujarat,Vadodara,2017,88.17,72.6,71.47,67.2
+Gujarat,Vadodara,2018,88.57,74.6,73.3,68.16
+Gujarat,Vadodara,2019,88.97,76.6,75.13,69.12
+Gujarat,Vadodara,2020,89.37,78.6,76.96,64.88
+Gujarat,Vadodara,2021,89.77,78.6,79.12,67.56
+Gujarat,Vadodara,2022,90.17,80.04,81.28,72.0
+Gujarat,Vadodara,2023,90.57,81.48,83.44,72.77
+Gujarat,Vadodara,2024,90.97,82.92,85.6,73.54
+Gujarat,Vadodara,2025,91.37,84.36,87.76,74.3
+Gujarat,Vadodara,2026,91.77,85.8,89.92,75.07
+Gujarat,Rajkot,2010,83.86,58.78,58.37,55.78
+Gujarat,Rajkot,2011,84.31,60.12,58.96,57.24
+Gujarat,Rajkot,2012,84.76,61.46,59.55,58.7
+Gujarat,Rajkot,2013,85.21,62.79,60.13,60.16
+Gujarat,Rajkot,2014,85.66,64.13,61.92,61.62
+Gujarat,Rajkot,2015,86.11,65.46,63.71,63.08
+Gujarat,Rajkot,2016,86.68,66.8,65.5,64.54
+Gujarat,Rajkot,2017,87.25,68.8,67.4,66.0
+Gujarat,Rajkot,2018,87.82,70.8,69.31,66.96
+Gujarat,Rajkot,2019,88.39,72.8,71.21,67.92
+Gujarat,Rajkot,2020,88.96,74.8,73.12,63.68
+Gujarat,Rajkot,2021,89.53,74.8,75.28,66.36
+Gujarat,Rajkot,2022,90.1,76.24,77.44,70.8
+Gujarat,Rajkot,2023,90.67,77.68,79.6,71.57
+Gujarat,Rajkot,2024,91.24,79.12,81.76,72.34
+Gujarat,Rajkot,2025,91.81,80.56,83.92,73.1
+Gujarat,Rajkot,2026,92.38,82.0,86.08,73.87
+Gujarat,Gandhinagar,2010,85.88,62.66,63.47,55.38
+Gujarat,Gandhinagar,2011,86.16,64.08,63.98,56.84
+Gujarat,Gandhinagar,2012,86.44,65.5,64.5,58.3
+Gujarat,Gandhinagar,2013,86.72,66.93,65.02,59.76
+Gujarat,Gandhinagar,2014,87.0,68.35,66.73,61.22
+Gujarat,Gandhinagar,2015,87.28,69.78,68.45,62.68
+Gujarat,Gandhinagar,2016,87.68,71.2,70.16,64.14
+Gujarat,Gandhinagar,2017,88.08,73.2,71.98,65.6
+Gujarat,Gandhinagar,2018,88.48,75.2,73.8,66.56
+Gujarat,Gandhinagar,2019,88.88,77.2,75.62,67.52
+Gujarat,Gandhinagar,2020,89.28,79.2,77.44,63.28
+Gujarat,Gandhinagar,2021,89.68,79.2,79.6,65.96
+Gujarat,Gandhinagar,2022,90.08,80.64,81.76,70.4
+Gujarat,Gandhinagar,2023,90.48,82.08,83.92,71.17
+Gujarat,Gandhinagar,2024,90.88,83.52,86.08,71.94
+Gujarat,Gandhinagar,2025,91.28,84.96,88.24,72.7
+Gujarat,Gandhinagar,2026,91.68,86.4,90.4,73.47
+Gujarat,Jamnagar,2010,79.54,54.91,54.12,50.18
+Gujarat,Jamnagar,2011,79.99,56.16,54.77,51.64
+Gujarat,Jamnagar,2012,80.44,57.41,55.42,53.1
+Gujarat,Jamnagar,2013,80.89,58.66,56.07,54.56
+Gujarat,Jamnagar,2014,81.34,59.9,57.91,56.02
+Gujarat,Jamnagar,2015,81.79,61.15,59.76,57.48
+Gujarat,Jamnagar,2016,82.36,62.4,61.61,58.94
+Gujarat,Jamnagar,2017,82.93,64.5,63.59,60.4
+Gujarat,Jamnagar,2018,83.5,66.6,65.56,61.36
+Gujarat,Jamnagar,2019,84.07,68.7,67.54,62.32
+Gujarat,Jamnagar,2020,84.64,70.8,69.52,58.08
+Gujarat,Jamnagar,2021,85.21,70.8,71.68,60.76
+Gujarat,Jamnagar,2022,85.78,72.31,73.84,65.2
+Gujarat,Jamnagar,2023,86.35,73.82,76.0,65.97
+Gujarat,Jamnagar,2024,86.92,75.34,78.16,66.74
+Gujarat,Jamnagar,2025,87.49,76.85,80.32,67.5
+Gujarat,Jamnagar,2026,88.06,78.36,82.48,68.27
+Gujarat,Bhavnagar,2010,77.69,53.5,51.01,50.18
+Gujarat,Bhavnagar,2011,78.14,54.72,51.7,51.64
+Gujarat,Bhavnagar,2012,78.59,55.94,52.39,53.1
+Gujarat,Bhavnagar,2013,79.04,57.15,53.08,54.56
+Gujarat,Bhavnagar,2014,79.49,58.37,54.97,56.02
+Gujarat,Bhavnagar,2015,79.94,59.58,56.87,57.48
+Gujarat,Bhavnagar,2016,80.51,60.8,58.76,58.94
+Gujarat,Bhavnagar,2017,81.08,62.95,60.79,60.4
+Gujarat,Bhavnagar,2018,81.65,65.1,62.82,61.36
+Gujarat,Bhavnagar,2019,82.22,67.25,64.85,62.32
+Gujarat,Bhavnagar,2020,82.79,69.4,66.88,58.08
+Gujarat,Bhavnagar,2021,83.36,69.4,69.04,60.76
+Gujarat,Bhavnagar,2022,83.93,70.95,71.2,65.2
+Gujarat,Bhavnagar,2023,84.5,72.5,73.36,65.97
+Gujarat,Bhavnagar,2024,85.07,74.04,75.52,66.74
+Gujarat,Bhavnagar,2025,85.64,75.59,77.68,67.5
+Gujarat,Bhavnagar,2026,86.21,77.14,79.84,68.27
+Gujarat,Anand,2010,78.59,56.67,56.39,50.18
+Gujarat,Anand,2011,79.04,57.96,57.0,51.64
+Gujarat,Anand,2012,79.49,59.25,57.62,53.1
+Gujarat,Anand,2013,79.94,60.54,58.24,54.56
+Gujarat,Anand,2014,80.39,61.82,60.05,56.02
+Gujarat,Anand,2015,80.84,63.11,61.87,57.48
+Gujarat,Anand,2016,81.41,64.4,63.68,58.94
+Gujarat,Anand,2017,81.98,66.45,65.62,60.4
+Gujarat,Anand,2018,82.55,68.5,67.56,61.36
+Gujarat,Anand,2019,83.12,70.55,69.5,62.32
+Gujarat,Anand,2020,83.69,72.6,71.44,58.08
+Gujarat,Anand,2021,84.26,72.6,73.6,60.76
+Gujarat,Anand,2022,84.83,74.08,75.76,65.2
+Gujarat,Anand,2023,85.4,75.55,77.92,65.97
+Gujarat,Anand,2024,85.97,77.03,80.08,66.74
+Gujarat,Anand,2025,86.54,78.5,82.24,67.5
+Gujarat,Anand,2026,87.11,79.98,84.4,68.27
+Gujarat,Kutch,2010,70.0,49.98,42.79,50.18
+Gujarat,Kutch,2011,70.58,51.12,43.6,51.64
+Gujarat,Kutch,2012,71.16,52.26,44.41,53.1
+Gujarat,Kutch,2013,71.74,53.39,45.22,54.56
+Gujarat,Kutch,2014,72.32,54.53,47.23,56.02
+Gujarat,Kutch,2015,72.9,55.66,49.23,57.48
+Gujarat,Kutch,2016,73.6,56.8,51.24,58.94
+Gujarat,Kutch,2017,74.3,58.95,53.41,60.4
+Gujarat,Kutch,2018,75.0,61.1,55.58,61.36
+Gujarat,Kutch,2019,75.7,63.25,57.75,62.32
+Gujarat,Kutch,2020,76.4,65.4,59.92,58.08
+Gujarat,Kutch,2021,77.1,65.4,62.08,60.76
+Gujarat,Kutch,2022,77.8,66.95,64.24,65.2
+Gujarat,Kutch,2023,78.5,68.5,66.4,65.97
+Gujarat,Kutch,2024,79.2,70.04,68.56,66.74
+Gujarat,Kutch,2025,79.9,71.59,70.72,67.5
+Gujarat,Kutch,2026,80.6,73.14,72.88,68.27
+Gujarat,Banaskantha,2010,53.77,39.25,25.8,45.38
+Gujarat,Banaskantha,2011,54.55,40.14,26.85,46.84
+Gujarat,Banaskantha,2012,55.33,41.03,27.9,48.3
+Gujarat,Banaskantha,2013,56.11,41.92,28.95,49.76
+Gujarat,Banaskantha,2014,56.89,42.82,31.19,51.22
+Gujarat,Banaskantha,2015,57.67,43.71,33.44,52.68
+Gujarat,Banaskantha,2016,58.57,44.6,35.69,54.14
+Gujarat,Banaskantha,2017,59.47,46.9,38.15,55.6
+Gujarat,Banaskantha,2018,60.37,49.2,40.6,56.56
+Gujarat,Banaskantha,2019,61.27,51.5,43.06,57.52
+Gujarat,Banaskantha,2020,62.17,53.8,45.52,53.28
+Gujarat,Banaskantha,2021,63.07,53.8,47.68,55.96
+Gujarat,Banaskantha,2022,63.97,55.46,49.84,60.4
+Gujarat,Banaskantha,2023,64.87,57.11,52.0,61.17
+Gujarat,Banaskantha,2024,65.77,58.77,54.16,61.94
+Gujarat,Banaskantha,2025,66.67,60.42,56.32,62.7
+Gujarat,Banaskantha,2026,67.57,62.08,58.48,63.47
+Gujarat,Dahod,2010,46.46,35.38,18.16,44.78
+Gujarat,Dahod,2011,47.24,36.18,19.31,46.24
+Gujarat,Dahod,2012,48.02,36.98,20.47,47.7
+Gujarat,Dahod,2013,48.8,37.79,21.62,49.16
+Gujarat,Dahod,2014,49.58,38.59,23.98,50.62
+Gujarat,Dahod,2015,50.36,39.4,26.34,52.08
+Gujarat,Dahod,2016,51.26,40.2,28.69,53.54
+Gujarat,Dahod,2017,52.16,42.55,31.28,55.0
+Gujarat,Dahod,2018,53.06,44.9,33.87,55.96
+Gujarat,Dahod,2019,53.96,47.25,36.45,56.92
+Gujarat,Dahod,2020,54.86,49.6,39.04,52.68
+Gujarat,Dahod,2021,55.76,49.6,41.2,55.36
+Gujarat,Dahod,2022,56.66,51.29,43.36,59.8
+Gujarat,Dahod,2023,57.56,52.98,45.52,60.57
+Gujarat,Dahod,2024,58.46,54.68,47.68,61.34
+Gujarat,Dahod,2025,59.36,56.37,49.84,62.1
+Gujarat,Dahod,2026,60.26,58.06,52.0,62.87
+Gujarat,Patan,2010,62.84,45.23,34.58,50.18
+Gujarat,Patan,2011,63.52,46.26,35.5,51.64
+Gujarat,Patan,2012,64.2,47.29,36.43,53.1
+Gujarat,Patan,2013,64.88,48.32,37.35,54.56
+Gujarat,Patan,2014,65.56,49.34,39.48,56.02
+Gujarat,Patan,2015,66.24,50.37,41.6,57.48
+Gujarat,Patan,2016,67.04,51.4,43.72,58.94
+Gujarat,Patan,2017,67.84,53.65,46.03,60.4
+Gujarat,Patan,2018,68.64,55.9,48.34,61.36
+Gujarat,Patan,2019,69.44,58.15,50.65,62.32
+Gujarat,Patan,2020,70.24,60.4,52.96,58.08
+Gujarat,Patan,2021,71.04,60.4,55.12,60.76
+Gujarat,Patan,2022,71.84,62.02,57.28,65.2
+Gujarat,Patan,2023,72.64,63.64,59.44,65.97
+Gujarat,Patan,2024,73.44,65.26,61.6,66.74
+Gujarat,Patan,2025,74.24,66.88,63.76,67.5
+Gujarat,Patan,2026,75.04,68.5,65.92,68.27
+Gujarat,Bharuch,2010,77.36,55.26,54.12,50.18
+Gujarat,Bharuch,2011,77.81,56.52,54.77,51.64
+Gujarat,Bharuch,2012,78.26,57.78,55.42,53.1
+Gujarat,Bharuch,2013,78.71,59.03,56.07,54.56
+Gujarat,Bharuch,2014,79.16,60.29,57.91,56.02
+Gujarat,Bharuch,2015,79.61,61.54,59.76,57.48
+Gujarat,Bharuch,2016,80.18,62.8,61.61,58.94
+Gujarat,Bharuch,2017,80.75,64.9,63.59,60.4
+Gujarat,Bharuch,2018,81.32,67.0,65.56,61.36
+Gujarat,Bharuch,2019,81.89,69.1,67.54,62.32
+Gujarat,Bharuch,2020,82.46,71.2,69.52,58.08
+Gujarat,Bharuch,2021,83.03,71.2,71.68,60.76
+Gujarat,Bharuch,2022,83.6,72.71,73.84,65.2
+Gujarat,Bharuch,2023,84.17,74.22,76.0,65.97
+Gujarat,Bharuch,2024,84.74,75.74,78.16,66.74
+Gujarat,Bharuch,2025,85.31,77.25,80.32,67.5
+Gujarat,Bharuch,2026,85.88,78.76,82.48,68.27
+Gujarat,Kheda,2010,76.37,53.15,52.14,50.18
+Gujarat,Kheda,2011,76.82,54.36,52.82,51.64
+Gujarat,Kheda,2012,77.27,55.57,53.49,53.1
+Gujarat,Kheda,2013,77.72,56.78,54.17,54.56
+Gujarat,Kheda,2014,78.17,57.98,56.04,56.02
+Gujarat,Kheda,2015,78.62,59.19,57.92,57.48
+Gujarat,Kheda,2016,79.19,60.4,59.8,58.94
+Gujarat,Kheda,2017,79.76,62.5,61.81,60.4
+Gujarat,Kheda,2018,80.33,64.6,63.82,61.36
+Gujarat,Kheda,2019,80.9,66.7,65.83,62.32
+Gujarat,Kheda,2020,81.47,68.8,67.84,58.08
+Gujarat,Kheda,2021,82.04,68.8,70.0,60.76
+Gujarat,Kheda,2022,82.61,70.31,72.16,65.2
+Gujarat,Kheda,2023,83.18,71.82,74.32,65.97
+Gujarat,Kheda,2024,83.75,73.34,76.48,66.74
+Gujarat,Kheda,2025,84.32,74.85,78.64,67.5
+Gujarat,Kheda,2026,84.89,76.36,80.8,68.27
+Karnataka,Bengaluru,2010,87.39,65.3,64.03,48.17
+Karnataka,Bengaluru,2011,87.67,66.78,64.54,49.52
+Karnataka,Bengaluru,2012,87.95,68.26,65.05,50.86
+Karnataka,Bengaluru,2013,88.23,69.75,65.56,52.21
+Karnataka,Bengaluru,2014,88.51,71.23,67.27,53.56
+Karnataka,Bengaluru,2015,88.79,72.72,68.97,54.91
+Karnataka,Bengaluru,2016,89.19,74.2,70.68,56.25
+Karnataka,Bengaluru,2017,89.59,76.05,72.49,57.6
+Karnataka,Bengaluru,2018,89.99,77.9,74.3,58.92
+Karnataka,Bengaluru,2019,90.39,79.75,76.11,60.24
+Karnataka,Bengaluru,2020,90.79,81.6,77.92,56.73
+Karnataka,Bengaluru,2021,91.19,81.6,80.08,59.63
+Karnataka,Bengaluru,2022,91.59,82.93,82.24,64.2
+Karnataka,Bengaluru,2023,91.99,84.26,84.4,65.26
+Karnataka,Bengaluru,2024,92.39,85.6,86.56,66.31
+Karnataka,Bengaluru,2025,92.79,86.93,88.72,67.37
+Karnataka,Bengaluru,2026,93.19,88.26,90.88,68.42
+Karnataka,Mysuru,2010,75.02,57.9,53.56,42.17
+Karnataka,Mysuru,2011,75.47,59.22,54.21,43.52
+Karnataka,Mysuru,2012,75.92,60.54,54.87,44.86
+Karnataka,Mysuru,2013,76.37,61.85,55.52,46.21
+Karnataka,Mysuru,2014,76.82,63.17,57.38,47.56
+Karnataka,Mysuru,2015,77.27,64.48,59.24,48.91
+Karnataka,Mysuru,2016,77.84,65.8,61.09,50.25
+Karnataka,Mysuru,2017,78.41,67.7,63.08,51.6
+Karnataka,Mysuru,2018,78.98,69.6,65.07,52.92
+Karnataka,Mysuru,2019,79.55,71.5,67.05,54.24
+Karnataka,Mysuru,2020,80.12,73.4,69.04,50.73
+Karnataka,Mysuru,2021,80.69,73.4,71.2,53.63
+Karnataka,Mysuru,2022,81.26,74.77,73.36,58.2
+Karnataka,Mysuru,2023,81.83,76.14,75.52,59.26
+Karnataka,Mysuru,2024,82.4,77.5,77.68,60.31
+Karnataka,Mysuru,2025,82.97,78.87,79.84,61.37
+Karnataka,Mysuru,2026,83.54,80.24,82.0,62.42
+Karnataka,Mangaluru,2010,88.34,67.23,68.28,42.57
+Karnataka,Mangaluru,2011,88.62,68.76,68.73,43.92
+Karnataka,Mangaluru,2012,88.9,70.29,69.18,45.26
+Karnataka,Mangaluru,2013,89.18,71.82,69.63,46.61
+Karnataka,Mangaluru,2014,89.46,73.34,71.27,47.96
+Karnataka,Mangaluru,2015,89.74,74.87,72.92,49.31
+Karnataka,Mangaluru,2016,90.14,76.4,74.57,50.65
+Karnataka,Mangaluru,2017,90.54,78.25,76.31,52.0
+Karnataka,Mangaluru,2018,90.94,80.1,78.04,53.32
+Karnataka,Mangaluru,2019,91.34,81.95,79.78,54.64
+Karnataka,Mangaluru,2020,91.74,83.8,81.52,51.13
+Karnataka,Mangaluru,2021,92.14,83.8,83.68,54.03
+Karnataka,Mangaluru,2022,92.54,85.13,85.84,58.6
+Karnataka,Mangaluru,2023,92.94,86.46,88.0,59.66
+Karnataka,Mangaluru,2024,93.34,87.8,90.16,60.71
+Karnataka,Mangaluru,2025,93.74,89.13,92.32,61.77
+Karnataka,Mangaluru,2026,94.14,90.46,94.48,62.82
+Karnataka,Dharwad,2010,77.01,54.91,52.42,37.77
+Karnataka,Dharwad,2011,77.46,56.16,53.09,39.12
+Karnataka,Dharwad,2012,77.91,57.41,53.77,40.46
+Karnataka,Dharwad,2013,78.36,58.66,54.44,41.81
+Karnataka,Dharwad,2014,78.81,59.9,56.31,43.16
+Karnataka,Dharwad,2015,79.26,61.15,58.18,44.51
+Karnataka,Dharwad,2016,79.83,62.4,60.05,45.85
+Karnataka,Dharwad,2017,80.4,64.4,62.06,47.2
+Karnataka,Dharwad,2018,80.97,66.4,64.07,48.52
+Karnataka,Dharwad,2019,81.54,68.4,66.07,49.84
+Karnataka,Dharwad,2020,82.11,70.4,68.08,46.33
+Karnataka,Dharwad,2021,82.68,70.4,70.24,49.23
+Karnataka,Dharwad,2022,83.25,71.84,72.4,53.8
+Karnataka,Dharwad,2023,83.82,73.28,74.56,54.86
+Karnataka,Dharwad,2024,84.39,74.72,76.72,55.91
+Karnataka,Dharwad,2025,84.96,76.16,78.88,56.97
+Karnataka,Dharwad,2026,85.53,77.6,81.04,58.02
+Karnataka,Belagavi,2010,70.37,51.74,45.63,37.77
+Karnataka,Belagavi,2011,70.95,52.92,46.39,39.12
+Karnataka,Belagavi,2012,71.53,54.1,47.16,40.46
+Karnataka,Belagavi,2013,72.11,55.27,47.93,41.81
+Karnataka,Belagavi,2014,72.69,56.45,49.9,43.16
+Karnataka,Belagavi,2015,73.27,57.62,51.87,44.51
+Karnataka,Belagavi,2016,73.97,58.8,53.83,45.85
+Karnataka,Belagavi,2017,74.67,60.8,55.96,47.2
+Karnataka,Belagavi,2018,75.37,62.8,58.08,48.52
+Karnataka,Belagavi,2019,76.07,64.8,60.2,49.84
+Karnataka,Belagavi,2020,76.77,66.8,62.32,46.33
+Karnataka,Belagavi,2021,77.47,66.8,64.48,49.23
+Karnataka,Belagavi,2022,78.17,68.24,66.64,53.8
+Karnataka,Belagavi,2023,78.87,69.68,68.8,54.86
+Karnataka,Belagavi,2024,79.57,71.12,70.96,55.91
+Karnataka,Belagavi,2025,80.27,72.56,73.12,56.97
+Karnataka,Belagavi,2026,80.97,74.0,75.28,58.02
+Karnataka,Shivamogga,2010,80.17,56.85,57.8,37.77
+Karnataka,Shivamogga,2011,80.62,58.14,58.4,39.12
+Karnataka,Shivamogga,2012,81.07,59.43,59.0,40.46
+Karnataka,Shivamogga,2013,81.52,60.72,59.59,41.81
+Karnataka,Shivamogga,2014,81.97,62.02,61.39,43.16
+Karnataka,Shivamogga,2015,82.42,63.31,63.18,44.51
+Karnataka,Shivamogga,2016,82.99,64.6,64.98,45.85
+Karnataka,Shivamogga,2017,83.56,66.55,66.89,47.2
+Karnataka,Shivamogga,2018,84.13,68.5,68.81,48.52
+Karnataka,Shivamogga,2019,84.7,70.45,70.72,49.84
+Karnataka,Shivamogga,2020,85.27,72.4,72.64,46.33
+Karnataka,Shivamogga,2021,85.84,72.4,74.8,49.23
+Karnataka,Shivamogga,2022,86.41,73.8,76.96,53.8
+Karnataka,Shivamogga,2023,86.98,75.21,79.12,54.86
+Karnataka,Shivamogga,2024,87.55,76.61,81.28,55.91
+Karnataka,Shivamogga,2025,88.12,78.02,83.44,56.97
+Karnataka,Shivamogga,2026,88.69,79.42,85.6,58.02
+Karnataka,Davanagere,2010,70.38,51.39,48.46,37.77
+Karnataka,Davanagere,2011,70.96,52.56,49.19,39.12
+Karnataka,Davanagere,2012,71.54,53.73,49.91,40.46
+Karnataka,Davanagere,2013,72.12,54.9,50.64,41.81
+Karnataka,Davanagere,2014,72.7,56.06,52.57,43.16
+Karnataka,Davanagere,2015,73.28,57.23,54.5,44.51
+Karnataka,Davanagere,2016,73.98,58.4,56.43,45.85
+Karnataka,Davanagere,2017,74.68,60.4,58.5,47.2
+Karnataka,Davanagere,2018,75.38,62.4,60.57,48.52
+Karnataka,Davanagere,2019,76.08,64.4,62.65,49.84
+Karnataka,Davanagere,2020,76.78,66.4,64.72,46.33
+Karnataka,Davanagere,2021,77.48,66.4,66.88,49.23
+Karnataka,Davanagere,2022,78.18,67.84,69.04,53.8
+Karnataka,Davanagere,2023,78.88,69.28,71.2,54.86
+Karnataka,Davanagere,2024,79.58,70.72,73.36,55.91
+Karnataka,Davanagere,2025,80.28,72.16,75.52,56.97
+Karnataka,Davanagere,2026,80.98,73.6,77.68,58.02
+Karnataka,Tumkur,2010,72.51,52.98,51.57,37.77
+Karnataka,Tumkur,2011,73.09,54.18,52.26,39.12
+Karnataka,Tumkur,2012,73.67,55.38,52.94,40.46
+Karnataka,Tumkur,2013,74.25,56.59,53.62,41.81
+Karnataka,Tumkur,2014,74.83,57.79,55.51,43.16
+Karnataka,Tumkur,2015,75.41,59.0,57.39,44.51
+Karnataka,Tumkur,2016,76.11,60.2,59.28,45.85
+Karnataka,Tumkur,2017,76.81,62.2,61.3,47.2
+Karnataka,Tumkur,2018,77.51,64.2,63.32,48.52
+Karnataka,Tumkur,2019,78.21,66.2,65.34,49.84
+Karnataka,Tumkur,2020,78.91,68.2,67.36,46.33
+Karnataka,Tumkur,2021,79.61,68.2,69.52,49.23
+Karnataka,Tumkur,2022,80.31,69.64,71.68,53.8
+Karnataka,Tumkur,2023,81.01,71.08,73.84,54.86
+Karnataka,Tumkur,2024,81.71,72.52,76.0,55.91
+Karnataka,Tumkur,2025,82.41,73.96,78.16,56.97
+Karnataka,Tumkur,2026,83.11,75.4,80.32,58.02
+Karnataka,Kalaburagi,2010,60.84,41.18,28.63,37.77
+Karnataka,Kalaburagi,2011,61.52,42.12,29.64,39.12
+Karnataka,Kalaburagi,2012,62.2,43.06,30.65,40.46
+Karnataka,Kalaburagi,2013,62.88,43.99,31.66,41.81
+Karnataka,Kalaburagi,2014,63.56,44.93,33.87,43.16
+Karnataka,Kalaburagi,2015,64.24,45.86,36.07,44.51
+Karnataka,Kalaburagi,2016,65.04,46.8,38.28,45.85
+Karnataka,Kalaburagi,2017,65.84,48.8,40.69,47.2
+Karnataka,Kalaburagi,2018,66.64,50.8,43.1,48.52
+Karnataka,Kalaburagi,2019,67.44,52.8,45.51,49.84
+Karnataka,Kalaburagi,2020,68.24,54.8,47.92,46.33
+Karnataka,Kalaburagi,2021,69.04,54.8,50.08,49.23
+Karnataka,Kalaburagi,2022,69.84,56.24,52.24,53.8
+Karnataka,Kalaburagi,2023,70.64,57.68,54.4,54.86
+Karnataka,Kalaburagi,2024,71.44,59.12,56.56,55.91
+Karnataka,Kalaburagi,2025,72.24,60.56,58.72,56.97
+Karnataka,Kalaburagi,2026,73.04,62.0,60.88,58.02
+Karnataka,Vijayapura,2010,62.06,42.59,31.18,37.77
+Karnataka,Vijayapura,2011,62.74,43.56,32.15,39.12
+Karnataka,Vijayapura,2012,63.42,44.53,33.13,40.46
+Karnataka,Vijayapura,2013,64.1,45.5,34.1,41.81
+Karnataka,Vijayapura,2014,64.78,46.46,36.27,43.16
+Karnataka,Vijayapura,2015,65.46,47.43,38.44,44.51
+Karnataka,Vijayapura,2016,66.26,48.4,40.61,45.85
+Karnataka,Vijayapura,2017,67.06,50.4,42.98,47.2
+Karnataka,Vijayapura,2018,67.86,52.4,45.35,48.52
+Karnataka,Vijayapura,2019,68.66,54.4,47.71,49.84
+Karnataka,Vijayapura,2020,69.46,56.4,50.08,46.33
+Karnataka,Vijayapura,2021,70.26,56.4,52.24,49.23
+Karnataka,Vijayapura,2022,71.06,57.84,54.4,53.8
+Karnataka,Vijayapura,2023,71.86,59.28,56.56,54.86
+Karnataka,Vijayapura,2024,72.66,60.72,58.72,55.91
+Karnataka,Vijayapura,2025,73.46,62.16,60.88,56.97
+Karnataka,Vijayapura,2026,74.26,63.6,63.04,58.02
+Karnataka,Raichur,2010,54.91,35.73,23.25,32.57
+Karnataka,Raichur,2011,55.59,36.54,24.34,33.92
+Karnataka,Raichur,2012,56.27,37.35,25.42,35.26
+Karnataka,Raichur,2013,56.95,38.16,26.5,36.61
+Karnataka,Raichur,2014,57.63,38.98,28.79,37.96
+Karnataka,Raichur,2015,58.31,39.79,31.07,39.31
+Karnataka,Raichur,2016,59.11,40.6,33.36,40.65
+Karnataka,Raichur,2017,59.91,42.75,35.86,42.0
+Karnataka,Raichur,2018,60.71,44.9,38.36,43.32
+Karnataka,Raichur,2019,61.51,47.05,40.86,44.64
+Karnataka,Raichur,2020,62.31,49.2,43.36,41.13
+Karnataka,Raichur,2021,63.11,49.2,45.52,44.03
+Karnataka,Raichur,2022,63.91,50.75,47.68,48.6
+Karnataka,Raichur,2023,64.71,52.3,49.84,49.66
+Karnataka,Raichur,2024,65.51,53.84,52.0,50.71
+Karnataka,Raichur,2025,66.31,55.39,54.16,51.77
+Karnataka,Raichur,2026,67.11,56.94,56.32,52.82
+Karnataka,Yadgir,2010,50.73,32.38,19.57,32.17
+Karnataka,Yadgir,2011,51.51,33.12,20.71,33.52
+Karnataka,Yadgir,2012,52.29,33.86,21.84,34.86
+Karnataka,Yadgir,2013,53.07,34.59,22.98,36.21
+Karnataka,Yadgir,2014,53.85,35.33,25.32,37.56
+Karnataka,Yadgir,2015,54.63,36.06,27.65,38.91
+Karnataka,Yadgir,2016,55.53,36.8,29.99,40.25
+Karnataka,Yadgir,2017,56.43,39.0,32.55,41.6
+Karnataka,Yadgir,2018,57.33,41.2,35.11,42.92
+Karnataka,Yadgir,2019,58.23,43.4,37.68,44.24
+Karnataka,Yadgir,2020,59.13,45.6,40.24,40.73
+Karnataka,Yadgir,2021,60.03,45.6,42.4,43.63
+Karnataka,Yadgir,2022,60.93,47.18,44.56,48.2
+Karnataka,Yadgir,2023,61.83,48.77,46.72,49.26
+Karnataka,Yadgir,2024,62.73,50.35,48.88,50.31
+Karnataka,Yadgir,2025,63.63,51.94,51.04,51.37
+Karnataka,Yadgir,2026,64.53,53.52,53.2,52.42
+Karnataka,Bidar,2010,63.4,44.35,35.71,37.77
+Karnataka,Bidar,2011,64.08,45.36,36.62,39.12
+Karnataka,Bidar,2012,64.76,46.37,37.53,40.46
+Karnataka,Bidar,2013,65.44,47.38,38.44,41.81
+Karnataka,Bidar,2014,66.12,48.38,40.55,43.16
+Karnataka,Bidar,2015,66.8,49.39,42.65,44.51
+Karnataka,Bidar,2016,67.6,50.4,44.76,45.85
+Karnataka,Bidar,2017,68.4,52.5,47.05,47.2
+Karnataka,Bidar,2018,69.2,54.6,49.34,48.52
+Karnataka,Bidar,2019,70.0,56.7,51.63,49.84
+Karnataka,Bidar,2020,70.8,58.8,53.92,46.33
+Karnataka,Bidar,2021,71.6,58.8,56.08,49.23
+Karnataka,Bidar,2022,72.4,60.31,58.24,53.8
+Karnataka,Bidar,2023,73.2,61.82,60.4,54.86
+Karnataka,Bidar,2024,74.0,63.34,62.56,55.91
+Karnataka,Bidar,2025,74.8,64.85,64.72,56.97
+Karnataka,Bidar,2026,75.6,66.36,66.88,58.02
+Karnataka,Hassan,2010,75.67,55.26,58.09,37.77
+Karnataka,Hassan,2011,76.12,56.52,58.68,39.12
+Karnataka,Hassan,2012,76.57,57.78,59.27,40.46
+Karnataka,Hassan,2013,77.02,59.03,59.86,41.81
+Karnataka,Hassan,2014,77.47,60.29,61.65,43.16
+Karnataka,Hassan,2015,77.92,61.54,63.45,44.51
+Karnataka,Hassan,2016,78.49,62.8,65.24,45.85
+Karnataka,Hassan,2017,79.06,64.75,67.15,47.2
+Karnataka,Hassan,2018,79.63,66.7,69.06,48.52
+Karnataka,Hassan,2019,80.2,68.65,70.97,49.84
+Karnataka,Hassan,2020,80.77,70.6,72.88,46.33
+Karnataka,Hassan,2021,81.34,70.6,75.04,49.23
+Karnataka,Hassan,2022,81.91,72.0,77.2,53.8
+Karnataka,Hassan,2023,82.48,73.41,79.36,54.86
+Karnataka,Hassan,2024,83.05,74.81,81.52,55.91
+Karnataka,Hassan,2025,83.62,76.22,83.68,56.97
+Karnataka,Hassan,2026,84.19,77.62,85.84,58.02
+Karnataka,Chikkamagaluru,2010,78.56,56.5,59.79,37.77
+Karnataka,Chikkamagaluru,2011,79.01,57.78,60.35,39.12
+Karnataka,Chikkamagaluru,2012,79.46,59.06,60.92,40.46
+Karnataka,Chikkamagaluru,2013,79.91,60.35,61.49,41.81
+Karnataka,Chikkamagaluru,2014,80.36,61.63,63.26,43.16
+Karnataka,Chikkamagaluru,2015,80.81,62.92,65.03,44.51
+Karnataka,Chikkamagaluru,2016,81.38,64.2,66.79,45.85
+Karnataka,Chikkamagaluru,2017,81.95,66.1,68.68,47.2
+Karnataka,Chikkamagaluru,2018,82.52,68.0,70.56,48.52
+Karnataka,Chikkamagaluru,2019,83.09,69.9,72.44,49.84
+Karnataka,Chikkamagaluru,2020,83.66,71.8,74.32,46.33
+Karnataka,Chikkamagaluru,2021,84.23,71.8,76.48,49.23
+Karnataka,Chikkamagaluru,2022,84.8,73.17,78.64,53.8
+Karnataka,Chikkamagaluru,2023,85.37,74.54,80.8,54.86
+Karnataka,Chikkamagaluru,2024,85.94,75.9,82.96,55.91
+Karnataka,Chikkamagaluru,2025,86.51,77.27,85.12,56.97
+Karnataka,Chikkamagaluru,2026,87.08,78.64,87.28,58.02
+Karnataka,Udupi,2010,85.96,65.82,66.58,41.57
+Karnataka,Udupi,2011,86.24,67.32,67.05,42.92
+Karnataka,Udupi,2012,86.52,68.82,67.53,44.26
+Karnataka,Udupi,2013,86.8,70.31,68.0,45.61
+Karnataka,Udupi,2014,87.08,71.81,69.67,46.96
+Karnataka,Udupi,2015,87.36,73.3,71.34,48.31
+Karnataka,Udupi,2016,87.76,74.8,73.01,49.65
+Karnataka,Udupi,2017,88.16,76.7,74.78,51.0
+Karnataka,Udupi,2018,88.56,78.6,76.55,52.32
+Karnataka,Udupi,2019,88.96,80.5,78.31,53.64
+Karnataka,Udupi,2020,89.36,82.4,80.08,50.13
+Karnataka,Udupi,2021,89.76,82.4,82.24,53.03
+Karnataka,Udupi,2022,90.16,83.77,84.4,57.6
+Karnataka,Udupi,2023,90.56,85.14,86.56,58.66
+Karnataka,Udupi,2024,90.96,86.5,88.72,59.71
+Karnataka,Udupi,2025,91.36,87.87,90.88,60.77
+Karnataka,Udupi,2026,91.76,89.24,93.04,61.82
+Punjab,Amritsar,2010,79.24,59.14,59.79,37.06
+Punjab,Amritsar,2011,79.69,60.48,60.35,38.36
+Punjab,Amritsar,2012,80.14,61.82,60.92,39.67
+Punjab,Amritsar,2013,80.59,63.17,61.49,40.97
+Punjab,Amritsar,2014,81.04,64.51,63.26,42.28
+Punjab,Amritsar,2015,81.49,65.86,65.03,43.59
+Punjab,Amritsar,2016,82.06,67.2,66.79,44.89
+Punjab,Amritsar,2017,82.63,69.1,68.68,46.2
+Punjab,Amritsar,2018,83.2,71.0,70.56,47.4
+Punjab,Amritsar,2019,83.77,72.9,72.44,48.6
+Punjab,Amritsar,2020,84.34,74.8,74.32,45.12
+Punjab,Amritsar,2021,84.91,74.8,76.48,47.86
+Punjab,Amritsar,2022,85.48,76.17,78.64,52.2
+Punjab,Amritsar,2023,86.05,77.54,80.8,53.16
+Punjab,Amritsar,2024,86.62,78.9,82.96,54.12
+Punjab,Amritsar,2025,87.19,80.27,85.12,55.08
+Punjab,Amritsar,2026,87.76,81.64,87.28,56.04
+Punjab,Ludhiana,2010,81.16,60.54,62.05,40.66
+Punjab,Ludhiana,2011,81.61,61.92,62.59,41.96
+Punjab,Ludhiana,2012,82.06,63.3,63.12,43.27
+Punjab,Ludhiana,2013,82.51,64.67,63.66,44.57
+Punjab,Ludhiana,2014,82.96,66.05,65.4,45.88
+Punjab,Ludhiana,2015,83.41,67.42,67.13,47.19
+Punjab,Ludhiana,2016,83.98,68.8,68.87,48.49
+Punjab,Ludhiana,2017,84.55,70.7,70.71,49.8
+Punjab,Ludhiana,2018,85.12,72.6,72.55,51.0
+Punjab,Ludhiana,2019,85.69,74.5,74.4,52.2
+Punjab,Ludhiana,2020,86.26,76.4,76.24,48.72
+Punjab,Ludhiana,2021,86.83,76.4,78.4,51.46
+Punjab,Ludhiana,2022,87.4,77.77,80.56,55.8
+Punjab,Ludhiana,2023,87.97,79.14,82.72,56.76
+Punjab,Ludhiana,2024,88.54,80.5,84.88,57.72
+Punjab,Ludhiana,2025,89.11,81.87,87.04,58.68
+Punjab,Ludhiana,2026,89.68,83.24,89.2,59.64
+Punjab,Jalandhar,2010,82.24,61.07,61.2,37.66
+Punjab,Jalandhar,2011,82.69,62.46,61.75,38.96
+Punjab,Jalandhar,2012,83.14,63.85,62.3,40.27
+Punjab,Jalandhar,2013,83.59,65.24,62.85,41.57
+Punjab,Jalandhar,2014,84.04,66.62,64.59,42.88
+Punjab,Jalandhar,2015,84.49,68.01,66.34,44.19
+Punjab,Jalandhar,2016,85.06,69.4,68.09,45.49
+Punjab,Jalandhar,2017,85.63,71.35,69.95,46.8
+Punjab,Jalandhar,2018,86.2,73.3,71.8,48.0
+Punjab,Jalandhar,2019,86.77,75.25,73.66,49.2
+Punjab,Jalandhar,2020,87.34,77.2,75.52,45.72
+Punjab,Jalandhar,2021,87.91,77.2,77.68,48.46
+Punjab,Jalandhar,2022,88.48,78.6,79.84,52.8
+Punjab,Jalandhar,2023,89.05,80.01,82.0,53.76
+Punjab,Jalandhar,2024,89.62,81.41,84.16,54.72
+Punjab,Jalandhar,2025,90.19,82.82,86.32,55.68
+Punjab,Jalandhar,2026,90.76,84.22,88.48,56.64
+Punjab,Patiala,2010,77.07,58.43,58.65,33.26
+Punjab,Patiala,2011,77.52,59.76,59.24,34.56
+Punjab,Patiala,2012,77.97,61.09,59.82,35.87
+Punjab,Patiala,2013,78.42,62.42,60.4,37.17
+Punjab,Patiala,2014,78.87,63.74,62.19,38.48
+Punjab,Patiala,2015,79.32,65.07,63.97,39.79
+Punjab,Patiala,2016,79.89,66.4,65.76,41.09
+Punjab,Patiala,2017,80.46,68.3,67.66,42.4
+Punjab,Patiala,2018,81.03,70.2,69.56,43.6
+Punjab,Patiala,2019,81.6,72.1,71.46,44.8
+Punjab,Patiala,2020,82.17,74.0,73.36,41.32
+Punjab,Patiala,2021,82.74,74.0,75.52,44.06
+Punjab,Patiala,2022,83.31,75.37,77.68,48.4
+Punjab,Patiala,2023,83.88,76.74,79.84,49.36
+Punjab,Patiala,2024,84.45,78.1,82.0,50.32
+Punjab,Patiala,2025,85.02,79.47,84.16,51.28
+Punjab,Patiala,2026,85.59,80.84,86.32,52.24
+Punjab,Gurdaspur,2010,76.83,57.02,56.67,33.26
+Punjab,Gurdaspur,2011,77.28,58.32,57.28,34.56
+Punjab,Gurdaspur,2012,77.73,59.62,57.89,35.87
+Punjab,Gurdaspur,2013,78.18,60.91,58.51,37.17
+Punjab,Gurdaspur,2014,78.63,62.21,60.32,38.48
+Punjab,Gurdaspur,2015,79.08,63.5,62.13,39.79
+Punjab,Gurdaspur,2016,79.65,64.8,63.94,41.09
+Punjab,Gurdaspur,2017,80.22,66.75,65.88,42.4
+Punjab,Gurdaspur,2018,80.79,68.7,67.81,43.6
+Punjab,Gurdaspur,2019,81.36,70.65,69.75,44.8
+Punjab,Gurdaspur,2020,81.93,72.6,71.68,41.32
+Punjab,Gurdaspur,2021,82.5,72.6,73.84,44.06
+Punjab,Gurdaspur,2022,83.07,74.0,76.0,48.4
+Punjab,Gurdaspur,2023,83.64,75.41,78.16,49.36
+Punjab,Gurdaspur,2024,84.21,76.81,80.32,50.32
+Punjab,Gurdaspur,2025,84.78,78.22,82.48,51.28
+Punjab,Gurdaspur,2026,85.35,79.62,84.64,52.24
+Punjab,Hoshiarpur,2010,83.27,59.66,59.79,33.26
+Punjab,Hoshiarpur,2011,83.72,61.02,60.35,34.56
+Punjab,Hoshiarpur,2012,84.17,62.38,60.92,35.87
+Punjab,Hoshiarpur,2013,84.62,63.73,61.49,37.17
+Punjab,Hoshiarpur,2014,85.07,65.09,63.26,38.48
+Punjab,Hoshiarpur,2015,85.52,66.44,65.03,39.79
+Punjab,Hoshiarpur,2016,86.09,67.8,66.79,41.09
+Punjab,Hoshiarpur,2017,86.66,69.75,68.68,42.4
+Punjab,Hoshiarpur,2018,87.23,71.7,70.56,43.6
+Punjab,Hoshiarpur,2019,87.8,73.65,72.44,44.8
+Punjab,Hoshiarpur,2020,88.37,75.6,74.32,41.32
+Punjab,Hoshiarpur,2021,88.94,75.6,76.48,44.06
+Punjab,Hoshiarpur,2022,89.51,77.0,78.64,48.4
+Punjab,Hoshiarpur,2023,90.08,78.41,80.8,49.36
+Punjab,Hoshiarpur,2024,90.65,79.81,82.96,50.32
+Punjab,Hoshiarpur,2025,91.22,81.22,85.12,51.28
+Punjab,Hoshiarpur,2026,91.79,82.62,87.28,52.24
+Punjab,Bathinda,2010,65.28,51.39,47.04,33.26
+Punjab,Bathinda,2011,65.86,52.56,47.79,34.56
+Punjab,Bathinda,2012,66.44,53.73,48.54,35.87
+Punjab,Bathinda,2013,67.02,54.9,49.29,37.17
+Punjab,Bathinda,2014,67.6,56.06,51.23,38.48
+Punjab,Bathinda,2015,68.18,57.23,53.18,39.79
+Punjab,Bathinda,2016,68.88,58.4,55.13,41.09
+Punjab,Bathinda,2017,69.58,60.25,57.23,42.4
+Punjab,Bathinda,2018,70.28,62.1,59.32,43.6
+Punjab,Bathinda,2019,70.98,63.95,61.42,44.8
+Punjab,Bathinda,2020,71.68,65.8,63.52,41.32
+Punjab,Bathinda,2021,72.38,65.8,65.68,44.06
+Punjab,Bathinda,2022,73.08,67.13,67.84,48.4
+Punjab,Bathinda,2023,73.78,68.46,70.0,49.36
+Punjab,Bathinda,2024,74.48,69.8,72.16,50.32
+Punjab,Bathinda,2025,75.18,71.13,74.32,51.28
+Punjab,Bathinda,2026,75.88,72.46,76.48,52.24
+Punjab,Mansa,2010,61.44,47.7,41.66,29.06
+Punjab,Mansa,2011,62.12,48.78,42.48,30.36
+Punjab,Mansa,2012,62.8,49.86,43.31,31.67
+Punjab,Mansa,2013,63.48,50.95,44.13,32.97
+Punjab,Mansa,2014,64.16,52.03,46.16,34.28
+Punjab,Mansa,2015,64.84,53.12,48.18,35.59
+Punjab,Mansa,2016,65.64,54.2,50.2,36.89
+Punjab,Mansa,2017,66.44,56.25,52.39,38.2
+Punjab,Mansa,2018,67.24,58.3,54.58,39.4
+Punjab,Mansa,2019,68.04,60.35,56.77,40.6
+Punjab,Mansa,2020,68.84,62.4,58.96,37.12
+Punjab,Mansa,2021,69.64,62.4,61.12,39.86
+Punjab,Mansa,2022,70.44,63.88,63.28,44.2
+Punjab,Mansa,2023,71.24,65.35,65.44,45.16
+Punjab,Mansa,2024,72.04,66.83,67.6,46.12
+Punjab,Mansa,2025,72.84,68.3,69.76,47.08
+Punjab,Mansa,2026,73.64,69.78,71.92,48.04
+Punjab,Ferozepur,2010,66.51,51.74,45.34,33.26
+Punjab,Ferozepur,2011,67.09,52.92,46.11,34.56
+Punjab,Ferozepur,2012,67.67,54.1,46.89,35.87
+Punjab,Ferozepur,2013,68.25,55.27,47.66,37.17
+Punjab,Ferozepur,2014,68.83,56.45,49.63,38.48
+Punjab,Ferozepur,2015,69.41,57.62,51.6,39.79
+Punjab,Ferozepur,2016,70.11,58.8,53.57,41.09
+Punjab,Ferozepur,2017,70.81,60.7,55.7,42.4
+Punjab,Ferozepur,2018,71.51,62.6,57.83,43.6
+Punjab,Ferozepur,2019,72.21,64.5,59.95,44.8
+Punjab,Ferozepur,2020,72.91,66.4,62.08,41.32
+Punjab,Ferozepur,2021,73.61,66.4,64.24,44.06
+Punjab,Ferozepur,2022,74.31,67.77,66.4,48.4
+Punjab,Ferozepur,2023,75.01,69.14,68.56,49.36
+Punjab,Ferozepur,2024,75.71,70.5,70.72,50.32
+Punjab,Ferozepur,2025,76.41,71.87,72.88,51.28
+Punjab,Ferozepur,2026,77.11,73.24,75.04,52.24
+Punjab,Muktsar,2010,64.64,49.63,43.64,33.26
+Punjab,Muktsar,2011,65.22,50.76,44.44,34.56
+Punjab,Muktsar,2012,65.8,51.89,45.24,35.87
+Punjab,Muktsar,2013,66.38,53.02,46.03,37.17
+Punjab,Muktsar,2014,66.96,54.14,48.03,38.48
+Punjab,Muktsar,2015,67.54,55.27,50.02,39.79
+Punjab,Muktsar,2016,68.24,56.4,52.02,41.09
+Punjab,Muktsar,2017,68.94,58.35,54.17,42.4
+Punjab,Muktsar,2018,69.64,60.3,56.33,43.6
+Punjab,Muktsar,2019,70.34,62.25,58.48,44.8
+Punjab,Muktsar,2020,71.04,64.2,60.64,41.32
+Punjab,Muktsar,2021,71.74,64.2,62.8,44.06
+Punjab,Muktsar,2022,72.44,65.6,64.96,48.4
+Punjab,Muktsar,2023,73.14,67.01,67.12,49.36
+Punjab,Muktsar,2024,73.84,68.41,69.28,50.32
+Punjab,Muktsar,2025,74.54,69.82,71.44,51.28
+Punjab,Muktsar,2026,75.24,71.22,73.6,52.24
+Punjab,Faridkot,2010,68.26,52.98,48.46,33.26
+Punjab,Faridkot,2011,68.84,54.18,49.19,34.56
+Punjab,Faridkot,2012,69.42,55.38,49.91,35.87
+Punjab,Faridkot,2013,70.0,56.59,50.64,37.17
+Punjab,Faridkot,2014,70.58,57.79,52.57,38.48
+Punjab,Faridkot,2015,71.16,59.0,54.5,39.79
+Punjab,Faridkot,2016,71.86,60.2,56.43,41.09
+Punjab,Faridkot,2017,72.56,62.25,58.5,42.4
+Punjab,Faridkot,2018,73.26,64.3,60.57,43.6
+Punjab,Faridkot,2019,73.96,66.35,62.65,44.8
+Punjab,Faridkot,2020,74.66,68.4,64.72,41.32
+Punjab,Faridkot,2021,75.36,68.4,66.88,44.06
+Punjab,Faridkot,2022,76.06,69.88,69.04,48.4
+Punjab,Faridkot,2023,76.76,71.35,71.2,49.36
+Punjab,Faridkot,2024,77.46,72.83,73.36,50.32
+Punjab,Faridkot,2025,78.16,74.3,75.52,51.28
+Punjab,Faridkot,2026,78.86,75.78,77.68,52.24
+Punjab,Kapurthala,2010,77.93,57.02,56.39,33.26
+Punjab,Kapurthala,2011,78.38,58.32,57.0,34.56
+Punjab,Kapurthala,2012,78.83,59.62,57.62,35.87
+Punjab,Kapurthala,2013,79.28,60.91,58.24,37.17
+Punjab,Kapurthala,2014,79.73,62.21,60.05,38.48
+Punjab,Kapurthala,2015,80.18,63.5,61.87,39.79
+Punjab,Kapurthala,2016,80.75,64.8,63.68,41.09
+Punjab,Kapurthala,2017,81.32,66.75,65.62,42.4
+Punjab,Kapurthala,2018,81.89,68.7,67.56,43.6
+Punjab,Kapurthala,2019,82.46,70.65,69.5,44.8
+Punjab,Kapurthala,2020,83.03,72.6,71.44,41.32
+Punjab,Kapurthala,2021,83.6,72.6,73.6,44.06
+Punjab,Kapurthala,2022,84.17,74.0,75.76,48.4
+Punjab,Kapurthala,2023,84.74,75.41,77.92,49.36
+Punjab,Kapurthala,2024,85.31,76.81,80.08,50.32
+Punjab,Kapurthala,2025,85.88,78.22,82.24,51.28
+Punjab,Kapurthala,2026,86.45,79.62,84.4,52.24
+Punjab,Rupnagar,2010,79.72,58.43,58.09,33.26
+Punjab,Rupnagar,2011,80.17,59.76,58.68,34.56
+Punjab,Rupnagar,2012,80.62,61.09,59.27,35.87
+Punjab,Rupnagar,2013,81.07,62.42,59.86,37.17
+Punjab,Rupnagar,2014,81.52,63.74,61.65,38.48
+Punjab,Rupnagar,2015,81.97,65.07,63.45,39.79
+Punjab,Rupnagar,2016,82.54,66.4,65.24,41.09
+Punjab,Rupnagar,2017,83.11,68.35,67.15,42.4
+Punjab,Rupnagar,2018,83.68,70.3,69.06,43.6
+Punjab,Rupnagar,2019,84.25,72.25,70.97,44.8
+Punjab,Rupnagar,2020,84.82,74.2,72.88,41.32
+Punjab,Rupnagar,2021,85.39,74.2,75.04,44.06
+Punjab,Rupnagar,2022,85.96,75.6,77.2,48.4
+Punjab,Rupnagar,2023,86.53,77.01,79.36,49.36
+Punjab,Rupnagar,2024,87.1,78.41,81.52,50.32
+Punjab,Rupnagar,2025,87.67,79.82,83.68,51.28
+Punjab,Rupnagar,2026,88.24,81.22,85.84,52.24
+Haryana,Gurugram,2010,84.25,63.71,67.72,46.78
+Haryana,Gurugram,2011,84.7,65.16,68.17,48.1
+Haryana,Gurugram,2012,85.15,66.61,68.63,49.42
+Haryana,Gurugram,2013,85.6,68.06,69.08,50.73
+Haryana,Gurugram,2014,86.05,69.5,70.74,52.05
+Haryana,Gurugram,2015,86.5,70.95,72.4,53.37
+Haryana,Gurugram,2016,87.07,72.4,74.05,54.68
+Haryana,Gurugram,2017,87.64,74.45,75.8,56.0
+Haryana,Gurugram,2018,88.21,76.5,77.55,57.32
+Haryana,Gurugram,2019,88.78,78.55,79.29,58.64
+Haryana,Gurugram,2020,89.35,80.6,81.04,55.23
+Haryana,Gurugram,2021,89.92,80.6,83.2,58.1
+Haryana,Gurugram,2022,90.49,82.08,85.36,62.6
+Haryana,Gurugram,2023,91.06,83.55,87.52,63.66
+Haryana,Gurugram,2024,91.63,85.03,89.68,64.71
+Haryana,Gurugram,2025,92.2,86.5,91.84,65.77
+Haryana,Gurugram,2026,92.77,87.98,94.0,66.82
+Haryana,Faridabad,2010,81.25,60.54,62.62,42.18
+Haryana,Faridabad,2011,81.7,61.92,63.15,43.5
+Haryana,Faridabad,2012,82.15,63.3,63.67,44.82
+Haryana,Faridabad,2013,82.6,64.67,64.2,46.13
+Haryana,Faridabad,2014,83.05,66.05,65.93,47.45
+Haryana,Faridabad,2015,83.5,67.42,67.66,48.77
+Haryana,Faridabad,2016,84.07,68.8,69.39,50.08
+Haryana,Faridabad,2017,84.64,70.7,71.22,51.4
+Haryana,Faridabad,2018,85.21,72.6,73.05,52.72
+Haryana,Faridabad,2019,85.78,74.5,74.89,54.04
+Haryana,Faridabad,2020,86.35,76.4,76.72,50.63
+Haryana,Faridabad,2021,86.92,76.4,78.88,53.5
+Haryana,Faridabad,2022,87.49,77.77,81.04,58.0
+Haryana,Faridabad,2023,88.06,79.14,83.2,59.06
+Haryana,Faridabad,2024,88.63,80.5,85.36,60.11
+Haryana,Faridabad,2025,89.2,81.87,87.52,61.17
+Haryana,Faridabad,2026,89.77,83.24,89.68,62.22
+Haryana,Panipat,2010,73.88,54.91,57.24,34.38
+Haryana,Panipat,2011,74.46,56.16,57.84,35.7
+Haryana,Panipat,2012,75.04,57.41,58.44,37.02
+Haryana,Panipat,2013,75.62,58.66,59.05,38.33
+Haryana,Panipat,2014,76.2,59.9,60.85,39.65
+Haryana,Panipat,2015,76.78,61.15,62.66,40.97
+Haryana,Panipat,2016,77.48,62.4,64.46,42.28
+Haryana,Panipat,2017,78.18,64.4,66.39,43.6
+Haryana,Panipat,2018,78.88,66.4,68.31,44.92
+Haryana,Panipat,2019,79.58,68.4,70.24,46.24
+Haryana,Panipat,2020,80.28,70.4,72.16,42.83
+Haryana,Panipat,2021,80.98,70.4,74.32,45.7
+Haryana,Panipat,2022,81.68,71.84,76.48,50.2
+Haryana,Panipat,2023,82.38,73.28,78.64,51.26
+Haryana,Panipat,2024,83.08,74.72,80.8,52.31
+Haryana,Panipat,2025,83.78,76.16,82.96,53.37
+Haryana,Panipat,2026,84.48,77.6,85.12,54.42
+Haryana,Karnal,2010,74.12,56.14,58.09,34.38
+Haryana,Karnal,2011,74.7,57.42,58.68,35.7
+Haryana,Karnal,2012,75.28,58.7,59.27,37.02
+Haryana,Karnal,2013,75.86,59.97,59.86,38.33
+Haryana,Karnal,2014,76.44,61.25,61.65,39.65
+Haryana,Karnal,2015,77.02,62.52,63.45,40.97
+Haryana,Karnal,2016,77.72,63.8,65.24,42.28
+Haryana,Karnal,2017,78.42,65.8,67.15,43.6
+Haryana,Karnal,2018,79.12,67.8,69.06,44.92
+Haryana,Karnal,2019,79.82,69.8,70.97,46.24
+Haryana,Karnal,2020,80.52,71.8,72.88,42.83
+Haryana,Karnal,2021,81.22,71.8,75.04,45.7
+Haryana,Karnal,2022,81.92,73.24,77.2,50.2
+Haryana,Karnal,2023,82.62,74.68,79.36,51.26
+Haryana,Karnal,2024,83.32,76.12,81.52,52.31
+Haryana,Karnal,2025,84.02,77.56,83.68,53.37
+Haryana,Karnal,2026,84.72,79.0,85.84,54.42
+Haryana,Rohtak,2010,79.67,56.85,59.79,34.38
+Haryana,Rohtak,2011,80.12,58.14,60.35,35.7
+Haryana,Rohtak,2012,80.57,59.43,60.92,37.02
+Haryana,Rohtak,2013,81.02,60.72,61.49,38.33
+Haryana,Rohtak,2014,81.47,62.02,63.26,39.65
+Haryana,Rohtak,2015,81.92,63.31,65.03,40.97
+Haryana,Rohtak,2016,82.49,64.6,66.79,42.28
+Haryana,Rohtak,2017,83.06,66.6,68.68,43.6
+Haryana,Rohtak,2018,83.63,68.6,70.56,44.92
+Haryana,Rohtak,2019,84.2,70.6,72.44,46.24
+Haryana,Rohtak,2020,84.77,72.6,74.32,42.83
+Haryana,Rohtak,2021,85.34,72.6,76.48,45.7
+Haryana,Rohtak,2022,85.91,74.04,78.64,50.2
+Haryana,Rohtak,2023,86.48,75.48,80.8,51.26
+Haryana,Rohtak,2024,87.05,76.92,82.96,52.31
+Haryana,Rohtak,2025,87.62,78.36,85.12,53.37
+Haryana,Rohtak,2026,88.19,79.8,87.28,54.42
+Haryana,Ambala,2010,81.43,58.26,60.64,34.38
+Haryana,Ambala,2011,81.88,59.58,61.19,35.7
+Haryana,Ambala,2012,82.33,60.9,61.75,37.02
+Haryana,Ambala,2013,82.78,62.23,62.3,38.33
+Haryana,Ambala,2014,83.23,63.55,64.06,39.65
+Haryana,Ambala,2015,83.68,64.88,65.82,40.97
+Haryana,Ambala,2016,84.25,66.2,67.57,42.28
+Haryana,Ambala,2017,84.82,68.25,69.44,43.6
+Haryana,Ambala,2018,85.39,70.3,71.31,44.92
+Haryana,Ambala,2019,85.96,72.35,73.17,46.24
+Haryana,Ambala,2020,86.53,74.4,75.04,42.83
+Haryana,Ambala,2021,87.1,74.4,77.2,45.7
+Haryana,Ambala,2022,87.67,75.88,79.36,50.2
+Haryana,Ambala,2023,88.24,77.35,81.52,51.26
+Haryana,Ambala,2024,88.81,78.83,83.68,52.31
+Haryana,Ambala,2025,89.38,80.3,85.84,53.37
+Haryana,Ambala,2026,89.95,81.78,88.0,54.42
+Haryana,Hisar,2010,70.85,51.39,50.72,34.38
+Haryana,Hisar,2011,71.43,52.56,51.42,35.7
+Haryana,Hisar,2012,72.01,53.73,52.12,37.02
+Haryana,Hisar,2013,72.59,54.9,52.81,38.33
+Haryana,Hisar,2014,73.17,56.06,54.71,39.65
+Haryana,Hisar,2015,73.75,57.23,56.6,40.97
+Haryana,Hisar,2016,74.45,58.4,58.5,42.28
+Haryana,Hisar,2017,75.15,60.35,60.53,43.6
+Haryana,Hisar,2018,75.85,62.3,62.57,44.92
+Haryana,Hisar,2019,76.55,64.25,64.6,46.24
+Haryana,Hisar,2020,77.25,66.2,66.64,42.83
+Haryana,Hisar,2021,77.95,66.2,68.8,45.7
+Haryana,Hisar,2022,78.65,67.6,70.96,50.2
+Haryana,Hisar,2023,79.35,69.01,73.12,51.26
+Haryana,Hisar,2024,80.05,70.41,75.28,52.31
+Haryana,Hisar,2025,80.75,71.82,77.44,53.37
+Haryana,Hisar,2026,81.45,73.22,79.6,54.42
+Haryana,Sirsa,2010,64.56,48.22,45.34,34.38
+Haryana,Sirsa,2011,65.14,49.32,46.11,35.7
+Haryana,Sirsa,2012,65.72,50.42,46.89,37.02
+Haryana,Sirsa,2013,66.3,51.51,47.66,38.33
+Haryana,Sirsa,2014,66.88,52.61,49.63,39.65
+Haryana,Sirsa,2015,67.46,53.7,51.6,40.97
+Haryana,Sirsa,2016,68.16,54.8,53.57,42.28
+Haryana,Sirsa,2017,68.86,56.8,55.7,43.6
+Haryana,Sirsa,2018,69.56,58.8,57.83,44.92
+Haryana,Sirsa,2019,70.26,60.8,59.95,46.24
+Haryana,Sirsa,2020,70.96,62.8,62.08,42.83
+Haryana,Sirsa,2021,71.66,62.8,64.24,45.7
+Haryana,Sirsa,2022,72.36,64.24,66.4,50.2
+Haryana,Sirsa,2023,73.06,65.68,68.56,51.26
+Haryana,Sirsa,2024,73.76,67.12,70.72,52.31
+Haryana,Sirsa,2025,74.46,68.56,72.88,53.37
+Haryana,Sirsa,2026,75.16,70.0,75.04,54.42
+Haryana,Mewat,2010,53.3,35.38,20.14,25.98
+Haryana,Mewat,2011,54.08,36.18,21.27,27.3
+Haryana,Mewat,2012,54.86,36.98,22.39,28.62
+Haryana,Mewat,2013,55.64,37.79,23.52,29.93
+Haryana,Mewat,2014,56.42,38.59,25.85,31.25
+Haryana,Mewat,2015,57.2,39.4,28.18,32.57
+Haryana,Mewat,2016,58.1,40.2,30.51,33.88
+Haryana,Mewat,2017,59.0,42.5,33.06,35.2
+Haryana,Mewat,2018,59.9,44.8,35.61,36.52
+Haryana,Mewat,2019,60.8,47.1,38.17,37.84
+Haryana,Mewat,2020,61.7,49.4,40.72,34.43
+Haryana,Mewat,2021,62.6,49.4,42.88,37.3
+Haryana,Mewat,2022,63.5,51.06,45.04,41.8
+Haryana,Mewat,2023,64.4,52.71,47.2,42.86
+Haryana,Mewat,2024,65.3,54.37,49.36,43.91
+Haryana,Mewat,2025,66.2,56.02,51.52,44.97
+Haryana,Mewat,2026,67.1,57.68,53.68,46.02
+Haryana,Bhiwani,2010,69.08,49.63,49.87,34.38
+Haryana,Bhiwani,2011,69.66,50.76,50.58,35.7
+Haryana,Bhiwani,2012,70.24,51.89,51.29,37.02
+Haryana,Bhiwani,2013,70.82,53.02,52.0,38.33
+Haryana,Bhiwani,2014,71.4,54.14,53.91,39.65
+Haryana,Bhiwani,2015,71.98,55.27,55.81,40.97
+Haryana,Bhiwani,2016,72.68,56.4,57.72,42.28
+Haryana,Bhiwani,2017,73.38,58.45,59.77,43.6
+Haryana,Bhiwani,2018,74.08,60.5,61.82,44.92
+Haryana,Bhiwani,2019,74.78,62.55,63.87,46.24
+Haryana,Bhiwani,2020,75.48,64.6,65.92,42.83
+Haryana,Bhiwani,2021,76.18,64.6,68.08,45.7
+Haryana,Bhiwani,2022,76.88,66.08,70.24,50.2
+Haryana,Bhiwani,2023,77.58,67.55,72.4,51.26
+Haryana,Bhiwani,2024,78.28,69.03,74.56,52.31
+Haryana,Bhiwani,2025,78.98,70.5,76.72,53.37
+Haryana,Bhiwani,2026,79.68,71.98,78.88,54.42
+Haryana,Jind,2010,69.69,51.22,51.57,34.38
+Haryana,Jind,2011,70.27,52.38,52.26,35.7
+Haryana,Jind,2012,70.85,53.54,52.94,37.02
+Haryana,Jind,2013,71.43,54.71,53.62,38.33
+Haryana,Jind,2014,72.01,55.87,55.51,39.65
+Haryana,Jind,2015,72.59,57.04,57.39,40.97
+Haryana,Jind,2016,73.29,58.2,59.28,42.28
+Haryana,Jind,2017,73.99,60.25,61.3,43.6
+Haryana,Jind,2018,74.69,62.3,63.32,44.92
+Haryana,Jind,2019,75.39,64.35,65.34,46.24
+Haryana,Jind,2020,76.09,66.4,67.36,42.83
+Haryana,Jind,2021,76.79,66.4,69.52,45.7
+Haryana,Jind,2022,77.49,67.88,71.68,50.2
+Haryana,Jind,2023,78.19,69.35,73.84,51.26
+Haryana,Jind,2024,78.89,70.83,76.0,52.31
+Haryana,Jind,2025,79.59,72.3,78.16,53.37
+Haryana,Jind,2026,80.29,73.78,80.32,54.42
+Haryana,Kaithal,2010,70.47,53.15,53.84,34.38
+Haryana,Kaithal,2011,71.05,54.36,54.49,35.7
+Haryana,Kaithal,2012,71.63,55.57,55.14,37.02
+Haryana,Kaithal,2013,72.21,56.78,55.79,38.33
+Haryana,Kaithal,2014,72.79,57.98,57.65,39.65
+Haryana,Kaithal,2015,73.37,59.19,59.5,40.97
+Haryana,Kaithal,2016,74.07,60.4,61.35,42.28
+Haryana,Kaithal,2017,74.77,62.35,63.33,43.6
+Haryana,Kaithal,2018,75.47,64.3,65.32,44.92
+Haryana,Kaithal,2019,76.17,66.25,67.3,46.24
+Haryana,Kaithal,2020,76.87,68.2,69.28,42.83
+Haryana,Kaithal,2021,77.57,68.2,71.44,45.7
+Haryana,Kaithal,2022,78.27,69.6,73.6,50.2
+Haryana,Kaithal,2023,78.97,71.01,75.76,51.26
+Haryana,Kaithal,2024,79.67,72.41,77.92,52.31
+Haryana,Kaithal,2025,80.37,73.82,80.08,53.37
+Haryana,Kaithal,2026,81.07,75.22,82.24,54.42
+Haryana,Kurukshetra,2010,75.87,56.14,58.37,34.38
+Haryana,Kurukshetra,2011,76.32,57.42,58.96,35.7
+Haryana,Kurukshetra,2012,76.77,58.7,59.55,37.02
+Haryana,Kurukshetra,2013,77.22,59.97,60.13,38.33
+Haryana,Kurukshetra,2014,77.67,61.25,61.92,39.65
+Haryana,Kurukshetra,2015,78.12,62.52,63.71,40.97
+Haryana,Kurukshetra,2016,78.69,63.8,65.5,42.28
+Haryana,Kurukshetra,2017,79.26,65.8,67.4,43.6
+Haryana,Kurukshetra,2018,79.83,67.8,69.31,44.92
+Haryana,Kurukshetra,2019,80.4,69.8,71.21,46.24
+Haryana,Kurukshetra,2020,80.97,71.8,73.12,42.83
+Haryana,Kurukshetra,2021,81.54,71.8,75.28,45.7
+Haryana,Kurukshetra,2022,82.11,73.24,77.44,50.2
+Haryana,Kurukshetra,2023,82.68,74.68,79.6,51.26
+Haryana,Kurukshetra,2024,83.25,76.12,81.76,52.31
+Haryana,Kurukshetra,2025,83.82,77.56,83.92,53.37
+Haryana,Kurukshetra,2026,84.39,79.0,86.08,54.42
+Haryana,Mahendragarh,2010,68.14,50.51,50.72,34.38
+Haryana,Mahendragarh,2011,68.72,51.66,51.42,35.7
+Haryana,Mahendragarh,2012,69.3,52.81,52.12,37.02
+Haryana,Mahendragarh,2013,69.88,53.96,52.81,38.33
+Haryana,Mahendragarh,2014,70.46,55.1,54.71,39.65
+Haryana,Mahendragarh,2015,71.04,56.25,56.6,40.97
+Haryana,Mahendragarh,2016,71.74,57.4,58.5,42.28
+Haryana,Mahendragarh,2017,72.44,59.45,60.53,43.6
+Haryana,Mahendragarh,2018,73.14,61.5,62.57,44.92
+Haryana,Mahendragarh,2019,73.84,63.55,64.6,46.24
+Haryana,Mahendragarh,2020,74.54,65.6,66.64,42.83
+Haryana,Mahendragarh,2021,75.24,65.6,68.8,45.7
+Haryana,Mahendragarh,2022,75.94,67.08,70.96,50.2
+Haryana,Mahendragarh,2023,76.64,68.55,73.12,51.26
+Haryana,Mahendragarh,2024,77.34,70.03,75.28,52.31
+Haryana,Mahendragarh,2025,78.04,71.5,77.44,53.37
+Haryana,Mahendragarh,2026,78.74,72.98,79.6,54.42
+West Bengal,Kolkata,2010,86.86,63.18,56.95,42.31
+West Bengal,Kolkata,2011,87.14,64.62,57.56,43.64
+West Bengal,Kolkata,2012,87.42,66.06,58.17,44.97
+West Bengal,Kolkata,2013,87.7,67.49,58.78,46.29
+West Bengal,Kolkata,2014,87.98,68.93,60.59,47.62
+West Bengal,Kolkata,2015,88.26,70.36,62.39,48.95
+West Bengal,Kolkata,2016,88.66,71.8,64.2,50.27
+West Bengal,Kolkata,2017,89.06,73.7,66.13,51.6
+West Bengal,Kolkata,2018,89.46,75.6,68.06,52.92
+West Bengal,Kolkata,2019,89.86,77.5,69.99,54.24
+West Bengal,Kolkata,2020,90.26,79.4,71.92,50.8
+West Bengal,Kolkata,2021,90.66,79.4,74.08,53.68
+West Bengal,Kolkata,2022,91.06,80.77,76.24,58.2
+West Bengal,Kolkata,2023,91.46,82.14,78.4,59.26
+West Bengal,Kolkata,2024,91.86,83.5,80.56,60.31
+West Bengal,Kolkata,2025,92.26,84.87,82.72,61.37
+West Bengal,Kolkata,2026,92.66,86.24,84.88,62.42
+West Bengal,Howrah,2010,79.37,58.43,50.16,35.51
+West Bengal,Howrah,2011,79.82,59.76,50.86,36.84
+West Bengal,Howrah,2012,80.27,61.09,51.56,38.17
+West Bengal,Howrah,2013,80.72,62.42,52.27,39.49
+West Bengal,Howrah,2014,81.17,63.74,54.17,40.82
+West Bengal,Howrah,2015,81.62,65.07,56.08,42.15
+West Bengal,Howrah,2016,82.19,66.4,57.98,43.47
+West Bengal,Howrah,2017,82.76,68.35,60.03,44.8
+West Bengal,Howrah,2018,83.33,70.3,62.07,46.12
+West Bengal,Howrah,2019,83.9,72.25,64.12,47.44
+West Bengal,Howrah,2020,84.47,74.2,66.16,44.0
+West Bengal,Howrah,2021,85.04,74.2,68.32,46.88
+West Bengal,Howrah,2022,85.61,75.6,70.48,51.4
+West Bengal,Howrah,2023,86.18,77.01,72.64,52.46
+West Bengal,Howrah,2024,86.75,78.41,74.8,53.51
+West Bengal,Howrah,2025,87.32,79.82,76.96,54.57
+West Bengal,Howrah,2026,87.89,81.22,79.12,55.62
+West Bengal,Hooghly,2010,78.78,57.9,52.14,35.51
+West Bengal,Hooghly,2011,79.23,59.22,52.82,36.84
+West Bengal,Hooghly,2012,79.68,60.54,53.49,38.17
+West Bengal,Hooghly,2013,80.13,61.85,54.17,39.49
+West Bengal,Hooghly,2014,80.58,63.17,56.04,40.82
+West Bengal,Hooghly,2015,81.03,64.48,57.92,42.15
+West Bengal,Hooghly,2016,81.6,65.8,59.8,43.47
+West Bengal,Hooghly,2017,82.17,67.75,61.81,44.8
+West Bengal,Hooghly,2018,82.74,69.7,63.82,46.12
+West Bengal,Hooghly,2019,83.31,71.65,65.83,47.44
+West Bengal,Hooghly,2020,83.88,73.6,67.84,44.0
+West Bengal,Hooghly,2021,84.45,73.6,70.0,46.88
+West Bengal,Hooghly,2022,85.02,75.0,72.16,51.4
+West Bengal,Hooghly,2023,85.59,76.41,74.32,52.46
+West Bengal,Hooghly,2024,86.16,77.81,76.48,53.51
+West Bengal,Hooghly,2025,86.73,79.22,78.64,54.57
+West Bengal,Hooghly,2026,87.3,80.62,80.8,55.62
+West Bengal,Darjeeling,2010,78.7,54.91,48.46,35.51
+West Bengal,Darjeeling,2011,79.15,56.16,49.19,36.84
+West Bengal,Darjeeling,2012,79.6,57.41,49.91,38.17
+West Bengal,Darjeeling,2013,80.05,58.66,50.64,39.49
+West Bengal,Darjeeling,2014,80.5,59.9,52.57,40.82
+West Bengal,Darjeeling,2015,80.95,61.15,54.5,42.15
+West Bengal,Darjeeling,2016,81.52,62.4,56.43,43.47
+West Bengal,Darjeeling,2017,82.09,64.4,58.5,44.8
+West Bengal,Darjeeling,2018,82.66,66.4,60.57,46.12
+West Bengal,Darjeeling,2019,83.23,68.4,62.65,47.44
+West Bengal,Darjeeling,2020,83.8,70.4,64.72,44.0
+West Bengal,Darjeeling,2021,84.37,70.4,66.88,46.88
+West Bengal,Darjeeling,2022,84.94,71.84,69.04,51.4
+West Bengal,Darjeeling,2023,85.51,73.28,71.2,52.46
+West Bengal,Darjeeling,2024,86.08,74.72,73.36,53.51
+West Bengal,Darjeeling,2025,86.65,76.16,75.52,54.57
+West Bengal,Darjeeling,2026,87.22,77.6,77.68,55.62
+West Bengal,Bardhaman,2010,75.3,55.97,51.01,35.51
+West Bengal,Bardhaman,2011,75.75,57.24,51.7,36.84
+West Bengal,Bardhaman,2012,76.2,58.51,52.39,38.17
+West Bengal,Bardhaman,2013,76.65,59.78,53.08,39.49
+West Bengal,Bardhaman,2014,77.1,61.06,54.97,40.82
+West Bengal,Bardhaman,2015,77.55,62.33,56.87,42.15
+West Bengal,Bardhaman,2016,78.12,63.6,58.76,43.47
+West Bengal,Bardhaman,2017,78.69,65.65,60.79,44.8
+West Bengal,Bardhaman,2018,79.26,67.7,62.82,46.12
+West Bengal,Bardhaman,2019,79.83,69.75,64.85,47.44
+West Bengal,Bardhaman,2020,80.4,71.8,66.88,44.0
+West Bengal,Bardhaman,2021,80.97,71.8,69.04,46.88
+West Bengal,Bardhaman,2022,81.54,73.28,71.2,51.4
+West Bengal,Bardhaman,2023,82.11,74.75,73.36,52.46
+West Bengal,Bardhaman,2024,82.68,76.23,75.52,53.51
+West Bengal,Bardhaman,2025,83.25,77.7,77.68,54.57
+West Bengal,Bardhaman,2026,83.82,79.18,79.84,55.62
+West Bengal,Birbhum,2010,66.06,48.22,39.4,35.51
+West Bengal,Birbhum,2011,66.64,49.32,40.25,36.84
+West Bengal,Birbhum,2012,67.22,50.42,41.11,38.17
+West Bengal,Birbhum,2013,67.8,51.51,41.96,39.49
+West Bengal,Birbhum,2014,68.38,52.61,44.02,40.82
+West Bengal,Birbhum,2015,68.96,53.7,46.08,42.15
+West Bengal,Birbhum,2016,69.66,54.8,48.13,43.47
+West Bengal,Birbhum,2017,70.36,56.7,50.36,44.8
+West Bengal,Birbhum,2018,71.06,58.6,52.59,46.12
+West Bengal,Birbhum,2019,71.76,60.5,54.81,47.44
+West Bengal,Birbhum,2020,72.46,62.4,57.04,44.0
+West Bengal,Birbhum,2021,73.16,62.4,59.2,46.88
+West Bengal,Birbhum,2022,73.86,63.77,61.36,51.4
+West Bengal,Birbhum,2023,74.56,65.14,63.52,52.46
+West Bengal,Birbhum,2024,75.26,66.5,65.68,53.51
+West Bengal,Birbhum,2025,75.96,67.87,67.84,54.57
+West Bengal,Birbhum,2026,76.66,69.24,70.0,55.62
+West Bengal,Murshidabad,2010,63.14,42.59,31.47,31.71
+West Bengal,Murshidabad,2011,63.82,43.56,32.43,33.04
+West Bengal,Murshidabad,2012,64.5,44.53,33.4,34.37
+West Bengal,Murshidabad,2013,65.18,45.5,34.37,35.69
+West Bengal,Murshidabad,2014,65.86,46.46,36.54,37.02
+West Bengal,Murshidabad,2015,66.54,47.43,38.71,38.35
+West Bengal,Murshidabad,2016,67.34,48.4,40.87,39.67
+West Bengal,Murshidabad,2017,68.14,50.5,43.24,41.0
+West Bengal,Murshidabad,2018,68.94,52.6,45.6,42.32
+West Bengal,Murshidabad,2019,69.74,54.7,47.96,43.64
+West Bengal,Murshidabad,2020,70.54,56.8,50.32,40.2
+West Bengal,Murshidabad,2021,71.34,56.8,52.48,43.08
+West Bengal,Murshidabad,2022,72.14,58.31,54.64,47.6
+West Bengal,Murshidabad,2023,72.94,59.82,56.8,48.66
+West Bengal,Murshidabad,2024,73.74,61.34,58.96,49.71
+West Bengal,Murshidabad,2025,74.54,62.85,61.12,50.77
+West Bengal,Murshidabad,2026,75.34,64.36,63.28,51.82
+West Bengal,Malda,2010,62.04,41.18,28.92,32.11
+West Bengal,Malda,2011,62.72,42.12,29.92,33.44
+West Bengal,Malda,2012,63.4,43.06,30.92,34.77
+West Bengal,Malda,2013,64.08,43.99,31.93,36.09
+West Bengal,Malda,2014,64.76,44.93,34.13,37.42
+West Bengal,Malda,2015,65.44,45.86,36.34,38.75
+West Bengal,Malda,2016,66.24,46.8,38.54,40.07
+West Bengal,Malda,2017,67.04,48.95,40.95,41.4
+West Bengal,Malda,2018,67.84,51.1,43.35,42.72
+West Bengal,Malda,2019,68.64,53.25,45.76,44.04
+West Bengal,Malda,2020,69.44,55.4,48.16,40.6
+West Bengal,Malda,2021,70.24,55.4,50.32,43.48
+West Bengal,Malda,2022,71.04,56.95,52.48,48.0
+West Bengal,Malda,2023,71.84,58.5,54.64,49.06
+West Bengal,Malda,2024,72.64,60.04,56.8,50.11
+West Bengal,Malda,2025,73.44,61.59,58.96,51.17
+West Bengal,Malda,2026,74.24,63.14,61.12,52.22
+West Bengal,Cooch Behar,2010,72.83,51.39,39.68,35.51
+West Bengal,Cooch Behar,2011,73.41,52.56,40.53,36.84
+West Bengal,Cooch Behar,2012,73.99,53.73,41.38,38.17
+West Bengal,Cooch Behar,2013,74.57,54.9,42.23,39.49
+West Bengal,Cooch Behar,2014,75.15,56.06,44.29,40.82
+West Bengal,Cooch Behar,2015,75.73,57.23,46.34,42.15
+West Bengal,Cooch Behar,2016,76.43,58.4,48.39,43.47
+West Bengal,Cooch Behar,2017,77.13,60.5,50.61,44.8
+West Bengal,Cooch Behar,2018,77.83,62.6,52.84,46.12
+West Bengal,Cooch Behar,2019,78.53,64.7,55.06,47.44
+West Bengal,Cooch Behar,2020,79.23,66.8,57.28,44.0
+West Bengal,Cooch Behar,2021,79.93,66.8,59.44,46.88
+West Bengal,Cooch Behar,2022,80.63,68.31,61.6,51.4
+West Bengal,Cooch Behar,2023,81.33,69.82,63.76,52.46
+West Bengal,Cooch Behar,2024,82.03,71.34,65.92,53.51
+West Bengal,Cooch Behar,2025,82.73,72.85,68.08,54.57
+West Bengal,Cooch Behar,2026,83.43,74.36,70.24,55.62
+West Bengal,Jalpaiguri,2010,73.47,53.86,42.79,35.51
+West Bengal,Jalpaiguri,2011,74.05,55.08,43.6,36.84
+West Bengal,Jalpaiguri,2012,74.63,56.3,44.41,38.17
+West Bengal,Jalpaiguri,2013,75.21,57.53,45.22,39.49
+West Bengal,Jalpaiguri,2014,75.79,58.75,47.23,40.82
+West Bengal,Jalpaiguri,2015,76.37,59.98,49.23,42.15
+West Bengal,Jalpaiguri,2016,77.07,61.2,51.24,43.47
+West Bengal,Jalpaiguri,2017,77.77,63.25,53.41,44.8
+West Bengal,Jalpaiguri,2018,78.47,65.3,55.58,46.12
+West Bengal,Jalpaiguri,2019,79.17,67.35,57.75,47.44
+West Bengal,Jalpaiguri,2020,79.87,69.4,59.92,44.0
+West Bengal,Jalpaiguri,2021,80.57,69.4,62.08,46.88
+West Bengal,Jalpaiguri,2022,81.27,70.88,64.24,51.4
+West Bengal,Jalpaiguri,2023,81.97,72.35,66.4,52.46
+West Bengal,Jalpaiguri,2024,82.67,73.83,68.56,53.51
+West Bengal,Jalpaiguri,2025,83.37,75.3,70.72,54.57
+West Bengal,Jalpaiguri,2026,84.07,76.78,72.88,55.62
+West Bengal,Nadia,2010,75.13,56.14,50.72,35.51
+West Bengal,Nadia,2011,75.58,57.42,51.42,36.84
+West Bengal,Nadia,2012,76.03,58.7,52.12,38.17
+West Bengal,Nadia,2013,76.48,59.97,52.81,39.49
+West Bengal,Nadia,2014,76.93,61.25,54.71,40.82
+West Bengal,Nadia,2015,77.38,62.52,56.6,42.15
+West Bengal,Nadia,2016,77.95,63.8,58.5,43.47
+West Bengal,Nadia,2017,78.52,65.75,60.53,44.8
+West Bengal,Nadia,2018,79.09,67.7,62.57,46.12
+West Bengal,Nadia,2019,79.66,69.65,64.6,47.44
+West Bengal,Nadia,2020,80.23,71.6,66.64,44.0
+West Bengal,Nadia,2021,80.8,71.6,68.8,46.88
+West Bengal,Nadia,2022,81.37,73.0,70.96,51.4
+West Bengal,Nadia,2023,81.94,74.41,73.12,52.46
+West Bengal,Nadia,2024,82.51,75.81,75.28,53.51
+West Bengal,Nadia,2025,83.08,77.22,77.44,54.57
+West Bengal,Nadia,2026,83.65,78.62,79.6,55.62
+West Bengal,North 24 Parganas,2010,80.06,58.43,53.84,35.51
+West Bengal,North 24 Parganas,2011,80.51,59.76,54.49,36.84
+West Bengal,North 24 Parganas,2012,80.96,61.09,55.14,38.17
+West Bengal,North 24 Parganas,2013,81.41,62.42,55.79,39.49
+West Bengal,North 24 Parganas,2014,81.86,63.74,57.65,40.82
+West Bengal,North 24 Parganas,2015,82.31,65.07,59.5,42.15
+West Bengal,North 24 Parganas,2016,82.88,66.4,61.35,43.47
+West Bengal,North 24 Parganas,2017,83.45,68.35,63.33,44.8
+West Bengal,North 24 Parganas,2018,84.02,70.3,65.32,46.12
+West Bengal,North 24 Parganas,2019,84.59,72.25,67.3,47.44
+West Bengal,North 24 Parganas,2020,85.16,74.2,69.28,44.0
+West Bengal,North 24 Parganas,2021,85.73,74.2,71.44,46.88
+West Bengal,North 24 Parganas,2022,86.3,75.6,73.6,51.4
+West Bengal,North 24 Parganas,2023,86.87,77.01,75.76,52.46
+West Bengal,North 24 Parganas,2024,87.44,78.41,77.92,53.51
+West Bengal,North 24 Parganas,2025,88.01,79.82,80.08,54.57
+West Bengal,North 24 Parganas,2026,88.58,81.22,82.24,55.62
+West Bengal,South 24 Parganas,2010,76.1,49.98,37.41,35.51
+West Bengal,South 24 Parganas,2011,76.55,51.12,38.3,36.84
+West Bengal,South 24 Parganas,2012,77.0,52.26,39.18,38.17
+West Bengal,South 24 Parganas,2013,77.45,53.39,40.06,39.49
+West Bengal,South 24 Parganas,2014,77.9,54.53,42.15,40.82
+West Bengal,South 24 Parganas,2015,78.35,55.66,44.23,42.15
+West Bengal,South 24 Parganas,2016,78.92,56.8,46.32,43.47
+West Bengal,South 24 Parganas,2017,79.49,58.9,48.58,44.8
+West Bengal,South 24 Parganas,2018,80.06,61.0,50.84,46.12
+West Bengal,South 24 Parganas,2019,80.63,63.1,53.1,47.44
+West Bengal,South 24 Parganas,2020,81.2,65.2,55.36,44.0
+West Bengal,South 24 Parganas,2021,81.77,65.2,57.52,46.88
+West Bengal,South 24 Parganas,2022,82.34,66.71,59.68,51.4
+West Bengal,South 24 Parganas,2023,82.91,68.22,61.84,52.46
+West Bengal,South 24 Parganas,2024,83.48,69.74,64.0,53.51
+West Bengal,South 24 Parganas,2025,84.05,71.25,66.16,54.57
+West Bengal,South 24 Parganas,2026,84.62,72.76,68.32,55.62
+West Bengal,Bankura,2010,71.96,48.75,37.98,35.51
+West Bengal,Bankura,2011,72.54,49.86,38.86,36.84
+West Bengal,Bankura,2012,73.12,50.97,39.73,38.17
+West Bengal,Bankura,2013,73.7,52.08,40.61,39.49
+West Bengal,Bankura,2014,74.28,53.18,42.68,40.82
+West Bengal,Bankura,2015,74.86,54.29,44.76,42.15
+West Bengal,Bankura,2016,75.56,55.4,46.84,43.47
+West Bengal,Bankura,2017,76.26,57.5,49.09,44.8
+West Bengal,Bankura,2018,76.96,59.6,51.34,46.12
+West Bengal,Bankura,2019,77.66,61.7,53.59,47.44
+West Bengal,Bankura,2020,78.36,63.8,55.84,44.0
+West Bengal,Bankura,2021,79.06,63.8,58.0,46.88
+West Bengal,Bankura,2022,79.76,65.31,60.16,51.4
+West Bengal,Bankura,2023,80.46,66.82,62.32,52.46
+West Bengal,Bankura,2024,81.16,68.34,64.48,53.51
+West Bengal,Bankura,2025,81.86,69.85,66.64,54.57
+West Bengal,Bankura,2026,82.56,71.36,68.8,55.62
+West Bengal,Purulia,2010,64.8,44.18,31.47,32.11
+West Bengal,Purulia,2011,65.38,45.18,32.43,33.44
+West Bengal,Purulia,2012,65.96,46.18,33.4,34.77
+West Bengal,Purulia,2013,66.54,47.19,34.37,36.09
+West Bengal,Purulia,2014,67.12,48.19,36.54,37.42
+West Bengal,Purulia,2015,67.7,49.2,38.71,38.75
+West Bengal,Purulia,2016,68.4,50.2,40.87,40.07
+West Bengal,Purulia,2017,69.1,52.3,43.24,41.4
+West Bengal,Purulia,2018,69.8,54.4,45.6,42.72
+West Bengal,Purulia,2019,70.5,56.5,47.96,44.04
+West Bengal,Purulia,2020,71.2,58.6,50.32,40.6
+West Bengal,Purulia,2021,71.9,58.6,52.48,43.48
+West Bengal,Purulia,2022,72.6,60.11,54.64,48.0
+West Bengal,Purulia,2023,73.3,61.62,56.8,49.06
+West Bengal,Purulia,2024,74.0,63.14,58.96,50.11
+West Bengal,Purulia,2025,74.7,64.65,61.12,51.17
+West Bengal,Purulia,2026,75.4,66.16,63.28,52.22
+Assam,Kamrup Metro,2010,89.72,65.3,62.62,44.7
+Assam,Kamrup Metro,2011,90.0,66.78,63.15,46.05
+Assam,Kamrup Metro,2012,90.28,68.26,63.67,47.41
+Assam,Kamrup Metro,2013,90.56,69.75,64.2,48.77
+Assam,Kamrup Metro,2014,90.84,71.23,65.93,50.13
+Assam,Kamrup Metro,2015,91.12,72.72,67.66,51.48
+Assam,Kamrup Metro,2016,91.52,74.2,69.39,52.84
+Assam,Kamrup Metro,2017,91.92,76.25,71.22,54.2
+Assam,Kamrup Metro,2018,92.32,78.3,73.05,55.64
+Assam,Kamrup Metro,2019,92.72,80.35,74.89,57.08
+Assam,Kamrup Metro,2020,93.12,82.4,76.72,53.64
+Assam,Kamrup Metro,2021,93.52,82.4,78.88,56.68
+Assam,Kamrup Metro,2022,93.92,83.88,81.04,61.4
+Assam,Kamrup Metro,2023,94.32,85.35,83.2,62.55
+Assam,Kamrup Metro,2024,94.72,86.83,85.36,63.7
+Assam,Kamrup Metro,2025,95.12,88.3,87.52,64.86
+Assam,Kamrup Metro,2026,95.52,89.78,89.68,66.01
+Assam,Kamrup,2010,77.28,55.26,47.89,38.9
+Assam,Kamrup,2011,77.73,56.52,48.63,40.25
+Assam,Kamrup,2012,78.18,57.78,49.36,41.61
+Assam,Kamrup,2013,78.63,59.03,50.1,42.97
+Assam,Kamrup,2014,79.08,60.29,52.04,44.33
+Assam,Kamrup,2015,79.53,61.54,53.97,45.68
+Assam,Kamrup,2016,80.1,62.8,55.91,47.04
+Assam,Kamrup,2017,80.67,64.9,57.99,48.4
+Assam,Kamrup,2018,81.24,67.0,60.07,49.84
+Assam,Kamrup,2019,81.81,69.1,62.16,51.28
+Assam,Kamrup,2020,82.38,71.2,64.24,47.84
+Assam,Kamrup,2021,82.95,71.2,66.4,50.88
+Assam,Kamrup,2022,83.52,72.71,68.56,55.6
+Assam,Kamrup,2023,84.09,74.22,70.72,56.75
+Assam,Kamrup,2024,84.66,75.74,72.88,57.9
+Assam,Kamrup,2025,85.23,77.25,75.04,59.06
+Assam,Kamrup,2026,85.8,78.76,77.2,60.21
+Assam,Nagaon,2010,66.55,46.11,36.85,38.9
+Assam,Nagaon,2011,67.13,47.16,37.74,40.25
+Assam,Nagaon,2012,67.71,48.21,38.63,41.61
+Assam,Nagaon,2013,68.29,49.26,39.52,42.97
+Assam,Nagaon,2014,68.87,50.3,41.61,44.33
+Assam,Nagaon,2015,69.45,51.35,43.71,45.68
+Assam,Nagaon,2016,70.15,52.4,45.8,47.04
+Assam,Nagaon,2017,70.85,54.65,48.07,48.4
+Assam,Nagaon,2018,71.55,56.9,50.34,49.84
+Assam,Nagaon,2019,72.25,59.15,52.61,51.28
+Assam,Nagaon,2020,72.95,61.4,54.88,47.84
+Assam,Nagaon,2021,73.65,61.4,57.04,50.88
+Assam,Nagaon,2022,74.35,63.02,59.2,55.6
+Assam,Nagaon,2023,75.05,64.64,61.36,56.75
+Assam,Nagaon,2024,75.75,66.26,63.52,57.9
+Assam,Nagaon,2025,76.45,67.88,65.68,59.06
+Assam,Nagaon,2026,77.15,69.5,67.84,60.21
+Assam,Cachar,2010,80.33,57.02,51.57,38.9
+Assam,Cachar,2011,80.78,58.32,52.26,40.25
+Assam,Cachar,2012,81.23,59.62,52.94,41.61
+Assam,Cachar,2013,81.68,60.91,53.62,42.97
+Assam,Cachar,2014,82.13,62.21,55.51,44.33
+Assam,Cachar,2015,82.58,63.5,57.39,45.68
+Assam,Cachar,2016,83.15,64.8,59.28,47.04
+Assam,Cachar,2017,83.72,67.0,61.3,48.4
+Assam,Cachar,2018,84.29,69.2,63.32,49.84
+Assam,Cachar,2019,84.86,71.4,65.34,51.28
+Assam,Cachar,2020,85.43,73.6,67.36,47.84
+Assam,Cachar,2021,86.0,73.6,69.52,50.88
+Assam,Cachar,2022,86.57,75.18,71.68,55.6
+Assam,Cachar,2023,87.14,76.77,73.84,56.75
+Assam,Cachar,2024,87.71,78.35,76.0,57.9
+Assam,Cachar,2025,88.28,79.94,78.16,59.06
+Assam,Cachar,2026,88.85,81.52,80.32,60.21
+Assam,Sonitpur,2010,72.14,50.51,42.79,38.9
+Assam,Sonitpur,2011,72.72,51.66,43.6,40.25
+Assam,Sonitpur,2012,73.3,52.81,44.41,41.61
+Assam,Sonitpur,2013,73.88,53.96,45.22,42.97
+Assam,Sonitpur,2014,74.46,55.1,47.23,44.33
+Assam,Sonitpur,2015,75.04,56.25,49.23,45.68
+Assam,Sonitpur,2016,75.74,57.4,51.24,47.04
+Assam,Sonitpur,2017,76.44,59.6,53.41,48.4
+Assam,Sonitpur,2018,77.14,61.8,55.58,49.84
+Assam,Sonitpur,2019,77.84,64.0,57.75,51.28
+Assam,Sonitpur,2020,78.54,66.2,59.92,47.84
+Assam,Sonitpur,2021,79.24,66.2,62.08,50.88
+Assam,Sonitpur,2022,79.94,67.78,64.24,55.6
+Assam,Sonitpur,2023,80.64,69.37,66.4,56.75
+Assam,Sonitpur,2024,81.34,70.95,68.56,57.9
+Assam,Sonitpur,2025,82.04,72.54,70.72,59.06
+Assam,Sonitpur,2026,82.74,74.12,72.88,60.21
+Assam,Barpeta,2010,61.71,41.18,31.18,35.3
+Assam,Barpeta,2011,62.39,42.12,32.15,36.65
+Assam,Barpeta,2012,63.07,43.06,33.13,38.01
+Assam,Barpeta,2013,63.75,43.99,34.1,39.37
+Assam,Barpeta,2014,64.43,44.93,36.27,40.73
+Assam,Barpeta,2015,65.11,45.86,38.44,42.08
+Assam,Barpeta,2016,65.91,46.8,40.61,43.44
+Assam,Barpeta,2017,66.71,49.2,42.98,44.8
+Assam,Barpeta,2018,67.51,51.6,45.35,46.24
+Assam,Barpeta,2019,68.31,54.0,47.71,47.68
+Assam,Barpeta,2020,69.11,56.4,50.08,44.24
+Assam,Barpeta,2021,69.91,56.4,52.24,47.28
+Assam,Barpeta,2022,70.71,58.13,54.4,52.0
+Assam,Barpeta,2023,71.51,59.86,56.56,53.15
+Assam,Barpeta,2024,72.31,61.58,58.72,54.3
+Assam,Barpeta,2025,73.11,63.31,60.88,55.46
+Assam,Barpeta,2026,73.91,65.04,63.04,56.61
+Assam,Darrang,2010,62.63,42.59,33.73,38.9
+Assam,Darrang,2011,63.31,43.56,34.67,40.25
+Assam,Darrang,2012,63.99,44.53,35.6,41.61
+Assam,Darrang,2013,64.67,45.5,36.54,42.97
+Assam,Darrang,2014,65.35,46.46,38.68,44.33
+Assam,Darrang,2015,66.03,47.43,40.81,45.68
+Assam,Darrang,2016,66.83,48.4,42.95,47.04
+Assam,Darrang,2017,67.63,50.85,45.27,48.4
+Assam,Darrang,2018,68.43,53.3,47.59,49.84
+Assam,Darrang,2019,69.23,55.75,49.92,51.28
+Assam,Darrang,2020,70.03,58.2,52.24,47.84
+Assam,Darrang,2021,70.83,58.2,54.4,50.88
+Assam,Darrang,2022,71.63,59.96,56.56,55.6
+Assam,Darrang,2023,72.43,61.73,58.72,56.75
+Assam,Darrang,2024,73.23,63.49,60.88,57.9
+Assam,Darrang,2025,74.03,65.26,63.04,59.06
+Assam,Darrang,2026,74.83,67.02,65.2,60.21
+Assam,Dhubri,2010,53.18,35.38,25.8,32.5
+Assam,Dhubri,2011,53.96,36.18,26.85,33.85
+Assam,Dhubri,2012,54.74,36.98,27.9,35.21
+Assam,Dhubri,2013,55.52,37.79,28.95,36.57
+Assam,Dhubri,2014,56.3,38.59,31.19,37.93
+Assam,Dhubri,2015,57.08,39.4,33.44,39.28
+Assam,Dhubri,2016,57.98,40.2,35.69,40.64
+Assam,Dhubri,2017,58.88,42.75,38.15,42.0
+Assam,Dhubri,2018,59.78,45.3,40.6,43.44
+Assam,Dhubri,2019,60.68,47.85,43.06,44.88
+Assam,Dhubri,2020,61.58,50.4,45.52,41.44
+Assam,Dhubri,2021,62.48,50.4,47.68,44.48
+Assam,Dhubri,2022,63.38,52.24,49.84,49.2
+Assam,Dhubri,2023,64.28,54.07,52.0,50.35
+Assam,Dhubri,2024,65.18,55.91,54.16,51.5
+Assam,Dhubri,2025,66.08,57.74,56.32,52.66
+Assam,Dhubri,2026,66.98,59.58,58.48,53.81
+Assam,Dibrugarh,2010,76.09,53.5,48.74,38.9
+Assam,Dibrugarh,2011,76.54,54.72,49.46,40.25
+Assam,Dibrugarh,2012,76.99,55.94,50.19,41.61
+Assam,Dibrugarh,2013,77.44,57.15,50.91,42.97
+Assam,Dibrugarh,2014,77.89,58.37,52.84,44.33
+Assam,Dibrugarh,2015,78.34,59.58,54.76,45.68
+Assam,Dibrugarh,2016,78.91,60.8,56.68,47.04
+Assam,Dibrugarh,2017,79.48,63.15,58.75,48.4
+Assam,Dibrugarh,2018,80.05,65.5,60.82,49.84
+Assam,Dibrugarh,2019,80.62,67.85,62.89,51.28
+Assam,Dibrugarh,2020,81.19,70.2,64.96,47.84
+Assam,Dibrugarh,2021,81.76,70.2,67.12,50.88
+Assam,Dibrugarh,2022,82.33,71.89,69.28,55.6
+Assam,Dibrugarh,2023,82.9,73.58,71.44,56.75
+Assam,Dibrugarh,2024,83.47,75.28,73.6,57.9
+Assam,Dibrugarh,2025,84.04,76.97,75.76,59.06
+Assam,Dibrugarh,2026,84.61,78.66,77.92,60.21
+Assam,Jorhat,2010,82.46,56.67,52.14,38.9
+Assam,Jorhat,2011,82.91,57.96,52.82,40.25
+Assam,Jorhat,2012,83.36,59.25,53.49,41.61
+Assam,Jorhat,2013,83.81,60.54,54.17,42.97
+Assam,Jorhat,2014,84.26,61.82,56.04,44.33
+Assam,Jorhat,2015,84.71,63.11,57.92,45.68
+Assam,Jorhat,2016,85.28,64.4,59.8,47.04
+Assam,Jorhat,2017,85.85,66.75,61.81,48.4
+Assam,Jorhat,2018,86.42,69.1,63.82,49.84
+Assam,Jorhat,2019,86.99,71.45,65.83,51.28
+Assam,Jorhat,2020,87.56,73.8,67.84,47.84
+Assam,Jorhat,2021,88.13,73.8,70.0,50.88
+Assam,Jorhat,2022,88.7,75.49,72.16,55.6
+Assam,Jorhat,2023,89.27,77.18,74.32,56.75
+Assam,Jorhat,2024,89.84,78.88,76.48,57.9
+Assam,Jorhat,2025,90.41,80.57,78.64,59.06
+Assam,Jorhat,2026,90.98,82.26,80.8,60.21
+Assam,Goalpara,2010,67.18,43.65,34.58,38.9
+Assam,Goalpara,2011,67.76,44.64,35.5,40.25
+Assam,Goalpara,2012,68.34,45.63,36.43,41.61
+Assam,Goalpara,2013,68.92,46.62,37.35,42.97
+Assam,Goalpara,2014,69.5,47.62,39.48,44.33
+Assam,Goalpara,2015,70.08,48.61,41.6,45.68
+Assam,Goalpara,2016,70.78,49.6,43.72,47.04
+Assam,Goalpara,2017,71.48,52.05,46.03,48.4
+Assam,Goalpara,2018,72.18,54.5,48.34,49.84
+Assam,Goalpara,2019,72.88,56.95,50.65,51.28
+Assam,Goalpara,2020,73.58,59.4,52.96,47.84
+Assam,Goalpara,2021,74.28,59.4,55.12,50.88
+Assam,Goalpara,2022,74.98,61.16,57.28,55.6
+Assam,Goalpara,2023,75.68,62.93,59.44,56.75
+Assam,Goalpara,2024,76.38,64.69,61.6,57.9
+Assam,Goalpara,2025,77.08,66.46,63.76,59.06
+Assam,Goalpara,2026,77.78,68.22,65.92,60.21
+Assam,Lakhimpur,2010,75.92,51.74,42.23,38.9
+Assam,Lakhimpur,2011,76.37,52.92,43.04,40.25
+Assam,Lakhimpur,2012,76.82,54.1,43.86,41.61
+Assam,Lakhimpur,2013,77.27,55.27,44.68,42.97
+Assam,Lakhimpur,2014,77.72,56.45,46.69,44.33
+Assam,Lakhimpur,2015,78.17,57.62,48.71,45.68
+Assam,Lakhimpur,2016,78.74,58.8,50.72,47.04
+Assam,Lakhimpur,2017,79.31,61.0,52.9,48.4
+Assam,Lakhimpur,2018,79.88,63.2,55.08,49.84
+Assam,Lakhimpur,2019,80.45,65.4,57.26,51.28
+Assam,Lakhimpur,2020,81.02,67.6,59.44,47.84
+Assam,Lakhimpur,2021,81.59,67.6,61.6,50.88
+Assam,Lakhimpur,2022,82.16,69.18,63.76,55.6
+Assam,Lakhimpur,2023,82.73,70.77,65.92,56.75
+Assam,Lakhimpur,2024,83.3,72.35,68.08,57.9
+Assam,Lakhimpur,2025,83.87,73.94,70.24,59.06
+Assam,Lakhimpur,2026,84.44,75.52,72.4,60.21
+Assam,Morigaon,2010,65.77,44.35,35.71,38.9
+Assam,Morigaon,2011,66.35,45.36,36.62,40.25
+Assam,Morigaon,2012,66.93,46.37,37.53,41.61
+Assam,Morigaon,2013,67.51,47.38,38.44,42.97
+Assam,Morigaon,2014,68.09,48.38,40.55,44.33
+Assam,Morigaon,2015,68.67,49.39,42.65,45.68
+Assam,Morigaon,2016,69.37,50.4,44.76,47.04
+Assam,Morigaon,2017,70.07,52.85,47.05,48.4
+Assam,Morigaon,2018,70.77,55.3,49.34,49.84
+Assam,Morigaon,2019,71.47,57.75,51.63,51.28
+Assam,Morigaon,2020,72.17,60.2,53.92,47.84
+Assam,Morigaon,2021,72.87,60.2,56.08,50.88
+Assam,Morigaon,2022,73.57,61.96,58.24,55.6
+Assam,Morigaon,2023,74.27,63.73,60.4,56.75
+Assam,Morigaon,2024,74.97,65.49,62.56,57.9
+Assam,Morigaon,2025,75.67,67.26,64.72,59.06
+Assam,Morigaon,2026,76.37,69.02,66.88,60.21
+Assam,Kokrajhar,2010,63.82,46.46,36.56,35.7
+Assam,Kokrajhar,2011,64.5,47.52,37.46,37.05
+Assam,Kokrajhar,2012,65.18,48.58,38.36,38.41
+Assam,Kokrajhar,2013,65.86,49.63,39.25,39.77
+Assam,Kokrajhar,2014,66.54,50.69,41.35,41.13
+Assam,Kokrajhar,2015,67.22,51.74,43.44,42.48
+Assam,Kokrajhar,2016,68.02,52.8,45.54,43.84
+Assam,Kokrajhar,2017,68.82,55.2,47.81,45.2
+Assam,Kokrajhar,2018,69.62,57.6,50.09,46.64
+Assam,Kokrajhar,2019,70.42,60.0,52.36,48.08
+Assam,Kokrajhar,2020,71.22,62.4,54.64,44.64
+Assam,Kokrajhar,2021,72.02,62.4,56.8,47.68
+Assam,Kokrajhar,2022,72.82,64.13,58.96,52.4
+Assam,Kokrajhar,2023,73.62,65.86,61.12,53.55
+Assam,Kokrajhar,2024,74.42,67.58,63.28,54.7
+Assam,Kokrajhar,2025,75.22,69.31,65.44,55.86
+Assam,Kokrajhar,2026,76.02,71.04,67.6,57.01
+Assam,Hailakandi,2010,66.84,42.77,33.16,38.9
+Assam,Hailakandi,2011,67.42,43.74,34.11,40.25
+Assam,Hailakandi,2012,68.0,44.71,35.05,41.61
+Assam,Hailakandi,2013,68.58,45.68,36.0,42.97
+Assam,Hailakandi,2014,69.16,46.66,38.14,44.33
+Assam,Hailakandi,2015,69.74,47.63,40.28,45.68
+Assam,Hailakandi,2016,70.44,48.6,42.43,47.04
+Assam,Hailakandi,2017,71.14,51.05,44.76,48.4
+Assam,Hailakandi,2018,71.84,53.5,47.09,49.84
+Assam,Hailakandi,2019,72.54,55.95,49.43,51.28
+Assam,Hailakandi,2020,73.24,58.4,51.76,47.84
+Assam,Hailakandi,2021,73.94,58.4,53.92,50.88
+Assam,Hailakandi,2022,74.64,60.16,56.08,55.6
+Assam,Hailakandi,2023,75.34,61.93,58.24,56.75
+Assam,Hailakandi,2024,76.04,63.69,60.4,57.9
+Assam,Hailakandi,2025,76.74,65.46,62.56,59.06
+Assam,Hailakandi,2026,77.44,67.22,64.72,60.21
+Odisha,Bhubaneswar,2010,91.32,63.71,62.05,51.06
+Odisha,Bhubaneswar,2011,91.6,65.16,62.59,52.48
+Odisha,Bhubaneswar,2012,91.88,66.61,63.12,53.9
+Odisha,Bhubaneswar,2013,92.16,68.06,63.66,55.32
+Odisha,Bhubaneswar,2014,92.44,69.5,65.4,56.74
+Odisha,Bhubaneswar,2015,92.72,70.95,67.13,58.16
+Odisha,Bhubaneswar,2016,93.12,72.4,68.87,59.58
+Odisha,Bhubaneswar,2017,93.52,74.4,70.71,61.0
+Odisha,Bhubaneswar,2018,93.92,76.4,72.55,62.32
+Odisha,Bhubaneswar,2019,94.32,78.4,74.4,63.64
+Odisha,Bhubaneswar,2020,94.72,80.4,76.24,59.87
+Odisha,Bhubaneswar,2021,95.12,80.4,78.4,62.86
+Odisha,Bhubaneswar,2022,95.52,81.84,80.56,67.6
+Odisha,Bhubaneswar,2023,95.92,83.28,82.72,68.66
+Odisha,Bhubaneswar,2024,96.32,84.72,84.88,69.71
+Odisha,Bhubaneswar,2025,96.72,86.16,87.04,70.77
+Odisha,Bhubaneswar,2026,97.12,87.6,89.2,71.82
+Odisha,Cuttack,2010,81.99,58.78,54.12,45.66
+Odisha,Cuttack,2011,82.44,60.12,54.77,47.08
+Odisha,Cuttack,2012,82.89,61.46,55.42,48.5
+Odisha,Cuttack,2013,83.34,62.79,56.07,49.92
+Odisha,Cuttack,2014,83.79,64.13,57.91,51.34
+Odisha,Cuttack,2015,84.24,65.46,59.76,52.76
+Odisha,Cuttack,2016,84.81,66.8,61.61,54.18
+Odisha,Cuttack,2017,85.38,68.75,63.59,55.6
+Odisha,Cuttack,2018,85.95,70.7,65.56,56.92
+Odisha,Cuttack,2019,86.52,72.65,67.54,58.24
+Odisha,Cuttack,2020,87.09,74.6,69.52,54.47
+Odisha,Cuttack,2021,87.66,74.6,71.68,57.46
+Odisha,Cuttack,2022,88.23,76.0,73.84,62.2
+Odisha,Cuttack,2023,88.8,77.41,76.0,63.26
+Odisha,Cuttack,2024,89.37,78.81,78.16,64.31
+Odisha,Cuttack,2025,89.94,80.22,80.32,65.37
+Odisha,Cuttack,2026,90.51,81.62,82.48,66.42
+Odisha,Rourkela,2010,80.9,56.67,56.39,49.86
+Odisha,Rourkela,2011,81.35,57.96,57.0,51.28
+Odisha,Rourkela,2012,81.8,59.25,57.62,52.7
+Odisha,Rourkela,2013,82.25,60.54,58.24,54.12
+Odisha,Rourkela,2014,82.7,61.82,60.05,55.54
+Odisha,Rourkela,2015,83.15,63.11,61.87,56.96
+Odisha,Rourkela,2016,83.72,64.4,63.68,58.38
+Odisha,Rourkela,2017,84.29,66.5,65.62,59.8
+Odisha,Rourkela,2018,84.86,68.6,67.56,61.12
+Odisha,Rourkela,2019,85.43,70.7,69.5,62.44
+Odisha,Rourkela,2020,86.0,72.8,71.44,58.67
+Odisha,Rourkela,2021,86.57,72.8,73.6,61.66
+Odisha,Rourkela,2022,87.14,74.31,75.76,66.4
+Odisha,Rourkela,2023,87.71,75.82,77.92,67.46
+Odisha,Rourkela,2024,88.28,77.34,80.08,68.51
+Odisha,Rourkela,2025,88.85,78.85,82.24,69.57
+Odisha,Rourkela,2026,89.42,80.36,84.4,70.62
+Odisha,Sambalpur,2010,76.5,52.62,48.46,45.66
+Odisha,Sambalpur,2011,76.95,53.82,49.19,47.08
+Odisha,Sambalpur,2012,77.4,55.02,49.91,48.5
+Odisha,Sambalpur,2013,77.85,56.21,50.64,49.92
+Odisha,Sambalpur,2014,78.3,57.41,52.57,51.34
+Odisha,Sambalpur,2015,78.75,58.6,54.5,52.76
+Odisha,Sambalpur,2016,79.32,59.8,56.43,54.18
+Odisha,Sambalpur,2017,79.89,61.95,58.5,55.6
+Odisha,Sambalpur,2018,80.46,64.1,60.57,56.92
+Odisha,Sambalpur,2019,81.03,66.25,62.65,58.24
+Odisha,Sambalpur,2020,81.6,68.4,64.72,54.47
+Odisha,Sambalpur,2021,82.17,68.4,66.88,57.46
+Odisha,Sambalpur,2022,82.74,69.95,69.04,62.2
+Odisha,Sambalpur,2023,83.31,71.5,71.2,63.26
+Odisha,Sambalpur,2024,83.88,73.04,73.36,64.31
+Odisha,Sambalpur,2025,84.45,74.59,75.52,65.37
+Odisha,Sambalpur,2026,85.02,76.14,77.68,66.42
+Odisha,Berhampur,2010,77.21,53.15,50.72,45.66
+Odisha,Berhampur,2011,77.66,54.36,51.42,47.08
+Odisha,Berhampur,2012,78.11,55.57,52.12,48.5
+Odisha,Berhampur,2013,78.56,56.78,52.81,49.92
+Odisha,Berhampur,2014,79.01,57.98,54.71,51.34
+Odisha,Berhampur,2015,79.46,59.19,56.6,52.76
+Odisha,Berhampur,2016,80.03,60.4,58.5,54.18
+Odisha,Berhampur,2017,80.6,62.6,60.53,55.6
+Odisha,Berhampur,2018,81.17,64.8,62.57,56.92
+Odisha,Berhampur,2019,81.74,67.0,64.6,58.24
+Odisha,Berhampur,2020,82.31,69.2,66.64,54.47
+Odisha,Berhampur,2021,82.88,69.2,68.8,57.46
+Odisha,Berhampur,2022,83.45,70.78,70.96,62.2
+Odisha,Berhampur,2023,84.02,72.37,73.12,63.26
+Odisha,Berhampur,2024,84.59,73.95,75.28,64.31
+Odisha,Berhampur,2025,85.16,75.54,77.44,65.37
+Odisha,Berhampur,2026,85.73,77.12,79.6,66.42
+Odisha,Puri,2010,79.17,55.26,56.95,45.66
+Odisha,Puri,2011,79.62,56.52,57.56,47.08
+Odisha,Puri,2012,80.07,57.78,58.17,48.5
+Odisha,Puri,2013,80.52,59.03,58.78,49.92
+Odisha,Puri,2014,80.97,60.29,60.59,51.34
+Odisha,Puri,2015,81.42,61.54,62.39,52.76
+Odisha,Puri,2016,81.99,62.8,64.2,54.18
+Odisha,Puri,2017,82.56,64.8,66.13,55.6
+Odisha,Puri,2018,83.13,66.8,68.06,56.92
+Odisha,Puri,2019,83.7,68.8,69.99,58.24
+Odisha,Puri,2020,84.27,70.8,71.92,54.47
+Odisha,Puri,2021,84.84,70.8,74.08,57.46
+Odisha,Puri,2022,85.41,72.24,76.24,62.2
+Odisha,Puri,2023,85.98,73.68,78.4,63.26
+Odisha,Puri,2024,86.55,75.12,80.56,64.31
+Odisha,Puri,2025,87.12,76.56,82.72,65.37
+Odisha,Puri,2026,87.69,78.0,84.88,66.42
+Odisha,Koraput,2010,49.01,32.03,22.4,40.26
+Odisha,Koraput,2011,49.79,32.76,23.5,41.68
+Odisha,Koraput,2012,50.57,33.49,24.6,43.1
+Odisha,Koraput,2013,51.35,34.22,25.69,44.52
+Odisha,Koraput,2014,52.13,34.94,27.99,45.94
+Odisha,Koraput,2015,52.91,35.67,30.28,47.36
+Odisha,Koraput,2016,53.81,36.4,32.58,48.78
+Odisha,Koraput,2017,54.71,38.75,35.09,50.2
+Odisha,Koraput,2018,55.61,41.1,37.61,51.52
+Odisha,Koraput,2019,56.51,43.45,40.12,52.84
+Odisha,Koraput,2020,57.41,45.8,42.64,49.07
+Odisha,Koraput,2021,58.31,45.8,44.8,52.06
+Odisha,Koraput,2022,59.21,47.49,46.96,56.8
+Odisha,Koraput,2023,60.11,49.18,49.12,57.86
+Odisha,Koraput,2024,61.01,50.88,51.28,58.91
+Odisha,Koraput,2025,61.91,52.57,53.44,59.97
+Odisha,Koraput,2026,62.81,54.26,55.6,61.02
+Odisha,Bolangir,2010,62.14,41.18,36.85,45.66
+Odisha,Bolangir,2011,62.82,42.12,37.74,47.08
+Odisha,Bolangir,2012,63.5,43.06,38.63,48.5
+Odisha,Bolangir,2013,64.18,43.99,39.52,49.92
+Odisha,Bolangir,2014,64.86,44.93,41.61,51.34
+Odisha,Bolangir,2015,65.54,45.86,43.71,52.76
+Odisha,Bolangir,2016,66.34,46.8,45.8,54.18
+Odisha,Bolangir,2017,67.14,49.2,48.07,55.6
+Odisha,Bolangir,2018,67.94,51.6,50.34,56.92
+Odisha,Bolangir,2019,68.74,54.0,52.61,58.24
+Odisha,Bolangir,2020,69.54,56.4,54.88,54.47
+Odisha,Bolangir,2021,70.34,56.4,57.04,57.46
+Odisha,Bolangir,2022,71.14,58.13,59.2,62.2
+Odisha,Bolangir,2023,71.94,59.86,61.36,63.26
+Odisha,Bolangir,2024,72.74,61.58,63.52,64.31
+Odisha,Bolangir,2025,73.54,63.31,65.68,65.37
+Odisha,Bolangir,2026,74.34,65.04,67.84,66.42
+Odisha,Gajapati,2010,51.21,33.79,25.8,45.66
+Odisha,Gajapati,2011,51.99,34.56,26.85,47.08
+Odisha,Gajapati,2012,52.77,35.33,27.9,48.5
+Odisha,Gajapati,2013,53.55,36.1,28.95,49.92
+Odisha,Gajapati,2014,54.33,36.86,31.19,51.34
+Odisha,Gajapati,2015,55.11,37.63,33.44,52.76
+Odisha,Gajapati,2016,56.01,38.4,35.69,54.18
+Odisha,Gajapati,2017,56.91,40.7,38.15,55.6
+Odisha,Gajapati,2018,57.81,43.0,40.6,56.92
+Odisha,Gajapati,2019,58.71,45.3,43.06,58.24
+Odisha,Gajapati,2020,59.61,47.6,45.52,54.47
+Odisha,Gajapati,2021,60.51,47.6,47.68,57.46
+Odisha,Gajapati,2022,61.41,49.26,49.84,62.2
+Odisha,Gajapati,2023,62.31,50.91,52.0,63.26
+Odisha,Gajapati,2024,63.21,52.57,54.16,64.31
+Odisha,Gajapati,2025,64.11,54.22,56.32,65.37
+Odisha,Gajapati,2026,65.01,55.88,58.48,66.42
+Odisha,Rayagada,2010,50.06,32.74,23.25,45.66
+Odisha,Rayagada,2011,50.84,33.48,24.34,47.08
+Odisha,Rayagada,2012,51.62,34.22,25.42,48.5
+Odisha,Rayagada,2013,52.4,34.97,26.5,49.92
+Odisha,Rayagada,2014,53.18,35.71,28.79,51.34
+Odisha,Rayagada,2015,53.96,36.46,31.07,52.76
+Odisha,Rayagada,2016,54.86,37.2,33.36,54.18
+Odisha,Rayagada,2017,55.76,39.5,35.86,55.6
+Odisha,Rayagada,2018,56.66,41.8,38.36,56.92
+Odisha,Rayagada,2019,57.56,44.1,40.86,58.24
+Odisha,Rayagada,2020,58.46,46.4,43.36,54.47
+Odisha,Rayagada,2021,59.36,46.4,45.52,57.46
+Odisha,Rayagada,2022,60.26,48.06,47.68,62.2
+Odisha,Rayagada,2023,61.16,49.71,49.84,63.26
+Odisha,Rayagada,2024,62.06,51.37,52.0,64.31
+Odisha,Rayagada,2025,62.96,53.02,54.16,65.37
+Odisha,Rayagada,2026,63.86,54.68,56.32,66.42
+Odisha,Kalahandi,2010,55.42,38.37,33.73,45.66
+Odisha,Kalahandi,2011,56.1,39.24,34.67,47.08
+Odisha,Kalahandi,2012,56.78,40.11,35.6,48.5
+Odisha,Kalahandi,2013,57.46,40.98,36.54,49.92
+Odisha,Kalahandi,2014,58.14,41.86,38.68,51.34
+Odisha,Kalahandi,2015,58.82,42.73,40.81,52.76
+Odisha,Kalahandi,2016,59.62,43.6,42.95,54.18
+Odisha,Kalahandi,2017,60.42,46.0,45.27,55.6
+Odisha,Kalahandi,2018,61.22,48.4,47.59,56.92
+Odisha,Kalahandi,2019,62.02,50.8,49.92,58.24
+Odisha,Kalahandi,2020,62.82,53.2,52.24,54.47
+Odisha,Kalahandi,2021,63.62,53.2,54.4,57.46
+Odisha,Kalahandi,2022,64.42,54.93,56.56,62.2
+Odisha,Kalahandi,2023,65.22,56.66,58.72,63.26
+Odisha,Kalahandi,2024,66.02,58.38,60.88,64.31
+Odisha,Kalahandi,2025,66.82,60.11,63.04,65.37
+Odisha,Kalahandi,2026,67.62,61.84,65.2,66.42
+Odisha,Nabarangpur,2010,47.44,31.5,20.42,39.86
+Odisha,Nabarangpur,2011,48.22,32.22,21.54,41.28
+Odisha,Nabarangpur,2012,49.0,32.94,22.67,42.7
+Odisha,Nabarangpur,2013,49.78,33.65,23.79,44.12
+Odisha,Nabarangpur,2014,50.56,34.37,26.12,45.54
+Odisha,Nabarangpur,2015,51.34,35.08,28.44,46.96
+Odisha,Nabarangpur,2016,52.24,35.8,30.76,48.38
+Odisha,Nabarangpur,2017,53.14,38.15,33.31,49.8
+Odisha,Nabarangpur,2018,54.04,40.5,35.86,51.12
+Odisha,Nabarangpur,2019,54.94,42.85,38.41,52.44
+Odisha,Nabarangpur,2020,55.84,45.2,40.96,48.67
+Odisha,Nabarangpur,2021,56.74,45.2,43.12,51.66
+Odisha,Nabarangpur,2022,57.64,46.89,45.28,56.4
+Odisha,Nabarangpur,2023,58.54,48.58,47.44,57.46
+Odisha,Nabarangpur,2024,59.44,50.28,49.6,58.51
+Odisha,Nabarangpur,2025,60.34,51.97,51.76,59.57
+Odisha,Nabarangpur,2026,61.24,53.66,53.92,60.62
+Odisha,Balasore,2010,79.18,53.15,55.82,45.66
+Odisha,Balasore,2011,79.63,54.36,56.44,47.08
+Odisha,Balasore,2012,80.08,55.57,57.07,48.5
+Odisha,Balasore,2013,80.53,56.78,57.69,49.92
+Odisha,Balasore,2014,80.98,57.98,59.52,51.34
+Odisha,Balasore,2015,81.43,59.19,61.34,52.76
+Odisha,Balasore,2016,82.0,60.4,63.16,54.18
+Odisha,Balasore,2017,82.57,62.7,65.11,55.6
+Odisha,Balasore,2018,83.14,65.0,67.06,56.92
+Odisha,Balasore,2019,83.71,67.3,69.01,58.24
+Odisha,Balasore,2020,84.28,69.6,70.96,54.47
+Odisha,Balasore,2021,84.85,69.6,73.12,57.46
+Odisha,Balasore,2022,85.42,71.26,75.28,62.2
+Odisha,Balasore,2023,85.99,72.91,77.44,63.26
+Odisha,Balasore,2024,86.56,74.57,79.6,64.31
+Odisha,Balasore,2025,87.13,76.22,81.76,65.37
+Odisha,Balasore,2026,87.7,77.88,83.92,66.42
+Odisha,Kendrapara,2010,78.91,53.86,56.39,45.66
+Odisha,Kendrapara,2011,79.36,55.08,57.0,47.08
+Odisha,Kendrapara,2012,79.81,56.3,57.62,48.5
+Odisha,Kendrapara,2013,80.26,57.53,58.24,49.92
+Odisha,Kendrapara,2014,80.71,58.75,60.05,51.34
+Odisha,Kendrapara,2015,81.16,59.98,61.87,52.76
+Odisha,Kendrapara,2016,81.73,61.2,63.68,54.18
+Odisha,Kendrapara,2017,82.3,63.5,65.62,55.6
+Odisha,Kendrapara,2018,82.87,65.8,67.56,56.92
+Odisha,Kendrapara,2019,83.44,68.1,69.5,58.24
+Odisha,Kendrapara,2020,84.01,70.4,71.44,54.47
+Odisha,Kendrapara,2021,84.58,70.4,73.6,57.46
+Odisha,Kendrapara,2022,85.15,72.06,75.76,62.2
+Odisha,Kendrapara,2023,85.72,73.71,77.92,63.26
+Odisha,Kendrapara,2024,86.29,75.37,80.08,64.31
+Odisha,Kendrapara,2025,86.86,77.02,82.24,65.37
+Odisha,Kendrapara,2026,87.43,78.68,84.4,66.42
+Odisha,Angul,2010,77.58,53.5,54.12,45.66
+Odisha,Angul,2011,78.03,54.72,54.77,47.08
+Odisha,Angul,2012,78.48,55.94,55.42,48.5
+Odisha,Angul,2013,78.93,57.15,56.07,49.92
+Odisha,Angul,2014,79.38,58.37,57.91,51.34
+Odisha,Angul,2015,79.83,59.58,59.76,52.76
+Odisha,Angul,2016,80.4,60.8,61.61,54.18
+Odisha,Angul,2017,80.97,63.05,63.59,55.6
+Odisha,Angul,2018,81.54,65.3,65.56,56.92
+Odisha,Angul,2019,82.11,67.55,67.54,58.24
+Odisha,Angul,2020,82.68,69.8,69.52,54.47
+Odisha,Angul,2021,83.25,69.8,71.68,57.46
+Odisha,Angul,2022,83.82,71.42,73.84,62.2
+Odisha,Angul,2023,84.39,73.04,76.0,63.26
+Odisha,Angul,2024,84.96,74.66,78.16,64.31
+Odisha,Angul,2025,85.53,76.28,80.32,65.37
+Odisha,Angul,2026,86.1,77.9,82.48,66.42
+Odisha,Jharsuguda,2010,80.57,54.91,56.67,45.66
+Odisha,Jharsuguda,2011,81.02,56.16,57.28,47.08
+Odisha,Jharsuguda,2012,81.47,57.41,57.89,48.5
+Odisha,Jharsuguda,2013,81.92,58.66,58.51,49.92
+Odisha,Jharsuguda,2014,82.37,59.9,60.32,51.34
+Odisha,Jharsuguda,2015,82.82,61.15,62.13,52.76
+Odisha,Jharsuguda,2016,83.39,62.4,63.94,54.18
+Odisha,Jharsuguda,2017,83.96,64.6,65.88,55.6
+Odisha,Jharsuguda,2018,84.53,66.8,67.81,56.92
+Odisha,Jharsuguda,2019,85.1,69.0,69.75,58.24
+Odisha,Jharsuguda,2020,85.67,71.2,71.68,54.47
+Odisha,Jharsuguda,2021,86.24,71.2,73.84,57.46
+Odisha,Jharsuguda,2022,86.81,72.78,76.0,62.2
+Odisha,Jharsuguda,2023,87.38,74.37,78.16,63.26
+Odisha,Jharsuguda,2024,87.95,75.95,80.32,64.31
+Odisha,Jharsuguda,2025,88.52,77.54,82.48,65.37
+Odisha,Jharsuguda,2026,89.09,79.12,84.64,66.42
+Madhya Pradesh,Bhopal,2010,81.84,58.78,54.12,48.61
+Madhya Pradesh,Bhopal,2011,82.29,60.12,54.77,50.01
+Madhya Pradesh,Bhopal,2012,82.74,61.46,55.42,51.41
+Madhya Pradesh,Bhopal,2013,83.19,62.79,56.07,52.8
+Madhya Pradesh,Bhopal,2014,83.64,64.13,57.91,54.2
+Madhya Pradesh,Bhopal,2015,84.09,65.46,59.76,55.6
+Madhya Pradesh,Bhopal,2016,84.66,66.8,61.61,57.0
+Madhya Pradesh,Bhopal,2017,85.23,68.75,63.59,58.4
+Madhya Pradesh,Bhopal,2018,85.8,70.7,65.56,59.84
+Madhya Pradesh,Bhopal,2019,86.37,72.65,67.54,61.28
+Madhya Pradesh,Bhopal,2020,86.94,74.6,69.52,57.69
+Madhya Pradesh,Bhopal,2021,87.51,74.6,71.68,60.78
+Madhya Pradesh,Bhopal,2022,88.08,76.0,73.84,65.6
+Madhya Pradesh,Bhopal,2023,88.65,77.41,76.0,66.75
+Madhya Pradesh,Bhopal,2024,89.22,78.81,78.16,67.9
+Madhya Pradesh,Bhopal,2025,89.79,80.22,80.32,69.06
+Madhya Pradesh,Bhopal,2026,90.36,81.62,82.48,70.21
+Madhya Pradesh,Indore,2010,83.81,60.19,56.39,49.81
+Madhya Pradesh,Indore,2011,84.26,61.56,57.0,51.21
+Madhya Pradesh,Indore,2012,84.71,62.93,57.62,52.61
+Madhya Pradesh,Indore,2013,85.16,64.3,58.24,54.0
+Madhya Pradesh,Indore,2014,85.61,65.66,60.05,55.4
+Madhya Pradesh,Indore,2015,86.06,67.03,61.87,56.8
+Madhya Pradesh,Indore,2016,86.63,68.4,63.68,58.2
+Madhya Pradesh,Indore,2017,87.2,70.35,65.62,59.6
+Madhya Pradesh,Indore,2018,87.77,72.3,67.56,61.04
+Madhya Pradesh,Indore,2019,88.34,74.25,69.5,62.48
+Madhya Pradesh,Indore,2020,88.91,76.2,71.44,58.89
+Madhya Pradesh,Indore,2021,89.48,76.2,73.6,61.98
+Madhya Pradesh,Indore,2022,90.05,77.6,75.76,66.8
+Madhya Pradesh,Indore,2023,90.62,79.01,77.92,67.95
+Madhya Pradesh,Indore,2024,91.19,80.41,80.08,69.1
+Madhya Pradesh,Indore,2025,91.76,81.82,82.24,70.26
+Madhya Pradesh,Indore,2026,92.33,83.22,84.4,71.41
+Madhya Pradesh,Jabalpur,2010,80.41,54.91,51.01,43.41
+Madhya Pradesh,Jabalpur,2011,80.86,56.16,51.7,44.81
+Madhya Pradesh,Jabalpur,2012,81.31,57.41,52.39,46.21
+Madhya Pradesh,Jabalpur,2013,81.76,58.66,53.08,47.6
+Madhya Pradesh,Jabalpur,2014,82.21,59.9,54.97,49.0
+Madhya Pradesh,Jabalpur,2015,82.66,61.15,56.87,50.4
+Madhya Pradesh,Jabalpur,2016,83.23,62.4,58.76,51.8
+Madhya Pradesh,Jabalpur,2017,83.8,64.4,60.79,53.2
+Madhya Pradesh,Jabalpur,2018,84.37,66.4,62.82,54.64
+Madhya Pradesh,Jabalpur,2019,84.94,68.4,64.85,56.08
+Madhya Pradesh,Jabalpur,2020,85.51,70.4,66.88,52.49
+Madhya Pradesh,Jabalpur,2021,86.08,70.4,69.04,55.58
+Madhya Pradesh,Jabalpur,2022,86.65,71.84,71.2,60.4
+Madhya Pradesh,Jabalpur,2023,87.22,73.28,73.36,61.55
+Madhya Pradesh,Jabalpur,2024,87.79,74.72,75.52,62.7
+Madhya Pradesh,Jabalpur,2025,88.36,76.16,77.68,63.86
+Madhya Pradesh,Jabalpur,2026,88.93,77.6,79.84,65.01
+Madhya Pradesh,Gwalior,2010,74.25,53.5,47.89,43.41
+Madhya Pradesh,Gwalior,2011,74.83,54.72,48.63,44.81
+Madhya Pradesh,Gwalior,2012,75.41,55.94,49.36,46.21
+Madhya Pradesh,Gwalior,2013,75.99,57.15,50.1,47.6
+Madhya Pradesh,Gwalior,2014,76.57,58.37,52.04,49.0
+Madhya Pradesh,Gwalior,2015,77.15,59.58,53.97,50.4
+Madhya Pradesh,Gwalior,2016,77.85,60.8,55.91,51.8
+Madhya Pradesh,Gwalior,2017,78.55,62.8,57.99,53.2
+Madhya Pradesh,Gwalior,2018,79.25,64.8,60.07,54.64
+Madhya Pradesh,Gwalior,2019,79.95,66.8,62.16,56.08
+Madhya Pradesh,Gwalior,2020,80.65,68.8,64.24,52.49
+Madhya Pradesh,Gwalior,2021,81.35,68.8,66.4,55.58
+Madhya Pradesh,Gwalior,2022,82.05,70.24,68.56,60.4
+Madhya Pradesh,Gwalior,2023,82.75,71.68,70.72,61.55
+Madhya Pradesh,Gwalior,2024,83.45,73.12,72.88,62.7
+Madhya Pradesh,Gwalior,2025,84.15,74.56,75.04,63.86
+Madhya Pradesh,Gwalior,2026,84.85,76.0,77.2,65.01
+Madhya Pradesh,Ujjain,2010,69.32,49.63,42.79,43.41
+Madhya Pradesh,Ujjain,2011,69.9,50.76,43.6,44.81
+Madhya Pradesh,Ujjain,2012,70.48,51.89,44.41,46.21
+Madhya Pradesh,Ujjain,2013,71.06,53.02,45.22,47.6
+Madhya Pradesh,Ujjain,2014,71.64,54.14,47.23,49.0
+Madhya Pradesh,Ujjain,2015,72.22,55.27,49.23,50.4
+Madhya Pradesh,Ujjain,2016,72.92,56.4,51.24,51.8
+Madhya Pradesh,Ujjain,2017,73.62,58.4,53.41,53.2
+Madhya Pradesh,Ujjain,2018,74.32,60.4,55.58,54.64
+Madhya Pradesh,Ujjain,2019,75.02,62.4,57.75,56.08
+Madhya Pradesh,Ujjain,2020,75.72,64.4,59.92,52.49
+Madhya Pradesh,Ujjain,2021,76.42,64.4,62.08,55.58
+Madhya Pradesh,Ujjain,2022,77.12,65.84,64.24,60.4
+Madhya Pradesh,Ujjain,2023,77.82,67.28,66.4,61.55
+Madhya Pradesh,Ujjain,2024,78.52,68.72,68.56,62.7
+Madhya Pradesh,Ujjain,2025,79.22,70.16,70.72,63.86
+Madhya Pradesh,Ujjain,2026,79.92,71.6,72.88,65.01
+Madhya Pradesh,Sagar,2010,70.53,48.22,41.66,43.41
+Madhya Pradesh,Sagar,2011,71.11,49.32,42.48,44.81
+Madhya Pradesh,Sagar,2012,71.69,50.42,43.31,46.21
+Madhya Pradesh,Sagar,2013,72.27,51.51,44.13,47.6
+Madhya Pradesh,Sagar,2014,72.85,52.61,46.16,49.0
+Madhya Pradesh,Sagar,2015,73.43,53.7,48.18,50.4
+Madhya Pradesh,Sagar,2016,74.13,54.8,50.2,51.8
+Madhya Pradesh,Sagar,2017,74.83,56.9,52.39,53.2
+Madhya Pradesh,Sagar,2018,75.53,59.0,54.58,54.64
+Madhya Pradesh,Sagar,2019,76.23,61.1,56.77,56.08
+Madhya Pradesh,Sagar,2020,76.93,63.2,58.96,52.49
+Madhya Pradesh,Sagar,2021,77.63,63.2,61.12,55.58
+Madhya Pradesh,Sagar,2022,78.33,64.71,63.28,60.4
+Madhya Pradesh,Sagar,2023,79.03,66.22,65.44,61.55
+Madhya Pradesh,Sagar,2024,79.73,67.74,67.6,62.7
+Madhya Pradesh,Sagar,2025,80.43,69.25,69.76,63.86
+Madhya Pradesh,Sagar,2026,81.13,70.76,71.92,65.01
+Madhya Pradesh,Rewa,2010,64.06,42.59,32.6,43.41
+Madhya Pradesh,Rewa,2011,64.74,43.56,33.55,44.81
+Madhya Pradesh,Rewa,2012,65.42,44.53,34.5,46.21
+Madhya Pradesh,Rewa,2013,66.1,45.5,35.45,47.6
+Madhya Pradesh,Rewa,2014,66.78,46.46,37.61,49.0
+Madhya Pradesh,Rewa,2015,67.46,47.43,39.76,50.4
+Madhya Pradesh,Rewa,2016,68.26,48.4,41.91,51.8
+Madhya Pradesh,Rewa,2017,69.06,50.5,44.25,53.2
+Madhya Pradesh,Rewa,2018,69.86,52.6,46.6,54.64
+Madhya Pradesh,Rewa,2019,70.66,54.7,48.94,56.08
+Madhya Pradesh,Rewa,2020,71.46,56.8,51.28,52.49
+Madhya Pradesh,Rewa,2021,72.26,56.8,53.44,55.58
+Madhya Pradesh,Rewa,2022,73.06,58.31,55.6,60.4
+Madhya Pradesh,Rewa,2023,73.86,59.82,57.76,61.55
+Madhya Pradesh,Rewa,2024,74.66,61.34,59.92,62.7
+Madhya Pradesh,Rewa,2025,75.46,62.85,62.08,63.86
+Madhya Pradesh,Rewa,2026,76.26,64.36,64.24,65.01
+Madhya Pradesh,Satna,2010,67.8,44.18,35.15,43.41
+Madhya Pradesh,Satna,2011,68.38,45.18,36.06,44.81
+Madhya Pradesh,Satna,2012,68.96,46.18,36.98,46.21
+Madhya Pradesh,Satna,2013,69.54,47.19,37.9,47.6
+Madhya Pradesh,Satna,2014,70.12,48.19,40.01,49.0
+Madhya Pradesh,Satna,2015,70.7,49.2,42.13,50.4
+Madhya Pradesh,Satna,2016,71.4,50.2,44.24,51.8
+Madhya Pradesh,Satna,2017,72.1,52.3,46.54,53.2
+Madhya Pradesh,Satna,2018,72.8,54.4,48.84,54.64
+Madhya Pradesh,Satna,2019,73.5,56.5,51.14,56.08
+Madhya Pradesh,Satna,2020,74.2,58.6,53.44,52.49
+Madhya Pradesh,Satna,2021,74.9,58.6,55.6,55.58
+Madhya Pradesh,Satna,2022,75.6,60.11,57.76,60.4
+Madhya Pradesh,Satna,2023,76.3,61.62,59.92,61.55
+Madhya Pradesh,Satna,2024,77.0,63.14,62.08,62.7
+Madhya Pradesh,Satna,2025,77.7,64.65,64.24,63.86
+Madhya Pradesh,Satna,2026,78.4,66.16,66.4,65.01
+Madhya Pradesh,Katni,2010,67.63,42.94,34.3,43.41
+Madhya Pradesh,Katni,2011,68.21,43.92,35.23,44.81
+Madhya Pradesh,Katni,2012,68.79,44.9,36.15,46.21
+Madhya Pradesh,Katni,2013,69.37,45.87,37.08,47.6
+Madhya Pradesh,Katni,2014,69.95,46.85,39.21,49.0
+Madhya Pradesh,Katni,2015,70.53,47.82,41.34,50.4
+Madhya Pradesh,Katni,2016,71.23,48.8,43.47,51.8
+Madhya Pradesh,Katni,2017,71.93,50.95,45.78,53.2
+Madhya Pradesh,Katni,2018,72.63,53.1,48.09,54.64
+Madhya Pradesh,Katni,2019,73.33,55.25,50.41,56.08
+Madhya Pradesh,Katni,2020,74.03,57.4,52.72,52.49
+Madhya Pradesh,Katni,2021,74.73,57.4,54.88,55.58
+Madhya Pradesh,Katni,2022,75.43,58.95,57.04,60.4
+Madhya Pradesh,Katni,2023,76.13,60.5,59.2,61.55
+Madhya Pradesh,Katni,2024,76.83,62.04,61.36,62.7
+Madhya Pradesh,Katni,2025,77.53,63.59,63.52,63.86
+Madhya Pradesh,Katni,2026,78.23,65.14,65.68,65.01
+Madhya Pradesh,Chhindwara,2010,73.57,47.87,45.63,43.41
+Madhya Pradesh,Chhindwara,2011,74.15,48.96,46.39,44.81
+Madhya Pradesh,Chhindwara,2012,74.73,50.05,47.16,46.21
+Madhya Pradesh,Chhindwara,2013,75.31,51.14,47.93,47.6
+Madhya Pradesh,Chhindwara,2014,75.89,52.22,49.9,49.0
+Madhya Pradesh,Chhindwara,2015,76.47,53.31,51.87,50.4
+Madhya Pradesh,Chhindwara,2016,77.17,54.4,53.83,51.8
+Madhya Pradesh,Chhindwara,2017,77.87,56.5,55.96,53.2
+Madhya Pradesh,Chhindwara,2018,78.57,58.6,58.08,54.64
+Madhya Pradesh,Chhindwara,2019,79.27,60.7,60.2,56.08
+Madhya Pradesh,Chhindwara,2020,79.97,62.8,62.32,52.49
+Madhya Pradesh,Chhindwara,2021,80.67,62.8,64.48,55.58
+Madhya Pradesh,Chhindwara,2022,81.37,64.31,66.64,60.4
+Madhya Pradesh,Chhindwara,2023,82.07,65.82,68.8,61.55
+Madhya Pradesh,Chhindwara,2024,82.77,67.34,70.96,62.7
+Madhya Pradesh,Chhindwara,2025,83.47,68.85,73.12,63.86
+Madhya Pradesh,Chhindwara,2026,84.17,70.36,75.28,65.01
+Madhya Pradesh,Damoh,2010,65.28,41.18,31.75,43.41
+Madhya Pradesh,Damoh,2011,65.86,42.12,32.71,44.81
+Madhya Pradesh,Damoh,2012,66.44,43.06,33.68,46.21
+Madhya Pradesh,Damoh,2013,67.02,43.99,34.64,47.6
+Madhya Pradesh,Damoh,2014,67.6,44.93,36.8,49.0
+Madhya Pradesh,Damoh,2015,68.18,45.86,38.97,50.4
+Madhya Pradesh,Damoh,2016,68.88,46.8,41.13,51.8
+Madhya Pradesh,Damoh,2017,69.58,48.95,43.49,53.2
+Madhya Pradesh,Damoh,2018,70.28,51.1,45.85,54.64
+Madhya Pradesh,Damoh,2019,70.98,53.25,48.2,56.08
+Madhya Pradesh,Damoh,2020,71.68,55.4,50.56,52.49
+Madhya Pradesh,Damoh,2021,72.38,55.4,52.72,55.58
+Madhya Pradesh,Damoh,2022,73.08,56.95,54.88,60.4
+Madhya Pradesh,Damoh,2023,73.78,58.5,57.04,61.55
+Madhya Pradesh,Damoh,2024,74.48,60.04,59.2,62.7
+Madhya Pradesh,Damoh,2025,75.18,61.59,61.36,63.86
+Madhya Pradesh,Damoh,2026,75.88,63.14,63.52,65.01
+Madhya Pradesh,Balaghat,2010,74.07,48.58,47.89,43.41
+Madhya Pradesh,Balaghat,2011,74.65,49.68,48.63,44.81
+Madhya Pradesh,Balaghat,2012,75.23,50.78,49.36,46.21
+Madhya Pradesh,Balaghat,2013,75.81,51.89,50.1,47.6
+Madhya Pradesh,Balaghat,2014,76.39,52.99,52.04,49.0
+Madhya Pradesh,Balaghat,2015,76.97,54.1,53.97,50.4
+Madhya Pradesh,Balaghat,2016,77.67,55.2,55.91,51.8
+Madhya Pradesh,Balaghat,2017,78.37,57.3,57.99,53.2
+Madhya Pradesh,Balaghat,2018,79.07,59.4,60.07,54.64
+Madhya Pradesh,Balaghat,2019,79.77,61.5,62.16,56.08
+Madhya Pradesh,Balaghat,2020,80.47,63.6,64.24,52.49
+Madhya Pradesh,Balaghat,2021,81.17,63.6,66.4,55.58
+Madhya Pradesh,Balaghat,2022,81.87,65.11,68.56,60.4
+Madhya Pradesh,Balaghat,2023,82.57,66.62,70.72,61.55
+Madhya Pradesh,Balaghat,2024,83.27,68.14,72.88,62.7
+Madhya Pradesh,Balaghat,2025,83.97,69.65,75.04,63.86
+Madhya Pradesh,Balaghat,2026,84.67,71.16,77.2,65.01
+Madhya Pradesh,Dhar,2010,51.47,36.61,25.8,43.41
+Madhya Pradesh,Dhar,2011,52.25,37.44,26.85,44.81
+Madhya Pradesh,Dhar,2012,53.03,38.27,27.9,46.21
+Madhya Pradesh,Dhar,2013,53.81,39.1,28.95,47.6
+Madhya Pradesh,Dhar,2014,54.59,39.94,31.19,49.0
+Madhya Pradesh,Dhar,2015,55.37,40.77,33.44,50.4
+Madhya Pradesh,Dhar,2016,56.27,41.6,35.69,51.8
+Madhya Pradesh,Dhar,2017,57.17,43.8,38.15,53.2
+Madhya Pradesh,Dhar,2018,58.07,46.0,40.6,54.64
+Madhya Pradesh,Dhar,2019,58.97,48.2,43.06,56.08
+Madhya Pradesh,Dhar,2020,59.87,50.4,45.52,52.49
+Madhya Pradesh,Dhar,2021,60.77,50.4,47.68,55.58
+Madhya Pradesh,Dhar,2022,61.67,51.98,49.84,60.4
+Madhya Pradesh,Dhar,2023,62.57,53.57,52.0,61.55
+Madhya Pradesh,Dhar,2024,63.47,55.15,54.16,62.7
+Madhya Pradesh,Dhar,2025,64.37,56.74,56.32,63.86
+Madhya Pradesh,Dhar,2026,65.27,58.32,58.48,65.01
+Madhya Pradesh,Jhabua,2010,43.09,30.62,15,37.01
+Madhya Pradesh,Jhabua,2011,43.87,31.32,15,38.41
+Madhya Pradesh,Jhabua,2012,44.65,32.02,15,39.81
+Madhya Pradesh,Jhabua,2013,45.43,32.71,15.39,41.2
+Madhya Pradesh,Jhabua,2014,46.21,33.41,17.83,42.6
+Madhya Pradesh,Jhabua,2015,46.99,34.1,20.28,44.0
+Madhya Pradesh,Jhabua,2016,47.89,34.8,22.73,45.4
+Madhya Pradesh,Jhabua,2017,48.79,37.15,25.43,46.8
+Madhya Pradesh,Jhabua,2018,49.69,39.5,28.12,48.24
+Madhya Pradesh,Jhabua,2019,50.59,41.85,30.82,49.68
+Madhya Pradesh,Jhabua,2020,51.49,44.2,33.52,46.09
+Madhya Pradesh,Jhabua,2021,52.39,44.2,35.68,49.18
+Madhya Pradesh,Jhabua,2022,53.29,45.89,37.84,54.0
+Madhya Pradesh,Jhabua,2023,54.19,47.58,40.0,55.15
+Madhya Pradesh,Jhabua,2024,55.09,49.28,42.16,56.3
+Madhya Pradesh,Jhabua,2025,55.99,50.97,44.32,57.46
+Madhya Pradesh,Jhabua,2026,56.89,52.66,46.48,58.61
+Madhya Pradesh,Barwani,2010,50.62,32.03,15,37.61
+Madhya Pradesh,Barwani,2011,51.4,32.76,15.12,39.01
+Madhya Pradesh,Barwani,2012,52.18,33.49,16.34,40.41
+Madhya Pradesh,Barwani,2013,52.96,34.22,17.56,41.8
+Madhya Pradesh,Barwani,2014,53.74,34.94,19.97,43.2
+Madhya Pradesh,Barwani,2015,54.52,35.67,22.39,44.6
+Madhya Pradesh,Barwani,2016,55.42,36.4,24.8,46.0
+Madhya Pradesh,Barwani,2017,56.32,38.75,27.46,47.4
+Madhya Pradesh,Barwani,2018,57.22,41.1,30.12,48.84
+Madhya Pradesh,Barwani,2019,58.12,43.45,32.78,50.28
+Madhya Pradesh,Barwani,2020,59.02,45.8,35.44,46.69
+Madhya Pradesh,Barwani,2021,59.92,45.8,37.6,49.78
+Madhya Pradesh,Barwani,2022,60.82,47.49,39.76,54.6
+Madhya Pradesh,Barwani,2023,61.72,49.18,41.92,55.75
+Madhya Pradesh,Barwani,2024,62.62,50.88,44.08,56.9
+Madhya Pradesh,Barwani,2025,63.52,52.57,46.24,58.06
+Madhya Pradesh,Barwani,2026,64.42,54.26,48.4,59.21
+Madhya Pradesh,Shivpuri,2010,61.83,40.66,34.58,43.41
+Madhya Pradesh,Shivpuri,2011,62.51,41.58,35.5,44.81
+Madhya Pradesh,Shivpuri,2012,63.19,42.5,36.43,46.21
+Madhya Pradesh,Shivpuri,2013,63.87,43.43,37.35,47.6
+Madhya Pradesh,Shivpuri,2014,64.55,44.35,39.48,49.0
+Madhya Pradesh,Shivpuri,2015,65.23,45.28,41.6,50.4
+Madhya Pradesh,Shivpuri,2016,66.03,46.2,43.72,51.8
+Madhya Pradesh,Shivpuri,2017,66.83,48.55,46.03,53.2
+Madhya Pradesh,Shivpuri,2018,67.63,50.9,48.34,54.64
+Madhya Pradesh,Shivpuri,2019,68.43,53.25,50.65,56.08
+Madhya Pradesh,Shivpuri,2020,69.23,55.6,52.96,52.49
+Madhya Pradesh,Shivpuri,2021,70.03,55.6,55.12,55.58
+Madhya Pradesh,Shivpuri,2022,70.83,57.29,57.28,60.4
+Madhya Pradesh,Shivpuri,2023,71.63,58.98,59.44,61.55
+Madhya Pradesh,Shivpuri,2024,72.43,60.68,61.6,62.7
+Madhya Pradesh,Shivpuri,2025,73.23,62.37,63.76,63.86
+Madhya Pradesh,Shivpuri,2026,74.03,64.06,65.92,65.01
+Rajasthan,Jaipur,2010,75.99,58.43,55.54,56.6
+Rajasthan,Jaipur,2011,76.44,59.76,56.17,58.08
+Rajasthan,Jaipur,2012,76.89,61.09,56.79,59.57
+Rajasthan,Jaipur,2013,77.34,62.42,57.42,61.05
+Rajasthan,Jaipur,2014,77.79,63.74,59.25,62.54
+Rajasthan,Jaipur,2015,78.24,65.07,61.08,64.03
+Rajasthan,Jaipur,2016,78.81,66.4,62.91,65.51
+Rajasthan,Jaipur,2017,79.38,68.45,64.86,67.0
+Rajasthan,Jaipur,2018,79.95,70.5,66.81,68.44
+Rajasthan,Jaipur,2019,80.52,72.55,68.77,69.88
+Rajasthan,Jaipur,2020,81.09,74.6,70.72,65.99
+Rajasthan,Jaipur,2021,81.66,74.6,72.88,69.18
+Rajasthan,Jaipur,2022,82.23,76.08,75.04,74.2
+Rajasthan,Jaipur,2023,82.8,77.55,77.2,75.35
+Rajasthan,Jaipur,2024,83.37,79.03,79.36,76.5
+Rajasthan,Jaipur,2025,83.94,80.5,81.52,77.66
+Rajasthan,Jaipur,2026,84.51,81.98,83.68,78.81
+Rajasthan,Jodhpur,2010,65.36,53.5,46.48,55.4
+Rajasthan,Jodhpur,2011,65.94,54.72,47.23,56.88
+Rajasthan,Jodhpur,2012,66.52,55.94,47.99,58.37
+Rajasthan,Jodhpur,2013,67.1,57.15,48.74,59.85
+Rajasthan,Jodhpur,2014,67.68,58.37,50.7,61.34
+Rajasthan,Jodhpur,2015,68.26,59.58,52.66,62.83
+Rajasthan,Jodhpur,2016,68.96,60.8,54.61,64.31
+Rajasthan,Jodhpur,2017,69.66,62.95,56.72,65.8
+Rajasthan,Jodhpur,2018,70.36,65.1,58.83,67.24
+Rajasthan,Jodhpur,2019,71.06,67.25,60.93,68.68
+Rajasthan,Jodhpur,2020,71.76,69.4,63.04,64.79
+Rajasthan,Jodhpur,2021,72.46,69.4,65.2,67.98
+Rajasthan,Jodhpur,2022,73.16,70.95,67.36,73.0
+Rajasthan,Jodhpur,2023,73.86,72.5,69.52,74.15
+Rajasthan,Jodhpur,2024,74.56,74.04,71.68,75.3
+Rajasthan,Jodhpur,2025,75.26,75.59,73.84,76.46
+Rajasthan,Jodhpur,2026,75.96,77.14,76.0,77.61
+Rajasthan,Udaipur,2010,61.62,51.39,43.08,53.0
+Rajasthan,Udaipur,2011,62.3,52.56,43.88,54.48
+Rajasthan,Udaipur,2012,62.98,53.73,44.68,55.97
+Rajasthan,Udaipur,2013,63.66,54.9,45.49,57.45
+Rajasthan,Udaipur,2014,64.34,56.06,47.49,58.94
+Rajasthan,Udaipur,2015,65.02,57.23,49.5,60.43
+Rajasthan,Udaipur,2016,65.82,58.4,51.5,61.91
+Rajasthan,Udaipur,2017,66.62,60.6,53.67,63.4
+Rajasthan,Udaipur,2018,67.42,62.8,55.83,64.84
+Rajasthan,Udaipur,2019,68.22,65.0,58.0,66.28
+Rajasthan,Udaipur,2020,69.02,67.2,60.16,62.39
+Rajasthan,Udaipur,2021,69.82,67.2,62.32,65.58
+Rajasthan,Udaipur,2022,70.62,68.78,64.48,70.6
+Rajasthan,Udaipur,2023,71.42,70.37,66.64,71.75
+Rajasthan,Udaipur,2024,72.22,71.95,68.8,72.9
+Rajasthan,Udaipur,2025,73.02,73.54,70.96,74.06
+Rajasthan,Udaipur,2026,73.82,75.12,73.12,75.21
+Rajasthan,Kota,2010,76.11,56.5,56.95,56.2
+Rajasthan,Kota,2011,76.56,57.78,57.56,57.68
+Rajasthan,Kota,2012,77.01,59.06,58.17,59.17
+Rajasthan,Kota,2013,77.46,60.35,58.78,60.65
+Rajasthan,Kota,2014,77.91,61.63,60.59,62.14
+Rajasthan,Kota,2015,78.36,62.92,62.39,63.63
+Rajasthan,Kota,2016,78.93,64.2,64.2,65.11
+Rajasthan,Kota,2017,79.5,66.35,66.13,66.6
+Rajasthan,Kota,2018,80.07,68.5,68.06,68.04
+Rajasthan,Kota,2019,80.64,70.65,69.99,69.48
+Rajasthan,Kota,2020,81.21,72.8,71.92,65.59
+Rajasthan,Kota,2021,81.78,72.8,74.08,68.78
+Rajasthan,Kota,2022,82.35,74.35,76.24,73.8
+Rajasthan,Kota,2023,82.92,75.9,78.4,74.95
+Rajasthan,Kota,2024,83.49,77.44,80.56,76.1
+Rajasthan,Kota,2025,84.06,78.99,82.72,77.26
+Rajasthan,Kota,2026,84.63,80.54,84.88,78.41
+Rajasthan,Ajmer,2010,69.88,54.38,52.42,53.0
+Rajasthan,Ajmer,2011,70.46,55.62,53.09,54.48
+Rajasthan,Ajmer,2012,71.04,56.86,53.77,55.97
+Rajasthan,Ajmer,2013,71.62,58.09,54.44,57.45
+Rajasthan,Ajmer,2014,72.2,59.33,56.31,58.94
+Rajasthan,Ajmer,2015,72.78,60.56,58.18,60.43
+Rajasthan,Ajmer,2016,73.48,61.8,60.05,61.91
+Rajasthan,Ajmer,2017,74.18,63.95,62.06,63.4
+Rajasthan,Ajmer,2018,74.88,66.1,64.07,64.84
+Rajasthan,Ajmer,2019,75.58,68.25,66.07,66.28
+Rajasthan,Ajmer,2020,76.28,70.4,68.08,62.39
+Rajasthan,Ajmer,2021,76.98,70.4,70.24,65.58
+Rajasthan,Ajmer,2022,77.68,71.95,72.4,70.6
+Rajasthan,Ajmer,2023,78.38,73.5,74.56,71.75
+Rajasthan,Ajmer,2024,79.08,75.04,76.72,72.9
+Rajasthan,Ajmer,2025,79.78,76.59,78.88,74.06
+Rajasthan,Ajmer,2026,80.48,78.14,81.04,75.21
+Rajasthan,Bikaner,2010,64.46,52.27,45.63,53.0
+Rajasthan,Bikaner,2011,65.04,53.46,46.39,54.48
+Rajasthan,Bikaner,2012,65.62,54.65,47.16,55.97
+Rajasthan,Bikaner,2013,66.2,55.84,47.93,57.45
+Rajasthan,Bikaner,2014,66.78,57.02,49.9,58.94
+Rajasthan,Bikaner,2015,67.36,58.21,51.87,60.43
+Rajasthan,Bikaner,2016,68.06,59.4,53.83,61.91
+Rajasthan,Bikaner,2017,68.76,61.5,55.96,63.4
+Rajasthan,Bikaner,2018,69.46,63.6,58.08,64.84
+Rajasthan,Bikaner,2019,70.16,65.7,60.2,66.28
+Rajasthan,Bikaner,2020,70.86,67.8,62.32,62.39
+Rajasthan,Bikaner,2021,71.56,67.8,64.48,65.58
+Rajasthan,Bikaner,2022,72.26,69.31,66.64,70.6
+Rajasthan,Bikaner,2023,72.96,70.82,68.8,71.75
+Rajasthan,Bikaner,2024,73.66,72.34,70.96,72.9
+Rajasthan,Bikaner,2025,74.36,73.85,73.12,74.06
+Rajasthan,Bikaner,2026,75.06,75.36,75.28,75.21
+Rajasthan,Alwar,2010,69.46,50.86,47.89,53.0
+Rajasthan,Alwar,2011,70.04,52.02,48.63,54.48
+Rajasthan,Alwar,2012,70.62,53.18,49.36,55.97
+Rajasthan,Alwar,2013,71.2,54.33,50.1,57.45
+Rajasthan,Alwar,2014,71.78,55.49,52.04,58.94
+Rajasthan,Alwar,2015,72.36,56.64,53.97,60.43
+Rajasthan,Alwar,2016,73.06,57.8,55.91,61.91
+Rajasthan,Alwar,2017,73.76,59.95,57.99,63.4
+Rajasthan,Alwar,2018,74.46,62.1,60.07,64.84
+Rajasthan,Alwar,2019,75.16,64.25,62.16,66.28
+Rajasthan,Alwar,2020,75.86,66.4,64.24,62.39
+Rajasthan,Alwar,2021,76.56,66.4,66.4,65.58
+Rajasthan,Alwar,2022,77.26,67.95,68.56,70.6
+Rajasthan,Alwar,2023,77.96,69.5,70.72,71.75
+Rajasthan,Alwar,2024,78.66,71.04,72.88,72.9
+Rajasthan,Alwar,2025,79.36,72.59,75.04,74.06
+Rajasthan,Alwar,2026,80.06,74.14,77.2,75.21
+Rajasthan,Bharatpur,2010,70.14,48.05,42.79,53.0
+Rajasthan,Bharatpur,2011,70.72,49.14,43.6,54.48
+Rajasthan,Bharatpur,2012,71.3,50.23,44.41,55.97
+Rajasthan,Bharatpur,2013,71.88,51.32,45.22,57.45
+Rajasthan,Bharatpur,2014,72.46,52.42,47.23,58.94
+Rajasthan,Bharatpur,2015,73.04,53.51,49.23,60.43
+Rajasthan,Bharatpur,2016,73.74,54.6,51.24,61.91
+Rajasthan,Bharatpur,2017,74.44,56.75,53.41,63.4
+Rajasthan,Bharatpur,2018,75.14,58.9,55.58,64.84
+Rajasthan,Bharatpur,2019,75.84,61.05,57.75,66.28
+Rajasthan,Bharatpur,2020,76.54,63.2,59.92,62.39
+Rajasthan,Bharatpur,2021,77.24,63.2,62.08,65.58
+Rajasthan,Bharatpur,2022,77.94,64.75,64.24,70.6
+Rajasthan,Bharatpur,2023,78.64,66.3,66.4,71.75
+Rajasthan,Bharatpur,2024,79.34,67.84,68.56,72.9
+Rajasthan,Bharatpur,2025,80.04,69.39,70.72,74.06
+Rajasthan,Bharatpur,2026,80.74,70.94,72.88,75.21
+Rajasthan,Barmer,2010,41.63,35.38,22.4,46.8
+Rajasthan,Barmer,2011,42.41,36.18,23.5,48.28
+Rajasthan,Barmer,2012,43.19,36.98,24.6,49.77
+Rajasthan,Barmer,2013,43.97,37.79,25.69,51.25
+Rajasthan,Barmer,2014,44.75,38.59,27.99,52.74
+Rajasthan,Barmer,2015,45.53,39.4,30.28,54.23
+Rajasthan,Barmer,2016,46.43,40.2,32.58,55.71
+Rajasthan,Barmer,2017,47.33,42.75,35.09,57.2
+Rajasthan,Barmer,2018,48.23,45.3,37.61,58.64
+Rajasthan,Barmer,2019,49.13,47.85,40.12,60.08
+Rajasthan,Barmer,2020,50.03,50.4,42.64,56.19
+Rajasthan,Barmer,2021,50.93,50.4,44.8,59.38
+Rajasthan,Barmer,2022,51.83,52.24,46.96,64.4
+Rajasthan,Barmer,2023,52.73,54.07,49.12,65.55
+Rajasthan,Barmer,2024,53.63,55.91,51.28,66.7
+Rajasthan,Barmer,2025,54.53,57.74,53.44,67.86
+Rajasthan,Barmer,2026,55.43,59.58,55.6,69.01
+Rajasthan,Jalore,2010,53.55,39.42,28.63,53.0
+Rajasthan,Jalore,2011,54.33,40.32,29.64,54.48
+Rajasthan,Jalore,2012,55.11,41.22,30.65,55.97
+Rajasthan,Jalore,2013,55.89,42.11,31.66,57.45
+Rajasthan,Jalore,2014,56.67,43.01,33.87,58.94
+Rajasthan,Jalore,2015,57.45,43.9,36.07,60.43
+Rajasthan,Jalore,2016,58.35,44.8,38.28,61.91
+Rajasthan,Jalore,2017,59.25,47.25,40.69,63.4
+Rajasthan,Jalore,2018,60.15,49.7,43.1,64.84
+Rajasthan,Jalore,2019,61.05,52.15,45.51,66.28
+Rajasthan,Jalore,2020,61.95,54.6,47.92,62.39
+Rajasthan,Jalore,2021,62.85,54.6,50.08,65.58
+Rajasthan,Jalore,2022,63.75,56.36,52.24,70.6
+Rajasthan,Jalore,2023,64.65,58.13,54.4,71.75
+Rajasthan,Jalore,2024,65.55,59.89,56.56,72.9
+Rajasthan,Jalore,2025,66.45,61.66,58.72,74.06
+Rajasthan,Jalore,2026,67.35,63.42,60.88,75.21
+Rajasthan,Bundi,2010,64.65,47.87,46.76,53.0
+Rajasthan,Bundi,2011,65.23,48.96,47.51,54.48
+Rajasthan,Bundi,2012,65.81,50.05,48.26,55.97
+Rajasthan,Bundi,2013,66.39,51.14,49.01,57.45
+Rajasthan,Bundi,2014,66.97,52.22,50.97,58.94
+Rajasthan,Bundi,2015,67.55,53.31,52.92,60.43
+Rajasthan,Bundi,2016,68.25,54.4,54.87,61.91
+Rajasthan,Bundi,2017,68.95,56.6,56.97,63.4
+Rajasthan,Bundi,2018,69.65,58.8,59.08,64.84
+Rajasthan,Bundi,2019,70.35,61.0,61.18,66.28
+Rajasthan,Bundi,2020,71.05,63.2,63.28,62.39
+Rajasthan,Bundi,2021,71.75,63.2,65.44,65.58
+Rajasthan,Bundi,2022,72.45,64.78,67.6,70.6
+Rajasthan,Bundi,2023,73.15,66.37,69.76,71.75
+Rajasthan,Bundi,2024,73.85,67.95,71.92,72.9
+Rajasthan,Bundi,2025,74.55,69.54,74.08,74.06
+Rajasthan,Bundi,2026,75.25,71.12,76.24,75.21
+Rajasthan,Dausa,2010,70.72,48.22,47.89,53.0
+Rajasthan,Dausa,2011,71.3,49.32,48.63,54.48
+Rajasthan,Dausa,2012,71.88,50.42,49.36,55.97
+Rajasthan,Dausa,2013,72.46,51.51,50.1,57.45
+Rajasthan,Dausa,2014,73.04,52.61,52.04,58.94
+Rajasthan,Dausa,2015,73.62,53.7,53.97,60.43
+Rajasthan,Dausa,2016,74.32,54.8,55.91,61.91
+Rajasthan,Dausa,2017,75.02,57.0,57.99,63.4
+Rajasthan,Dausa,2018,75.72,59.2,60.07,64.84
+Rajasthan,Dausa,2019,76.42,61.4,62.16,66.28
+Rajasthan,Dausa,2020,77.12,63.6,64.24,62.39
+Rajasthan,Dausa,2021,77.82,63.6,66.4,65.58
+Rajasthan,Dausa,2022,78.52,65.18,68.56,70.6
+Rajasthan,Dausa,2023,79.22,66.77,70.72,71.75
+Rajasthan,Dausa,2024,79.92,68.35,72.88,72.9
+Rajasthan,Dausa,2025,80.62,69.94,75.04,74.06
+Rajasthan,Dausa,2026,81.32,71.52,77.2,75.21
+Rajasthan,Nagaur,2010,61.75,46.11,41.09,53.0
+Rajasthan,Nagaur,2011,62.43,47.16,41.93,54.48
+Rajasthan,Nagaur,2012,63.11,48.21,42.76,55.97
+Rajasthan,Nagaur,2013,63.79,49.26,43.59,57.45
+Rajasthan,Nagaur,2014,64.47,50.3,45.62,58.94
+Rajasthan,Nagaur,2015,65.15,51.35,47.65,60.43
+Rajasthan,Nagaur,2016,65.95,52.4,49.69,61.91
+Rajasthan,Nagaur,2017,66.75,54.6,51.88,63.4
+Rajasthan,Nagaur,2018,67.55,56.8,54.08,64.84
+Rajasthan,Nagaur,2019,68.35,59.0,56.28,66.28
+Rajasthan,Nagaur,2020,69.15,61.2,58.48,62.39
+Rajasthan,Nagaur,2021,69.95,61.2,60.64,65.58
+Rajasthan,Nagaur,2022,70.75,62.78,62.8,70.6
+Rajasthan,Nagaur,2023,71.55,64.37,64.96,71.75
+Rajasthan,Nagaur,2024,72.35,65.95,67.12,72.9
+Rajasthan,Nagaur,2025,73.15,67.54,69.28,74.06
+Rajasthan,Nagaur,2026,73.95,69.12,71.44,75.21
+Rajasthan,Sikar,2010,71.69,51.57,52.71,53.0
+Rajasthan,Sikar,2011,72.27,52.74,53.37,54.48
+Rajasthan,Sikar,2012,72.85,53.91,54.04,55.97
+Rajasthan,Sikar,2013,73.43,55.08,54.71,57.45
+Rajasthan,Sikar,2014,74.01,56.26,56.58,58.94
+Rajasthan,Sikar,2015,74.59,57.43,58.45,60.43
+Rajasthan,Sikar,2016,75.29,58.6,60.31,61.91
+Rajasthan,Sikar,2017,75.99,60.8,62.32,63.4
+Rajasthan,Sikar,2018,76.69,63.0,64.32,64.84
+Rajasthan,Sikar,2019,77.39,65.2,66.32,66.28
+Rajasthan,Sikar,2020,78.09,67.4,68.32,62.39
+Rajasthan,Sikar,2021,78.79,67.4,70.48,65.58
+Rajasthan,Sikar,2022,79.49,68.98,72.64,70.6
+Rajasthan,Sikar,2023,80.19,70.57,74.8,71.75
+Rajasthan,Sikar,2024,80.89,72.15,76.96,72.9
+Rajasthan,Sikar,2025,81.59,73.74,79.12,74.06
+Rajasthan,Sikar,2026,82.29,75.32,81.28,75.21
+Rajasthan,Tonk,2010,59.88,44.18,38.83,53.0
+Rajasthan,Tonk,2011,60.56,45.18,39.69,54.48
+Rajasthan,Tonk,2012,61.24,46.18,40.56,55.97
+Rajasthan,Tonk,2013,61.92,47.19,41.42,57.45
+Rajasthan,Tonk,2014,62.6,48.19,43.48,58.94
+Rajasthan,Tonk,2015,63.28,49.2,45.55,60.43
+Rajasthan,Tonk,2016,64.08,50.2,47.61,61.91
+Rajasthan,Tonk,2017,64.88,52.5,49.85,63.4
+Rajasthan,Tonk,2018,65.68,54.8,52.09,64.84
+Rajasthan,Tonk,2019,66.48,57.1,54.32,66.28
+Rajasthan,Tonk,2020,67.28,59.4,56.56,62.39
+Rajasthan,Tonk,2021,68.08,59.4,58.72,65.58
+Rajasthan,Tonk,2022,68.88,61.06,60.88,70.6
+Rajasthan,Tonk,2023,69.68,62.71,63.04,71.75
+Rajasthan,Tonk,2024,70.48,64.37,65.2,72.9
+Rajasthan,Tonk,2025,71.28,66.02,67.36,74.06
+Rajasthan,Tonk,2026,72.08,67.68,69.52,75.21
+Rajasthan,Karauli,2010,57.0,39.25,29.48,53.0
+Rajasthan,Karauli,2011,57.68,40.14,30.48,54.48
+Rajasthan,Karauli,2012,58.36,41.03,31.48,55.97
+Rajasthan,Karauli,2013,59.04,41.92,32.47,57.45
+Rajasthan,Karauli,2014,59.72,42.82,34.67,58.94
+Rajasthan,Karauli,2015,60.4,43.71,36.86,60.43
+Rajasthan,Karauli,2016,61.2,44.6,39.06,61.91
+Rajasthan,Karauli,2017,62.0,47.0,41.45,63.4
+Rajasthan,Karauli,2018,62.8,49.4,43.85,64.84
+Rajasthan,Karauli,2019,63.6,51.8,46.24,66.28
+Rajasthan,Karauli,2020,64.4,54.2,48.64,62.39
+Rajasthan,Karauli,2021,65.2,54.2,50.8,65.58
+Rajasthan,Karauli,2022,66.0,55.93,52.96,70.6
+Rajasthan,Karauli,2023,66.8,57.66,55.12,71.75
+Rajasthan,Karauli,2024,67.6,59.38,57.28,72.9
+Rajasthan,Karauli,2025,68.4,61.11,59.44,74.06
+Rajasthan,Karauli,2026,69.2,62.84,61.6,75.21
+Jharkhand,Ranchi,2010,76.55,53.15,45.63,50.46
+Jharkhand,Ranchi,2011,77.0,54.36,46.39,51.88
+Jharkhand,Ranchi,2012,77.45,55.57,47.16,53.3
+Jharkhand,Ranchi,2013,77.9,56.78,47.93,54.72
+Jharkhand,Ranchi,2014,78.35,57.98,49.9,56.14
+Jharkhand,Ranchi,2015,78.8,59.19,51.87,57.56
+Jharkhand,Ranchi,2016,79.37,60.4,53.83,58.98
+Jharkhand,Ranchi,2017,79.94,62.4,55.96,60.4
+Jharkhand,Ranchi,2018,80.51,64.4,58.08,61.84
+Jharkhand,Ranchi,2019,81.08,66.4,60.2,63.28
+Jharkhand,Ranchi,2020,81.65,68.4,62.32,59.62
+Jharkhand,Ranchi,2021,82.22,68.4,64.48,62.73
+Jharkhand,Ranchi,2022,82.79,69.84,66.64,67.6
+Jharkhand,Ranchi,2023,83.36,71.28,68.8,68.75
+Jharkhand,Ranchi,2024,83.93,72.72,70.96,69.9
+Jharkhand,Ranchi,2025,84.5,74.16,73.12,71.06
+Jharkhand,Ranchi,2026,85.07,75.6,75.28,72.21
+Jharkhand,Dhanbad,2010,73.95,49.98,41.66,50.86
+Jharkhand,Dhanbad,2011,74.53,51.12,42.48,52.28
+Jharkhand,Dhanbad,2012,75.11,52.26,43.31,53.7
+Jharkhand,Dhanbad,2013,75.69,53.39,44.13,55.12
+Jharkhand,Dhanbad,2014,76.27,54.53,46.16,56.54
+Jharkhand,Dhanbad,2015,76.85,55.66,48.18,57.96
+Jharkhand,Dhanbad,2016,77.55,56.8,50.2,59.38
+Jharkhand,Dhanbad,2017,78.25,58.8,52.39,60.8
+Jharkhand,Dhanbad,2018,78.95,60.8,54.58,62.24
+Jharkhand,Dhanbad,2019,79.65,62.8,56.77,63.68
+Jharkhand,Dhanbad,2020,80.35,64.8,58.96,60.02
+Jharkhand,Dhanbad,2021,81.05,64.8,61.12,63.13
+Jharkhand,Dhanbad,2022,81.75,66.24,63.28,68.0
+Jharkhand,Dhanbad,2023,82.45,67.68,65.44,69.15
+Jharkhand,Dhanbad,2024,83.15,69.12,67.6,70.3
+Jharkhand,Dhanbad,2025,83.85,70.56,69.76,71.46
+Jharkhand,Dhanbad,2026,84.55,72.0,71.92,72.61
+Jharkhand,Jamshedpur,2010,75.81,51.39,43.93,52.06
+Jharkhand,Jamshedpur,2011,76.26,52.56,44.72,53.48
+Jharkhand,Jamshedpur,2012,76.71,53.73,45.51,54.9
+Jharkhand,Jamshedpur,2013,77.16,54.9,46.3,56.32
+Jharkhand,Jamshedpur,2014,77.61,56.06,48.29,57.74
+Jharkhand,Jamshedpur,2015,78.06,57.23,50.29,59.16
+Jharkhand,Jamshedpur,2016,78.63,58.4,52.28,60.58
+Jharkhand,Jamshedpur,2017,79.2,60.4,54.43,62.0
+Jharkhand,Jamshedpur,2018,79.77,62.4,56.58,63.44
+Jharkhand,Jamshedpur,2019,80.34,64.4,58.73,64.88
+Jharkhand,Jamshedpur,2020,80.91,66.4,60.88,61.22
+Jharkhand,Jamshedpur,2021,81.48,66.4,63.04,64.33
+Jharkhand,Jamshedpur,2022,82.05,67.84,65.2,69.2
+Jharkhand,Jamshedpur,2023,82.62,69.28,67.36,70.35
+Jharkhand,Jamshedpur,2024,83.19,70.72,69.52,71.5
+Jharkhand,Jamshedpur,2025,83.76,72.16,71.68,72.66
+Jharkhand,Jamshedpur,2026,84.33,73.6,73.84,73.81
+Jharkhand,Hazaribagh,2010,71.72,47.7,39.4,45.66
+Jharkhand,Hazaribagh,2011,72.3,48.78,40.25,47.08
+Jharkhand,Hazaribagh,2012,72.88,49.86,41.11,48.5
+Jharkhand,Hazaribagh,2013,73.46,50.95,41.96,49.92
+Jharkhand,Hazaribagh,2014,74.04,52.03,44.02,51.34
+Jharkhand,Hazaribagh,2015,74.62,53.12,46.08,52.76
+Jharkhand,Hazaribagh,2016,75.32,54.2,48.13,54.18
+Jharkhand,Hazaribagh,2017,76.02,56.25,50.36,55.6
+Jharkhand,Hazaribagh,2018,76.72,58.3,52.59,57.04
+Jharkhand,Hazaribagh,2019,77.42,60.35,54.81,58.48
+Jharkhand,Hazaribagh,2020,78.12,62.4,57.04,54.82
+Jharkhand,Hazaribagh,2021,78.82,62.4,59.2,57.93
+Jharkhand,Hazaribagh,2022,79.52,63.88,61.36,62.8
+Jharkhand,Hazaribagh,2023,80.22,65.35,63.52,63.95
+Jharkhand,Hazaribagh,2024,80.92,66.83,65.68,65.1
+Jharkhand,Hazaribagh,2025,81.62,68.3,67.84,66.26
+Jharkhand,Hazaribagh,2026,82.32,69.78,70.0,67.41
+Jharkhand,Bokaro,2010,73.89,49.98,42.79,50.26
+Jharkhand,Bokaro,2011,74.47,51.12,43.6,51.68
+Jharkhand,Bokaro,2012,75.05,52.26,44.41,53.1
+Jharkhand,Bokaro,2013,75.63,53.39,45.22,54.52
+Jharkhand,Bokaro,2014,76.21,54.53,47.23,55.94
+Jharkhand,Bokaro,2015,76.79,55.66,49.23,57.36
+Jharkhand,Bokaro,2016,77.49,56.8,51.24,58.78
+Jharkhand,Bokaro,2017,78.19,58.8,53.41,60.2
+Jharkhand,Bokaro,2018,78.89,60.8,55.58,61.64
+Jharkhand,Bokaro,2019,79.59,62.8,57.75,63.08
+Jharkhand,Bokaro,2020,80.29,64.8,59.92,59.42
+Jharkhand,Bokaro,2021,80.99,64.8,62.08,62.53
+Jharkhand,Bokaro,2022,81.69,66.24,64.24,67.4
+Jharkhand,Bokaro,2023,82.39,67.68,66.4,68.55
+Jharkhand,Bokaro,2024,83.09,69.12,68.56,69.7
+Jharkhand,Bokaro,2025,83.79,70.56,70.72,70.86
+Jharkhand,Bokaro,2026,84.49,72.0,72.88,72.01
+Jharkhand,Giridih,2010,60.04,39.25,28.35,45.66
+Jharkhand,Giridih,2011,60.72,40.14,29.36,47.08
+Jharkhand,Giridih,2012,61.4,41.03,30.37,48.5
+Jharkhand,Giridih,2013,62.08,41.92,31.39,49.92
+Jharkhand,Giridih,2014,62.76,42.82,33.6,51.34
+Jharkhand,Giridih,2015,63.44,43.71,35.81,52.76
+Jharkhand,Giridih,2016,64.24,44.6,38.02,54.18
+Jharkhand,Giridih,2017,65.04,46.8,40.44,55.6
+Jharkhand,Giridih,2018,65.84,49.0,42.85,57.04
+Jharkhand,Giridih,2019,66.64,51.2,45.27,58.48
+Jharkhand,Giridih,2020,67.44,53.4,47.68,54.82
+Jharkhand,Giridih,2021,68.24,53.4,49.84,57.93
+Jharkhand,Giridih,2022,69.04,54.98,52.0,62.8
+Jharkhand,Giridih,2023,69.84,56.57,54.16,63.95
+Jharkhand,Giridih,2024,70.64,58.15,56.32,65.1
+Jharkhand,Giridih,2025,71.44,59.74,58.48,66.26
+Jharkhand,Giridih,2026,72.24,61.32,60.64,67.41
+Jharkhand,Deoghar,2010,65.89,42.59,33.73,45.66
+Jharkhand,Deoghar,2011,66.47,43.56,34.67,47.08
+Jharkhand,Deoghar,2012,67.05,44.53,35.6,48.5
+Jharkhand,Deoghar,2013,67.63,45.5,36.54,49.92
+Jharkhand,Deoghar,2014,68.21,46.46,38.68,51.34
+Jharkhand,Deoghar,2015,68.79,47.43,40.81,52.76
+Jharkhand,Deoghar,2016,69.49,48.4,42.95,54.18
+Jharkhand,Deoghar,2017,70.19,50.65,45.27,55.6
+Jharkhand,Deoghar,2018,70.89,52.9,47.59,57.04
+Jharkhand,Deoghar,2019,71.59,55.15,49.92,58.48
+Jharkhand,Deoghar,2020,72.29,57.4,52.24,54.82
+Jharkhand,Deoghar,2021,72.99,57.4,54.4,57.93
+Jharkhand,Deoghar,2022,73.69,59.02,56.56,62.8
+Jharkhand,Deoghar,2023,74.39,60.64,58.72,63.95
+Jharkhand,Deoghar,2024,75.09,62.26,60.88,65.1
+Jharkhand,Deoghar,2025,75.79,63.88,63.04,66.26
+Jharkhand,Deoghar,2026,76.49,65.5,65.2,67.41
+Jharkhand,Dumka,2010,51.74,34.14,20.14,40.86
+Jharkhand,Dumka,2011,52.52,34.92,21.27,42.28
+Jharkhand,Dumka,2012,53.3,35.7,22.39,43.7
+Jharkhand,Dumka,2013,54.08,36.47,23.52,45.12
+Jharkhand,Dumka,2014,54.86,37.25,25.85,46.54
+Jharkhand,Dumka,2015,55.64,38.02,28.18,47.96
+Jharkhand,Dumka,2016,56.54,38.8,30.51,49.38
+Jharkhand,Dumka,2017,57.44,41.15,33.06,50.8
+Jharkhand,Dumka,2018,58.34,43.5,35.61,52.24
+Jharkhand,Dumka,2019,59.24,45.85,38.17,53.68
+Jharkhand,Dumka,2020,60.14,48.2,40.72,50.02
+Jharkhand,Dumka,2021,61.04,48.2,42.88,53.13
+Jharkhand,Dumka,2022,61.94,49.89,45.04,58.0
+Jharkhand,Dumka,2023,62.84,51.58,47.2,59.15
+Jharkhand,Dumka,2024,63.74,53.28,49.36,60.3
+Jharkhand,Dumka,2025,64.64,54.97,51.52,61.46
+Jharkhand,Dumka,2026,65.54,56.66,53.68,62.61
+Jharkhand,Godda,2010,50.79,32.03,17.59,40.46
+Jharkhand,Godda,2011,51.57,32.76,18.75,41.88
+Jharkhand,Godda,2012,52.35,33.49,19.92,43.3
+Jharkhand,Godda,2013,53.13,34.22,21.08,44.72
+Jharkhand,Godda,2014,53.91,34.94,23.44,46.14
+Jharkhand,Godda,2015,54.69,35.67,25.81,47.56
+Jharkhand,Godda,2016,55.59,36.4,28.17,48.98
+Jharkhand,Godda,2017,56.49,38.9,30.77,50.4
+Jharkhand,Godda,2018,57.39,41.4,33.37,51.84
+Jharkhand,Godda,2019,58.29,43.9,35.96,53.28
+Jharkhand,Godda,2020,59.19,46.4,38.56,49.62
+Jharkhand,Godda,2021,60.09,46.4,40.72,52.73
+Jharkhand,Godda,2022,60.99,48.2,42.88,57.6
+Jharkhand,Godda,2023,61.89,50.0,45.04,58.75
+Jharkhand,Godda,2024,62.79,51.8,47.2,59.9
+Jharkhand,Godda,2025,63.69,53.6,49.36,61.06
+Jharkhand,Godda,2026,64.59,55.4,51.52,62.21
+Jharkhand,Gumla,2010,57.1,31.5,15,40.26
+Jharkhand,Gumla,2011,57.78,32.22,15.68,41.68
+Jharkhand,Gumla,2012,58.46,32.94,16.89,43.1
+Jharkhand,Gumla,2013,59.14,33.65,18.1,44.52
+Jharkhand,Gumla,2014,59.82,34.37,20.51,45.94
+Jharkhand,Gumla,2015,60.5,35.08,22.91,47.36
+Jharkhand,Gumla,2016,61.3,35.8,25.32,48.78
+Jharkhand,Gumla,2017,62.1,38.15,27.97,50.2
+Jharkhand,Gumla,2018,62.9,40.5,30.62,51.64
+Jharkhand,Gumla,2019,63.7,42.85,33.27,53.08
+Jharkhand,Gumla,2020,64.5,45.2,35.92,49.42
+Jharkhand,Gumla,2021,65.3,45.2,38.08,52.53
+Jharkhand,Gumla,2022,66.1,46.89,40.24,57.4
+Jharkhand,Gumla,2023,66.9,48.58,42.4,58.55
+Jharkhand,Gumla,2024,67.7,50.28,44.56,59.7
+Jharkhand,Gumla,2025,68.5,51.97,46.72,60.86
+Jharkhand,Gumla,2026,69.3,53.66,48.88,62.01
+Jharkhand,Lohardaga,2010,61.6,37.49,25.24,45.66
+Jharkhand,Lohardaga,2011,62.28,38.34,26.29,47.08
+Jharkhand,Lohardaga,2012,62.96,39.19,27.35,48.5
+Jharkhand,Lohardaga,2013,63.64,40.04,28.4,49.92
+Jharkhand,Lohardaga,2014,64.32,40.9,30.66,51.34
+Jharkhand,Lohardaga,2015,65.0,41.75,32.92,52.76
+Jharkhand,Lohardaga,2016,65.8,42.6,35.17,54.18
+Jharkhand,Lohardaga,2017,66.6,45.05,37.64,55.6
+Jharkhand,Lohardaga,2018,67.4,47.5,40.11,57.04
+Jharkhand,Lohardaga,2019,68.2,49.95,42.57,58.48
+Jharkhand,Lohardaga,2020,69.0,52.4,45.04,54.82
+Jharkhand,Lohardaga,2021,69.8,52.4,47.2,57.93
+Jharkhand,Lohardaga,2022,70.6,54.16,49.36,62.8
+Jharkhand,Lohardaga,2023,71.4,55.93,51.52,63.95
+Jharkhand,Lohardaga,2024,72.2,57.69,53.68,65.1
+Jharkhand,Lohardaga,2025,73.0,59.46,55.84,66.26
+Jharkhand,Lohardaga,2026,73.8,61.22,58.0,67.41
+Jharkhand,Pakur,2010,46.09,30.1,17.02,39.86
+Jharkhand,Pakur,2011,46.87,30.78,18.19,41.28
+Jharkhand,Pakur,2012,47.65,31.46,19.37,42.7
+Jharkhand,Pakur,2013,48.43,32.15,20.54,44.12
+Jharkhand,Pakur,2014,49.21,32.83,22.91,45.54
+Jharkhand,Pakur,2015,49.99,33.52,25.28,46.96
+Jharkhand,Pakur,2016,50.89,34.2,27.65,48.38
+Jharkhand,Pakur,2017,51.79,36.55,30.26,49.8
+Jharkhand,Pakur,2018,52.69,38.9,32.87,51.24
+Jharkhand,Pakur,2019,53.59,41.25,35.47,52.68
+Jharkhand,Pakur,2020,54.49,43.6,38.08,49.02
+Jharkhand,Pakur,2021,55.39,43.6,40.24,52.13
+Jharkhand,Pakur,2022,56.29,45.29,42.4,57.0
+Jharkhand,Pakur,2023,57.19,46.98,44.56,58.15
+Jharkhand,Pakur,2024,58.09,48.68,46.72,59.3
+Jharkhand,Pakur,2025,58.99,50.37,48.88,60.46
+Jharkhand,Pakur,2026,59.89,52.06,51.04,61.61
+Jharkhand,Simdega,2010,61.66,34.14,20.14,45.66
+Jharkhand,Simdega,2011,62.34,34.92,21.27,47.08
+Jharkhand,Simdega,2012,63.02,35.7,22.39,48.5
+Jharkhand,Simdega,2013,63.7,36.47,23.52,49.92
+Jharkhand,Simdega,2014,64.38,37.25,25.85,51.34
+Jharkhand,Simdega,2015,65.06,38.02,28.18,52.76
+Jharkhand,Simdega,2016,65.86,38.8,30.51,54.18
+Jharkhand,Simdega,2017,66.66,41.2,33.06,55.6
+Jharkhand,Simdega,2018,67.46,43.6,35.61,57.04
+Jharkhand,Simdega,2019,68.26,46.0,38.17,58.48
+Jharkhand,Simdega,2020,69.06,48.4,40.72,54.82
+Jharkhand,Simdega,2021,69.86,48.4,42.88,57.93
+Jharkhand,Simdega,2022,70.66,50.13,45.04,62.8
+Jharkhand,Simdega,2023,71.46,51.86,47.2,63.95
+Jharkhand,Simdega,2024,72.26,53.58,49.36,65.1
+Jharkhand,Simdega,2025,73.06,55.31,51.52,66.26
+Jharkhand,Simdega,2026,73.86,57.04,53.68,67.41
+Jharkhand,Chatra,2010,60.94,37.31,29.48,45.66
+Jharkhand,Chatra,2011,61.62,38.16,30.48,47.08
+Jharkhand,Chatra,2012,62.3,39.01,31.48,48.5
+Jharkhand,Chatra,2013,62.98,39.86,32.47,49.92
+Jharkhand,Chatra,2014,63.66,40.7,34.67,51.34
+Jharkhand,Chatra,2015,64.34,41.55,36.86,52.76
+Jharkhand,Chatra,2016,65.14,42.4,39.06,54.18
+Jharkhand,Chatra,2017,65.94,44.85,41.45,55.6
+Jharkhand,Chatra,2018,66.74,47.3,43.85,57.04
+Jharkhand,Chatra,2019,67.54,49.75,46.24,58.48
+Jharkhand,Chatra,2020,68.34,52.2,48.64,54.82
+Jharkhand,Chatra,2021,69.14,52.2,50.8,57.93
+Jharkhand,Chatra,2022,69.94,53.96,52.96,62.8
+Jharkhand,Chatra,2023,70.74,55.73,55.12,63.95
+Jharkhand,Chatra,2024,71.54,57.49,57.28,65.1
+Jharkhand,Chatra,2025,72.34,59.26,59.44,66.26
+Jharkhand,Chatra,2026,73.14,61.02,61.6,67.41
+Uttar Pradesh,Lucknow,2010,76.84,57.02,56.39,42.0
+Uttar Pradesh,Lucknow,2011,77.29,58.32,57.0,43.35
+Uttar Pradesh,Lucknow,2012,77.74,59.62,57.62,44.69
+Uttar Pradesh,Lucknow,2013,78.19,60.91,58.24,46.03
+Uttar Pradesh,Lucknow,2014,78.64,62.21,60.05,47.37
+Uttar Pradesh,Lucknow,2015,79.09,63.5,61.87,48.72
+Uttar Pradesh,Lucknow,2016,79.66,64.8,63.68,50.06
+Uttar Pradesh,Lucknow,2017,80.23,66.7,65.62,51.4
+Uttar Pradesh,Lucknow,2018,80.8,68.6,67.56,52.72
+Uttar Pradesh,Lucknow,2019,81.37,70.5,69.5,54.04
+Uttar Pradesh,Lucknow,2020,81.94,72.4,71.44,50.54
+Uttar Pradesh,Lucknow,2021,82.51,72.4,73.6,53.44
+Uttar Pradesh,Lucknow,2022,83.08,73.77,75.76,58.0
+Uttar Pradesh,Lucknow,2023,83.65,75.14,77.92,59.06
+Uttar Pradesh,Lucknow,2024,84.22,76.5,80.08,60.11
+Uttar Pradesh,Lucknow,2025,84.79,77.87,82.24,61.17
+Uttar Pradesh,Lucknow,2026,85.36,79.24,84.4,62.22
+Uttar Pradesh,Kanpur,2010,79.2,54.91,54.12,41.4
+Uttar Pradesh,Kanpur,2011,79.65,56.16,54.77,42.75
+Uttar Pradesh,Kanpur,2012,80.1,57.41,55.42,44.09
+Uttar Pradesh,Kanpur,2013,80.55,58.66,56.07,45.43
+Uttar Pradesh,Kanpur,2014,81.0,59.9,57.91,46.77
+Uttar Pradesh,Kanpur,2015,81.45,61.15,59.76,48.12
+Uttar Pradesh,Kanpur,2016,82.02,62.4,61.61,49.46
+Uttar Pradesh,Kanpur,2017,82.59,64.35,63.59,50.8
+Uttar Pradesh,Kanpur,2018,83.16,66.3,65.56,52.12
+Uttar Pradesh,Kanpur,2019,83.73,68.25,67.54,53.44
+Uttar Pradesh,Kanpur,2020,84.3,70.2,69.52,49.94
+Uttar Pradesh,Kanpur,2021,84.87,70.2,71.68,52.84
+Uttar Pradesh,Kanpur,2022,85.44,71.6,73.84,57.4
+Uttar Pradesh,Kanpur,2023,86.01,73.01,76.0,58.46
+Uttar Pradesh,Kanpur,2024,86.58,74.41,78.16,59.51
+Uttar Pradesh,Kanpur,2025,87.15,75.82,80.32,60.57
+Uttar Pradesh,Kanpur,2026,87.72,77.22,82.48,61.62
+Uttar Pradesh,Agra,2010,71.0,51.74,47.89,38.4
+Uttar Pradesh,Agra,2011,71.58,52.92,48.63,39.75
+Uttar Pradesh,Agra,2012,72.16,54.1,49.36,41.09
+Uttar Pradesh,Agra,2013,72.74,55.27,50.1,42.43
+Uttar Pradesh,Agra,2014,73.32,56.45,52.04,43.77
+Uttar Pradesh,Agra,2015,73.9,57.62,53.97,45.12
+Uttar Pradesh,Agra,2016,74.6,58.8,55.91,46.46
+Uttar Pradesh,Agra,2017,75.3,60.8,57.99,47.8
+Uttar Pradesh,Agra,2018,76.0,62.8,60.07,49.12
+Uttar Pradesh,Agra,2019,76.7,64.8,62.16,50.44
+Uttar Pradesh,Agra,2020,77.4,66.8,64.24,46.94
+Uttar Pradesh,Agra,2021,78.1,66.8,66.4,49.84
+Uttar Pradesh,Agra,2022,78.8,68.24,68.56,54.4
+Uttar Pradesh,Agra,2023,79.5,69.68,70.72,55.46
+Uttar Pradesh,Agra,2024,80.2,71.12,72.88,56.51
+Uttar Pradesh,Agra,2025,80.9,72.56,75.04,57.57
+Uttar Pradesh,Agra,2026,81.6,74.0,77.2,58.62
+Uttar Pradesh,Varanasi,2010,75.15,53.15,51.01,39.0
+Uttar Pradesh,Varanasi,2011,75.6,54.36,51.7,40.35
+Uttar Pradesh,Varanasi,2012,76.05,55.57,52.39,41.69
+Uttar Pradesh,Varanasi,2013,76.5,56.78,53.08,43.03
+Uttar Pradesh,Varanasi,2014,76.95,57.98,54.97,44.37
+Uttar Pradesh,Varanasi,2015,77.4,59.19,56.87,45.72
+Uttar Pradesh,Varanasi,2016,77.97,60.4,58.76,47.06
+Uttar Pradesh,Varanasi,2017,78.54,62.4,60.79,48.4
+Uttar Pradesh,Varanasi,2018,79.11,64.4,62.82,49.72
+Uttar Pradesh,Varanasi,2019,79.68,66.4,64.85,51.04
+Uttar Pradesh,Varanasi,2020,80.25,68.4,66.88,47.54
+Uttar Pradesh,Varanasi,2021,80.82,68.4,69.04,50.44
+Uttar Pradesh,Varanasi,2022,81.39,69.84,71.2,55.0
+Uttar Pradesh,Varanasi,2023,81.96,71.28,73.36,56.06
+Uttar Pradesh,Varanasi,2024,82.53,72.72,75.52,57.11
+Uttar Pradesh,Varanasi,2025,83.1,74.16,77.68,58.17
+Uttar Pradesh,Varanasi,2026,83.67,75.6,79.84,59.22
+Uttar Pradesh,Prayagraj,2010,72.93,51.39,48.46,37.2
+Uttar Pradesh,Prayagraj,2011,73.51,52.56,49.19,38.55
+Uttar Pradesh,Prayagraj,2012,74.09,53.73,49.91,39.89
+Uttar Pradesh,Prayagraj,2013,74.67,54.9,50.64,41.23
+Uttar Pradesh,Prayagraj,2014,75.25,56.06,52.57,42.57
+Uttar Pradesh,Prayagraj,2015,75.83,57.23,54.5,43.92
+Uttar Pradesh,Prayagraj,2016,76.53,58.4,56.43,45.26
+Uttar Pradesh,Prayagraj,2017,77.23,60.4,58.5,46.6
+Uttar Pradesh,Prayagraj,2018,77.93,62.4,60.57,47.92
+Uttar Pradesh,Prayagraj,2019,78.63,64.4,62.65,49.24
+Uttar Pradesh,Prayagraj,2020,79.33,66.4,64.72,45.74
+Uttar Pradesh,Prayagraj,2021,80.03,66.4,66.88,48.64
+Uttar Pradesh,Prayagraj,2022,80.73,67.84,69.04,53.2
+Uttar Pradesh,Prayagraj,2023,81.43,69.28,71.2,54.26
+Uttar Pradesh,Prayagraj,2024,82.13,70.72,73.36,55.31
+Uttar Pradesh,Prayagraj,2025,82.83,72.16,75.52,56.37
+Uttar Pradesh,Prayagraj,2026,83.53,73.6,77.68,57.42
+Uttar Pradesh,Ghaziabad,2010,81.77,58.78,62.05,45.8
+Uttar Pradesh,Ghaziabad,2011,82.22,60.12,62.59,47.15
+Uttar Pradesh,Ghaziabad,2012,82.67,61.46,63.12,48.49
+Uttar Pradesh,Ghaziabad,2013,83.12,62.79,63.66,49.83
+Uttar Pradesh,Ghaziabad,2014,83.57,64.13,65.4,51.17
+Uttar Pradesh,Ghaziabad,2015,84.02,65.46,67.13,52.52
+Uttar Pradesh,Ghaziabad,2016,84.59,66.8,68.87,53.86
+Uttar Pradesh,Ghaziabad,2017,85.16,68.75,70.71,55.2
+Uttar Pradesh,Ghaziabad,2018,85.73,70.7,72.55,56.52
+Uttar Pradesh,Ghaziabad,2019,86.3,72.65,74.4,57.84
+Uttar Pradesh,Ghaziabad,2020,86.87,74.6,76.24,54.34
+Uttar Pradesh,Ghaziabad,2021,87.44,74.6,78.4,57.24
+Uttar Pradesh,Ghaziabad,2022,88.01,76.0,80.56,61.8
+Uttar Pradesh,Ghaziabad,2023,88.58,77.41,82.72,62.86
+Uttar Pradesh,Ghaziabad,2024,89.15,78.81,84.88,63.91
+Uttar Pradesh,Ghaziabad,2025,89.72,80.22,87.04,64.97
+Uttar Pradesh,Ghaziabad,2026,90.29,81.62,89.2,66.02
+Uttar Pradesh,Meerut,2010,74.14,52.98,51.57,37.2
+Uttar Pradesh,Meerut,2011,74.72,54.18,52.26,38.55
+Uttar Pradesh,Meerut,2012,75.3,55.38,52.94,39.89
+Uttar Pradesh,Meerut,2013,75.88,56.59,53.62,41.23
+Uttar Pradesh,Meerut,2014,76.46,57.79,55.51,42.57
+Uttar Pradesh,Meerut,2015,77.04,59.0,57.39,43.92
+Uttar Pradesh,Meerut,2016,77.74,60.2,59.28,45.26
+Uttar Pradesh,Meerut,2017,78.44,62.25,61.3,46.6
+Uttar Pradesh,Meerut,2018,79.14,64.3,63.32,47.92
+Uttar Pradesh,Meerut,2019,79.84,66.35,65.34,49.24
+Uttar Pradesh,Meerut,2020,80.54,68.4,67.36,45.74
+Uttar Pradesh,Meerut,2021,81.24,68.4,69.52,48.64
+Uttar Pradesh,Meerut,2022,81.94,69.88,71.68,53.2
+Uttar Pradesh,Meerut,2023,82.64,71.35,73.84,54.26
+Uttar Pradesh,Meerut,2024,83.34,72.83,76.0,55.31
+Uttar Pradesh,Meerut,2025,84.04,74.3,78.16,56.37
+Uttar Pradesh,Meerut,2026,84.74,75.78,80.32,57.42
+Uttar Pradesh,Mathura,2010,67.18,48.05,42.79,37.2
+Uttar Pradesh,Mathura,2011,67.76,49.14,43.6,38.55
+Uttar Pradesh,Mathura,2012,68.34,50.23,44.41,39.89
+Uttar Pradesh,Mathura,2013,68.92,51.32,45.22,41.23
+Uttar Pradesh,Mathura,2014,69.5,52.42,47.23,42.57
+Uttar Pradesh,Mathura,2015,70.08,53.51,49.23,43.92
+Uttar Pradesh,Mathura,2016,70.78,54.6,51.24,45.26
+Uttar Pradesh,Mathura,2017,71.48,56.65,53.41,46.6
+Uttar Pradesh,Mathura,2018,72.18,58.7,55.58,47.92
+Uttar Pradesh,Mathura,2019,72.88,60.75,57.75,49.24
+Uttar Pradesh,Mathura,2020,73.58,62.8,59.92,45.74
+Uttar Pradesh,Mathura,2021,74.28,62.8,62.08,48.64
+Uttar Pradesh,Mathura,2022,74.98,64.28,64.24,53.2
+Uttar Pradesh,Mathura,2023,75.68,65.75,66.4,54.26
+Uttar Pradesh,Mathura,2024,76.38,67.23,68.56,55.31
+Uttar Pradesh,Mathura,2025,77.08,68.7,70.72,56.37
+Uttar Pradesh,Mathura,2026,77.78,70.18,72.88,57.42
+Uttar Pradesh,Bareilly,2010,63.1,44.35,36.56,37.2
+Uttar Pradesh,Bareilly,2011,63.78,45.36,37.46,38.55
+Uttar Pradesh,Bareilly,2012,64.46,46.37,38.36,39.89
+Uttar Pradesh,Bareilly,2013,65.14,47.38,39.25,41.23
+Uttar Pradesh,Bareilly,2014,65.82,48.38,41.35,42.57
+Uttar Pradesh,Bareilly,2015,66.5,49.39,43.44,43.92
+Uttar Pradesh,Bareilly,2016,67.3,50.4,45.54,45.26
+Uttar Pradesh,Bareilly,2017,68.1,52.4,47.81,46.6
+Uttar Pradesh,Bareilly,2018,68.9,54.4,50.09,47.92
+Uttar Pradesh,Bareilly,2019,69.7,56.4,52.36,49.24
+Uttar Pradesh,Bareilly,2020,70.5,58.4,54.64,45.74
+Uttar Pradesh,Bareilly,2021,71.3,58.4,56.8,48.64
+Uttar Pradesh,Bareilly,2022,72.1,59.84,58.96,53.2
+Uttar Pradesh,Bareilly,2023,72.9,61.28,61.12,54.26
+Uttar Pradesh,Bareilly,2024,73.7,62.72,63.28,55.31
+Uttar Pradesh,Bareilly,2025,74.5,64.16,65.44,56.37
+Uttar Pradesh,Bareilly,2026,75.3,65.6,67.6,57.42
+Uttar Pradesh,Aligarh,2010,67.21,46.46,39.68,37.2
+Uttar Pradesh,Aligarh,2011,67.79,47.52,40.53,38.55
+Uttar Pradesh,Aligarh,2012,68.37,48.58,41.38,39.89
+Uttar Pradesh,Aligarh,2013,68.95,49.63,42.23,41.23
+Uttar Pradesh,Aligarh,2014,69.53,50.69,44.29,42.57
+Uttar Pradesh,Aligarh,2015,70.11,51.74,46.34,43.92
+Uttar Pradesh,Aligarh,2016,70.81,52.8,48.39,45.26
+Uttar Pradesh,Aligarh,2017,71.51,54.8,50.61,46.6
+Uttar Pradesh,Aligarh,2018,72.21,56.8,52.84,47.92
+Uttar Pradesh,Aligarh,2019,72.91,58.8,55.06,49.24
+Uttar Pradesh,Aligarh,2020,73.61,60.8,57.28,45.74
+Uttar Pradesh,Aligarh,2021,74.31,60.8,59.44,48.64
+Uttar Pradesh,Aligarh,2022,75.01,62.24,61.6,53.2
+Uttar Pradesh,Aligarh,2023,75.71,63.68,63.76,54.26
+Uttar Pradesh,Aligarh,2024,76.41,65.12,65.92,55.31
+Uttar Pradesh,Aligarh,2025,77.11,66.56,68.08,56.37
+Uttar Pradesh,Aligarh,2026,77.81,68.0,70.24,57.42
+Uttar Pradesh,Gorakhpur,2010,67.99,45.23,38.55,37.2
+Uttar Pradesh,Gorakhpur,2011,68.57,46.26,39.41,38.55
+Uttar Pradesh,Gorakhpur,2012,69.15,47.29,40.28,39.89
+Uttar Pradesh,Gorakhpur,2013,69.73,48.32,41.15,41.23
+Uttar Pradesh,Gorakhpur,2014,70.31,49.34,43.22,42.57
+Uttar Pradesh,Gorakhpur,2015,70.89,50.37,45.29,43.92
+Uttar Pradesh,Gorakhpur,2016,71.59,51.4,47.35,45.26
+Uttar Pradesh,Gorakhpur,2017,72.29,53.4,49.6,46.6
+Uttar Pradesh,Gorakhpur,2018,72.99,55.4,51.84,47.92
+Uttar Pradesh,Gorakhpur,2019,73.69,57.4,54.08,49.24
+Uttar Pradesh,Gorakhpur,2020,74.39,59.4,56.32,45.74
+Uttar Pradesh,Gorakhpur,2021,75.09,59.4,58.48,48.64
+Uttar Pradesh,Gorakhpur,2022,75.79,60.84,60.64,53.2
+Uttar Pradesh,Gorakhpur,2023,76.49,62.28,62.8,54.26
+Uttar Pradesh,Gorakhpur,2024,77.19,63.72,64.96,55.31
+Uttar Pradesh,Gorakhpur,2025,77.89,65.16,67.12,56.37
+Uttar Pradesh,Gorakhpur,2026,78.59,66.6,69.28,57.42
+Uttar Pradesh,Jhansi,2010,71.52,48.22,43.08,37.2
+Uttar Pradesh,Jhansi,2011,72.1,49.32,43.88,38.55
+Uttar Pradesh,Jhansi,2012,72.68,50.42,44.68,39.89
+Uttar Pradesh,Jhansi,2013,73.26,51.51,45.49,41.23
+Uttar Pradesh,Jhansi,2014,73.84,52.61,47.49,42.57
+Uttar Pradesh,Jhansi,2015,74.42,53.7,49.5,43.92
+Uttar Pradesh,Jhansi,2016,75.12,54.8,51.5,45.26
+Uttar Pradesh,Jhansi,2017,75.82,56.9,53.67,46.6
+Uttar Pradesh,Jhansi,2018,76.52,59.0,55.83,47.92
+Uttar Pradesh,Jhansi,2019,77.22,61.1,58.0,49.24
+Uttar Pradesh,Jhansi,2020,77.92,63.2,60.16,45.74
+Uttar Pradesh,Jhansi,2021,78.62,63.2,62.32,48.64
+Uttar Pradesh,Jhansi,2022,79.32,64.71,64.48,53.2
+Uttar Pradesh,Jhansi,2023,80.02,66.22,66.64,54.26
+Uttar Pradesh,Jhansi,2024,80.72,67.74,68.8,55.31
+Uttar Pradesh,Jhansi,2025,81.42,69.25,70.96,56.37
+Uttar Pradesh,Jhansi,2026,82.12,70.76,73.12,57.42
+Uttar Pradesh,Moradabad,2010,59.52,42.59,33.73,37.2
+Uttar Pradesh,Moradabad,2011,60.2,43.56,34.67,38.55
+Uttar Pradesh,Moradabad,2012,60.88,44.53,35.6,39.89
+Uttar Pradesh,Moradabad,2013,61.56,45.5,36.54,41.23
+Uttar Pradesh,Moradabad,2014,62.24,46.46,38.68,42.57
+Uttar Pradesh,Moradabad,2015,62.92,47.43,40.81,43.92
+Uttar Pradesh,Moradabad,2016,63.72,48.4,42.95,45.26
+Uttar Pradesh,Moradabad,2017,64.52,50.5,45.27,46.6
+Uttar Pradesh,Moradabad,2018,65.32,52.6,47.59,47.92
+Uttar Pradesh,Moradabad,2019,66.12,54.7,49.92,49.24
+Uttar Pradesh,Moradabad,2020,66.92,56.8,52.24,45.74
+Uttar Pradesh,Moradabad,2021,67.72,56.8,54.4,48.64
+Uttar Pradesh,Moradabad,2022,68.52,58.31,56.56,53.2
+Uttar Pradesh,Moradabad,2023,69.32,59.82,58.72,54.26
+Uttar Pradesh,Moradabad,2024,70.12,61.34,60.88,55.31
+Uttar Pradesh,Moradabad,2025,70.92,62.85,63.04,56.37
+Uttar Pradesh,Moradabad,2026,71.72,64.36,65.2,57.42
+Uttar Pradesh,Sitapur,2010,54.12,38.9,28.63,32.8
+Uttar Pradesh,Sitapur,2011,54.9,39.78,29.64,34.15
+Uttar Pradesh,Sitapur,2012,55.68,40.66,30.65,35.49
+Uttar Pradesh,Sitapur,2013,56.46,41.55,31.66,36.83
+Uttar Pradesh,Sitapur,2014,57.24,42.43,33.87,38.17
+Uttar Pradesh,Sitapur,2015,58.02,43.32,36.07,39.52
+Uttar Pradesh,Sitapur,2016,58.92,44.2,38.28,40.86
+Uttar Pradesh,Sitapur,2017,59.82,46.25,40.69,42.2
+Uttar Pradesh,Sitapur,2018,60.72,48.3,43.1,43.52
+Uttar Pradesh,Sitapur,2019,61.62,50.35,45.51,44.84
+Uttar Pradesh,Sitapur,2020,62.52,52.4,47.92,41.34
+Uttar Pradesh,Sitapur,2021,63.42,52.4,50.08,44.24
+Uttar Pradesh,Sitapur,2022,64.32,53.88,52.24,48.8
+Uttar Pradesh,Sitapur,2023,65.22,55.35,54.4,49.86
+Uttar Pradesh,Sitapur,2024,66.12,56.83,56.56,50.91
+Uttar Pradesh,Sitapur,2025,67.02,58.3,58.72,51.97
+Uttar Pradesh,Sitapur,2026,67.92,59.78,60.88,53.02
+Uttar Pradesh,Sonbhadra,2010,60.04,37.66,26.65,37.2
+Uttar Pradesh,Sonbhadra,2011,60.72,38.52,27.69,38.55
+Uttar Pradesh,Sonbhadra,2012,61.4,39.38,28.72,39.89
+Uttar Pradesh,Sonbhadra,2013,62.08,40.23,29.76,41.23
+Uttar Pradesh,Sonbhadra,2014,62.76,41.09,32.0,42.57
+Uttar Pradesh,Sonbhadra,2015,63.44,41.94,34.23,43.92
+Uttar Pradesh,Sonbhadra,2016,64.24,42.8,36.47,45.26
+Uttar Pradesh,Sonbhadra,2017,65.04,45.0,38.91,46.6
+Uttar Pradesh,Sonbhadra,2018,65.84,47.2,41.35,47.92
+Uttar Pradesh,Sonbhadra,2019,66.64,49.4,43.8,49.24
+Uttar Pradesh,Sonbhadra,2020,67.44,51.6,46.24,45.74
+Uttar Pradesh,Sonbhadra,2021,68.24,51.6,48.4,48.64
+Uttar Pradesh,Sonbhadra,2022,69.04,53.18,50.56,53.2
+Uttar Pradesh,Sonbhadra,2023,69.84,54.77,52.72,54.26
+Uttar Pradesh,Sonbhadra,2024,70.64,56.35,54.88,55.31
+Uttar Pradesh,Sonbhadra,2025,71.44,57.94,57.04,56.37
+Uttar Pradesh,Sonbhadra,2026,72.24,59.52,59.2,57.42
+Uttar Pradesh,Bahraich,2010,48.29,35.73,20.14,30.4
+Uttar Pradesh,Bahraich,2011,49.07,36.54,21.27,31.75
+Uttar Pradesh,Bahraich,2012,49.85,37.35,22.39,33.09
+Uttar Pradesh,Bahraich,2013,50.63,38.16,23.52,34.43
+Uttar Pradesh,Bahraich,2014,51.41,38.98,25.85,35.77
+Uttar Pradesh,Bahraich,2015,52.19,39.79,28.18,37.12
+Uttar Pradesh,Bahraich,2016,53.09,40.6,30.51,38.46
+Uttar Pradesh,Bahraich,2017,53.99,42.9,33.06,39.8
+Uttar Pradesh,Bahraich,2018,54.89,45.2,35.61,41.12
+Uttar Pradesh,Bahraich,2019,55.79,47.5,38.17,42.44
+Uttar Pradesh,Bahraich,2020,56.69,49.8,40.72,38.94
+Uttar Pradesh,Bahraich,2021,57.59,49.8,42.88,41.84
+Uttar Pradesh,Bahraich,2022,58.49,51.46,45.04,46.4
+Uttar Pradesh,Bahraich,2023,59.39,53.11,47.2,47.46
+Uttar Pradesh,Bahraich,2024,60.29,54.77,49.36,48.51
+Uttar Pradesh,Bahraich,2025,61.19,56.42,51.52,49.57
+Uttar Pradesh,Bahraich,2026,62.09,58.08,53.68,50.62
+Uttar Pradesh,Shravasti,2010,45.96,32.03,15,29.8
+Uttar Pradesh,Shravasti,2011,46.74,32.76,15.96,31.15
+Uttar Pradesh,Shravasti,2012,47.52,33.49,17.16,32.49
+Uttar Pradesh,Shravasti,2013,48.3,34.22,18.37,33.83
+Uttar Pradesh,Shravasti,2014,49.08,34.94,20.77,35.17
+Uttar Pradesh,Shravasti,2015,49.86,35.67,23.18,36.52
+Uttar Pradesh,Shravasti,2016,50.76,36.4,25.58,37.86
+Uttar Pradesh,Shravasti,2017,51.66,38.6,28.23,39.2
+Uttar Pradesh,Shravasti,2018,52.56,40.8,30.87,40.52
+Uttar Pradesh,Shravasti,2019,53.46,43.0,33.52,41.84
+Uttar Pradesh,Shravasti,2020,54.36,45.2,36.16,38.34
+Uttar Pradesh,Shravasti,2021,55.26,45.2,38.32,41.24
+Uttar Pradesh,Shravasti,2022,56.16,46.78,40.48,45.8
+Uttar Pradesh,Shravasti,2023,57.06,48.37,42.64,46.86
+Uttar Pradesh,Shravasti,2024,57.96,49.95,44.8,47.91
+Uttar Pradesh,Shravasti,2025,58.86,51.54,46.96,48.97
+Uttar Pradesh,Shravasti,2026,59.76,53.12,49.12,50.02
+Uttar Pradesh,Balrampur,2010,48.55,35.02,18.16,37.2
+Uttar Pradesh,Balrampur,2011,49.33,35.82,19.31,38.55
+Uttar Pradesh,Balrampur,2012,50.11,36.62,20.47,39.89
+Uttar Pradesh,Balrampur,2013,50.89,37.41,21.62,41.23
+Uttar Pradesh,Balrampur,2014,51.67,38.21,23.98,42.57
+Uttar Pradesh,Balrampur,2015,52.45,39.0,26.34,43.92
+Uttar Pradesh,Balrampur,2016,53.35,39.8,28.69,45.26
+Uttar Pradesh,Balrampur,2017,54.25,42.0,31.28,46.6
+Uttar Pradesh,Balrampur,2018,55.15,44.2,33.87,47.92
+Uttar Pradesh,Balrampur,2019,56.05,46.4,36.45,49.24
+Uttar Pradesh,Balrampur,2020,56.95,48.6,39.04,45.74
+Uttar Pradesh,Balrampur,2021,57.85,48.6,41.2,48.64
+Uttar Pradesh,Balrampur,2022,58.75,50.18,43.36,53.2
+Uttar Pradesh,Balrampur,2023,59.65,51.77,45.52,54.26
+Uttar Pradesh,Balrampur,2024,60.55,53.35,47.68,55.31
+Uttar Pradesh,Balrampur,2025,61.45,54.94,49.84,56.37
+Uttar Pradesh,Balrampur,2026,62.35,56.52,52.0,57.42
+Uttar Pradesh,Chitrakoot,2010,58.58,37.49,25.8,37.2
+Uttar Pradesh,Chitrakoot,2011,59.26,38.34,26.85,38.55
+Uttar Pradesh,Chitrakoot,2012,59.94,39.19,27.9,39.89
+Uttar Pradesh,Chitrakoot,2013,60.62,40.04,28.95,41.23
+Uttar Pradesh,Chitrakoot,2014,61.3,40.9,31.19,42.57
+Uttar Pradesh,Chitrakoot,2015,61.98,41.75,33.44,43.92
+Uttar Pradesh,Chitrakoot,2016,62.78,42.6,35.69,45.26
+Uttar Pradesh,Chitrakoot,2017,63.58,44.8,38.15,46.6
+Uttar Pradesh,Chitrakoot,2018,64.38,47.0,40.6,47.92
+Uttar Pradesh,Chitrakoot,2019,65.18,49.2,43.06,49.24
+Uttar Pradesh,Chitrakoot,2020,65.98,51.4,45.52,45.74
+Uttar Pradesh,Chitrakoot,2021,66.78,51.4,47.68,48.64
+Uttar Pradesh,Chitrakoot,2022,67.58,52.98,49.84,53.2
+Uttar Pradesh,Chitrakoot,2023,68.38,54.57,52.0,54.26
+Uttar Pradesh,Chitrakoot,2024,69.18,56.15,54.16,55.31
+Uttar Pradesh,Chitrakoot,2025,69.98,57.74,56.32,56.37
+Uttar Pradesh,Chitrakoot,2026,70.78,59.32,58.48,57.42
+Bihar,Patna,2010,70.1,49.98,40.81,43.39
+Bihar,Patna,2011,70.68,51.12,41.65,44.76
+Bihar,Patna,2012,71.26,52.26,42.48,46.13
+Bihar,Patna,2013,71.84,53.39,43.32,47.51
+Bihar,Patna,2014,72.42,54.53,45.36,48.88
+Bihar,Patna,2015,73.0,55.66,47.39,50.25
+Bihar,Patna,2016,73.7,56.8,49.43,51.63
+Bihar,Patna,2017,74.4,58.7,51.63,53.0
+Bihar,Patna,2018,75.1,60.6,53.83,54.44
+Bihar,Patna,2019,75.8,62.5,56.04,55.88
+Bihar,Patna,2020,76.5,64.4,58.24,52.38
+Bihar,Patna,2021,77.2,64.4,60.4,55.44
+Bihar,Patna,2022,77.9,65.77,62.56,60.2
+Bihar,Patna,2023,78.6,67.14,64.72,61.35
+Bihar,Patna,2024,79.3,68.5,66.88,62.5
+Bihar,Patna,2025,80.0,69.87,69.04,63.66
+Bihar,Patna,2026,80.7,71.24,71.2,64.81
+Bihar,Gaya,2010,62.99,42.59,30.05,40.59
+Bihar,Gaya,2011,63.67,43.56,31.04,41.96
+Bihar,Gaya,2012,64.35,44.53,32.03,43.33
+Bihar,Gaya,2013,65.03,45.5,33.01,44.71
+Bihar,Gaya,2014,65.71,46.46,35.2,46.08
+Bihar,Gaya,2015,66.39,47.43,37.39,47.45
+Bihar,Gaya,2016,67.19,48.4,39.58,48.83
+Bihar,Gaya,2017,67.99,50.5,41.96,50.2
+Bihar,Gaya,2018,68.79,52.6,44.35,51.64
+Bihar,Gaya,2019,69.59,54.7,46.73,53.08
+Bihar,Gaya,2020,70.39,56.8,49.12,49.58
+Bihar,Gaya,2021,71.19,56.8,51.28,52.64
+Bihar,Gaya,2022,71.99,58.31,53.44,57.4
+Bihar,Gaya,2023,72.79,59.82,55.6,58.55
+Bihar,Gaya,2024,73.59,61.34,57.76,59.7
+Bihar,Gaya,2025,74.39,62.85,59.92,60.86
+Bihar,Gaya,2026,75.19,64.36,62.08,62.01
+Bihar,Muzaffarpur,2010,63.31,41.18,28.92,40.59
+Bihar,Muzaffarpur,2011,63.99,42.12,29.92,41.96
+Bihar,Muzaffarpur,2012,64.67,43.06,30.92,43.33
+Bihar,Muzaffarpur,2013,65.35,43.99,31.93,44.71
+Bihar,Muzaffarpur,2014,66.03,44.93,34.13,46.08
+Bihar,Muzaffarpur,2015,66.71,45.86,36.34,47.45
+Bihar,Muzaffarpur,2016,67.51,46.8,38.54,48.83
+Bihar,Muzaffarpur,2017,68.31,48.9,40.95,50.2
+Bihar,Muzaffarpur,2018,69.11,51.0,43.35,51.64
+Bihar,Muzaffarpur,2019,69.91,53.1,45.76,53.08
+Bihar,Muzaffarpur,2020,70.71,55.2,48.16,49.58
+Bihar,Muzaffarpur,2021,71.51,55.2,50.32,52.64
+Bihar,Muzaffarpur,2022,72.31,56.71,52.48,57.4
+Bihar,Muzaffarpur,2023,73.11,58.22,54.64,58.55
+Bihar,Muzaffarpur,2024,73.91,59.74,56.8,59.7
+Bihar,Muzaffarpur,2025,74.71,61.25,58.96,60.86
+Bihar,Muzaffarpur,2026,75.51,62.76,61.12,62.01
+Bihar,Bhagalpur,2010,62.46,42.42,31.18,40.59
+Bihar,Bhagalpur,2011,63.14,43.38,32.15,41.96
+Bihar,Bhagalpur,2012,63.82,44.34,33.13,43.33
+Bihar,Bhagalpur,2013,64.5,45.31,34.1,44.71
+Bihar,Bhagalpur,2014,65.18,46.27,36.27,46.08
+Bihar,Bhagalpur,2015,65.86,47.24,38.44,47.45
+Bihar,Bhagalpur,2016,66.66,48.2,40.61,48.83
+Bihar,Bhagalpur,2017,67.46,50.3,42.98,50.2
+Bihar,Bhagalpur,2018,68.26,52.4,45.35,51.64
+Bihar,Bhagalpur,2019,69.06,54.5,47.71,53.08
+Bihar,Bhagalpur,2020,69.86,56.6,50.08,49.58
+Bihar,Bhagalpur,2021,70.66,56.6,52.24,52.64
+Bihar,Bhagalpur,2022,71.46,58.11,54.4,57.4
+Bihar,Bhagalpur,2023,72.26,59.62,56.56,58.55
+Bihar,Bhagalpur,2024,73.06,61.14,58.72,59.7
+Bihar,Bhagalpur,2025,73.86,62.65,60.88,60.86
+Bihar,Bhagalpur,2026,74.66,64.16,63.04,62.01
+Bihar,Darbhanga,2010,58.55,39.25,25.8,40.59
+Bihar,Darbhanga,2011,59.23,40.14,26.85,41.96
+Bihar,Darbhanga,2012,59.91,41.03,27.9,43.33
+Bihar,Darbhanga,2013,60.59,41.92,28.95,44.71
+Bihar,Darbhanga,2014,61.27,42.82,31.19,46.08
+Bihar,Darbhanga,2015,61.95,43.71,33.44,47.45
+Bihar,Darbhanga,2016,62.75,44.6,35.69,48.83
+Bihar,Darbhanga,2017,63.55,46.75,38.15,50.2
+Bihar,Darbhanga,2018,64.35,48.9,40.6,51.64
+Bihar,Darbhanga,2019,65.15,51.05,43.06,53.08
+Bihar,Darbhanga,2020,65.95,53.2,45.52,49.58
+Bihar,Darbhanga,2021,66.75,53.2,47.68,52.64
+Bihar,Darbhanga,2022,67.55,54.75,49.84,57.4
+Bihar,Darbhanga,2023,68.35,56.3,52.0,58.55
+Bihar,Darbhanga,2024,69.15,57.84,54.16,59.7
+Bihar,Darbhanga,2025,69.95,59.39,56.32,60.86
+Bihar,Darbhanga,2026,70.75,60.94,58.48,62.01
+Bihar,Nalanda,2010,64.81,42.94,32.32,40.59
+Bihar,Nalanda,2011,65.39,43.92,33.27,41.96
+Bihar,Nalanda,2012,65.97,44.9,34.23,43.33
+Bihar,Nalanda,2013,66.55,45.87,35.18,44.71
+Bihar,Nalanda,2014,67.13,46.85,37.34,46.08
+Bihar,Nalanda,2015,67.71,47.82,39.5,47.45
+Bihar,Nalanda,2016,68.41,48.8,41.65,48.83
+Bihar,Nalanda,2017,69.11,50.95,44.0,50.2
+Bihar,Nalanda,2018,69.81,53.1,46.35,51.64
+Bihar,Nalanda,2019,70.51,55.25,48.69,53.08
+Bihar,Nalanda,2020,71.21,57.4,51.04,49.58
+Bihar,Nalanda,2021,71.91,57.4,53.2,52.64
+Bihar,Nalanda,2022,72.61,58.95,55.36,57.4
+Bihar,Nalanda,2023,73.31,60.5,57.52,58.55
+Bihar,Nalanda,2024,74.01,62.04,59.68,59.7
+Bihar,Nalanda,2025,74.71,63.59,61.84,60.86
+Bihar,Nalanda,2026,75.41,65.14,64.0,62.01
+Bihar,Begusarai,2010,63.03,40.83,28.35,40.59
+Bihar,Begusarai,2011,63.71,41.76,29.36,41.96
+Bihar,Begusarai,2012,64.39,42.69,30.37,43.33
+Bihar,Begusarai,2013,65.07,43.62,31.39,44.71
+Bihar,Begusarai,2014,65.75,44.54,33.6,46.08
+Bihar,Begusarai,2015,66.43,45.47,35.81,47.45
+Bihar,Begusarai,2016,67.23,46.4,38.02,48.83
+Bihar,Begusarai,2017,68.03,48.5,40.44,50.2
+Bihar,Begusarai,2018,68.83,50.6,42.85,51.64
+Bihar,Begusarai,2019,69.63,52.7,45.27,53.08
+Bihar,Begusarai,2020,70.43,54.8,47.68,49.58
+Bihar,Begusarai,2021,71.23,54.8,49.84,52.64
+Bihar,Begusarai,2022,72.03,56.31,52.0,57.4
+Bihar,Begusarai,2023,72.83,57.82,54.16,58.55
+Bihar,Begusarai,2024,73.63,59.34,56.32,59.7
+Bihar,Begusarai,2025,74.43,60.85,58.48,60.86
+Bihar,Begusarai,2026,75.23,62.36,60.64,62.01
+Bihar,Samastipur,2010,57.9,37.66,24.39,40.59
+Bihar,Samastipur,2011,58.58,38.52,25.45,41.96
+Bihar,Samastipur,2012,59.26,39.38,26.52,43.33
+Bihar,Samastipur,2013,59.94,40.23,27.59,44.71
+Bihar,Samastipur,2014,60.62,41.09,29.86,46.08
+Bihar,Samastipur,2015,61.3,41.94,32.13,47.45
+Bihar,Samastipur,2016,62.1,42.8,34.39,48.83
+Bihar,Samastipur,2017,62.9,44.95,36.88,50.2
+Bihar,Samastipur,2018,63.7,47.1,39.36,51.64
+Bihar,Samastipur,2019,64.5,49.25,41.84,53.08
+Bihar,Samastipur,2020,65.3,51.4,44.32,49.58
+Bihar,Samastipur,2021,66.1,51.4,46.48,52.64
+Bihar,Samastipur,2022,66.9,52.95,48.64,57.4
+Bihar,Samastipur,2023,67.7,54.5,50.8,58.55
+Bihar,Samastipur,2024,68.5,56.04,52.96,59.7
+Bihar,Samastipur,2025,69.3,57.59,55.12,60.86
+Bihar,Samastipur,2026,70.1,59.14,57.28,62.01
+Bihar,Araria,2010,50.66,32.03,17.59,35.79
+Bihar,Araria,2011,51.44,32.76,18.75,37.16
+Bihar,Araria,2012,52.22,33.49,19.92,38.53
+Bihar,Araria,2013,53.0,34.22,21.08,39.91
+Bihar,Araria,2014,53.78,34.94,23.44,41.28
+Bihar,Araria,2015,54.56,35.67,25.81,42.65
+Bihar,Araria,2016,55.46,36.4,28.17,44.03
+Bihar,Araria,2017,56.36,38.6,30.77,45.4
+Bihar,Araria,2018,57.26,40.8,33.37,46.84
+Bihar,Araria,2019,58.16,43.0,35.96,48.28
+Bihar,Araria,2020,59.06,45.2,38.56,44.78
+Bihar,Araria,2021,59.96,45.2,40.72,47.84
+Bihar,Araria,2022,60.86,46.78,42.88,52.6
+Bihar,Araria,2023,61.76,48.37,45.04,53.75
+Bihar,Araria,2024,62.66,49.95,47.2,54.9
+Bihar,Araria,2025,63.56,51.54,49.36,56.06
+Bihar,Araria,2026,64.46,53.12,51.52,57.21
+Bihar,Kishanganj,2010,55.09,30.62,15.61,34.79
+Bihar,Kishanganj,2011,55.77,31.32,16.8,36.16
+Bihar,Kishanganj,2012,56.45,32.02,17.99,37.53
+Bihar,Kishanganj,2013,57.13,32.71,19.18,38.91
+Bihar,Kishanganj,2014,57.81,33.41,21.57,40.28
+Bihar,Kishanganj,2015,58.49,34.1,23.97,41.65
+Bihar,Kishanganj,2016,59.29,34.8,26.36,43.03
+Bihar,Kishanganj,2017,60.09,37.05,28.99,44.4
+Bihar,Kishanganj,2018,60.89,39.3,31.62,45.84
+Bihar,Kishanganj,2019,61.69,41.55,34.25,47.28
+Bihar,Kishanganj,2020,62.49,43.8,36.88,43.78
+Bihar,Kishanganj,2021,63.29,43.8,39.04,46.84
+Bihar,Kishanganj,2022,64.09,45.42,41.2,51.6
+Bihar,Kishanganj,2023,64.89,47.04,43.36,52.75
+Bihar,Kishanganj,2024,65.69,48.66,45.52,53.9
+Bihar,Kishanganj,2025,66.49,50.28,47.68,55.06
+Bihar,Kishanganj,2026,67.29,51.9,49.84,56.21
+Bihar,Katihar,2010,52.3,33.79,20.99,40.59
+Bihar,Katihar,2011,53.08,34.56,22.1,41.96
+Bihar,Katihar,2012,53.86,35.33,23.22,43.33
+Bihar,Katihar,2013,54.64,36.1,24.34,44.71
+Bihar,Katihar,2014,55.42,36.86,26.65,46.08
+Bihar,Katihar,2015,56.2,37.63,28.97,47.45
+Bihar,Katihar,2016,57.1,38.4,31.28,48.83
+Bihar,Katihar,2017,58.0,40.65,33.82,50.2
+Bihar,Katihar,2018,58.9,42.9,36.36,51.64
+Bihar,Katihar,2019,59.8,45.15,38.9,53.08
+Bihar,Katihar,2020,60.7,47.4,41.44,49.58
+Bihar,Katihar,2021,61.6,47.4,43.6,52.64
+Bihar,Katihar,2022,62.5,49.02,45.76,57.4
+Bihar,Katihar,2023,63.4,50.64,47.92,58.55
+Bihar,Katihar,2024,64.3,52.26,50.08,59.7
+Bihar,Katihar,2025,65.2,53.88,52.24,60.86
+Bihar,Katihar,2026,66.1,55.5,54.4,62.01
+Bihar,Sitamarhi,2010,52.75,32.38,18.72,40.59
+Bihar,Sitamarhi,2011,53.53,33.12,19.87,41.96
+Bihar,Sitamarhi,2012,54.31,33.86,21.02,43.33
+Bihar,Sitamarhi,2013,55.09,34.59,22.17,44.71
+Bihar,Sitamarhi,2014,55.87,35.33,24.51,46.08
+Bihar,Sitamarhi,2015,56.65,36.06,26.86,47.45
+Bihar,Sitamarhi,2016,57.55,36.8,29.21,48.83
+Bihar,Sitamarhi,2017,58.45,39.0,31.79,50.2
+Bihar,Sitamarhi,2018,59.35,41.2,34.36,51.64
+Bihar,Sitamarhi,2019,60.25,43.4,36.94,53.08
+Bihar,Sitamarhi,2020,61.15,45.6,39.52,49.58
+Bihar,Sitamarhi,2021,62.05,45.6,41.68,52.64
+Bihar,Sitamarhi,2022,62.95,47.18,43.84,57.4
+Bihar,Sitamarhi,2023,63.85,48.77,46.0,58.55
+Bihar,Sitamarhi,2024,64.75,50.35,48.16,59.7
+Bihar,Sitamarhi,2025,65.65,51.94,50.32,60.86
+Bihar,Sitamarhi,2026,66.55,53.52,52.48,62.01
+Bihar,Champaran East,2010,54.91,33.62,19.85,40.59
+Bihar,Champaran East,2011,55.59,34.38,20.99,41.96
+Bihar,Champaran East,2012,56.27,35.14,22.12,43.33
+Bihar,Champaran East,2013,56.95,35.91,23.25,44.71
+Bihar,Champaran East,2014,57.63,36.67,25.58,46.08
+Bihar,Champaran East,2015,58.31,37.44,27.91,47.45
+Bihar,Champaran East,2016,59.11,38.2,30.25,48.83
+Bihar,Champaran East,2017,59.91,40.4,32.8,50.2
+Bihar,Champaran East,2018,60.71,42.6,35.36,51.64
+Bihar,Champaran East,2019,61.51,44.8,37.92,53.08
+Bihar,Champaran East,2020,62.31,47.0,40.48,49.58
+Bihar,Champaran East,2021,63.11,47.0,42.64,52.64
+Bihar,Champaran East,2022,63.91,48.58,44.8,57.4
+Bihar,Champaran East,2023,64.71,50.17,46.96,58.55
+Bihar,Champaran East,2024,65.51,51.75,49.12,59.7
+Bihar,Champaran East,2025,66.31,53.34,51.28,60.86
+Bihar,Champaran East,2026,67.11,54.92,53.44,62.01
+Bihar,Champaran West,2010,54.52,32.03,18.16,40.59
+Bihar,Champaran West,2011,55.2,32.76,19.31,41.96
+Bihar,Champaran West,2012,55.88,33.49,20.47,43.33
+Bihar,Champaran West,2013,56.56,34.22,21.62,44.71
+Bihar,Champaran West,2014,57.24,34.94,23.98,46.08
+Bihar,Champaran West,2015,57.92,35.67,26.34,47.45
+Bihar,Champaran West,2016,58.72,36.4,28.69,48.83
+Bihar,Champaran West,2017,59.52,38.65,31.28,50.2
+Bihar,Champaran West,2018,60.32,40.9,33.87,51.64
+Bihar,Champaran West,2019,61.12,43.15,36.45,53.08
+Bihar,Champaran West,2020,61.92,45.4,39.04,49.58
+Bihar,Champaran West,2021,62.72,45.4,41.2,52.64
+Bihar,Champaran West,2022,63.52,47.02,43.36,57.4
+Bihar,Champaran West,2023,64.32,48.64,45.52,58.55
+Bihar,Champaran West,2024,65.12,50.26,47.68,59.7
+Bihar,Champaran West,2025,65.92,51.88,49.84,60.86
+Bihar,Champaran West,2026,66.72,53.5,52.0,62.01
+Bihar,Gopalganj,2010,64.88,37.31,25.8,40.59
+Bihar,Gopalganj,2011,65.46,38.16,26.85,41.96
+Bihar,Gopalganj,2012,66.04,39.01,27.9,43.33
+Bihar,Gopalganj,2013,66.62,39.86,28.95,44.71
+Bihar,Gopalganj,2014,67.2,40.7,31.19,46.08
+Bihar,Gopalganj,2015,67.78,41.55,33.44,47.45
+Bihar,Gopalganj,2016,68.48,42.4,35.69,48.83
+Bihar,Gopalganj,2017,69.18,44.75,38.15,50.2
+Bihar,Gopalganj,2018,69.88,47.1,40.6,51.64
+Bihar,Gopalganj,2019,70.58,49.45,43.06,53.08
+Bihar,Gopalganj,2020,71.28,51.8,45.52,49.58
+Bihar,Gopalganj,2021,71.98,51.8,47.68,52.64
+Bihar,Gopalganj,2022,72.68,53.49,49.84,57.4
+Bihar,Gopalganj,2023,73.38,55.18,52.0,58.55
+Bihar,Gopalganj,2024,74.08,56.88,54.16,59.7
+Bihar,Gopalganj,2025,74.78,58.57,56.32,60.86
+Bihar,Gopalganj,2026,75.48,60.26,58.48,62.01
+Bihar,Jehanabad,2010,68.68,42.06,33.16,40.59
+Bihar,Jehanabad,2011,69.26,43.02,34.11,41.96
+Bihar,Jehanabad,2012,69.84,43.98,35.05,43.33
+Bihar,Jehanabad,2013,70.42,44.93,36.0,44.71
+Bihar,Jehanabad,2014,71.0,45.89,38.14,46.08
+Bihar,Jehanabad,2015,71.58,46.84,40.28,47.45
+Bihar,Jehanabad,2016,72.28,47.8,42.43,48.83
+Bihar,Jehanabad,2017,72.98,49.9,44.76,50.2
+Bihar,Jehanabad,2018,73.68,52.0,47.09,51.64
+Bihar,Jehanabad,2019,74.38,54.1,49.43,53.08
+Bihar,Jehanabad,2020,75.08,56.2,51.76,49.58
+Bihar,Jehanabad,2021,75.78,56.2,53.92,52.64
+Bihar,Jehanabad,2022,76.48,57.71,56.08,57.4
+Bihar,Jehanabad,2023,77.18,59.22,58.24,58.55
+Bihar,Jehanabad,2024,77.88,60.74,60.4,59.7
+Bihar,Jehanabad,2025,78.58,62.25,62.56,60.86
+Bihar,Jehanabad,2026,79.28,63.76,64.72,62.01
+Bihar,Aurangabad,2010,66.69,39.25,28.63,40.59
+Bihar,Aurangabad,2011,67.27,40.14,29.64,41.96
+Bihar,Aurangabad,2012,67.85,41.03,30.65,43.33
+Bihar,Aurangabad,2013,68.43,41.92,31.66,44.71
+Bihar,Aurangabad,2014,69.01,42.82,33.87,46.08
+Bihar,Aurangabad,2015,69.59,43.71,36.07,47.45
+Bihar,Aurangabad,2016,70.29,44.6,38.28,48.83
+Bihar,Aurangabad,2017,70.99,46.8,40.69,50.2
+Bihar,Aurangabad,2018,71.69,49.0,43.1,51.64
+Bihar,Aurangabad,2019,72.39,51.2,45.51,53.08
+Bihar,Aurangabad,2020,73.09,53.4,47.92,49.58
+Bihar,Aurangabad,2021,73.79,53.4,50.08,52.64
+Bihar,Aurangabad,2022,74.49,54.98,52.24,57.4
+Bihar,Aurangabad,2023,75.19,56.57,54.4,58.55
+Bihar,Aurangabad,2024,75.89,58.15,56.56,59.7
+Bihar,Aurangabad,2025,76.59,59.74,58.72,60.86
+Bihar,Aurangabad,2026,77.29,61.32,60.88,62.01
+Bihar,Supaul,2010,57.6,34.14,22.4,36.39
+Bihar,Supaul,2011,58.28,34.92,23.5,37.76
+Bihar,Supaul,2012,58.96,35.7,24.6,39.13
+Bihar,Supaul,2013,59.64,36.47,25.69,40.51
+Bihar,Supaul,2014,60.32,37.25,27.99,41.88
+Bihar,Supaul,2015,61.0,38.02,30.28,43.25
+Bihar,Supaul,2016,61.8,38.8,32.58,44.63
+Bihar,Supaul,2017,62.6,41.0,35.09,46.0
+Bihar,Supaul,2018,63.4,43.2,37.61,47.44
+Bihar,Supaul,2019,64.2,45.4,40.12,48.88
+Bihar,Supaul,2020,65.0,47.6,42.64,45.38
+Bihar,Supaul,2021,65.8,47.6,44.8,48.44
+Bihar,Supaul,2022,66.6,49.18,46.96,53.2
+Bihar,Supaul,2023,67.4,50.77,49.12,54.35
+Bihar,Supaul,2024,68.2,52.35,51.28,55.5
+Bihar,Supaul,2025,69.0,53.94,53.44,56.66
+Bihar,Supaul,2026,69.8,55.52,55.6,57.81
+Bihar,Madhubani,2010,58.22,35.55,24.1,36.79
+Bihar,Madhubani,2011,58.9,36.36,25.17,38.16
+Bihar,Madhubani,2012,59.58,37.17,26.25,39.53
+Bihar,Madhubani,2013,60.26,37.98,27.32,40.91
+Bihar,Madhubani,2014,60.94,38.78,29.59,42.28
+Bihar,Madhubani,2015,61.62,39.59,31.86,43.65
+Bihar,Madhubani,2016,62.42,40.4,34.13,45.03
+Bihar,Madhubani,2017,63.22,42.6,36.62,46.4
+Bihar,Madhubani,2018,64.02,44.8,39.11,47.84
+Bihar,Madhubani,2019,64.82,47.0,41.59,49.28
+Bihar,Madhubani,2020,65.62,49.2,44.08,45.78
+Bihar,Madhubani,2021,66.42,49.2,46.24,48.84
+Bihar,Madhubani,2022,67.22,50.78,48.4,53.6
+Bihar,Madhubani,2023,68.02,52.37,50.56,54.75
+Bihar,Madhubani,2024,68.82,53.95,52.72,55.9
+Bihar,Madhubani,2025,69.62,55.54,54.88,57.06
+Bihar,Madhubani,2026,70.42,57.12,57.04,58.21

@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+{% block title %}Admin Panel{% endblock %}
+{% block topbar_title %}Admin Panel{% endblock %}
+{% block content %}
+<div class="ph fi flex jb items-c">
+  <div><h1 class="ph-title">Admin Panel</h1><p class="ph-sub">Manage datasets, review citizen reports, and manage users.</p></div>
+  <span class="badge b-admin" style="font-size:13px;padding:6px 14px">⚙️ Admin</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:22px" class="fi1">
+  <div class="kpi-card kpi-b"><div class="kpi-lbl">Datasets</div><div class="kpi-val">{{ stats.total_records|default(0) }}</div><div class="kpi-sub">Total risk records</div></div>
+  <div class="kpi-card kpi-a"><div class="kpi-lbl">Pending Reports</div><div class="kpi-val" style="color:var(--a)">{{ stats.pending }}</div><div class="kpi-sub">Awaiting review</div></div>
+  <div class="kpi-card kpi-g"><div class="kpi-lbl">Users</div><div class="kpi-val">{{ stats.total_users }}</div><div class="kpi-sub">Registered accounts</div></div>
+</div>
+<div class="tab-bar fi2">
+  <button class="tab-btn act" onclick="sw('datasets',this)"><i class="fa fa-database" style="margin-right:6px"></i>Datasets</button>
+  <button class="tab-btn" onclick="sw('reports',this)"><i class="fa fa-flag" style="margin-right:6px"></i>Reports {% if stats.pending>0 %}<span style="background:var(--r);color:#fff;border-radius:20px;padding:1px 7px;font-size:11px;margin-left:5px">{{stats.pending}}</span>{% endif %}</button>
+  <button class="tab-btn" onclick="sw('users',this)"><i class="fa fa-users" style="margin-right:6px"></i>Users</button>
+</div>
+
+<div id="tab-datasets" class="tab-pane act fi3">
+  <div class="card mb4">
+    <div class="card-h"><div class="card-t">📤 Upload New Dataset</div></div>
+    <div class="card-b">
+      <form method="POST" action="{{ url_for('upload_dataset') }}" enctype="multipart/form-data">
+        <div class="fr">
+          <div class="fg"><label class="fl">Name *</label><input type="text" name="name" class="fc" required></div>
+          <div class="fg"><label class="fl">CSV File *</label><input type="file" name="file" class="fc" accept=".csv" required></div>
+        </div>
+        <div class="fr">
+          <div class="fg"><label class="fl">Source</label><input type="text" name="source" class="fc" placeholder="e.g. data.gov.in"></div>
+          <div class="fg"><label class="fl">Domain</label><input type="text" name="domain" class="fc" placeholder="e.g. Healthcare"></div>
+        </div>
+        <div class="fg"><label class="fl">Description</label><input type="text" name="description" class="fc" placeholder="Brief description…"></div>
+        <button type="submit" class="btn btn-p btn-sm"><i class="fa fa-upload"></i> Upload</button>
+      </form>
+    </div>
+  </div>
+  {% for ds in datasets %}
+  <div class="card mb4">
+    <div class="card-h">
+      <div><div class="card-t">{{ ds['name'] }}</div><div class="card-sub">{{ ds['row_count'] }} rows · {{ ds['uploaded_at'][:10] }} {% if ds['is_official'] %}<span class="badge b-official">Official</span>{% endif %}</div></div>
+      <div style="display:flex;gap:6px">
+        <a href="{{ url_for('explorer_detail',dataset_id=ds['id']) }}" class="btn btn-o btn-sm"><i class="fa fa-eye"></i></a>
+        <a href="{{ url_for('download_dataset',dataset_id=ds['id']) }}" class="btn btn-ghost btn-sm"><i class="fa fa-download"></i></a>
+        <button type="button" class="btn btn-sm" style="background:var(--r-l);color:var(--r);border:1px solid #FCA5A5" onclick="confirmDelete({{ ds['id'] }}, '{{ ds['name']|replace("'","\\'")|truncate(40) }}')" ><i class="fa fa-trash"></i></button>
+      </div>
+    </div>
+    <div class="card-b">
+      <p style="font-size:13px;color:var(--ts);margin-bottom:14px"><strong>Columns:</strong> <span style="color:var(--tm)">{{ ds['columns']|clean_cols|truncate(120) }}</span></p>
+      {% set col_str = ds['columns']|clean_cols|replace(' ','') %}
+      {% set cols = col_str.split(',') if col_str else [] %}
+      <div style="background:var(--surf2);border:1px solid var(--b);border-radius:var(--rads);padding:16px">
+        <div style="font-size:13px;font-weight:700;color:var(--th);margin-bottom:10px">⚙️ Run Welfare Analysis — map columns to indicators (higher column value = better welfare)</div>
+        <form method="POST" action="{{ url_for('analyze_dataset',dataset_id=ds['id']) }}">
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px">
+            {% for fn,fl in [('col_state','State Column'),('col_district','District Column'),('col_year','Year Column')] %}
+            <div class="fg" style="margin:0"><label class="fl" style="font-size:11px">{{fl}}</label><select name="{{fn}}" class="fc" style="font-size:12px"><option value="">— optional —</option>{% for col in cols if col.strip() %}<option>{{col.strip()}}</option>{% endfor %}</select></div>
+            {% endfor %}
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px">
+            {% for i,def in [(1,INDICATOR_LABELS.indicator_1),(2,INDICATOR_LABELS.indicator_2),(3,INDICATOR_LABELS.indicator_3),(4,INDICATOR_LABELS.indicator_4)] %}
+            <div>
+              <div class="fg" style="margin-bottom:5px"><label class="fl" style="font-size:11px">Indicator {{i}} Column</label><select name="col_i{{i}}" class="fc" style="font-size:12px"><option value="">— skip —</option>{% for col in cols if col.strip() %}<option>{{col.strip()}}</option>{% endfor %}</select></div>
+              <input type="text" name="name_i{{i}}" class="fc" style="font-size:11px" placeholder="{{def}}" value="{{def}}">
+            </div>
+            {% endfor %}
+          </div>
+          <button type="submit" class="btn btn-sm" style="background:var(--t);color:#fff"><i class="fa fa-calculator"></i> Run Analysis</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  {% else %}<div class="card"><div class="card-b"><div class="empty"><i class="fa fa-database"></i><h3>No datasets</h3></div></div></div>{% endfor %}
+</div>
+
+<div id="tab-reports" class="tab-pane">
+
+  {% if report_by_cat or report_by_sev %}
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:18px">
+    {% for cat, icon in [('Education','📚'),('Healthcare','🏥'),('Food Security','🌾'),('Employment','💼')] %}
+    <div class="kpi-card kpi-b" style="padding:14px 16px">
+      <div class="kpi-lbl">{{ icon }} {{ cat }}</div>
+      <div class="kpi-val" style="font-size:24px">{{ report_by_cat.get(cat, 0) }}</div>
+      <div class="kpi-sub">reports</div>
+    </div>
+    {% endfor %}
+    <div class="kpi-card kpi-r" style="padding:14px 16px">
+      <div class="kpi-lbl">🔴 High Severity</div>
+      <div class="kpi-val" style="font-size:24px;color:var(--r)">{{ report_by_sev.get('High', 0) }}</div>
+      <div class="kpi-sub">urgent reports</div>
+    </div>
+    <div class="kpi-card kpi-a" style="padding:14px 16px">
+      <div class="kpi-lbl">🟡 Medium Severity</div>
+      <div class="kpi-val" style="font-size:24px;color:var(--a)">{{ report_by_sev.get('Medium', 0) }}</div>
+      <div class="kpi-sub">reports</div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if high_districts %}
+  <div class="ib ib-r mb4" style="display:flex;align-items:flex-start;gap:12px">
+    <i class="fa fa-triangle-exclamation" style="color:var(--r);font-size:18px;flex-shrink:0;margin-top:2px"></i>
+    <div>
+      <h4 style="margin-bottom:6px">⚠️ Districts with Multiple High-Severity Reports</h4>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        {% for d in high_districts %}
+        <span style="background:var(--r-l);color:var(--r);border:1px solid #FCA5A5;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700">
+          {{ d.district }}, {{ d.state }} — {{ d.n }} reports
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="card">
+    <div class="card-h" style="flex-wrap:wrap;gap:10px">
+      <div>
+        <div class="card-t">Citizen Reports</div>
+        <div class="card-sub">{{ reports|length }} shown{% if cat_filter or sev_filter %} (filtered){% endif %}</div>
+      </div>
+      
+      <form method="GET" action="{{ url_for('admin') }}" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <input type="hidden" name="_tab" value="reports">
+        <select name="cat_filter" class="fc" style="font-size:12px;padding:5px 10px;width:160px" onchange="this.form.submit()">
+          <option value="">All Categories</option>
+          {% for c in ['Education','Healthcare','Food Security','Employment'] %}
+          <option value="{{ c }}" {% if c == cat_filter %}selected{% endif %}>{{ c }}</option>
+          {% endfor %}
+        </select>
+        <select name="sev_filter" class="fc" style="font-size:12px;padding:5px 10px;width:140px" onchange="this.form.submit()">
+          <option value="">All Severities</option>
+          {% for s in ['Low','Medium','High'] %}
+          <option value="{{ s }}" {% if s == sev_filter %}selected{% endif %}>{{ s }}</option>
+          {% endfor %}
+        </select>
+        {% if cat_filter or sev_filter %}
+        <a href="{{ url_for('admin') }}#reports" class="btn btn-ghost btn-sm"><i class="fa fa-xmark"></i> Clear</a>
+        {% endif %}
+      </form>
+    </div>
+
+    <div class="card-b" style="padding:0">
+      {% if reports %}
+      <div class="tw"><table>
+        <thead>
+          <tr>
+            <th>#</th><th>State</th><th>District</th>
+            <th>Category</th><th>Severity</th><th>Impact</th>
+            <th>By</th><th>Status</th><th>Date</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for rpt in reports %}
+        {% set sev_color = '#EF4444' if rpt['severity']=='High' else '#F59E0B' if rpt['severity']=='Medium' else '#10B981' %}
+        <tr>
+          <td style="color:var(--tm);font-size:12px">{{ rpt['id'] }}</td>
+          <td style="font-size:13px">{{ rpt['state'] }}</td>
+          <td style="font-weight:600;font-size:13px">{{ rpt['district'] }}</td>
+          <td style="font-size:12px">
+            {% set cat_icons = {'Education':'📚','Healthcare':'🏥','Food Security':'🌾','Employment':'💼'} %}
+            {% if rpt['category'] %}
+            <span style="background:var(--p-l);color:var(--p);padding:2px 8px;border-radius:20px;font-size:11px;font-weight:700">
+              {{ cat_icons.get(rpt['category'], '📋') }} {{ rpt['category'] }}
+            </span>
+            {% else %}—{% endif %}
+          </td>
+          <td>
+            {% if rpt['severity'] %}
+            <span style="background:{{ sev_color }}18;color:{{ sev_color }};border:1px solid {{ sev_color }}40;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:700">
+              {{ '🔴' if rpt['severity']=='High' else '🟡' if rpt['severity']=='Medium' else '🟢' }} {{ rpt['severity'] }}
+            </span>
+            {% else %}—{% endif %}
+          </td>
+          <td style="font-size:12px;color:var(--ts)">
+            {{ rpt['impact'] or rpt['issue_type'][:20] if rpt['impact'] or rpt['issue_type'] else '—' }}
+          </td>
+          <td style="font-size:12px;color:var(--tm)">{{ rpt['username'] or 'Anon' }}</td>
+          <td><span class="badge b-{{ rpt['status'] }}">{{ rpt['status'].title() }}</span></td>
+          <td style="font-size:12px;color:var(--tm)">{{ rpt['submitted_at'][:10] }}</td>
+          <td>
+            <form method="POST" action="{{ url_for('update_report_status',rid=rpt['id']) }}" style="display:flex;flex-direction:column;gap:4px;min-width:150px">
+              <select name="status" class="fc" style="font-size:12px;padding:4px 8px">
+                {% for s in ['pending','reviewed','resolved'] %}
+                <option value="{{ s }}" {% if s==rpt['status'] %}selected{% endif %}>{{ s.title() }}</option>
+                {% endfor %}
+              </select>
+              <input type="text" name="admin_note" class="fc" style="font-size:11px;padding:3px 7px" placeholder="Note for citizen…" value="{{ rpt['admin_note'] or '' }}">
+              <button type="submit" class="btn btn-p btn-sm" style="font-size:11px">Save</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table></div>
+      {% else %}
+      <div class="empty"><i class="fa fa-flag"></i><p>No reports{% if cat_filter or sev_filter %} matching current filters{% endif %}.</p></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div id="tab-users" class="tab-pane">
+  <div class="card">
+    <div class="card-h"><div class="card-t">Users</div><span class="tc-m ts-sm">{{ users|length }}</span></div>
+    <div class="card-b" style="padding:0"><div class="tw"><table><thead><tr><th>#</th><th>Username</th><th>Email</th><th>Account Type</th><th>Role</th><th>State</th><th>Joined</th></tr></thead><tbody>
+    {% for u in users %}
+    {% set role=ROLES.get(u['user_type'] or 'citizen',ROLES.citizen) %}
+    <tr>
+      <td style="color:var(--tm)">{{u['id']}}</td>
+      <td style="font-weight:700">{{u['username']}}</td>
+      <td style="color:var(--ts);font-size:13px">{{u['email']}}</td>
+      <td><span class="badge b-{{u['user_type'] or 'citizen'}}">{{role.icon}} {{role.label}}</span></td>
+      <td><span class="badge b-{{u['role']}}">{{u['role'].title()}}</span></td>
+      <td style="font-size:13px;color:var(--ts)">{{u['state'] or '—'}}</td>
+      <td style="font-size:12px;color:var(--tm)">{{u['created_at'][:10]}}</td>
+    </tr>
+    {% endfor %}
+    </tbody></table></div></div>
+  </div>
+</div>
+{% endblock %}
+
+<div id="deleteModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center">
+  <div style="background:var(--surf);border-radius:var(--radl);padding:28px 32px;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.3)">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+      <div style="width:42px;height:42px;background:var(--r-l);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fa fa-triangle-exclamation" style="color:var(--r);font-size:18px"></i></div>
+      <div>
+        <div style="font-family:var(--fontd);font-size:17px;font-weight:800;color:var(--th)">Delete Dataset</div>
+        <div style="font-size:13px;color:var(--ts)">This action cannot be undone</div>
+      </div>
+    </div>
+    <p style="font-size:14px;color:var(--tb);margin-bottom:8px">You are about to permanently delete:</p>
+    <div id="deleteDatasetName" style="font-weight:700;font-size:15px;color:var(--r);background:var(--r-l);padding:10px 14px;border-radius:8px;margin-bottom:16px"></div>
+    <p style="font-size:13px;color:var(--ts);margin-bottom:20px">All associated welfare analysis records will also be deleted. CSV file will be removed from storage.</p>
+    <div style="display:flex;gap:10px;justify-content:flex-end">
+      <button onclick="closeDeleteModal()" class="btn btn-ghost btn-sm">Cancel</button>
+      <form id="deleteForm" method="POST" style="margin:0">
+        <button type="submit" class="btn btn-sm" style="background:#DC2626;color:#fff;border:none"><i class="fa fa-trash"></i> Delete Permanently</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% block extra_js %}
+<script>
+function sw(n,btn){
+  document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('act'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('act'));
+  document.getElementById('tab-'+n).classList.add('act');
+  btn.classList.add('act');
+}
+if(window.location.hash==='#reports') document.querySelectorAll('.tab-btn')[1].click();
+
+function confirmDelete(id, name){
+  document.getElementById('deleteDatasetName').textContent = name;
+  document.getElementById('deleteForm').action = '/admin/dataset/'+id+'/delete';
+  const modal = document.getElementById('deleteModal');
+  modal.style.display = 'flex';
+  modal.addEventListener('click', function(e){ if(e.target===modal) closeDeleteModal(); }, {once:true});
+}
+function closeDeleteModal(){
+  document.getElementById('deleteModal').style.display = 'none';
+}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeDeleteModal(); });
+</script>
+{% endblock %}

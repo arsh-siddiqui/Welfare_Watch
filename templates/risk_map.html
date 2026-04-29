@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}India Welfare Map{% endblock %}
+{% block topbar_title %}India Welfare Map{% endblock %}
+{% block content %}
+<div class="ph fi" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px">
+  <div>
+    <h1 class="ph-title">India Welfare Map</h1>
+    <p class="ph-sub">Hover over any dot for details. Click to view profile. <strong>Higher score = better welfare delivery.</strong></p>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <span style="font-size:13px;font-weight:600;color:var(--ts)">View: <span id="viewModeLabel">State Level</span></span>
+    <button id="toggleViewBtn" class="btn btn-ghost btn-sm"><i class="fa fa-map"></i> District View</button>
+  </div>
+</div>
+<div class="map-legend mb4 fi1">
+  <span style="font-size:13px;font-weight:700;color:var(--ts)">Welfare Score:</span>
+  <div class="ml-item"><div class="ml-dot" style="background:#10B981"></div><span>🌟 80–100 Excellent</span></div>
+  <div class="ml-item"><div class="ml-dot" style="background:#3B82F6"></div><span>✅ 60–79 Good</span></div>
+  <div class="ml-item"><div class="ml-dot" style="background:#F59E0B"></div><span>⚠️ 40–59 Moderate</span></div>
+  <div class="ml-item"><div class="ml-dot" style="background:#F97316"></div><span>🔶 20–39 Weak</span></div>
+  <div class="ml-item"><div class="ml-dot" style="background:#EF4444"></div><span>🚨 0–19 Critical</span></div>
+  <span style="margin-left:auto;font-size:12px;color:var(--tm)">💡 State view: click state → District view: click district</span>
+</div>
+<div class="card fi2 mb4" style="position:relative">
+  <div id="district-loading" style="display:none;position:absolute;inset:0;background:rgba(255,255,255,.85);z-index:999;align-items:center;justify-content:center;flex-direction:column;gap:12px;border-radius:var(--radl)">
+    <div style="width:36px;height:36px;border:3px solid var(--p);border-top-color:transparent;border-radius:50%;animation:spin .7s linear infinite"></div>
+    <span style="font-size:13px;font-weight:600;color:var(--ts)">Loading 524 district dots…</span>
+  </div>
+  <div class="card-b" style="padding:14px"><div id="india-map"></div></div>
+</div>
+<div class="card fi3">
+  <div class="card-h"><div><div class="card-t">All States & UTs — Welfare Rankings</div><div class="card-sub">Sorted best first · Higher score = better welfare delivery</div></div><a href="{{ url_for('leaderboard') }}" class="btn btn-ghost btn-sm">Full rankings →</a></div>
+  <div class="card-b" style="padding:0"><div class="tw"><table>
+    <thead><tr><th>State / UT</th><th>Welfare Score</th><th>Category</th><th>Districts</th></tr></thead>
+    <tbody id="stateTableBody"></tbody>
+  </table></div></div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{{ url_for('static',filename='js/map.js') }}"></script>
+<script>initMap({{ state_data|safe }});</script>
+<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+{% endblock %}

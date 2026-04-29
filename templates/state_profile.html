@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}{{ state_name }}{% endblock %}
+{% block topbar_title %}{{ state_name }} — Welfare Profile{% endblock %}
+{% block content %}
+<div class="ph fi flex jb items-c" style="flex-wrap:wrap;gap:12px">
+  <div><h1 class="ph-title">{{ state_name }}</h1><p class="ph-sub">Welfare performance across {{ districts|length }} districts. Higher score = better delivery.</p></div>
+  <div style="display:flex;gap:8px">
+    <a href="{{ url_for('risk_map') }}" class="btn btn-o btn-sm"><i class="fa fa-arrow-left"></i> Back to Map</a>
+    <a href="{{ url_for('report') }}" class="btn btn-sm" style="background:var(--t);color:#fff"><i class="fa fa-flag"></i> Report Issue</a>
+  </div>
+</div>
+
+<div class="fi1" style="background:linear-gradient(135deg,#0A1628,#1a2f50);border-radius:var(--rad);padding:26px 32px;margin-bottom:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;box-shadow:var(--shm)">
+  <div>
+    <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.7);margin-bottom:8px">Welfare Score — {{ state_name }}</div>
+    <div style="display:flex;align-items:baseline;gap:8px">
+      <div style="font-family:var(--fontd);font-size:68px;font-weight:800;line-height:1;color:{{ wl.color }}">{{ state_avg }}</div>
+      <div style="font-size:20px;color:rgba(255,255,255,.5)">/100</div>
+    </div>
+    <div style="font-size:17px;font-weight:700;color:{{ wl.color }};margin-top:6px">{{ wl.icon }} {{ wl.label }}</div>
+    <div style="margin-top:10px;font-size:13px;color:rgba(255,255,255,.6);max-width:400px;line-height:1.6">{{ wl.description }}</div>
+  </div>
+  <div style="text-align:right;min-width:180px">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:rgba(255,255,255,.5);margin-bottom:12px">Quick Actions</div>
+    <a href="{{ url_for('compare') }}" class="btn btn-o btn-sm" style="display:block;margin-bottom:8px;text-align:center"><i class="fa fa-scale-balanced"></i> Compare Districts</a>
+    <a href="{{ url_for('leaderboard') }}" class="btn btn-o btn-sm" style="display:block;text-align:center"><i class="fa fa-trophy"></i> State Rankings</a>
+  </div>
+</div>
+
+<div class="cg fi2">
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">Districts by Welfare Score</div><div class="card-sub">Higher = better welfare delivery · Sorted best first</div></div></div>
+    <div class="card-b" style="padding:0"><div class="tw" style="max-height:440px;overflow-y:auto"><table>
+      <thead><tr><th>Rank</th><th>District</th><th>Score</th><th>Category</th><th>Analysis</th></tr></thead>
+      <tbody>
+      {% for row in districts %}
+      {% set wld = welfare_label(row["avg"]) %}
+      <tr>
+        <td style="font-family:var(--fontd);font-weight:700;color:var(--tm)">{{ loop.index }}</td>
+        <td style="font-weight:600;color:var(--th)">{{ row["district"] }}</td>
+        <td>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="flex:1;background:var(--surf2);border-radius:20px;height:6px">
+              <div style="width:{{ row["avg"] }}%;background:{{ wld.color }};border-radius:20px;height:6px;max-width:100%"></div>
+            </div>
+            <span style="font-family:var(--fontd);font-weight:800;font-size:13px;color:{{ wld.color }}">{{ row["avg"] }}</span>
+          </div>
+        </td>
+        <td><span class="badge b-{{ wld.cls }}">{{ wld.icon }} {{ wld.label }}</span></td>
+        <td style="padding:11px 16px"><a href="{{ url_for('district_commentary', district_name=row['district']) }}" style="font-size:12px;color:var(--p);font-weight:600;white-space:nowrap"><i class="fa fa-comment-dots" style="margin-right:4px"></i>Why?</a></td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">Welfare Trend</div><div class="card-sub">Rising = improving welfare delivery</div></div></div>
+    <div class="card-b"><canvas id="stateTrend" height="240"></canvas>
+    <div style="margin-top:12px;padding:12px;background:var(--surf2);border-radius:var(--rads);font-size:13px;color:var(--ts)">📈 A rising trend means welfare programmes are improving in {{ state_name }}.</div></div>
+  </div>
+</div>
+
+{% if state_reports %}
+<div class="card fi3">
+  <div class="card-h"><div><div class="card-t">Recent Citizen Reports from {{ state_name }}</div></div><a href="{{ url_for('report') }}" class="btn btn-sm" style="background:var(--t);color:#fff">+ Report</a></div>
+  <div class="card-b" style="padding-top:12px">
+    {% for rpt in state_reports %}
+    <div style="padding:12px 14px;background:var(--surf2);border-radius:var(--rads);border:1px solid var(--b);margin-bottom:8px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-weight:700;font-size:13px;color:var(--th)">{{ rpt["scheme"] }}</span><span class="badge b-{{ rpt['status'] }}">{{ rpt["status"].title() }}</span></div>
+      <div style="font-size:12px;color:var(--ts)"><i class="fa fa-location-dot" style="color:var(--p);margin-right:4px"></i>{{ rpt["district"] }} · {{ rpt["issue_type"][:40] }} · {{ rpt["submitted_at"][:10] }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+{% block extra_js %}
+<script>
+const t={{ trend|safe }};
+new Chart(document.getElementById("stateTrend"),{type:"line",data:{labels:t.years,datasets:[{label:"Welfare Score",data:t.scores,borderColor:"{{ wl.color }}",backgroundColor:"{{ wl.color }}18",fill:true,tension:.4,borderWidth:3,pointRadius:6,pointBackgroundColor:"{{ wl.color }}",pointBorderColor:"#fff",pointBorderWidth:2,spanGaps:true}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{grid:{color:"rgba(226,232,240,.6)"},ticks:{font:{family:"Inter",size:12}}},y:{min:0,max:100,grid:{color:"rgba(226,232,240,.6)"},ticks:{font:{family:"Inter",size:12},callback:v=>v+"/100"}}},animation:{duration:900}}});
+</script>
+{% endblock %}

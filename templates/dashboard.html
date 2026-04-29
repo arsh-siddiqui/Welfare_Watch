@@ -1,0 +1,464 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block topbar_title %}Welfare Dashboard{% endblock %}
+{% block content %}
+
+<div class="ph fi flex jb items-c" style="flex-wrap:wrap;gap:12px">
+  <div>
+    <h1 class="ph-title">Welfare Dashboard</h1>
+    <p class="ph-sub">Monitoring {{ total_states }} states & {{ total_districts }} districts across 2018–2026. <strong>Higher score = better welfare delivery.</strong></p>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+    <form method="GET" style="margin:0;display:flex;align-items:center;gap:8px">
+      <span style="font-size:13px;color:var(--ts);font-weight:600">Year:</span>
+      <select name="year" class="fc" style="width:100px;font-size:13px;padding:7px 10px" onchange="this.form.submit()">
+        {% for y in years_avail %}<option value="{{ y }}" {% if y==sel_year %}selected{% endif %}>{{ y }}</option>{% endfor %}
+      </select>
+      {% if sel_ds %}<input type="hidden" name="dataset" value="{{ sel_ds }}">{% endif %}
+    </form>
+    {% if datasets %}
+    <form method="GET" style="margin:0">
+      <select name="dataset" class="fc" style="min-width:200px;font-size:13px" onchange="this.form.submit()">
+        <option value="">All Datasets Combined</option>
+        {% for ds in datasets %}<option value="{{ ds['id'] }}" {% if sel_ds==ds['id'] %}selected{% endif %}>{{ ds['name']|truncate(42) }}</option>{% endfor %}
+      </select>
+      {% if sel_year != latest_year %}<input type="hidden" name="year" value="{{ sel_year }}">{% endif %}
+    </form>
+    {% endif %}
+  </div>
+</div>
+
+<div class="fi1 dash-hero">
+  <div class="dash-hero-main">
+    <div class="dash-hero-label">🇮🇳 National Welfare Score ({{ sel_year }})</div>
+    <div class="dash-hero-score">
+      <span class="count-up-dash" data-target="{{ nat_avg }}">{{ nat_avg }}</span><span class="dash-hero-denom">/100</span>
+    </div>
+    <div class="dash-hero-tag" style="color:{{ wl.color }}">{{ wl.icon }} {{ wl.label }}</div>
+    <div class="dash-hero-meter">
+      <div class="score-meter"><div class="score-needle" style="left:{{ nat_avg }}%"></div></div>
+      <div class="score-labels"><span>0</span><span>20</span><span>40</span><span>60</span><span>80</span><span>100</span></div>
+    </div>
+    <div class="dash-hero-guide">
+      {% for lo,hi,label,color,cls,desc in SCORE_BANDS %}
+      <span class="score-pill" style="background:{{ color }}18;color:{{ color }};border-color:{{ color }}40">{{ lo }}-{{ hi }} {{ label }}</span>
+      {% endfor %}
+    </div>
+    <div class="dash-hero-actions">
+      <a href="{{ url_for('export_dashboard') }}" class="btn btn-o btn-sm"><i class="fa fa-download"></i> Export CSV</a>
+      <a href="{{ url_for('leaderboard') }}" class="btn btn-o btn-sm"><i class="fa fa-trophy"></i> Rankings</a>
+    </div>
+  </div>
+</div>
+
+{% if ind_avgs %}
+<div class="indicator-spotlight fi2">
+  {% for icon,key,score,lbl in [('📚','i1',ind_avgs['i1'],INDICATOR_LABELS.indicator_1),('🏥','i2',ind_avgs['i2'],INDICATOR_LABELS.indicator_2),('🌾','i3',ind_avgs['i3'],INDICATOR_LABELS.indicator_3),('💼','i4',ind_avgs['i4'],INDICATOR_LABELS.indicator_4)] %}
+  {% set iwl = welfare_label(score or 0) %}
+  <div class="indicator-spot-card">
+    <div class="indicator-spot-head">
+      <span class="indicator-spot-ico">{{ icon }}</span>
+      <div class="indicator-spot-label">{{ lbl }}</div>
+      <span class="indicator-spot-tag" style="color:{{ iwl.color }};background:{{ iwl.color }}20">{{ iwl.label }}</span>
+    </div>
+    <div class="indicator-spot-score" style="color:{{ iwl.color }}">{{ score or 0 }}<span>/100</span></div>
+    <div class="indicator-spot-bar"><div style="width:{{ score or 0 }}%;background:{{ iwl.color }}"></div></div>
+    <div class="indicator-spot-links">
+      <a href="{{ url_for('trends') }}" class="btn btn-ghost btn-sm">Trend</a>
+      <a href="{{ url_for('risk_map') }}" class="btn btn-ghost btn-sm">Map</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if corr_insights %}
+<div class="card fi2 mb4" style="border-left:4px solid var(--v)">
+  <div class="card-h">
+    <div>
+      <div class="card-t" style="display:flex;align-items:center;gap:8px">
+        <i class="fa fa-chart-bar" style="color:var(--v)"></i> Key Indicator Insights ({{ sel_year }})
+      </div>
+      <div class="card-sub">Auto-computed correlations between welfare indicators</div>
+    </div>
+    <span style="font-size:11px;background:var(--v-l);color:var(--v);padding:4px 10px;border-radius:20px;font-weight:700">AI Insights</span>
+  </div>
+  <div class="card-b" style="padding-top:12px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px">
+      {% for ins in corr_insights %}
+      <div style="padding:14px 16px;background:{{ ins.color }}08;border:1px solid {{ ins.color }}30;border-radius:var(--rads)">
+        <div style="font-size:13px;font-weight:700;color:var(--th);margin-bottom:6px">{{ ins.pair }}</div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="font-family:var(--fontd);font-size:24px;font-weight:800;color:{{ ins.color }}">{{ ins.value }}</div>
+          <div>
+            <div style="font-size:12px;font-weight:700;color:{{ ins.color }}">{{ ins.strength|capitalize }} {{ ins.direction }}</div>
+            <div style="font-size:11px;color:var(--ts)">correlation coefficient</div>
+          </div>
+        </div>
+        <div style="margin-top:8px;background:{{ ins.color }}20;border-radius:20px;height:5px">
+          <div style="width:{{ (ins.value|abs * 100)|round }}%;background:{{ ins.color }};height:5px;border-radius:20px;max-width:100%"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div style="margin-top:10px;font-size:12px;color:var(--tm)">
+      <i class="fa fa-circle-info"></i> Correlation ranges −1 to +1 · Positive = both indicators improve together · Negative = one improves as other declines
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if key_insights %}
+<div class="card fi2 mb4" style="border-left:4px solid var(--p)">
+  <div class="card-h" style="padding-bottom:4px">
+    <div>
+      <div class="card-t" style="display:flex;align-items:center;gap:8px">
+        <i class="fa fa-lightbulb" style="color:var(--a)"></i> Key Insights — {{ sel_year }}
+      </div>
+      <div class="card-sub">Auto-generated from current year data</div>
+    </div>
+    <span title="Higher score = better welfare performance" style="font-size:11px;background:var(--p-l);color:var(--p);padding:4px 10px;border-radius:20px;font-weight:700;cursor:help"><i class="fa fa-circle-info"></i> Higher = Better</span>
+  </div>
+  <div class="card-b" style="padding-top:10px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
+
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:var(--p-l);border-radius:var(--rads);border:1px solid rgba(37,99,235,.2)">
+        <div style="width:32px;height:32px;background:var(--p);border-radius:8px;display:grid;place-items:center;flex-shrink:0"><i class="fa fa-chart-line" style="color:#fff;font-size:13px"></i></div>
+        <div>
+          <div style="font-size:11px;font-weight:700;color:var(--p);text-transform:uppercase;letter-spacing:.05em">National Avg Score</div>
+          <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--th)">{{ key_insights.nat_avg }}/100</div>
+          <div style="font-size:12px;color:var(--ts)">All districts · {{ sel_year }}</div>
+        </div>
+      </div>
+
+      {% set yoy = key_insights.yoy_change %}
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:{% if yoy >= 0 %}var(--g-l){% else %}var(--r-l){% endif %};border-radius:var(--rads);border:1px solid {% if yoy >= 0 %}rgba(16,185,129,.25){% else %}rgba(239,68,68,.25){% endif %}">
+        <div style="width:32px;height:32px;background:{% if yoy >= 0 %}var(--g){% else %}var(--r){% endif %};border-radius:8px;display:grid;place-items:center;flex-shrink:0"><i class="fa fa-{% if yoy >= 0 %}arrow-trend-up{% else %}arrow-trend-down{% endif %}" style="color:#fff;font-size:13px"></i></div>
+        <div>
+          <div style="font-size:11px;font-weight:700;color:{% if yoy >= 0 %}var(--g){% else %}var(--r){% endif %};text-transform:uppercase;letter-spacing:.05em">Vs Last Year</div>
+          <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--th)">{% if yoy > 0 %}+{% endif %}{{ yoy }} pts</div>
+          <div style="font-size:12px;color:var(--ts)">{% if yoy >= 0 %}Improving ↑{% else %}Declining ↓{% endif %} vs {{ sel_year - 1 }}</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:var(--r-l);border-radius:var(--rads);border:1px solid rgba(239,68,68,.2)">
+        <div style="width:32px;height:32px;background:var(--r);border-radius:8px;display:grid;place-items:center;flex-shrink:0"><i class="fa fa-triangle-exclamation" style="color:#fff;font-size:13px"></i></div>
+        <div>
+          <div style="font-size:11px;font-weight:700;color:var(--r);text-transform:uppercase;letter-spacing:.05em">Weakest Indicator</div>
+          <div style="font-family:var(--fontd);font-size:16px;font-weight:800;color:var(--th);line-height:1.2">{{ key_insights.lowest_ind.name }}</div>
+          <div style="font-size:12px;color:var(--ts)">Avg score: <strong>{{ key_insights.lowest_ind.score }}/100</strong></div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:var(--g-l);border-radius:var(--rads);border:1px solid rgba(16,185,129,.2)">
+        <div style="width:32px;height:32px;background:var(--g);border-radius:8px;display:grid;place-items:center;flex-shrink:0"><i class="fa fa-star" style="color:#fff;font-size:13px"></i></div>
+        <div>
+          <div style="font-size:11px;font-weight:700;color:var(--g);text-transform:uppercase;letter-spacing:.05em">Strongest Indicator</div>
+          <div style="font-family:var(--fontd);font-size:16px;font-weight:800;color:var(--th);line-height:1.2">{{ key_insights.highest_ind.name }}</div>
+          <div style="font-size:12px;color:var(--ts)">Avg score: <strong>{{ key_insights.highest_ind.score }}/100</strong></div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:var(--a-l);border-radius:var(--rads);border:1px solid rgba(245,158,11,.25)">
+        <div style="width:32px;height:32px;background:var(--a);border-radius:8px;display:grid;place-items:center;flex-shrink:0"><i class="fa fa-flag" style="color:#fff;font-size:13px"></i></div>
+        <div>
+          <div style="font-size:11px;font-weight:700;color:var(--a);text-transform:uppercase;letter-spacing:.05em">Need Support</div>
+          <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--th)">{{ key_insights.needs_improvement }}</div>
+          <div style="font-size:12px;color:var(--ts)">Districts scoring below 60</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="kpi-grid fi2">
+  <div class="kpi-card kpi-g">
+    <div class="kpi-lbl">🌟 Excellent (80–100)</div>
+    <div class="kpi-val score-excellent">{{ cat_counts.get('Excellent',0) }}</div>
+    <div class="kpi-sub">Districts with outstanding welfare</div>
+    <div class="kpi-trend up"><i class="fa fa-arrow-up"></i> Top performers</div>
+  </div>
+  <div class="kpi-card kpi-b">
+    <div class="kpi-lbl">✅ Good (60–79)</div>
+    <div class="kpi-val score-good">{{ cat_counts.get('Good',0) }}</div>
+    <div class="kpi-sub">Strong welfare delivery</div>
+  </div>
+  <div class="kpi-card kpi-a">
+    <div class="kpi-lbl">⚠️ Moderate (40–59)</div>
+    <div class="kpi-val score-moderate">{{ cat_counts.get('Moderate',0) }}</div>
+    <div class="kpi-sub">Average, improvement needed</div>
+  </div>
+  <div class="kpi-card kpi-o">
+    <div class="kpi-lbl">🔶 Weak (20–39)</div>
+    <div class="kpi-val score-weak">{{ cat_counts.get('Weak',0) }}</div>
+    <div class="kpi-sub">Significant gaps — action needed</div>
+    <div class="kpi-trend dn"><i class="fa fa-triangle-exclamation"></i> Needs attention</div>
+  </div>
+  <div class="kpi-card kpi-r">
+    <div class="kpi-lbl">🚨 Critical (0–19)</div>
+    <div class="kpi-val score-critical">{{ cat_counts.get('Critical',0) }}</div>
+    <div class="kpi-sub">Urgent intervention required</div>
+    <div class="kpi-trend dn"><i class="fa fa-exclamation-triangle"></i> Priority</div>
+  </div>
+</div>
+
+{% set cu = current_user() %}
+{% if utype == 'citizen' %}
+<div class="ib ib-v fi2" style="display:flex;align-items:center;gap:12px">
+  <i class="fa fa-lock" style="font-size:18px;flex-shrink:0"></i>
+  <span><strong>Researchers & Data Analysts</strong> see the full state comparison chart, raw indicator data, and API access. <a href="{{ url_for('upgrade') }}" style="font-weight:700">Upgrade your account free →</a></span>
+</div>
+{% endif %}
+
+<div class="cg fi3">
+  
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">District Welfare Distribution</div><div class="card-sub">{{ total_districts }} districts · Higher score = better welfare</div></div></div>
+    <div class="card-b">
+      {% set total_d = (cat_counts.values()|sum) or 1 %}
+      {% for label,cat,color,icon in [('Excellent','Excellent','#10B981','🌟'),('Good','Good','#3B82F6','✅'),('Moderate','Moderate','#F59E0B','⚠️'),('Weak','Weak','#F97316','🔶'),('Critical','Critical','#EF4444','🚨')] %}
+      {% set count = cat_counts.get(cat,0) %}
+      <div style="margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-size:14px;font-weight:600;color:var(--tb)">{{ icon }} {{ label }}</span>
+          <span style="font-family:var(--fontd);font-size:16px;font-weight:800;color:{{ color }}">{{ count }} <span style="font-size:12px;font-weight:400;color:var(--tm)">({{ ((count/total_d)*100)|round(0)|int }}%)</span></span>
+        </div>
+        <div class="prog"><div class="prog-fill" style="width:{{ ((count/total_d)*100)|round(1) }}%;background:{{ color }}"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+<div class="cg fi4">
+  
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">State Rankings by Welfare Score</div><div class="card-sub">Sorted best first · Higher = better welfare delivery</div></div></div>
+    <div class="card-b" style="padding-top:12px">
+      {% if feats.dashboard == 'full' %}
+      <canvas id="stateBar" style="max-height:330px"></canvas>
+      {% else %}
+      <div class="feature-wrap">
+        <div style="filter:blur(5px);pointer-events:none"><canvas id="stateBar" style="max-height:330px"></canvas></div>
+        <div class="lock-overlay"><i class="fa fa-lock"></i><h3 style="font-family:var(--fontd);font-size:16px;font-weight:700;color:var(--th);text-align:center;padding:0 20px">Researcher Feature</h3><a href="{{ url_for('upgrade') }}" class="btn btn-p btn-sm">Upgrade Free</a></div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="card-f"><div style="display:flex;gap:14px;font-size:12px;flex-wrap:wrap">
+      <span style="color:#10B981">🌟 80–100 Excellent</span>
+      <span style="color:#3B82F6">✅ 60–79 Good</span>
+      <span style="color:#F59E0B">⚠️ 40–59 Moderate</span>
+      <span style="color:#F97316">🔶 20–39 Weak</span>
+      <span style="color:#EF4444">🚨 0–19 Critical</span>
+    </div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">National Welfare Trend</div><div class="card-sub">2018–2023 · Upward = improving</div></div><a href="{{ url_for('trends') }}" class="btn btn-ghost btn-sm">Full analysis →</a></div>
+    <div class="card-b" style="padding-top:12px">
+      <canvas id="trendLine" style="max-height:220px"></canvas>
+      <div style="margin-top:10px;display:flex;gap:8px;font-size:13px;flex-wrap:wrap">
+        <span style="background:var(--g-l);color:var(--g);padding:4px 10px;border-radius:20px;font-weight:600">📈 Rising = Better welfare</span>
+        <span style="background:var(--r-l);color:var(--r);padding:4px 10px;border-radius:20px;font-weight:600">📉 Falling = Declining welfare</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cg fi4">
+  
+  <div class="card">
+    <div class="card-h"><div><div class="card-t">🏆 Most Improved Districts ({{ sel_year-1 }}→{{ sel_year }})</div><div class="card-sub">Score increased = welfare delivery improved</div></div><a href="{{ url_for('leaderboard') }}" class="btn btn-ghost btn-sm">Full rankings →</a></div>
+    <div class="card-b" style="padding-top:12px">
+      {% if improved %}
+      {% for row in improved %}
+      <div style="display:flex;align-items:center;gap:12px;padding:11px;background:var(--g-l);border-radius:var(--rads);border:1px solid #6EE7B7;margin-bottom:8px">
+        <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--g);width:22px">{{loop.index}}</div>
+        <div style="flex:1"><div style="font-weight:700;font-size:14px;color:var(--th)">{{row['district']}}</div><div style="font-size:12px;color:var(--ts)">{{row['state']}}</div></div>
+        <div style="text-align:right">
+          <div style="font-family:var(--fontd);font-size:14px;font-weight:800;color:var(--g)">+{{row['delta']}} pts</div>
+          <div style="font-size:11px;color:var(--tm)">{{row['s22']}} → {{row['s23']}}</div>
+        </div>
+      </div>
+      {% endfor %}
+      {% else %}<p class="tc-m ts-sm mt2">No improvement data between {{ sel_year-1 }} and {{ sel_year }}.</p>{% endif %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><div class="card-t">District Performance Extremes</div></div>
+    <div class="card-b" style="padding-top:12px">
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ts);margin-bottom:8px">🌟 Top Performing ({{ sel_year }})</div>
+      {% for row in top_districts %}
+      <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--g-l);border-radius:var(--rads);margin-bottom:6px;border:1px solid #6EE7B7">
+        <span style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--g);width:22px">{{loop.index}}</span>
+        <div style="flex:1"><div style="font-weight:600;font-size:13px;color:var(--th)">{{row['district']}}</div><div style="font-size:11px;color:var(--ts)">{{row['state']}}</div></div>
+        <span style="font-family:var(--fontd);font-weight:800;color:var(--g)">{{row['avg']}}</span>
+      </div>
+      {% endfor %}
+      <div class="divider"></div>
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ts);margin-bottom:8px">🚨 Needs Most Support ({{ sel_year }})</div>
+      {% for row in weakest %}
+      <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--r-l);border-radius:var(--rads);margin-bottom:6px;border:1px solid #FCA5A5">
+        <span style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--r);width:22px">{{loop.index}}</span>
+        <div style="flex:1"><div style="font-weight:600;font-size:13px;color:var(--th)">{{row['district']}}</div><div style="font-size:11px;color:var(--ts)">{{row['state']}}</div></div>
+        <span style="font-family:var(--fontd);font-weight:800;color:var(--r)">{{row['avg']}}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="cg fi4" style="margin-bottom:22px">
+
+  <div class="card">
+    <div class="card-h">
+      <div><div class="card-t" style="display:flex;align-items:center;gap:7px"><i class="fa fa-trophy" style="color:var(--a)"></i> Top 5 Districts ({{ sel_year }})</div><div class="card-sub">Highest welfare scores · hover for indicator detail</div></div>
+      <a href="{{ url_for('leaderboard') }}" class="btn btn-ghost btn-sm">Full list →</a>
+    </div>
+    <div class="card-b" style="padding-top:8px">
+      {% for row in top5 %}
+      {% set rwl = welfare_label(row.avg) %}
+      <div title="Ed:{{ row.i1 }}  Health:{{ row.i2 }}  Food:{{ row.i3 }}  Emp:{{ row.i4 }}" style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:var(--rads);margin-bottom:6px;background:{% if loop.index==1 %}var(--a-l){% else %}var(--surf2){% endif %};border:1px solid {% if loop.index==1 %}rgba(245,158,11,.3){% else %}var(--b){% endif %};cursor:help;transition:all .15s" onmouseover="this.style.transform='translateX(3px)'" onmouseout="this.style.transform='none'">
+        <div style="font-family:var(--fontd);font-size:16px;font-weight:800;color:{% if loop.index==1 %}var(--a){% elif loop.index==2 %}var(--ts){% elif loop.index==3 %}var(--a){% else %}var(--tm){% endif %};width:22px;text-align:center">{% if loop.index==1 %}🥇{% elif loop.index==2 %}🥈{% elif loop.index==3 %}🥉{% else %}{{ loop.index }}{% endif %}</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:700;font-size:13px;color:var(--th);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ row.district }}</div>
+          <div style="font-size:11px;color:var(--ts)">{{ row.state }}</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0">
+          <div style="font-family:var(--fontd);font-weight:800;font-size:15px;color:{{ rwl.color }}">{{ row.avg }}/100</div>
+          <div style="font-size:10px;font-weight:700;color:{{ rwl.color }}">{{ rwl.label }}</div>
+        </div>
+        <div style="width:4px;height:32px;background:{{ rwl.color }};border-radius:4px;flex-shrink:0"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h">
+      <div><div class="card-t" style="display:flex;align-items:center;gap:7px"><i class="fa fa-triangle-exclamation" style="color:var(--r)"></i> Bottom 5 Districts ({{ sel_year }})</div><div class="card-sub">Lowest welfare scores · need most support</div></div>
+      <a href="{{ url_for('report') }}" class="btn btn-ghost btn-sm">Report issue →</a>
+    </div>
+    <div class="card-b" style="padding-top:8px">
+      {% for row in bottom5 %}
+      {% set rwl = welfare_label(row.avg) %}
+      <div title="Ed:{{ row.i1 }}  Health:{{ row.i2 }}  Food:{{ row.i3 }}  Emp:{{ row.i4 }}" style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:var(--rads);margin-bottom:6px;background:var(--r-l);border:1px solid rgba(239,68,68,.2);cursor:help;transition:all .15s" onmouseover="this.style.transform='translateX(3px)'" onmouseout="this.style.transform='none'">
+        <div style="font-family:var(--fontd);font-size:14px;font-weight:800;color:var(--r);width:22px;text-align:center">{{ loop.index }}</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-weight:700;font-size:13px;color:var(--th);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ row.district }}</div>
+          <div style="font-size:11px;color:var(--ts)">{{ row.state }}</div>
+        </div>
+        <div style="text-align:right;flex-shrink:0">
+          <div style="font-family:var(--fontd);font-weight:800;font-size:15px;color:{{ rwl.color }}">{{ row.avg }}/100</div>
+          <div style="font-size:10px;font-weight:700;color:{{ rwl.color }}">{{ rwl.label }}</div>
+        </div>
+        <div style="width:4px;height:32px;background:{{ rwl.color }};border-radius:4px;flex-shrink:0"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+{% if report_insights and report_insights.get('total', 0) > 0 %}
+<div class="card fi4 mb4" style="border-left:4px solid var(--t)">
+  <div class="card-h">
+    <div>
+      <div class="card-t" style="display:flex;align-items:center;gap:8px">
+        <i class="fa fa-flag" style="color:var(--t)"></i> Ground-Level Report Insights
+      </div>
+      <div class="card-sub">Citizen-reported welfare issues · {{ report_insights.get('total',0) }} total reports</div>
+    </div>
+    <a href="{{ url_for('report') }}" class="btn btn-sm" style="background:var(--t);color:#fff"><i class="fa fa-plus"></i> Submit Report</a>
+  </div>
+  <div class="card-b" style="padding-top:12px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:14px">
+      {% for cat, icon, clr in [('Education','📚','var(--p)'),('Healthcare','🏥','var(--g)'),('Food Security','🌾','var(--a)'),('Employment','💼','var(--v)')] %}
+      <div style="padding:14px 12px;background:var(--surf2);border-radius:var(--rads);border:1px solid var(--b);text-align:center">
+        <div style="font-size:22px;margin-bottom:4px">{{ icon }}</div>
+        <div style="font-family:var(--fontd);font-size:24px;font-weight:800;color:{{ clr }}">{{ report_insights.get(cat, 0) }}</div>
+        <div style="font-size:11px;color:var(--ts);margin-top:2px">{{ cat }} issues</div>
+      </div>
+      {% endfor %}
+      <div style="padding:14px 12px;background:var(--r-l);border:1px solid rgba(239,68,68,.25);border-radius:var(--rads);text-align:center">
+        <div style="font-size:22px;margin-bottom:4px">🔴</div>
+        <div style="font-family:var(--fontd);font-size:24px;font-weight:800;color:var(--r)">{{ report_insights.get('high_severity', 0) }}</div>
+        <div style="font-size:11px;color:var(--r);margin-top:2px">High severity</div>
+      </div>
+    </div>
+    {% if report_insights.get('ground_signal') %}
+    <div style="padding:12px 14px;background:var(--r-l);border-radius:var(--rads);border:1px solid rgba(239,68,68,.2)">
+      <div style="font-size:12px;font-weight:700;color:var(--r);margin-bottom:8px"><i class="fa fa-triangle-exclamation"></i> ⚠ Districts with Ground Issues Reported</div>
+      <div style="display:flex;flex-wrap:wrap;gap:7px">
+        {% for d in report_insights.ground_signal %}
+        <span style="background:var(--r-l);color:var(--r);border:1px solid #FCA5A5;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700">
+          {{ d.district }}, {{ d.state }}
+          <span style="background:var(--r);color:#fff;border-radius:20px;padding:1px 6px;font-size:10px;margin-left:4px">{{ d.count }} reports</span>
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+<div class="card fi4">
+  <div class="card-h"><div><div class="card-t">Recent Citizen Reports</div><div class="card-sub">Issues reported by citizens across India</div></div>
+    <div style="display:flex;gap:6px;align-items:center">{% if pending_reports>0 %}<span class="badge b-pending">{{pending_reports}} pending</span>{% endif %}<a href="{{ url_for('report') }}" class="btn btn-sm" style="background:var(--t);color:#fff">+ Report Issue</a></div>
+  </div>
+  <div class="card-b" style="padding-top:12px">
+    {% if recent_reports %}
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px">
+    {% for rpt in recent_reports %}
+    {% set cat_icons = {'Education':'📚','Healthcare':'🏥','Food Security':'🌾','Employment':'💼'} %}
+    {% set sev_color = '#EF4444' if rpt['severity']=='High' else '#F59E0B' if rpt['severity']=='Medium' else '#10B981' if rpt['severity']=='Low' else 'var(--tm)' %}
+    <div style="padding:12px 14px;background:var(--surf2);border-radius:var(--rads);border:1px solid var(--b){% if rpt['severity']=='High' %};border-left:3px solid #EF4444{% endif %}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span style="font-weight:700;font-size:13px;color:var(--th)">
+          {{ cat_icons.get(rpt['category'], '📋') if rpt['category'] else '📋' }}
+          {{ (rpt['category'] or rpt['scheme'] or 'Issue')[:28] }}
+        </span>
+        <span class="badge b-{{rpt['status']}}">{{rpt['status'].title()}}</span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+        <div style="font-size:12px;color:var(--ts)"><i class="fa fa-location-dot" style="color:var(--p);margin-right:4px"></i>{{rpt['district']}}, {{rpt['state']}}</div>
+        {% if rpt['severity'] %}<span style="font-size:10px;font-weight:700;color:{{ sev_color }}">{{ '🔴' if rpt['severity']=='High' else '🟡' if rpt['severity']=='Medium' else '🟢' }} {{rpt['severity']}}</span>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    </div>
+    {% else %}<div class="empty" style="padding:28px"><i class="fa fa-flag"></i><p>No reports yet.</p></div>{% endif %}
+  </div>
+  <div class="card-f"><span class="ts-sm tc-s">{{total_reports}} total · {{pending_reports}} pending</span>{% if cu %}<a href="{{ url_for('my_reports') }}" class="btn btn-ghost btn-sm">My Reports →</a>{% endif %}</div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const sb={{ state_bar|safe }}, tr={{ trend|safe }};
+function scoreColor(v){return v>=80?'#10B981':v>=60?'#3B82F6':v>=40?'#F59E0B':v>=20?'#F97316':'#EF4444'}
+
+/* Animated count-up for dashboard hero score */
+(function(){
+  const el=document.querySelector('.count-up-dash');
+  if(!el) return;
+  const target=parseFloat(el.dataset.target)||0;
+  const dur=1800,steps=72,inc=target/steps;
+  let cur=0,step=0;
+  const t=setInterval(()=>{
+    step++; cur=Math.min(step*inc,target);
+    el.textContent=Number.isInteger(target)?Math.round(cur):cur.toFixed(1);
+    if(step>=steps){el.textContent=target;clearInterval(t);}
+  },dur/steps);
+})();
+
+new Chart(document.getElementById('stateBar'),{type:'bar',data:{labels:sb.labels,datasets:[{data:sb.scores,backgroundColor:sb.colors,borderRadius:6,borderSkipped:false}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(255,255,255,.97)',titleColor:'#0A1628',bodyColor:'#475569',borderColor:'#E2E8F0',borderWidth:1,padding:12,callbacks:{title:i=>i[0].label,label:ctx=>{var v=ctx.raw;return[' Welfare Score: '+v+'/100',' '+(v>=80?'🌟 Excellent':v>=60?'✅ Good':v>=40?'⚠️ Moderate':v>=20?'🔶 Weak':'🚨 Critical')]}}}},scales:{x:{min:0,max:100,grid:{color:'rgba(226,232,240,.6)'},ticks:{font:{family:'Inter',size:11},callback:v=>v+'/100'}},y:{grid:{display:false},ticks:{font:{family:'Inter',size:11}}}},animation:{duration:900,easing:'easeOutQuart'}}});
+
+new Chart(document.getElementById('trendLine'),{type:'line',data:{labels:tr.years,datasets:[{label:'National Welfare Score',data:tr.scores,borderColor:'#2563EB',backgroundColor:'rgba(37,99,235,.07)',fill:true,tension:.4,borderWidth:3,pointRadius:6,pointBackgroundColor:'#2563EB',pointBorderColor:'#fff',pointBorderWidth:2.5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(255,255,255,.97)',titleColor:'#0A1628',bodyColor:'#475569',borderColor:'#E2E8F0',borderWidth:1,padding:12,callbacks:{title:i=>'Year: '+i[0].label,label:ctx=>{var v=ctx.raw;return[' Score: '+v+'/100',' '+(v>=80?'🌟 Excellent':v>=60?'✅ Good':v>=40?'⚠️ Moderate':v>=20?'🔶 Weak':'🚨 Critical')]}}}},scales:{x:{grid:{color:'rgba(226,232,240,.6)'},ticks:{font:{family:'Inter',size:12}}},y:{min:0,max:100,grid:{color:'rgba(226,232,240,.6)'},ticks:{font:{family:'Inter',size:12},callback:v=>v===0?'0 (Critical)':v===100?'100 (Excellent)':v}}},animation:{duration:1000}}});
+</script>
+{% endblock %}

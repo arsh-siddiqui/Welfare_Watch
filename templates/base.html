@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
+<title>{% block title %}WelfareWatch{% endblock %} - India Welfare Monitoring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}?v=1.1"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a href="#mainContent" class="skip-link">Skip to main content</a>
+{% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}
+<div class="flash-wrap">{% for cat,msg in messages %}
+<div class="flash flash--{{cat}}"><i class="fa {% if cat=='success' %}fa-circle-check{% elif cat=='error' %}fa-circle-exclamation{% else %}fa-circle-info{% endif %}"></i><span>{{msg}}</span><button onclick="this.parentElement.remove()">x</button></div>
+{% endfor %}</div>{% endif %}{% endwith %}
+
+{% block full_page %}
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-icon"><i class="fa fa-shield-halved"></i></div>
+    <div>
+      <div class="sb-name">WelfareWatch</div>
+      <div class="sb-tag">Simple welfare insights for everyone</div>
+    </div>
+    <button id="sidebarClose" aria-label="Close menu" style="display:none;margin-left:auto;background:none;border:none;cursor:pointer;color:var(--ts);font-size:18px;padding:4px 6px;border-radius:6px;line-height:1"><i class="fa fa-xmark"></i></button>
+  </div>
+  <nav class="sb-nav">
+    <div class="sb-sec">Start Here</div>
+    <a href="{{ url_for('home') }}"        class="sb-item {% if request.endpoint=='home'%}act{% endif %}"><i class="fa fa-house"></i><span>Home</span></a>
+    <a href="{{ url_for('dashboard') }}"   class="sb-item {% if request.endpoint=='dashboard'%}act{% endif %}"><i class="fa fa-chart-line"></i><span>Overview Dashboard</span></a>
+    <a href="{{ url_for('risk_map') }}"    class="sb-item {% if request.endpoint in ['risk_map','state_profile']%}act{% endif %}"><i class="fa fa-map-location-dot"></i><span>Explore the Map</span></a>
+    <a href="{{ url_for('leaderboard') }}" class="sb-item {% if request.endpoint=='leaderboard'%}act{% endif %}"><i class="fa fa-trophy"></i><span>Rankings</span></a>
+
+    <div class="sb-sec">Explore Data</div>
+    <a href="{{ url_for('search') }}"      class="sb-item {% if request.endpoint=='search'%}act{% endif %}"><i class="fa fa-magnifying-glass"></i><span>Find a District</span></a>
+    <a href="{{ url_for('compare') }}"     class="sb-item {% if request.endpoint=='compare'%}act{% endif %}"><i class="fa fa-scale-balanced"></i><span>Compare Districts</span></a>
+    <a href="{{ url_for('trends') }}"      class="sb-item {% if request.endpoint=='trends'%}act{% endif %}"><i class="fa fa-chart-area"></i><span>Trend Analysis</span></a>
+    <a href="{{ url_for('explorer') }}"    class="sb-item {% if request.endpoint in ['explorer','explorer_detail']%}act{% endif %}"><i class="fa fa-database"></i><span>Data Library</span></a>
+
+    <div class="sb-sec">Take Part</div>
+    <a href="{{ url_for('report') }}"      class="sb-item {% if request.endpoint=='report'%}act{% endif %}"><i class="fa fa-flag"></i><span>Report an Issue</span></a>
+    {% set cu=current_user() %}{% if cu %}
+    <a href="{{ url_for('my_reports') }}"  class="sb-item {% if request.endpoint=='my_reports'%}act{% endif %}"><i class="fa fa-inbox"></i><span>My Reports</span></a>
+    {% if cu.user_type in ('data_analyst','admin') %}
+    <a href="{{ url_for('contribute') }}"  class="sb-item {% if request.endpoint=='contribute'%}act{% endif %}"><i class="fa fa-upload"></i><span>Contribute Data</span></a>
+    {% endif %}{% endif %}
+    <a href="{{ url_for('methodology') }}" class="sb-item {% if request.endpoint=='methodology'%}act{% endif %}"><i class="fa fa-circle-question"></i><span>How It Works</span></a>
+    {% set cu=current_user() %}{% if cu and cu.role=='admin' %}
+    <div class="sb-sec">Admin</div>
+    <a href="{{ url_for('admin') }}" class="sb-item {% if request.endpoint=='admin'%}act{% endif %}"><i class="fa fa-gear"></i><span>Admin Panel</span></a>
+    {% endif %}
+  </nav>
+  <div class="sb-foot">
+    {% set cu=current_user() %}{% if cu %}
+    {% set role=ROLES.get(cu.user_type,ROLES.citizen) %}
+    <div class="user-chip">
+      <div class="user-av" style="background:{{role.color}}">{{cu.username[0].upper()}}</div>
+      <div class="user-info"><span class="user-nm">{{cu.username}}</span><span class="user-tp">{{role.icon}} {{role.label}}</span></div>
+    </div>
+    {% else %}
+    <a href="{{ url_for('auth_register') }}" class="sb-cta"><i class="fa fa-user-plus"></i><span class="sb-cta-text">Join WelfareWatch</span></a>
+    {% endif %}
+  </div>
+</aside>
+
+<div class="main" id="mainArea">
+  <header class="topbar">
+    <button class="tb-toggle" id="sidebarToggle"><i class="fa fa-bars"></i></button>
+    <div class="tb-title">{% block topbar_title %}{% endblock %}</div>
+    <div class="tb-right">
+      <a href="{{ url_for('search') }}" class="tb-icon-btn" title="Search districts"><i class="fa fa-magnifying-glass"></i></a>
+      <a href="{{ url_for('report') }}" class="tb-quick-link"><i class="fa fa-flag"></i><span>Report issue</span></a>
+      <button class="theme-btn" id="themeBtn" title="Toggle dark mode"><i class="fa fa-moon" id="themeIco"></i></button>
+      {% set cu=current_user() %}
+      {% if cu %}
+        {% set role=ROLES.get(cu.user_type,ROLES.citizen) %}
+        <div class="tb-user-pill"><div class="av" style="background:{{role.color}}">{{cu.username[0].upper()}}</div><span>{{cu.username}}</span></div>
+        <a href="{{ url_for('upgrade') }}" class="tb-role-badge" style="background:{{role.color}}20;color:{{role.color}};border:1px solid {{role.color}}40">{{role.icon}} {{role.label}}</a>
+        <a href="{{ url_for('auth_logout') }}" class="tb-signout"><i class="fa fa-arrow-right-from-bracket"></i> <span>Sign Out</span></a>
+      {% else %}
+        <a href="{{ url_for('auth_login') }}"    class="tb-signin"><i class="fa fa-sign-in-alt"></i> <span>Sign In</span></a>
+        <a href="{{ url_for('auth_register') }}" class="tb-register"><i class="fa fa-user-plus"></i> <span>Join Free</span></a>
+      {% endif %}
+    </div>
+  </header>
+  <main class="content" id="mainContent">{% block content %}{% endblock %}</main>
+  <footer class="page-footer" style="flex-wrap:wrap;gap:8px">
+    <span>&copy; 2026 WelfareWatch - Open data for a better India</span>
+    <div style="display:flex;gap:16px;flex-wrap:wrap">
+      <a href="{{ url_for('methodology') }}">How it works</a>
+      <a href="{{ url_for('leaderboard') }}">Rankings</a>
+      <a href="{{ url_for('trends') }}">Trends</a>
+      <a href="{{ url_for('compare') }}">Compare</a>
+      <a href="{{ url_for('report') }}">Report issue</a>
+      <a href="{{ url_for('upgrade') }}">Account types</a>
+    </div>
+  </footer>
+</div>
+</div>
+<div class="sb-overlay" id="sbOverlay"></div>
+{% endblock %}
+<script src="{{ url_for('static',filename='js/theme.js') }}"></script>
+<script src="{{ url_for('static',filename='js/dashboard.js') }}"></script>
+{% block extra_js %}{% endblock %}
+</body></html>

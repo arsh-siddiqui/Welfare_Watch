@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Contribute Data{% endblock %}
+{% block topbar_title %}Contribute Data{% endblock %}
+{% block content %}
+<div class="ph fi flex jb items-c">
+  <div><h1 class="ph-title">Contribute a Dataset</h1><p class="ph-sub">Upload your own CSV, map columns to welfare indicators, and run analysis.</p></div>
+  <span class="badge b-data_analyst">📊 Data Analyst Feature</span>
+</div>
+<div style="background:var(--a-l);border:1px solid #FDE68A;border-radius:var(--rad);padding:22px;margin-bottom:22px" class="fi1">
+  <h3 style="font-family:var(--fontd);font-size:17px;font-weight:800;color:var(--th);margin-bottom:10px">📤 Upload New Dataset</h3>
+  <form method="POST" enctype="multipart/form-data">
+    <div class="fr">
+      <div class="fg"><label class="fl">Dataset Name *</label><input type="text" name="name" class="fc" required></div>
+      <div class="fg"><label class="fl">CSV File *</label><input type="file" name="file" class="fc" accept=".csv" required></div>
+    </div>
+    <div class="fg"><label class="fl">Description</label><input type="text" name="description" class="fc" placeholder="Brief description of what this data contains…"></div>
+    <div class="ib ib-b" style="margin-bottom:14px"><h4>💡 Higher column values = better welfare delivery</h4><p>When you map columns to indicators, make sure high raw values in your data represent better welfare delivery (more enrollment = better education, more hospitals = better healthcare, etc.).</p></div>
+    <button type="submit" class="btn btn-p btn-sm"><i class="fa fa-upload"></i> Upload Dataset</button>
+  </form>
+</div>
+{% if my_datasets %}
+<h2 style="font-family:var(--fontd);font-size:17px;font-weight:700;color:var(--th);margin-bottom:14px" class="fi2">My Uploaded Datasets</h2>
+{% for ds in my_datasets %}
+<div class="card fi2 mb4">
+  <div class="card-h"><div><div class="card-t">{{ ds['name'] }}</div><div class="card-sub">{{ ds['row_count'] }} rows · {{ ds['uploaded_at'][:10] }}</div></div>
+    <div style="display:flex;gap:6px">
+        <a href="{{ url_for('explorer_detail',dataset_id=ds['id']) }}" class="btn btn-o btn-sm"><i class="fa fa-eye"></i></a>
+        <a href="{{ url_for('download_dataset',dataset_id=ds['id']) }}" class="btn btn-ghost btn-sm"><i class="fa fa-download"></i></a>
+        <form method="POST" action="{{ url_for('delete_own_dataset',dataset_id=ds['id']) }}" style="margin:0" onsubmit="return confirm('Delete this dataset and all its analysis records? This cannot be undone.')">
+          <button type="submit" class="btn btn-r btn-sm"><i class="fa fa-trash"></i></button>
+        </form>
+      </div>
+  </div>
+  <div class="card-b">
+    {% set col_str = ds['columns']|clean_cols|replace(' ','') %}
+    {% set cols = col_str.split(',') if col_str else [] %}
+    <p style="font-size:13px;color:var(--ts);margin-bottom:14px"><strong>Columns:</strong> <span style="color:var(--tm)">{{ ds['columns']|clean_cols|truncate(100) }}</span></p>
+    <div style="background:var(--surf2);border:1px solid var(--b);border-radius:var(--rads);padding:16px">
+      <div style="font-size:13px;font-weight:700;color:var(--th);margin-bottom:12px">⚙️ Map Columns & Run Welfare Analysis</div>
+      <form method="POST" action="{{ url_for('analyst_analyze',dataset_id=ds['id']) }}">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px">
+          {% for fn,fl in [('col_state','State'),('col_district','District'),('col_year','Year')] %}
+          <div class="fg" style="margin:0"><label class="fl" style="font-size:11px">{{fl}}</label><select name="{{fn}}" class="fc" style="font-size:12px"><option value="">— optional —</option>{% for col in cols if col.strip() %}<option>{{col.strip()}}</option>{% endfor %}</select></div>
+          {% endfor %}
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px">
+          {% for i,def in [(1,INDICATOR_LABELS.indicator_1),(2,INDICATOR_LABELS.indicator_2),(3,INDICATOR_LABELS.indicator_3),(4,INDICATOR_LABELS.indicator_4)] %}
+          <div>
+            <div class="fg" style="margin-bottom:5px"><label class="fl" style="font-size:11px">Indicator {{i}}</label><select name="col_i{{i}}" class="fc" style="font-size:12px"><option value="">— skip —</option>{% for col in cols if col.strip() %}<option>{{col.strip()}}</option>{% endfor %}</select></div>
+            <input type="text" name="name_i{{i}}" class="fc" style="font-size:11px" placeholder="{{def}}" value="{{def}}">
+          </div>
+          {% endfor %}
+        </div>
+        <button type="submit" class="btn btn-sm" style="background:var(--t);color:#fff"><i class="fa fa-calculator"></i> Run Analysis</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% else %}
+<div class="card fi2"><div class="card-b"><div class="empty"><i class="fa fa-upload"></i><h3>No uploads yet</h3><p>Upload a CSV above to get started.</p></div></div></div>
+{% endif %}
+{% endblock %}

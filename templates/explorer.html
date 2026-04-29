@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Dataset Explorer{% endblock %}
+{% block topbar_title %}Dataset Explorer{% endblock %}
+{% block content %}
+<div class="ph fi flex jb items-c" style="flex-wrap:wrap;gap:12px">
+  <div>
+    <h1 class="ph-title">Dataset Explorer</h1>
+    <p class="ph-sub">{{ datasets|length }} uploaded dataset{% if datasets|length != 1 %}s{% endif %} available. Browse freely — download requires Researcher or Data Analyst account.</p>
+  </div>
+</div>
+<div class="ib ib-b mb4 fi1">
+  <h4><i class="fa fa-database"></i> Open Data Policy</h4>
+  <p>All uploaded datasets are open to browse. <strong>Researchers and Data Analysts</strong> can download full CSV files. Citizens can preview data. {% if not feats.download %}<a href="{{ url_for('upgrade') }}" style="font-weight:700">Upgrade free to unlock downloads →</a>{% endif %}</p>
+</div>
+<div class="ds-grid fi2">
+{% for ds in datasets %}
+<div class="ds-card">
+  <div style="display:flex;align-items:center;justify-content:space-between">
+    <span style="font-size:12px;color:var(--tm)">Community upload</span>
+    {% if ds['domain'] %}<span style="background:var(--surf2);border:1px solid var(--b);padding:3px 9px;border-radius:20px;font-size:12px;font-weight:600;color:var(--ts)">{{ ds['domain'] }}</span>{% endif %}
+  </div>
+  <div class="ds-name">{{ ds['name'] }}</div>
+  {% if ds['description'] %}<div class="ds-desc">{{ ds['description'][:120] }}{% if ds['description']|length > 120 %}…{% endif %}</div>{% endif %}
+  {% if ds['source'] %}<div class="ds-meta"><span><i class="fa fa-link"></i> {{ ds['source'] }}</span></div>{% endif %}
+  <div class="ds-meta">
+    <span><i class="fa fa-table"></i> {{ ds['row_count'] }} rows</span>
+    <span><i class="fa fa-calendar"></i> {{ ds['uploaded_at'][:10] }}</span>
+  </div>
+  <div style="display:flex;gap:8px;padding-top:10px;border-top:1px solid var(--b)">
+    <a href="{{ url_for('explorer_detail', dataset_id=ds['id']) }}" class="btn btn-o btn-sm" style="flex:1;justify-content:center"><i class="fa fa-eye"></i> Preview</a>
+    {% if feats.download %}
+    <a href="{{ url_for('download_dataset', dataset_id=ds['id']) }}" class="btn btn-p btn-sm" style="flex:1;justify-content:center"><i class="fa fa-download"></i> Download</a>
+    {% else %}
+    <a href="{{ url_for('upgrade') }}" class="btn btn-o btn-sm" style="flex:1;justify-content:center;color:var(--tm)"><i class="fa fa-lock"></i> Unlock</a>
+    {% endif %}
+  </div>
+</div>
+{% else %}
+<div class="card" style="grid-column:1/-1">
+  <div class="card-b">
+    <div class="empty">
+      <i class="fa fa-database"></i>
+      <h3>No datasets uploaded yet</h3>
+      <p>Data Analysts can upload CSV datasets via the Contribute section.</p>
+      {% set cu = current_user() %}
+      {% if cu and cu.user_type in ('data_analyst','admin') %}
+      <a href="{{ url_for('contribute') }}" class="btn btn-p btn-sm" style="margin-top:14px"><i class="fa fa-upload"></i> Upload Dataset</a>
+      {% else %}
+      <a href="{{ url_for('upgrade') }}" class="btn btn-o btn-sm" style="margin-top:14px"><i class="fa fa-arrow-up"></i> Upgrade to Upload</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

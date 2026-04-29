@@ -1,0 +1,370 @@
+{% extends "base.html" %}
+{% block title %}Indicator Correlation Analysis{% endblock %}
+{% block topbar_title %}Which Indicator Matters Most?{% endblock %}
+{% block content %}
+
+<div class="ph fi">
+  <h1 class="ph-title">Indicator Correlation Analysis</h1>
+  <p class="ph-sub">Which welfare indicator has the strongest relationship with overall welfare scores? Pure rule-based statistical analysis — no AI.</p>
+</div>
+
+<div style="background:var(--surf);border:1px solid var(--b);border-radius:var(--rad);padding:18px 22px;margin-bottom:22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap" class="fi1">
+  <form method="GET" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0">
+    <div style="display:flex;align-items:center;gap:8px">
+      <label style="font-size:13px;font-weight:600;color:var(--ts);white-space:nowrap">Year:</label>
+      <select name="year" class="fc" style="min-width:100px;font-size:13px">
+        {% for yr in years %}<option value="{{ yr }}" {% if yr==selected_year %}selected{% endif %}>{{ yr }}</option>{% endfor %}
+      </select>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <label style="font-size:13px;font-weight:600;color:var(--ts);white-space:nowrap">State:</label>
+      <select name="state" class="fc" style="min-width:180px;font-size:13px">
+        <option value="">All States (National)</option>
+        {% for s in states %}<option {% if s==selected_state %}selected{% endif %}>{{ s }}</option>{% endfor %}
+      </select>
+    </div>
+    <button type="submit" class="btn btn-p btn-sm"><i class="fa fa-filter"></i> Analyse</button>
+  </form>
+  <div style="margin-left:auto;font-size:13px;color:var(--ts)">
+    Analysing <strong>{{ analysis.n_records if analysis else 0 }}</strong> district records
+  </div>
+</div>
+
+{% if analysis %}
+
+<div class="fi1" style="background:linear-gradient(135deg,#0A1628,#162340);border-radius:var(--rad);padding:22px 28px;margin-bottom:24px;box-shadow:var(--shm)">
+  <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.5);margin-bottom:10px">🔑 Key Finding</div>
+  <p style="font-size:16px;color:rgba(255,255,255,.9);line-height:1.75;margin:0">{{ analysis.key_insight|safe }}</p>
+</div>
+
+<h2 style="font-family:var(--fontd);font-size:18px;font-weight:800;color:var(--th);margin-bottom:16px" class="fi2">
+  Indicators Ranked by Impact on Welfare Score
+</h2>
+
+<div style="display:flex;flex-direction:column;gap:14px;margin-bottom:26px" class="fi2">
+  {% for ind_key, ind in analysis.ranked %}
+  {% set rank_colors = ['#F59E0B','#94A3B8','#CD7F32','#94A3B8'] %}
+  {% set rank_labels = ['Most Impactful','2nd','3rd','Least Impactful'] %}
+  {% set icons       = {'indicator_1':'📚','indicator_2':'🏥','indicator_3':'🌾','indicator_4':'💼'} %}
+  {% set r2          = analysis.r_squared[ind_key] %}
+  {% set bar_w       = (ind.pearson_r * 100)|abs|round(0)|int %}
+  <div style="background:var(--surf);border:1px solid var(--b);border-radius:var(--rad);padding:22px 26px;box-shadow:var(--sh);position:relative;overflow:hidden;transition:box-shadow .2s" onmouseover="this.style.boxShadow='var(--shm)'" onmouseout="this.style.boxShadow='var(--sh)'">
+    
+    <div style="position:absolute;top:0;left:0;bottom:0;width:5px;background:{{ ['#F59E0B','#94A3B8','#CD7F32','#64748B'][loop.index0] }}"></div>
+    <div style="display:grid;grid-template-columns:40px auto 1fr auto;align-items:center;gap:18px;flex-wrap:wrap">
+      
+      <div style="text-align:center">
+        <div style="font-family:var(--fontd);font-size:32px;font-weight:800;color:{{ rank_colors[rank] }};line-height:1">{{ loop.index }}</div>
+        <div style="font-size:10px;font-weight:700;color:var(--tm);white-space:nowrap">{{ ['Most Impactful','2nd','3rd','Least Impactful'][loop.index0] }}</div>
+      </div>
+      
+      <div style="display:flex;align-items:center;gap:10px;min-width:200px">
+        <span style="font-size:28px">{{ icons[ind_key] }}</span>
+        <div>
+          <div style="font-family:var(--fontd);font-size:16px;font-weight:800;color:var(--th)">{{ ind.label }}</div>
+          <div style="font-size:12px;color:var(--ts);margin-top:2px">Weight in formula: <strong>{{ ind.weight_pct }}%</strong></div>
+        </div>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+        <div style="text-align:center;padding:10px;background:var(--surf2);border-radius:var(--rads)">
+          <div style="font-size:10px;font-weight:700;color:var(--ts);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Pearson r</div>
+          <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:{% if ind.pearson_r >= 0.6 %}var(--g){% elif ind.pearson_r >= 0.4 %}var(--a){% else %}var(--r){% endif %}">{{ ind.pearson_r }}</div>
+          <div style="font-size:10px;color:var(--tm);margin-top:2px">correlation</div>
+        </div>
+        <div style="text-align:center;padding:10px;background:var(--surf2);border-radius:var(--rads)">
+          <div style="font-size:10px;font-weight:700;color:var(--ts);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">R² (Impact)</div>
+          <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--p)">{{ r2 }}%</div>
+          <div style="font-size:10px;color:var(--tm);margin-top:2px">score variance</div>
+        </div>
+        <div style="text-align:center;padding:10px;background:var(--surf2);border-radius:var(--rads)">
+          <div style="font-size:10px;font-weight:700;color:var(--ts);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">+10 pts →</div>
+          <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--t)">+{{ ind.impact_10pts }}</div>
+          <div style="font-size:10px;color:var(--tm);margin-top:2px">welfare gain</div>
+        </div>
+        <div style="text-align:center;padding:10px;background:var(--surf2);border-radius:var(--rads)">
+          <div style="font-size:10px;font-weight:700;color:var(--ts);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">Current Avg</div>
+          <div style="font-family:var(--fontd);font-size:20px;font-weight:800;color:var(--tb)">{{ ind.avg_value }}</div>
+          <div style="font-size:10px;color:var(--tm);margin-top:2px">/ 100</div>
+        </div>
+      </div>
+      
+      <div style="min-width:160px">
+        <div style="font-size:11px;color:var(--tm);margin-bottom:5px;font-weight:600">Correlation strength</div>
+        <div style="height:10px;background:var(--surf2);border-radius:20px;overflow:hidden;margin-bottom:5px">
+          <div style="width:{{ bar_w }}%;height:10px;background:{{ ['#F59E0B','#94A3B8','#CD7F32','#64748B'][loop.index0] }};border-radius:20px;transition:width 1s ease"></div>
+        </div>
+        <div style="font-size:12px;color:var(--ts);font-weight:600">{{ ind.interpretation }}</div>
+        <div style="font-size:11px;color:var(--tm);margin-top:3px">Spearman r = {{ ind.spearman_r }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="cg fi3">
+  <div class="card">
+    <div class="card-h">
+      <div><div class="card-t">Correlation with Welfare Score</div>
+      <div class="card-sub">Pearson r — how strongly each indicator moves the overall score</div></div>
+    </div>
+    <div class="card-b"><div style="position:relative;height:280px"><canvas id="corrBar"></canvas></div></div>
+    <div class="card-f" style="font-size:12px;color:var(--ts)">
+      r = 1.0 means perfect correlation. r = 0 means no relationship. Higher bars = stronger predictor of welfare.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h">
+      <div><div class="card-t">Score Variance Explained (R²)</div>
+      <div class="card-sub">What % of welfare score differences does each indicator explain?</div></div>
+    </div>
+    <div class="card-b" style="display:flex;justify-content:center;align-items:center;height:280px">
+      <canvas id="r2Donut" style="max-width:260px;max-height:260px"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="card fi3 mb4">
+  <div class="card-h">
+    <div><div class="card-t">⚡ Marginal Impact Simulation</div>
+    <div class="card-sub">If an indicator improves by 10 or 20 points, how much does the welfare score change?</div></div>
+  </div>
+  <div class="card-b">
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead>
+          <tr>
+            <th style="padding:11px 16px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ts);background:var(--surf2);border-bottom:1px solid var(--b)">Indicator</th>
+            <th style="padding:11px 16px;text-align:center;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ts);background:var(--surf2);border-bottom:1px solid var(--b)">Current Avg</th>
+            <th style="padding:11px 16px;text-align:center;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ts);background:var(--surf2);border-bottom:1px solid var(--b)">Formula Weight</th>
+            <th style="padding:11px 16px;text-align:center;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ts);background:var(--surf2);border-bottom:1px solid var(--b)">+10 pts → Score Gain</th>
+            <th style="padding:11px 16px;text-align:center;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ts);background:var(--surf2);border-bottom:1px solid var(--b)">+20 pts → Score Gain</th>
+            <th style="padding:11px 16px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ts);background:var(--surf2);border-bottom:1px solid var(--b)">Correlation</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% set icons = {'indicator_1':'📚','indicator_2':'🏥','indicator_3':'🌾','indicator_4':'💼'} %}
+          {% for ind_key, ind in analysis.ranked %}
+          <tr style="border-bottom:1px solid var(--b)">
+            <td style="padding:14px 16px">
+              <div style="display:flex;align-items:center;gap:8px">
+                <span style="font-size:18px">{{ icons[ind_key] }}</span>
+                <div>
+                  <div style="font-weight:700;color:var(--th)">{{ ind.label }}</div>
+                  {% if loop.index0 == 0 %}<span style="font-size:10px;font-weight:700;background:var(--a-l);color:var(--a);padding:2px 7px;border-radius:20px">Most Impactful</span>{% endif %}
+                </div>
+              </div>
+            </td>
+            <td style="padding:14px 16px;text-align:center">
+              <span style="font-family:var(--fontd);font-weight:700;color:var(--tb)">{{ ind.avg_value }}/100</span>
+            </td>
+            <td style="padding:14px 16px;text-align:center">
+              <span style="background:var(--p-l);color:var(--p);padding:3px 10px;border-radius:20px;font-weight:700;font-size:13px">{{ ind.weight_pct }}%</span>
+            </td>
+            <td style="padding:14px 16px;text-align:center">
+              <span style="font-family:var(--fontd);font-size:16px;font-weight:800;color:var(--g)">+{{ ind.impact_10pts }} pts</span>
+            </td>
+            <td style="padding:14px 16px;text-align:center">
+              <span style="font-family:var(--fontd);font-size:16px;font-weight:800;color:var(--t)">+{{ ind.impact_20pts }} pts</span>
+            </td>
+            <td style="padding:14px 16px">
+              <div style="display:flex;align-items:center;gap:8px">
+                <div style="width:80px;height:6px;background:var(--surf2);border-radius:20px">
+                  <div style="width:{{ (ind.pearson_r * 100)|abs|round(0)|int }}%;height:6px;background:{% if ind.pearson_r >= 0.6 %}var(--g){% elif ind.pearson_r >= 0.4 %}var(--a){% else %}var(--r){% endif %};border-radius:20px;max-width:100%"></div>
+                </div>
+                <span style="font-size:12px;color:var(--ts)">r={{ ind.pearson_r }}</span>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card fi4 mb4">
+  <div class="card-h"><div><div class="card-t">🏛️ What This Means for Policy</div>
+  <div class="card-sub">Rule-based recommendations derived from the correlation data above</div></div></div>
+  <div class="card-b">
+    {% set top_ind = analysis.top_indicator %}
+    {% set bot_ind = analysis.bottom_indicator %}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="padding:16px;background:var(--g-l);border-radius:var(--rads);border:1px solid #6EE7B7">
+        <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--g);margin-bottom:8px">📈 Highest Leverage</div>
+        <div style="font-size:15px;font-weight:700;color:var(--g);margin-bottom:8px">Invest in {{ top_ind.label }}</div>
+        <p style="font-size:13px;color:var(--tb);line-height:1.7;margin:0">
+          With r={{ top_ind.pearson_r }} and {{ analysis.r_squared[analysis.ranked[0][0]] }}% of score variance explained,
+          improving <strong>{{ top_ind.label }}</strong> has the highest predicted return on investment.
+          Every 10-point gain in this indicator yields a +{{ top_ind.impact_10pts }} point welfare score improvement.
+        </p>
+      </div>
+      <div style="padding:16px;background:var(--a-l);border-radius:var(--rads);border:1px solid #FDE68A">
+        <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--a);margin-bottom:8px">🔶 Biggest Gap to Close</div>
+        <div style="font-size:15px;font-weight:700;color:var(--a);margin-bottom:8px">
+          {{ analysis.biggest_gap.label }} — {{ analysis.biggest_gap.gap }} pts below ideal
+        </div>
+        <p style="font-size:13px;color:var(--tb);line-height:1.7;margin:0">
+          The average {{ analysis.biggest_gap.label }} score is {{ 100 - analysis.biggest_gap.gap }}/100,
+          leaving a gap of {{ analysis.biggest_gap.gap }} points to reach the ideal 100.
+          This indicator has the most room for structural improvement across all districts.
+        </p>
+      </div>
+      <div style="padding:16px;background:var(--p-l);border-radius:var(--rads);border:1px solid #BFDBFE">
+        <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--p);margin-bottom:8px">📊 Highest Variance — Target Inequality</div>
+        <div style="font-size:15px;font-weight:700;color:var(--p);margin-bottom:8px">
+          {{ analysis.most_variable.label }} (σ = {{ analysis.most_variable.std }})
+        </div>
+        <p style="font-size:13px;color:var(--tb);line-height:1.7;margin:0">
+          <strong>{{ analysis.most_variable.label }}</strong> has the widest spread across districts (std dev = {{ analysis.most_variable.std }}).
+          This means some districts are doing exceptionally well while others are critically underserved — a strong signal for geographically targeted interventions.
+        </p>
+      </div>
+      <div style="padding:16px;background:var(--surf2);border-radius:var(--rads);border:1px solid var(--b)">
+        <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ts);margin-bottom:8px">📝 Methodology Note</div>
+        <p style="font-size:13px;color:var(--ts);line-height:1.7;margin:0">
+          Pearson r measures linear relationship between each indicator and composite welfare score.
+          Spearman r confirms robustness to outliers. R² shows percentage of welfare score variation explained.
+          Marginal impact is calculated by holding other indicators constant and applying the formula weights.
+          All analysis is rule-based — no machine learning is used.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card fi4">
+  <div class="card-h">
+    <div><div class="card-t">📐 Indicator Cross-Correlation Matrix</div>
+    <div class="card-sub">How strongly are the 4 indicators correlated with each other?</div></div>
+  </div>
+  <div class="card-b" style="padding:0">
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:13px">
+        <thead>
+          <tr>
+            <th style="padding:12px 16px;background:var(--surf2);border-bottom:1px solid var(--b)"></th>
+            {% for key in ['indicator_1','indicator_2','indicator_3','indicator_4'] %}
+            <th style="padding:12px 16px;font-size:12px;font-weight:700;text-align:center;background:var(--surf2);border-bottom:1px solid var(--b);color:var(--ts)">
+              {{ {'indicator_1':'📚 Education','indicator_2':'🏥 Healthcare','indicator_3':'🌾 Food','indicator_4':'💼 Employment'}[key] }}
+            </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row_key in ['indicator_1','indicator_2','indicator_3','indicator_4'] %}
+          <tr style="border-bottom:1px solid var(--b)">
+            <td style="padding:12px 16px;font-weight:700;color:var(--th);background:var(--surf2);font-size:13px">
+              {{ {'indicator_1':'📚 Education','indicator_2':'🏥 Healthcare','indicator_3':'🌾 Food','indicator_4':'💼 Employment'}[row_key] }}
+            </td>
+            {% for col_key in ['indicator_1','indicator_2','indicator_3','indicator_4'] %}
+            {% set rv = analysis.corr_matrix[row_key][col_key] %}
+            {% set bg = '#10B98120' if rv >= 0.6 else '#3B82F620' if rv >= 0.4 else '#F59E0B20' if rv >= 0.2 else 'var(--surf2)' %}
+            {% set fc = 'var(--g)' if rv >= 0.6 else 'var(--p)' if rv >= 0.4 else 'var(--a)' if rv >= 0.2 else 'var(--ts)' %}
+            <td style="padding:12px 16px;text-align:center;background:{{ bg }}">
+              {% if row_key == col_key %}
+              <span style="font-family:var(--fontd);font-weight:800;color:var(--p)">1.00</span>
+              {% else %}
+              <span style="font-family:var(--fontd);font-weight:700;color:{{ fc }}">{{ rv }}</span>
+              {% endif %}
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div style="padding:14px 18px;font-size:12px;color:var(--tm)">
+      <strong>Reading guide:</strong> Values close to 1.0 = strong positive correlation (both improve together). Values near 0 = independent indicators. Green cells ≥ 0.6, blue ≥ 0.4, amber ≥ 0.2.
+    </div>
+  </div>
+</div>
+
+{% else %}
+<div class="card fi2"><div class="card-b"><div class="empty"><i class="fa fa-chart-bar"></i><h3>Insufficient Data</h3><p>Need at least 10 records to run correlation analysis. Select a different year or broader filter.</p></div></div></div>
+{% endif %}
+
+{% endblock %}
+{% block extra_js %}
+{% if analysis %}
+<script>
+const indLabels = [{% for key, ind in analysis.ranked %}"{{ ind.label }}"{% if not loop.last %},{% endif %}{% endfor %}];
+const pearsonR  = [{% for key, ind in analysis.ranked %}{{ ind.pearson_r }}{% if not loop.last %},{% endif %}{% endfor %}];
+const r2Data    = [{% for key, ind in analysis.ranked %}{{ analysis.r_squared[key] }}{% if not loop.last %},{% endif %}{% endfor %}];
+const rankColors = ['#F59E0B','#94A3B8','#CD7F32','#64748B'];
+
+// Correlation bar chart
+new Chart(document.getElementById('corrBar'), {
+  type: 'bar',
+  data: {
+    labels: indLabels,
+    datasets: [{
+      label: 'Pearson r',
+      data: pearsonR,
+      backgroundColor: pearsonR.map(r => r >= 0.6 ? '#10B981' : r >= 0.4 ? '#3B82F6' : r >= 0.2 ? '#F59E0B' : '#EF4444'),
+      borderRadius: 8, borderSkipped: false,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: 'rgba(255,255,255,.97)', titleColor: '#0A1628',
+        bodyColor: '#475569', borderColor: '#E2E8F0', borderWidth: 1, padding: 12,
+        callbacks: {
+          label: ctx => [
+            ' Pearson r = ' + ctx.raw,
+            ' Explains ' + (ctx.raw * ctx.raw * 100).toFixed(1) + '% of variance',
+            ' ' + (ctx.raw >= 0.6 ? '✅ Strong' : ctx.raw >= 0.4 ? '⚠️ Moderate' : '🔶 Weak') + ' correlation',
+          ]
+        }
+      }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 12 } } },
+      y: {
+        min: 0, max: 1,
+        grid: { color: 'rgba(226,232,240,.6)' },
+        ticks: { font: { family: 'Inter', size: 11 }, callback: v => 'r = ' + v.toFixed(1) }
+      }
+    },
+    animation: { duration: 900, easing: 'easeOutQuart' }
+  }
+});
+
+// R² donut
+new Chart(document.getElementById('r2Donut'), {
+  type: 'doughnut',
+  data: {
+    labels: indLabels,
+    datasets: [{
+      data: r2Data,
+      backgroundColor: ['#10B981','#3B82F6','#F59E0B','#94A3B8'],
+      borderColor: 'var(--surf)',
+      borderWidth: 3, hoverOffset: 8,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: { font: { family: 'Inter', size: 12 }, padding: 14, usePointStyle: true }
+      },
+      tooltip: {
+        backgroundColor: 'rgba(255,255,255,.97)', titleColor: '#0A1628',
+        bodyColor: '#475569', borderColor: '#E2E8F0', borderWidth: 1, padding: 12,
+        callbacks: {
+          label: ctx => ' ' + ctx.label + ': explains ' + ctx.raw + '% of score variation'
+        }
+      }
+    },
+    cutout: '62%',
+    animation: { duration: 900 }
+  }
+});
+</script>
+{% endif %}
+{% endblock %}

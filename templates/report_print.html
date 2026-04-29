@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>WelfareWatch Report — {{ district }}</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --p: #2563EB; --g: #10B981; --a: #F59E0B; --r: #EF4444; --v: #8B5CF6;
+    --dark: #0A1628; --mid: #475569; --light: #94A3B8; --border: #E2E8F0;
+    --surf: #F8FAFC;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; font-size: 14px; color: #1E293B; background: #fff; }
+
+  /* ── Screen styles ── */
+  .print-page { max-width: 860px; margin: 0 auto; padding: 0; }
+
+  /* No-print toolbar */
+  .no-print-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--dark); color: #fff;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 28px; gap: 12px;
+  }
+  .no-print-bar span { font-size: 13px; color: rgba(255,255,255,.6); }
+  .btn-print {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 22px; background: var(--p); color: #fff;
+    border: none; border-radius: 8px; font-family: 'Inter', sans-serif;
+    font-size: 14px; font-weight: 700; cursor: pointer; transition: background .15s;
+    text-decoration: none;
+  }
+  .btn-print:hover { background: #1D4ED8; }
+  .btn-back {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 16px; background: rgba(255,255,255,.1); color: #fff;
+    border: 1px solid rgba(255,255,255,.2); border-radius: 8px;
+    font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none;
+    transition: background .15s;
+  }
+  .btn-back:hover { background: rgba(255,255,255,.18); color: #fff; }
+
+  /* Report body */
+  .report-body { padding: 36px 40px; }
+
+  /* Header */
+  .rpt-header {
+    background: linear-gradient(135deg, #060F1D 0%, #0E2341 60%, #0A3D55 100%);
+    border-radius: 14px; padding: 28px 32px; margin-bottom: 28px;
+    display: flex; align-items: center; justify-content: space-between;
+    color: #fff;
+  }
+  .rpt-badge { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 6px; }
+  .rpt-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; font-weight: 800; color: #fff; line-height: 1.1; }
+  .rpt-sub { font-size: 13px; color: rgba(255,255,255,.5); margin-top: 4px; }
+  .rpt-score-box { text-align: center; }
+  .rpt-score-num { font-family: 'Bricolage Grotesque', sans-serif; font-size: 56px; font-weight: 800; line-height: 1; }
+  .rpt-score-label { font-size: 14px; font-weight: 700; margin-top: 4px; }
+  .rpt-score-sub { font-size: 11px; color: rgba(255,255,255,.4); margin-top: 2px; }
+
+  /* Section heading */
+  .sec-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 15px; font-weight: 800; color: var(--dark);
+    border-left: 4px solid var(--p); padding-left: 12px;
+    margin: 24px 0 14px;
+  }
+
+  /* Score cards row */
+  .score-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 24px; }
+  .score-card {
+    border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+    text-align: center; background: var(--surf);
+  }
+  .sc-label { font-size: 11px; font-weight: 700; color: var(--light); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+  .sc-val { font-family: 'Bricolage Grotesque', sans-serif; font-size: 30px; font-weight: 800; line-height: 1; }
+  .sc-sub { font-size: 12px; font-weight: 700; margin-top: 4px; }
+
+  /* Indicator bars */
+  .ind-grid { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .ind-row { background: var(--surf); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .ind-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .ind-name { font-size: 13px; font-weight: 700; color: var(--dark); }
+  .ind-score { font-family: 'Bricolage Grotesque', sans-serif; font-size: 18px; font-weight: 800; }
+  .ind-meta { display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: var(--light); margin-bottom: 6px; }
+  .ind-track { background: #E2E8F0; border-radius: 20px; height: 8px; overflow: hidden; }
+  .ind-fill { height: 8px; border-radius: 20px; }
+
+  /* Trend table */
+  .trend-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 13px; }
+  .trend-table thead th { background: var(--dark); color: #fff; padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .trend-table tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .trend-table tbody tr:nth-child(even) { background: var(--surf); }
+  .trend-table tbody tr:last-child td { border-bottom: none; }
+
+  /* Commentary */
+  .commentary-block { background: var(--surf); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; margin-bottom: 24px; }
+  .commentary-block p { font-size: 13px; line-height: 1.75; color: #334155; margin-bottom: 12px; }
+  .commentary-block p:last-child { margin-bottom: 0; }
+
+  /* Footer */
+  .rpt-footer { border-top: 1px solid var(--border); padding-top: 16px; text-align: center; font-size: 11px; color: var(--light); line-height: 1.6; }
+
+  /* Score colour helpers */
+  .c-excellent { color: #10B981; } .bg-excellent { background: #10B981; }
+  .c-good       { color: #3B82F6; } .bg-good       { background: #3B82F6; }
+  .c-moderate   { color: #F59E0B; } .bg-moderate   { background: #F59E0B; }
+  .c-weak       { color: #F97316; } .bg-weak       { background: #F97316; }
+  .c-critical   { color: #EF4444; } .bg-critical   { background: #EF4444; }
+
+  /* ── Print styles ── */
+  @media print {
+    .no-print-bar { display: none !important; }
+    .print-page { max-width: 100%; }
+    .report-body { padding: 0; }
+    .rpt-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .score-card, .ind-row, .commentary-block { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .ind-fill, thead { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { font-size: 12px; }
+    .rpt-title { font-size: 22px; }
+    .rpt-score-num { font-size: 44px; }
+    .sc-val { font-size: 24px; }
+    @page { margin: 14mm 12mm; size: A4; }
+  }
+</style>
+</head>
+<body>
+<div class="print-page">
+
+  <div class="no-print-bar">
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="javascript:history.back()" class="btn-back">← Back</a>
+      <span>WelfareWatch Welfare Report — {{ district }}</span>
+    </div>
+    <button class="btn-print" onclick="window.print()">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Save as PDF / Print
+    </button>
+  </div>
+
+  <div class="report-body">
+
+    <div class="rpt-header">
+      <div>
+        <div class="rpt-badge">🇮🇳 WelfareWatch — District Welfare Report</div>
+        <div class="rpt-title">{{ district }}</div>
+        <div class="rpt-sub">{{ row.state }} &nbsp;·&nbsp; Data: 2018–2026 &nbsp;·&nbsp; Generated: {{ generated }}</div>
+      </div>
+      <div class="rpt-score-box">
+        <div class="rpt-score-num c-{{ wl.cls }}">{{ row.score }}</div>
+        <div class="rpt-score-label c-{{ wl.cls }}">{{ wl.icon }} {{ wl.label }}</div>
+        <div class="rpt-score-sub">out of 100</div>
+      </div>
+    </div>
+
+    <div class="sec-title">Score Summary</div>
+    <div class="score-cards">
+      <div class="score-card">
+        <div class="sc-label">District Score</div>
+        <div class="sc-val c-{{ wl.cls }}">{{ row.score }}<span style="font-size:16px;font-weight:500;color:var(--light)">/100</span></div>
+        <div class="sc-sub c-{{ wl.cls }}">{{ wl.icon }} {{ wl.label }}</div>
+      </div>
+      <div class="score-card">
+        <div class="sc-label">State Average</div>
+        {% set swl = welfare_label(state_avg) %}
+        <div class="sc-val c-{{ swl.cls }}">{{ state_avg }}<span style="font-size:16px;font-weight:500;color:var(--light)">/100</span></div>
+        <div class="sc-sub c-{{ swl.cls }}">{{ row.state }}</div>
+      </div>
+      <div class="score-card">
+        <div class="sc-label">National Average</div>
+        {% set nwl = welfare_label(nat_avg) %}
+        <div class="sc-val c-{{ nwl.cls }}">{{ nat_avg }}<span style="font-size:16px;font-weight:500;color:var(--light)">/100</span></div>
+        <div class="sc-sub" style="color:var(--light)">All India</div>
+      </div>
+    </div>
+
+    <div class="sec-title">Indicator Breakdown</div>
+    <div class="ind-grid">
+      {% set indicators = [
+        ("📚", INDICATOR_LABELS.indicator_1, row.i1, 40),
+        ("🏥", INDICATOR_LABELS.indicator_2, row.i2, 30),
+        ("🌾", INDICATOR_LABELS.indicator_3, row.i3, 20),
+        ("💼", INDICATOR_LABELS.indicator_4, row.i4, 10)
+      ] %}
+      {% for icon, label, score, weight in indicators %}
+      {% set iwl = welfare_label(score or 0) %}
+      <div class="ind-row">
+        <div class="ind-top">
+          <div class="ind-name">{{ icon }} {{ label }}</div>
+          <div class="ind-score c-{{ iwl.cls }}">{{ score }}/100</div>
+        </div>
+        <div class="ind-meta">
+          <span>{{ iwl.icon }} {{ iwl.label }}</span>
+          <span>Weight in score: {{ weight }}%</span>
+        </div>
+        <div class="ind-track">
+          <div class="ind-fill bg-{{ iwl.cls }}" style="width:{{ score or 0 }}%"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if trend_rows %}
+    <div class="sec-title">Year-on-Year Welfare Trend</div>
+    <table class="trend-table">
+      <thead><tr><th>Year</th><th>Welfare Score</th><th>Category</th><th>Change</th></tr></thead>
+      <tbody>
+      {% set ns = namespace(prev=none) %}
+      {% for r in trend_rows %}
+      {% set twl = welfare_label(r.avg) %}
+      <tr>
+        <td style="font-weight:700">{{ r.year }}</td>
+        <td>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="flex:1;background:#E2E8F0;border-radius:20px;height:5px">
+              <div style="width:{{ r.avg }}%;background:{{ twl.color }};height:5px;border-radius:20px"></div>
+            </div>
+            <span style="font-weight:700;color:{{ twl.color }}">{{ r.avg }}/100</span>
+          </div>
+        </td>
+        <td><span style="color:{{ twl.color }};font-weight:700">{{ twl.icon }} {{ twl.label }}</span></td>
+        <td style="font-weight:700;color:{% if ns.prev is not none and r.avg > ns.prev %}#10B981{% elif ns.prev is not none and r.avg < ns.prev %}#EF4444{% else %}#94A3B8{% endif %}">
+          {% if ns.prev is not none %}
+            {% set delta = r.avg - ns.prev %}
+            {% if delta > 0 %}▲ +{{ delta|round(1) }}{% elif delta < 0 %}▼ {{ delta|round(1) }}{% else %}— No change{% endif %}
+          {% else %}—{% endif %}
+        </td>
+      </tr>
+      {% set ns.prev = r.avg %}
+      {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
+    {% if commentary and commentary.paragraphs %}
+    <div class="sec-title">Welfare Analysis</div>
+    <div class="commentary-block">
+      {% for para in commentary.paragraphs[:5] %}
+      <p>{{ para }}</p>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="sec-title">Score Scale Reference</div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:24px">
+      {% for lo,hi,label,color,cls,desc in SCORE_BANDS %}
+      <div style="background:{{ color }}15;border:1px solid {{ color }}40;border-radius:8px;padding:10px;text-align:center">
+        <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:800;color:{{ color }}">{{ lo }}–{{ hi }}</div>
+        <div style="font-size:11px;font-weight:700;color:{{ color }};margin-top:2px">{{ label }}</div>
+        <div style="font-size:10px;color:var(--light);margin-top:4px;line-height:1.4">{{ desc[:50] }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="rpt-footer">
+      <strong>© 2024–26 WelfareWatch</strong> — Open data for a better India<br>
+      This report is auto-generated from verified welfare indicators. Not a substitute for official government data.<br>
+      To save as PDF: click "Save as PDF / Print" → choose "Save as PDF" as the destination in your print dialog.
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

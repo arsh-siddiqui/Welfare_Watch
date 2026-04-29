@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% block title %}{{ district }} — Welfare Commentary{% endblock %}
+{% block topbar_title %}{{ district }} — Score Explained{% endblock %}
+{% block content %}
+
+<div class="ph fi flex jb items-c" style="flex-wrap:wrap;gap:12px">
+  <div>
+    <h1 class="ph-title">{{ district }}</h1>
+    <p class="ph-sub">{{ state }} &nbsp;·&nbsp; AI-free rule-based welfare analysis</p>
+  </div>
+  <div style="display:flex;gap:8px">
+    <a href="{{ url_for('compare') }}" class="btn btn-o btn-sm"><i class="fa fa-scale-balanced"></i> Compare</a>
+    <a href="{{ url_for('state_commentary', state_name=state) }}" class="btn btn-o btn-sm"><i class="fa fa-map-marker-alt"></i> {{ state }} Analysis</a>
+    <a href="{{ url_for('generate_pdf_report', district_name=district) }}" class="btn btn-v btn-sm"><i class="fa fa-file-pdf"></i> Download PDF Report</a>
+    <a href="{{ url_for('export_district', district_name=district) }}" class="btn btn-ghost btn-sm"><i class="fa fa-download"></i> Export CSV</a>
+  </div>
+</div>
+
+<div class="fi1" style="background:linear-gradient(135deg,#0A1628,#1a2f50);border-radius:var(--rad);padding:26px 32px;margin-bottom:22px;box-shadow:var(--shm)">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <div>
+      <div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:8px;font-weight:600">Welfare Score — {{ district }}</div>
+      <div style="display:flex;align-items:baseline;gap:8px">
+        <div style="font-family:var(--fontd);font-size:72px;font-weight:800;line-height:1;color:{{ commentary.wl.color }}">{{ commentary.score }}</div>
+        <div style="font-size:22px;color:rgba(255,255,255,.4)">/100</div>
+      </div>
+      <div style="font-size:18px;font-weight:700;color:{{ commentary.wl.color }};margin-top:6px">{{ commentary.wl.icon }} {{ commentary.wl.label }}</div>
+      <div style="margin-top:14px;max-width:380px">
+        <div style="height:10px;border-radius:20px;background:linear-gradient(to right,#EF4444 0%,#F97316 20%,#F59E0B 40%,#3B82F6 60%,#10B981 80%,#10B981 100%);position:relative">
+          <div style="position:absolute;top:-5px;left:{{ commentary.score }}%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid {{ commentary.wl.color }};box-shadow:0 1px 4px rgba(0,0,0,.2)"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:10px;font-weight:700;margin-top:5px;color:rgba(255,255,255,.4)">
+          <span>0 Critical</span><span>20 Weak</span><span>40 Moderate</span><span>60 Good</span><span>80 Excellent</span><span>100</span>
+        </div>
+      </div>
+    </div>
+    <div style="min-width:200px">
+      <canvas id="sparkline" height="100" width="220"></canvas>
+      <div style="font-size:11px;color:rgba(255,255,255,.4);text-align:center;margin-top:4px">Welfare trend 2018–2023</div>
+    </div>
+  </div>
+</div>
+
+<div class="card fi2 mb4">
+  <div class="card-h">
+    <div>
+      <div class="card-t">🔍 Why does {{ district }} score {{ commentary.score }}/100?</div>
+      <div class="card-sub">Rule-based analysis of all 4 welfare indicators</div>
+    </div>
+  </div>
+  <div class="card-b">
+    <div style="font-size:15px;color:var(--tb);line-height:1.8;padding:16px;background:var(--surf2);border-radius:var(--rads);border-left:4px solid {{ commentary.wl.color }};margin-bottom:16px">
+      {{ commentary.overall_why|safe }}
+    </div>
+    <div style="font-size:14px;color:var(--ts);padding:12px 16px;background:var(--p-l);border-radius:var(--rads);border:1px solid #BFDBFE">
+      📊 <strong>Benchmarking:</strong> {{ commentary.comparison|safe }}
+    </div>
+  </div>
+</div>
+
+<div class="card fi3 mb4">
+  <div class="card-h">
+    <div><div class="card-t">📋 Indicator-by-Indicator Analysis</div>
+    <div class="card-sub">Why each area scores the way it does + specific improvement actions</div></div>
+  </div>
+  <div class="card-b" style="padding:0">
+    {% set icons = ['📚','🏥','🌾','💼'] %}
+    {% for ind in commentary.indicators %}
+    <div style="padding:22px 24px;border-bottom:1px solid var(--b);{% if loop.last %}border-bottom:none{% endif %}">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+        <span style="font-size:28px">{{ icons[loop.index0] }}</span>
+        <div style="flex:1">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+            <h3 style="font-family:var(--fontd);font-size:17px;font-weight:700;color:var(--th)">{{ ind.label }}</h3>
+            <div style="display:flex;align-items:center;gap:10px">
+              <span style="font-family:var(--fontd);font-size:28px;font-weight:800;color:{{ ind.wl.color }}">{{ ind.score }}</span>
+              <span style="font-size:22px;color:var(--tm)">/100</span>
+              <span class="badge b-{{ ind.wl.cls }}">{{ ind.wl.icon }} {{ ind.wl.label }}</span>
+            </div>
+          </div>
+          <div style="height:8px;border-radius:20px;background:var(--surf2)">
+            <div style="width:{{ ind.score }}%;height:8px;border-radius:20px;background:{{ ind.wl.color }};max-width:100%;transition:width 1s ease"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        
+        <div style="padding:14px 16px;background:{{ ind.wl.color }}0F;border-radius:var(--rads);border:1px solid {{ ind.wl.color }}30">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:{{ ind.wl.color }};margin-bottom:8px">
+            <i class="fa fa-circle-info" style="margin-right:5px"></i>Why this score
+          </div>
+          <p style="font-size:13px;color:var(--tb);line-height:1.7">{{ ind.why }}</p>
+        </div>
+        
+        <div style="padding:14px 16px;background:var(--g-l);border-radius:var(--rads);border:1px solid #6EE7B7">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--g);margin-bottom:8px">
+            <i class="fa fa-arrow-trend-up" style="margin-right:5px"></i>How to improve
+          </div>
+          <p style="font-size:13px;color:var(--tb);line-height:1.7">{{ ind.action }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="cg fi4">
+  <div style="padding:22px 24px;border-radius:var(--rad);background:var(--r-l);border:2px solid {{ commentary.top_priority.wl.color }};box-shadow:var(--sh)">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+      <div style="width:40px;height:40px;border-radius:50%;background:{{ commentary.top_priority.wl.color }};display:grid;place-items:center;color:#fff;font-size:18px;flex-shrink:0">🚨</div>
+      <div>
+        <div style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--th)">Top Priority — Immediate Action</div>
+        <div style="font-size:13px;color:var(--ts)">The weakest indicator — fix this first for maximum impact</div>
+      </div>
+    </div>
+    <div style="font-size:17px;font-weight:700;color:{{ commentary.top_priority.wl.color }};margin-bottom:8px">
+      {{ {'📚':['📚','🏥','🌾','💼'][['Education & Literacy','Healthcare Access','Food Security','Employment & Income'].index(commentary.top_priority.label)] if commentary.top_priority.label in ['Education & Literacy','Healthcare Access','Food Security','Employment & Income'] else '📌'}['📚'] }}
+      {{ commentary.top_priority.label }}: {{ commentary.top_priority.score }}/100
+    </div>
+    <p style="font-size:14px;color:var(--tb);line-height:1.7;margin-bottom:12px">{{ commentary.top_priority.why }}</p>
+    <div style="padding:12px 14px;background:var(--surf2);border-radius:var(--rads);font-size:13px;color:var(--tb)">
+      <strong>Recommended action:</strong> {{ commentary.top_priority.action }}
+    </div>
+  </div>
+
+  <div style="padding:22px 24px;border-radius:var(--rad);background:var(--g-l);border:2px solid #10B981;box-shadow:var(--sh)">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--g);display:grid;place-items:center;color:#fff;font-size:18px;flex-shrink:0">⚡</div>
+      <div>
+        <div style="font-family:var(--fontd);font-size:15px;font-weight:800;color:var(--th)">Quick Win — Easiest Improvement</div>
+        <div style="font-size:13px;color:var(--ts)">Already performing reasonably — a small push gets big results</div>
+      </div>
+    </div>
+    <div style="font-size:17px;font-weight:700;color:var(--g);margin-bottom:8px">
+      {{ commentary.quick_win.label }}: {{ commentary.quick_win.score }}/100
+    </div>
+    <p style="font-size:14px;color:var(--tb);line-height:1.7;margin-bottom:12px">{{ commentary.quick_win.why }}</p>
+    <div style="padding:12px 14px;background:var(--surf2);border-radius:var(--rads);font-size:13px;color:var(--tb)">
+      <strong>Recommended action:</strong> {{ commentary.quick_win.action }}
+    </div>
+  </div>
+</div>
+
+<div class="ib ib-b fi4 mt4" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+  <div style="flex:1"><h4>Is welfare not reaching you in {{ district }}?</h4><p>If you're personally affected by a welfare gap described above, report it here to help policymakers take action.</p></div>
+  <a href="{{ url_for('report') }}" class="btn btn-p"><i class="fa fa-flag"></i> Submit a Report</a>
+  
+</div>
+
+{% endblock %}
+{% block extra_js %}
+<script>
+const t = {{ trend|safe }};
+new Chart(document.getElementById('sparkline'), {
+  type: 'line',
+  data: {
+    labels: t.years,
+    datasets: [{
+      data: t.scores,
+      borderColor: '{{ commentary.wl.color }}',
+      backgroundColor: '{{ commentary.wl.color }}30',
+      fill: true, tension: .4, borderWidth: 2.5,
+      pointRadius: 4, pointBackgroundColor: '{{ commentary.wl.color }}',
+      pointBorderColor: '#fff', pointBorderWidth: 1.5, spanGaps: true,
+    }]
+  },
+  options: {
+    responsive: false,
+    plugins: { legend: { display: false }, tooltip: {
+      callbacks: { label: ctx => ' ' + ctx.raw + '/100' }
+    }},
+    scales: {
+      x: { display: false },
+      y: { display: false, min: 0, max: 100 }
+    },
+    animation: { duration: 1000 }
+  }
+});
+</script>
+{% endblock %}
